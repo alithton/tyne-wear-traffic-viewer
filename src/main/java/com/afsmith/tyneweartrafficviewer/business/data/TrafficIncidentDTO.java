@@ -6,4 +6,4 @@ public record TrafficIncidentDTO(
         String incidentTypeDescription,
         String shortDescription,
         String locationDescription
-) { }
+) implements TrafficDataDTO { }
