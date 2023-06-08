@@ -42,3 +42,8 @@
 .read-the-docs {
     color: #888;
 }
+
+.leaflet-container {
+    width: 550px;
+    height: 550px;
+}
