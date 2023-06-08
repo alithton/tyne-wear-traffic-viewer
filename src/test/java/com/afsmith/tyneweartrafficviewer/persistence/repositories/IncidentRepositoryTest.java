@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.repositories;
 
+import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ class IncidentRepositoryTest {
     public void save() {
         TrafficIncident incident = TrafficIncident.builder()
                                                   .systemCodeNumber("code1")
+                                                  .point(new Point(1L, 1L, 0.0, 0.0))
                                                   .build();
 
         TrafficIncident savedIncident = incidentRepository.save(incident);
