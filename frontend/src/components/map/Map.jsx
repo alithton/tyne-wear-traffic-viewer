@@ -14,9 +14,8 @@ function Map() {
 
     useEffect(() => {
         const fetchData = async (url) => {
-            const response = await fetch(API_INCIDENT_URL);
+            const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
             const fetchedIncidents = data.map(incident => ({
                 systemCodeNumber: incident.systemCodeNumber,
                 incidentPosition: [incident.point.latitude, incident.point.longitude],

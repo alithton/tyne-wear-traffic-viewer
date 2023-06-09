@@ -4,8 +4,8 @@ function IncidentMarker(props) {
 
     return (
         <Marker position={props.incidentData.incidentPosition}>
-            <Tooltip>{props.incidentData.shortDescription}</Tooltip>
-            <Popup>{props.incidentData.longDescription}</Popup>
+            <Tooltip >{props.incidentData.shortDescription}</Tooltip>
+            <Popup >{props.incidentData.longDescription}</Popup>
         </Marker>
     );
 }

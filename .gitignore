@@ -4,7 +4,7 @@ HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
-!**/src/test/**/target/
+!frontend/tests/**/target/
 
 ### STS ###
 .apt_generated
@@ -55,7 +55,7 @@ dist-ssr
 /.nb-gradle/
 build/
 !**/src/main/**/build/
-!**/src/test/**/build/
+!frontend/tests/**/build/
 
 ### VS Code ###
 .vscode/
