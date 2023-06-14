@@ -1,17 +1,15 @@
-import {useState} from 'react';
-import Map from './components/map/Map.jsx';
-
-import './App.css'
+import styles from './App.module.css'
+import Header from "./components/header/Header.jsx";
+import Dashboard from "./components/dashboard/Dashboard.jsx";
 
 function App() {
 
     return (
-        <>
-            <h1>Map</h1>
-            <Map />
-        </>
-
-    )
+        <div className={styles['app-container']}>
+            <Header className={styles.header} />
+            <Dashboard />
+        </div>
+    );
 }
 
 export default App

@@ -2,7 +2,7 @@ import {describe, test, expect} from 'vitest';
 import {render, screen} from '@testing-library/react';
 import {MapContainer} from "react-leaflet";
 
-import IncidentMarker from "../../../src/components/map/IncidentMarker";
+import IncidentMarker from "../../../src/components/dashboard/map/IncidentMarker";
 import {incidentProps} from "../../mocks/handlers.js";
 
 describe('IncidentMarker component', () => {

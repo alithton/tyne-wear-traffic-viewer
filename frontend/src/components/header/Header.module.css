@@ -1,0 +1,42 @@
+.header {
+    background: #747bff;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 2rem;
+}
+
+.logo:hover {
+
+}
+
+.logo__main {
+    margin: 0;
+    font-size: 3rem;
+    color: #f3d753;
+    font-family: 'Tilt Warp', sans-serif;
+}
+
+.logo__sub {
+    margin: 0;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.user-profile {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+}
+
+.user-profile:hover {
+    color: #f8e47a;
+    cursor: pointer;
+    border-bottom: 2px solid #f8e47a;
+}

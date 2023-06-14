@@ -1,0 +1,23 @@
+.dashboard {
+    display: grid;
+    grid: "map options" 25vh
+          "map details" 50vh
+          / 52vw auto;
+    grid-gap: 1rem;
+    width: 95vw;
+    height: 100%;
+    padding: 0.5rem;
+    max-width: 1200px;
+}
+
+.map-panel {
+    grid-area: map;
+}
+
+.options-panel {
+    grid-area: options;
+}
+
+.details {
+    grid-area: details;
+}

@@ -1,0 +1,10 @@
+.details--no-selection {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.no-selection-text {
+
+}

@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Map from "../../../src/components/map/Map.jsx";
+import Map from "../../../src/components/dashboard/map/Map.jsx";
 
 describe('Map component', () => {
     test('Has an attribution', () => {
