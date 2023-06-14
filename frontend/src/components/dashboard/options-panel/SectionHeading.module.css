@@ -1,0 +1,14 @@
+.section-heading {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+}
+
+.line {
+    width: 10rem;
+    flex-grow: 1;
+    margin: 0 1rem;
+    color: #efefef;
+}

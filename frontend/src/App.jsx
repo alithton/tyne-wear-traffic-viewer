@@ -5,10 +5,13 @@ import Dashboard from "./components/dashboard/Dashboard.jsx";
 function App() {
 
     return (
-        <div className={styles['app-container']}>
-            <Header className={styles.header} />
-            <Dashboard />
-        </div>
+        <>
+            <div className={styles.background}></div>
+            <div className={styles['app-container']}>
+                <Header className={styles.header} />
+                <Dashboard />
+            </div>
+        </>
     );
 }
 

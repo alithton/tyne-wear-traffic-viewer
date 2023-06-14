@@ -5,6 +5,33 @@
     height: 100%;
 }
 
-.no-selection-text {
+.details--selection {
+    margin: 0;
+}
 
+.details__card--selection {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.details__header {
+    margin: 0;
+}
+
+.info--minor {
+    font-size: 0.8rem;
+}
+
+.info--important {
+    font-weight: bold;
+}
+
+.info--date {
+    margin: 0;
+}
+
+.info--important,
+.info--main,
+.info--minor {
+    margin: 0.5rem 0 0.5rem 0;
 }
