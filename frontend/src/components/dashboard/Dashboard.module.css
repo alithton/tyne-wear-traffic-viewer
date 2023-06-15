@@ -1,14 +1,14 @@
 .dashboard {
     display: grid;
-    grid: "map options" 35vh
-          "map details" 40vh
-          / 52vw auto;
+    grid: "map options" 25rem
+          "map details" minmax(0, 1fr)
+          / 52vw 30vw;
     grid-gap: 1rem;
-    width: 95vw;
-    height: 100%;
+    /*height: 70vh;*/
+    justify-content: center;
     padding: 0.5rem;
     max-width: 1200px;
-    margin-top: 5rem;
+    margin: 3rem 0;
 }
 
 .map-panel {
@@ -21,4 +21,13 @@
 
 .details {
     grid-area: details;
+}
+
+@media (max-width: 960px) {
+    .dashboard {
+        grid: "map"
+              "options"
+              "details";
+        height: 90%;
+    }
 }

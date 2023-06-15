@@ -1,0 +1,28 @@
+.comment__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.comment__text {
+    align-self: stretch;
+}
+
+.comment__button {
+    align-self: center;
+    font-family: inherit;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    background: #747bff;
+    border-radius: 8px;
+    border: 2px solid #f5c806;
+}
+
+.comment__button:hover,
+.comment__button:active {
+    background: #f5c806;
+    color: #747bff;
+    border: 2px solid #747bff;
+}

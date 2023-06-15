@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 import Header from "./components/header/Header.jsx";
 import Dashboard from "./components/dashboard/Dashboard.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
             <div className={styles['app-container']}>
                 <Header className={styles.header} />
                 <Dashboard />
+                <Footer />
             </div>
         </>
     );

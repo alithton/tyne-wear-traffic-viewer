@@ -4,6 +4,7 @@ import {useSelector} from 'react-redux';
 import Card from "../../ui/Card.jsx";
 import styles from './DetailsPanel.module.css';
 import {utcToLocal, hasOccurred} from "../../../util/dateHelpers.js";
+import Comments from "./Comments.jsx";
 
 const COORDINATE_PRECISION = 4;
 
@@ -54,6 +55,7 @@ function DetailsPanel(props) {
                 {diversion && diversion.trim() && <p className={styles['info--main']}>Diversion: {diversion}</p>}
                 {startTimeDisplay}
                 {endTimeDisplay}
+                <Comments />
             </div>
         );
     }
