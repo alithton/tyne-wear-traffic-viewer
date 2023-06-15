@@ -12,6 +12,8 @@
 .details__card--selection {
     justify-content: flex-start;
     align-items: flex-start;
+    overflow-y: scroll;
+    height: 37vh;
 }
 
 .details__header {

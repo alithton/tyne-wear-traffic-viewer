@@ -15,17 +15,29 @@
 }
 
 .leaflet-container {
-    width: 50vw;
-    height: 70vh;
+    width: 90%;
+    height: 90%;
 }
+
+/*html {*/
+/*    height: 100%;*/
+/*}*/
 
 body {
     margin: 0;
+    /*height: 100%;*/
 }
 
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+}
+
+@media (max-width: 960px) {
+    .leaflet-container {
+        width: 80vw;
+        height: 70vh;
+    }
 }
 
 
