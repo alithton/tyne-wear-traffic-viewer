@@ -20,7 +20,7 @@ function Comments() {
     return (
         <>
             <h2>Comments</h2>
-            <div>
+            <div data-testid='comments'>
                 {comments.map(comment => (
                     <Comment key={comment.id} name={comment.name} text={comment.text} />
                 ))}

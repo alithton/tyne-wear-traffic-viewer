@@ -1,11 +1,10 @@
 import styles from './TimeOptions.module.css';
 import SectionHeading from "./SectionHeading.jsx";
 import {useState} from "react";
+import DateInput from "./DateInput.jsx";
 
 function TimeOptions() {
     const [enableTimeFilter, setEnableTimeFilter] = useState(false);
-
-    const currentDate = new Date();
 
     const handleChange = () => {
         setEnableTimeFilter(!enableTimeFilter);
@@ -18,11 +17,9 @@ function TimeOptions() {
                 <label htmlFor='date-filter'>Filter by date?</label>
                 <input className={styles['date-filter']} type='checkbox' id='date-filter' name='date-filter' onChange={handleChange}/>
 
-                <label htmlFor='start'>From</label>
-                <input type='date' id='start' name='start-date' value={currentDate.toDateString()} disabled={!enableTimeFilter}/>
+                <DateInput id='start' label='From' name='start-date' disabled={!enableTimeFilter} />
+                <DateInput id='end' label='To' name='end-date' disabled={!enableTimeFilter} />
 
-                <label htmlFor='end'>To</label>
-                <input type='date' id='end' name='end-date' value={currentDate.toDateString()} disabled={!enableTimeFilter} />
             </div>
         </>
     );
