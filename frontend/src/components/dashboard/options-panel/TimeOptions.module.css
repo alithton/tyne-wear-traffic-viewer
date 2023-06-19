@@ -1,0 +1,10 @@
+.time-options {
+    display: grid;
+    grid-template-columns: 8rem 8rem;
+    justify-items: self-end;
+    grid-column-gap: 0.5rem;
+}
+
+.date-filter {
+    justify-self: flex-start;
+}

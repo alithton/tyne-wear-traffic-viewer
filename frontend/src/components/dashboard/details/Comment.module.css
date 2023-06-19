@@ -1,0 +1,21 @@
+.comment__box {
+    background: #2f8bf6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 1rem 0;
+    width: 80%;
+}
+
+.comment__name {
+    font-size: 0.7rem;
+}
+
+.comment__name,
+.comment__text {
+    color: aliceblue;
+    margin: 0;
+}

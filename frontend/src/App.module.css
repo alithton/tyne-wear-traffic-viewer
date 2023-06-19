@@ -1,0 +1,22 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100vw;
+    position: sticky;
+    z-index: 5;
+}
+
+.background {
+    background: url("./assets/pexels-daniel-smyth-12918223.jpg") center/cover;
+    filter: sepia(50%);
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+

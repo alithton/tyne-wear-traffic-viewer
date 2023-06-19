@@ -1,0 +1,32 @@
+.dashboard {
+    display: grid;
+    grid: "map options" 25rem
+          "map details" minmax(0, 1fr)
+          / 52vw 30vw;
+    grid-gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin: 3rem 0;
+}
+
+.map-panel {
+    grid-area: map;
+}
+
+.options-panel {
+    grid-area: options;
+}
+
+.details {
+    grid-area: details;
+}
+
+@media (max-width: 960px) {
+    .dashboard {
+        grid: "map"
+              "options"
+              "details";
+        height: 90%;
+    }
+}

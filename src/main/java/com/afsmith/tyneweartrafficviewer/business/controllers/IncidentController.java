@@ -5,6 +5,7 @@ import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataService
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Slf4j
 @AllArgsConstructor
+@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:5173"})
 @RestController
 public class IncidentController {
 

@@ -1,0 +1,12 @@
+.typeOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 5px;
+}
+
+@media (max-width: 1240px) {
+    .typeOptions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,11 @@
+.options {
+    align-self: flex-start;
+}
+
+.options__card {
+    justify-content: flex-start;
+}
+
+.options__header {
+    margin-top: 0;
+}
