@@ -1,12 +1,12 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficIncidentDTO;
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
 public interface TrafficDataReader {
-    List<TrafficIncidentDTO> read(InputStream src) throws IOException;
+    List<TrafficDataDTO> read(InputStream src, Class<? extends TrafficDataDTO> dataClass) throws IOException;
+    List<TrafficDataDTO> read(String fileName, Class<? extends TrafficDataDTO> dataClass) throws IOException;
 }

@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -15,7 +16,7 @@ import java.time.ZonedDateTime;
 public class TrafficIncident {
     @Id
     private String systemCodeNumber;
-    private String type;
+    private TrafficDataTypes type;
     private String incidentTypeDescription;
     private String shortDescription;
     private String longDescription;

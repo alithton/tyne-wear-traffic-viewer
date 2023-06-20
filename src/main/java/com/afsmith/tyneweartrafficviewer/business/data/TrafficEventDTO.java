@@ -1,12 +1,13 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.ZonedDateTime;
 
-public record  TrafficIncidentDTO(
+public record TrafficEventDTO(
         String systemCodeNumber,
         TrafficDataTypes type,
-        String incidentTypeDescription,
+        String eventTypeDescription,
         String shortDescription,
         String longDescription,
         String locationDescription,
@@ -22,8 +23,7 @@ public record  TrafficIncidentDTO(
         String lanesAffectedTypeRefDescription,
         String diversionInForce,
         String phaseTypeRef,
-        @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
-        ZonedDateTime incidentTime,
-        @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
-        ZonedDateTime endTime
+        PlannedDTO planned,
+        String organiser,
+        String venueName
 ) implements TrafficDataDTO { }

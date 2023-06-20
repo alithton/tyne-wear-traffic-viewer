@@ -1,0 +1,1346 @@
+[
+  {
+    "systemCodeNumber": "Tyneandwear0001152597",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Jack Whitehall Settle Down at th",
+    "longDescription": "Jack Whitehall Settle Down at the Utilitia Arena Newcastle this evening\r\n",
+    "point": {
+      "easting": 424162,
+      "northing": 563218,
+      "latitude": 54.9630123228499000,
+      "longitude": -1.6241682284586400
+    },
+    "locationDescription": "Utilita Arena",
+    "creationDate": "2023-05-15T12:01:03.970+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-15T11:59:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T18:00:51.230+0100",
+      "endTime": "2023-06-23T21:15:51.230+0100"
+    },
+    "organiser": "SMG Europe",
+    "venueName": "Utilita Arena Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001152609",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "WWE Live at the Utilitia Arena N",
+    "longDescription": "WWE Live at the Utilitia Arena Newcastle this evening",
+    "point": {
+      "easting": 424162,
+      "northing": 563218,
+      "latitude": 54.9630123228499000,
+      "longitude": -1.6241682284586400
+    },
+    "locationDescription": "Utilita Arena",
+    "creationDate": "2023-05-15T12:37:40.113+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-15T12:18:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T18:00:41.110+0100",
+      "endTime": "2023-06-30T21:15:41.110+0100"
+    },
+    "organiser": "SMG Europe",
+    "venueName": "Utilita Arena Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001152617",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Deacon Blue at the Utilitia Aren",
+    "longDescription": "Deacon Blue at the Utilitia Arena Newcastle this evening",
+    "point": {
+      "easting": 424162,
+      "northing": 563218,
+      "latitude": 54.9630123228499000,
+      "longitude": -1.6241682284586400
+    },
+    "locationDescription": "Utilita Arena",
+    "creationDate": "2023-05-15T12:54:49.257+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-15T12:53:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-09-17T18:30:54.223+0100",
+      "endTime": "2023-09-17T21:30:54.223+0100"
+    },
+    "organiser": "SMG Europe",
+    "venueName": "Utilita Arena Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001152618",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "RuPauls Drag Race Werq The World",
+    "longDescription": "RuPauls Drag Race Werq The World Tour 2023at the Utilitia Arena Newcastle this evening",
+    "point": {
+      "easting": 424162,
+      "northing": 563218,
+      "latitude": 54.9630123228499000,
+      "longitude": -1.6241682284586400
+    },
+    "locationDescription": "Utilita Arena",
+    "creationDate": "2023-05-15T12:59:56.443+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-15T12:56:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-10-13T18:00:10.677+0100",
+      "endTime": "2023-10-13T21:20:10.677+0100"
+    },
+    "organiser": "SMG Europe",
+    "venueName": "Utilita Arena Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001155502",
+    "type": "Event",
+    "eventTypeDescription": "FESTIVAL",
+    "shortDescription": "Feast in the Park at Bents Park",
+    "longDescription": "Feast in the Park at Bents Park by South Tyneside Council.",
+    "point": {
+      "easting": 437420,
+      "northing": 567462,
+      "latitude": 55.0003310674553000,
+      "longitude": -1.4165657542545500
+    },
+    "locationDescription": "A183 Sea Road - Bents Park",
+    "creationDate": "2023-05-22T12:25:37.103+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-22T12:24:00.000+0100",
+    "modifiedDate": "2023-05-22T12:26:28.400+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-08-26T11:00:58.557+0100",
+      "endTime": "2023-08-26T18:00:58.557+0100"
+    },
+    "organiser": "South Tyneside Council",
+    "venueName": "Bents Park"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158467",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-05-30T08:49:10.817+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": "2023-05-30T08:50:46.387+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-19T18:45:22.083+0100",
+      "endTime": "2023-06-19T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158469",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "The Commitments the musical at t",
+    "longDescription": "The Commitments the musical at the Newcastle Theatre Royal this evening.",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-05-30T08:54:06.767+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T08:52:00.000+0100",
+    "modifiedDate": "2023-05-30T08:54:53.470+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T18:45:27.393+0100",
+      "endTime": "2023-06-26T21:50:27.393+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158484",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Royal Blood at the O2 City Hall",
+    "longDescription": "Royal Blood at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-05-30T09:25:15.640+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T09:22:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-21T18:45:00.173+0100",
+      "endTime": "2023-06-21T21:30:00.173+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158486",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "An Evening Of Burlesque at the O",
+    "longDescription": "An Evening Of Burlesque at the O2 City Hall Newcastle this evening.\r\n",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-05-30T09:29:13.590+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T09:26:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-24T18:15:03.283+0100",
+      "endTime": "2023-06-24T21:20:03.283+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158487",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Daniel Martinez Flamenco Art Of",
+    "longDescription": "Daniel Martinez Flamenco Art Of Believing at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-05-30T09:31:43.403+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T09:30:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-25T18:15:24.320+0100",
+      "endTime": "2023-06-25T21:15:24.320+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158489",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Luther, A Luther Vandross Celebr",
+    "longDescription": "Luther, A Luther Vandross Celebration at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-05-30T09:35:51.693+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T09:34:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-01T18:15:07.987+0100",
+      "endTime": "2023-07-01T21:20:07.987+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158579",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Heathers the Musical at the Sund",
+    "longDescription": "Heathers the Musical at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-05-30T12:43:02.367+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-30T12:42:00.000+0100",
+    "modifiedDate": "2023-05-30T12:44:07.697+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-20T18:50:24.900+0100",
+      "endTime": "2023-06-20T22:00:24.900+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158837",
+    "type": "Event",
+    "eventTypeDescription": "FESTIVAL",
+    "shortDescription": "West Sunniside and surrounding r",
+    "longDescription": "West Sunniside and surrounding road to be closed for the Pride and Sunlun Calling 2023 music festival",
+    "point": {
+      "easting": 439948,
+      "northing": 557052,
+      "latitude": 54.9065927498011000,
+      "longitude": -1.3784961327500700
+    },
+    "locationDescription": "Sunniside Gardens",
+    "creationDate": "2023-05-31T14:25:44.513+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-31T14:17:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-06T12:00:37.357+0100",
+      "endTime": "2023-07-10T18:00:37.357+0100"
+    },
+    "organiser": "Eventbrite",
+    "venueName": "Sunniside Gardens"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001158846",
+    "type": "Event",
+    "eventTypeDescription": "MARCH",
+    "shortDescription": "Green Lane - rolling road closur",
+    "longDescription": "Green Lane - rolling road closures from Park Lane for this years Sunderland Pride march.",
+    "point": {
+      "easting": 439312,
+      "northing": 556757,
+      "latitude": 54.9039929044561000,
+      "longitude": -1.3884547776136700
+    },
+    "locationDescription": "Green Terrace - Vine Place",
+    "creationDate": "2023-05-31T14:44:28.940+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-31T14:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-08T12:00:34.343+0100",
+      "endTime": "2023-07-08T12:45:34.343+0100"
+    },
+    "organiser": "Sunderland City Council",
+    "venueName": "Sunderland Pride Parade"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001161256",
+    "type": "Event",
+    "eventTypeDescription": "RACE MEETING",
+    "shortDescription": "The Gainford Group Ladies Day ft",
+    "longDescription": "The Gainford Group Ladies Day ft Ronan Keating, Newcastle Race Course.",
+    "point": {
+      "easting": 424784,
+      "northing": 571314,
+      "latitude": 55.0357338661726000,
+      "longitude": -1.6137628554530200
+    },
+    "locationDescription": "Newcastle Racecourse",
+    "creationDate": "2023-06-08T09:44:56.120+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-08T09:43:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-29T11:00:00.063+0100",
+      "endTime": "2023-07-29T17:00:00.063+0100"
+    },
+    "organiser": " ",
+    "venueName": "Newcastle Race Course"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001161260",
+    "type": "Event",
+    "eventTypeDescription": "RACE MEETING",
+    "shortDescription": "First day of the Northumberland",
+    "longDescription": "First day of the Northumberland Plate Festival",
+    "point": {
+      "easting": 424830,
+      "northing": 571355,
+      "latitude": 55.0360938345863000,
+      "longitude": -1.6130329628824000
+    },
+    "locationDescription": "Newcastle Racecourse",
+    "creationDate": "2023-06-08T10:30:32.210+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-08T10:29:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T12:15:48.600+0100",
+      "endTime": "2023-06-29T17:05:48.600+0100"
+    },
+    "organiser": " ",
+    "venueName": " Newcastle Racecourse"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001161261",
+    "type": "Event",
+    "eventTypeDescription": "RACE MEETING",
+    "shortDescription": "Second day of The Northumberland",
+    "longDescription": "Second day of The Northumberland Plate Festival. 90's Night ft Vernon Kay DJ Set.",
+    "point": {
+      "easting": 424784,
+      "northing": 571314,
+      "latitude": 55.0357338661726000,
+      "longitude": -1.6137628554530200
+    },
+    "locationDescription": "Newcastle Racecourse",
+    "creationDate": "2023-06-08T10:40:11.060+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-08T10:35:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T15:00:47.137+0100",
+      "endTime": "2023-06-30T20:20:47.137+0100"
+    },
+    "organiser": " ",
+    "venueName": "Newcastle Racecourse"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001161262",
+    "type": "Event",
+    "eventTypeDescription": "RACE MEETING",
+    "shortDescription": "Last day of Northumberland Plate",
+    "longDescription": "Last day of Northumberland Plate Festival ft Tom Grennan.",
+    "point": {
+      "easting": 424830,
+      "northing": 571355,
+      "latitude": 55.0360938345863000,
+      "longitude": -1.6130329628824000
+    },
+    "locationDescription": "Newcastle Racecourse",
+    "creationDate": "2023-06-08T10:44:40.490+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-08T10:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-01T11:00:18.793+0100",
+      "endTime": "2023-07-01T17:55:18.793+0100"
+    },
+    "organiser": " ",
+    "venueName": "Newcastle Racecourse"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001162958",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-06-13T02:00:00.840+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-20T18:45:22.083+0100",
+      "endTime": "2023-06-20T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163148",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-13T10:54:03.403+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.543+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-18T13:00:31.507+0100",
+      "endTime": "2023-06-18T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163149",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-13T10:54:03.450+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.573+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-19T13:00:31.507+0100",
+      "endTime": "2023-06-19T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163150",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-13T10:54:03.480+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.607+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-20T13:00:31.507+0100",
+      "endTime": "2023-06-20T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163389",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Heathers the Musical at the Sund",
+    "longDescription": "Heathers the Musical at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-14T02:00:00.937+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T12:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-21T18:50:24.900+0100",
+      "endTime": "2023-06-21T22:00:24.900+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163390",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-06-14T02:00:00.953+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-21T18:45:22.083+0100",
+      "endTime": "2023-06-21T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163392",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-14T02:00:01.077+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.653+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-21T13:00:31.507+0100",
+      "endTime": "2023-06-21T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163814",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-06-15T02:00:00.820+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-22T18:45:22.083+0100",
+      "endTime": "2023-06-22T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163815",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Heathers the Musical at the Sund",
+    "longDescription": "Heathers the Musical at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-15T02:00:00.820+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T12:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-22T18:50:24.900+0100",
+      "endTime": "2023-06-22T22:00:24.900+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163816",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-15T02:00:00.833+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.683+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-22T13:00:31.507+0100",
+      "endTime": "2023-06-22T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163950",
+    "type": "Event",
+    "eventTypeDescription": "FOOTBALL MATCH",
+    "shortDescription": "Newcastle United FC vs Aston Vil",
+    "longDescription": "Newcastle United FC vs Aston Villa FC,  Premier League, kick off @ 17:30hrs.\r\n",
+    "point": {
+      "easting": 424370,
+      "northing": 564500,
+      "latitude": 54.9745210104806000,
+      "longitude": -1.6208191710767800
+    },
+    "locationDescription": "St James Park",
+    "creationDate": "2023-06-15T09:40:24.690+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-15T09:39:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-08-12T16:00:37.480+0100",
+      "endTime": "2023-08-12T19:00:37.480+0100"
+    },
+    "organiser": "Premier League",
+    "venueName": "St James Park Football Stadium"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163955",
+    "type": "Event",
+    "eventTypeDescription": "FOOTBALL MATCH",
+    "shortDescription": "Newcastle United FC vs Liverpool",
+    "longDescription": "Newcastle United FC vs Liverpool FC,  Premier League, kick off @ 15:00hrs.",
+    "point": {
+      "easting": 424370,
+      "northing": 564500,
+      "latitude": 54.9745210104806000,
+      "longitude": -1.6208191710767800
+    },
+    "locationDescription": "St James Park",
+    "creationDate": "2023-06-15T09:45:54.370+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-15T09:41:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-08-26T13:30:28.570+0100",
+      "endTime": "2023-08-26T16:30:28.570+0100"
+    },
+    "organiser": "Premier League",
+    "venueName": "St James Park Football Stadium"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164257",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-06-16T02:00:00.920+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T18:45:22.083+0100",
+      "endTime": "2023-06-23T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164258",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Heathers the Musical at the Sund",
+    "longDescription": "Heathers the Musical at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T02:00:00.903+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T12:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T18:50:24.900+0100",
+      "endTime": "2023-06-23T22:00:24.900+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164259",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-16T02:00:00.950+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.730+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T13:00:31.507+0100",
+      "endTime": "2023-06-23T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164437",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Hozier at the O2 City Hall Newca",
+    "longDescription": "Hozier at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:02:36.747+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:01:00.000+0100",
+    "modifiedDate": "2023-06-16T10:12:45.877+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T18:30:07.600+0100",
+      "endTime": "2023-07-03T21:15:07.600+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164441",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Belle & Sebastian at the O2 City",
+    "longDescription": "Belle & Sebastian at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:07:12.647+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:06:00.000+0100",
+    "modifiedDate": "2023-06-16T10:13:16.720+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-05T18:30:59.563+0100",
+      "endTime": "2023-07-05T21:15:59.563+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164442",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Just Qawali at the O2 City Hall",
+    "longDescription": "Just Qawali at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:10:42.340+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:08:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-06T17:45:52.880+0100",
+      "endTime": "2023-07-06T21:10:52.880+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": " O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164445",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Dreamboys at the O2 City Hall Ne",
+    "longDescription": "Dreamboys at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:15:50.353+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:14:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-07T18:00:36.657+0100",
+      "endTime": "2023-07-07T21:15:36.657+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164448",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Legend The Music of Bob Marley a",
+    "longDescription": "Legend The Music of Bob Marley at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:19:21.493+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:18:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-08T18:00:47.053+0100",
+      "endTime": "2023-07-08T21:15:47.053+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164449",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "The Story of Soul at the O2 City",
+    "longDescription": "The Story of Soul at the O2 City Hall Newcastle this evening.",
+    "point": {
+      "easting": 425039,
+      "northing": 564783,
+      "latitude": 54.9770308718832000,
+      "longitude": -1.6103405888544100
+    },
+    "locationDescription": "Newcastle City Hall",
+    "creationDate": "2023-06-16T10:22:54.150+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:21:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-29T18:00:22.450+0100",
+      "endTime": "2023-07-29T21:15:22.450+0100"
+    },
+    "organiser": "The Academy Music Group",
+    "venueName": "O2 City Hall Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164452",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Sounds of the City at the Sunder",
+    "longDescription": "Sounds of the City at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T10:28:55.493+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:26:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T18:50:15.477+0100",
+      "endTime": "2023-07-03T21:30:15.477+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164456",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Demon Dentist at the Sunderland",
+    "longDescription": "Demon Dentist at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T10:33:25.250+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:31:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-13T17:45:55.130+0100",
+      "endTime": "2023-07-13T20:30:55.130+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164460",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Seasons at the Sunderland Empire",
+    "longDescription": "Seasons at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T10:43:18.883+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:41:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-16T18:15:39.940+0100",
+      "endTime": "2023-07-16T20:30:39.940+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164464",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Luther/Luther Vandross Celebrati",
+    "longDescription": "Luther/Luther Vandross Celebration at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T10:48:11.313+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:46:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-21T18:50:30.430+0100",
+      "endTime": "2023-07-21T21:50:30.430+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164466",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Paul Smith Joker at the Sunderla",
+    "longDescription": "Paul Smith Joker at the Sunderland Empire Theatre this evening",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-16T10:53:12.513+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-16T10:52:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-22T18:50:35.093+0100",
+      "endTime": "2023-07-22T21:45:35.093+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164670",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Heathers the Musical at the Sund",
+    "longDescription": "Heathers the Musical at the Sunderland Empire Theatre this evening.",
+    "point": {
+      "easting": 439237,
+      "northing": 556989,
+      "latitude": 54.9060826396094000,
+      "longitude": -1.3895947329596600
+    },
+    "locationDescription": "Empire Theatre",
+    "creationDate": "2023-06-17T02:00:00.967+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T12:42:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-24T18:50:24.900+0100",
+      "endTime": "2023-06-24T22:00:24.900+0100"
+    },
+    "organiser": "Ambassador Theatre Group Ltd",
+    "venueName": "Sunderland Empire Theatre"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164671",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "\r\nSister Act the musical at the",
+    "longDescription": "\r\nSister Act the musical at the Newcastle Theatre Royal this evening.\r\n",
+    "point": {
+      "easting": 424912,
+      "northing": 564280,
+      "latitude": 54.9725213752417000,
+      "longitude": -1.6123701300745700
+    },
+    "locationDescription": "Theatre Royal",
+    "creationDate": "2023-06-17T02:00:00.933+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-05-30T08:47:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-24T18:45:22.083+0100",
+      "endTime": "2023-06-24T21:50:22.083+0100"
+    },
+    "organiser": "Newcastle Theatre Royal Trust",
+    "venueName": "Newcastle Theatre Royal"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164672",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-17T02:00:00.950+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-24T13:00:31.507+0100",
+      "endTime": "2023-06-24T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001164890",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-18T02:00:00.943+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-25T13:00:31.507+0100",
+      "endTime": "2023-06-25T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "systemCodeNumber": "Tyneandwear0001152597",
+    "type": "Event",
+    "eventTypeDescription": "SHOW",
+    "shortDescription": "Jack Whitehall Settle Down at th",
+    "longDescription": "Jack Whitehall Settle Down at the Utilitia Arena Newcastle this evening\r\n",
+    "point": {
+      "easting": 424162,
+      "northing": 563218,
+      "latitude": 54.9630123228499000,
+      "longitude": -1.6241682284586400
+    },
+    "locationDescription": "Utilita Arena",
+    "creationDate": "2023-05-15T12:01:03.970+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-05-15T11:59:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T18:00:51.230+0100",
+      "endTime": "2023-06-23T21:15:51.230+0100"
+    },
+    "organiser": "SMG Europe",
+    "venueName": "Utilita Arena Newcastle"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001163148",
+    "type": "Event",
+    "eventTypeDescription": "FUNFAIR",
+    "shortDescription": "The Hoppings, Newcastle Town Moo",
+    "longDescription": "The Hoppings, Newcastle Town Moor local delays during the opening times at the car park entrance on the A189.",
+    "point": {
+      "easting": 424391,
+      "northing": 566856,
+      "latitude": 54.9956885112678000,
+      "longitude": -1.6202902058913300
+    },
+    "locationDescription": "Newcastle Town Moor",
+    "creationDate": "2023-06-13T10:54:03.403+0100",
+    "dataSourceTypeRef": "Event Scheduler",
+    "confirmedDate": "2023-06-13T10:50:00.000+0100",
+    "modifiedDate": "2023-06-16T12:13:17.543+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-18T13:00:31.507+0100",
+      "endTime": "2023-06-18T23:00:31.507+0100"
+    },
+    "organiser": "Crow Events",
+    "venueName": "Newcastle Town Moor"
+  },
+  {
+    "systemCodeNumber": "Tyneandwear0001161256",
+    "type": "Event",
+    "eventTypeDescription": "RACE MEETING",
+    "shortDescription": "The Gainford Group Ladies Day ft",
+    "longDescription": "The Gainford Group Ladies Day ft Ronan Keating, Newcastle Race Course.",
+    "point": {
+      "easting": 424784,
+      "northing": 571314,
+      "latitude": 55.0357338661726000,
+      "longitude": -1.6137628554530200
+    },
+    "locationDescription": "Newcastle Racecourse",
+    "creationDate": "2023-06-08T09:44:56.120+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-08T09:43:00.000+0100",
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": "N",
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-29T11:00:00.063+0100",
+      "endTime": "2023-07-29T17:00:00.063+0100"
+    },
+    "organiser": " ",
+    "venueName": "Newcastle Race Course"
+  }
+]
