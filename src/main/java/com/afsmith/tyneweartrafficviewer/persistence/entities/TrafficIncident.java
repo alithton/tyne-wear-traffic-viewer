@@ -7,13 +7,16 @@ import lombok.*;
 
 import java.time.ZonedDateTime;
 
+/**
+ * A JPA entity representing traffic incident data.
+ */
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class TrafficIncident {
+public class TrafficIncident extends TrafficDataEntity {
     @Id
     private String systemCodeNumber;
     private TrafficDataTypes type;
