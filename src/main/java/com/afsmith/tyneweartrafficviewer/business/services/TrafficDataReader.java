@@ -9,4 +9,5 @@ import java.util.List;
 public interface TrafficDataReader {
     List<TrafficDataDTO> read(InputStream src, Class<? extends TrafficDataDTO> dataClass) throws IOException;
     List<TrafficDataDTO> read(String fileName, Class<? extends TrafficDataDTO> dataClass) throws IOException;
+    List<TrafficDataDTO> readFromString(String input, Class<? extends TrafficDataDTO> dataClass) throws IOException;
 }

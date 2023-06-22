@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -63,5 +64,10 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
     public List<TrafficDataDTO> read(String fileName, Class<? extends TrafficDataDTO> dataClass) throws IOException {
         Path inputFilePath = Paths.get(workingDir.toString(), fileName);
         return read(Files.newInputStream(inputFilePath), dataClass);
+    }
+
+    @Override
+    public List<TrafficDataDTO> readFromString(String input, Class<? extends TrafficDataDTO> dataClass) throws IOException {
+        return read(new ByteArrayInputStream(input.getBytes()), dataClass);
     }
 }

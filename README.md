@@ -15,3 +15,10 @@ configure access to the database:
 * POSTGRES_DB_PASSWORD - the password for the database
 * POSTGRES_DB_DATABASE_NAME - the name of the database
 * POSTGRES_DB_PORT - the port number for the database
+
+Live data is accessed from the Tyne and Wear open data service API. To access this
+service, create an account at https://www.netraveldata.co.uk/ then store the username
+and password for that account as environment variables:
+
+* UTMCODS_USERNAME - the username for the account
+* UTMCODS_PASSWORD - the password for the account
