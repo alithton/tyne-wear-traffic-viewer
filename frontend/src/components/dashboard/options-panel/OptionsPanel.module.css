@@ -1,5 +1,6 @@
 .options {
     align-self: flex-start;
+    width: 100%;
 }
 
 .options__card {
@@ -7,5 +8,23 @@
 }
 
 .options__header {
-    margin-top: 0;
+    margin: 0;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.show-content-toggle {
+    font-family: inherit;
+    padding: 0.2rem 0.4rem;
+}
+
+.shared-content-option {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
 }

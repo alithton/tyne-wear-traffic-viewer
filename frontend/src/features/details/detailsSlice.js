@@ -6,17 +6,24 @@ import { createSlice } from "@reduxjs/toolkit";
 export const detailsSlice = createSlice({
     name: 'details',
     initialState: {
-        value: {}
+        value: {
+            markerSelected: false,
+            newMarker: false,
+            data: {}
+        }
     },
     reducers: {
         update: (state, action) => {
-            state.value = action.payload
+            state.value = {markerSelected: true, newMarker: false, data: action.payload};
         },
         clear: state => {
-            state.value = {}
+            state.value = {markerSelected: false, newMarker: false, data: {}}
+        },
+        addNew: (state, action) => {
+            state.value = {markerSelected: false, newMarker: true, data: action.payload};
         }
     }
 });
 
-export const { update, clear } = detailsSlice.actions;
+export const { update, clear, addNew } = detailsSlice.actions;
 export default detailsSlice.reducer;

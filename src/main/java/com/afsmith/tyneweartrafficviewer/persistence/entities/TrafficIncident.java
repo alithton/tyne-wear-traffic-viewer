@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -22,6 +23,7 @@ public class TrafficIncident extends TrafficDataEntity {
     private TrafficDataTypes type;
     private String incidentTypeDescription;
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
     private String locationDescription;
     private Point point;

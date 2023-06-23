@@ -20,7 +20,7 @@ function TypeOptions() {
             </div>
             <div>
                 <input type='checkbox' id='speed' name='Speed' />
-                <label htmlFor='speed'>Speed</label>
+                <label htmlFor='speed'>Traffic Speed</label>
             </div>
             <div>
                 <input type='checkbox' id='cameras' name='Cameras' />
