@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +17,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TrafficDataPersistence {
 
-    private final TrafficIncidentConnector incidentAdapter;
-    private final TrafficEventConnector eventAdapter;
+    private final TrafficIncidentConnector incidentConnector;
+    private final TrafficEventConnector eventConnector;
     private final TrafficDataServiceImpl dataService;
 
     /**
@@ -28,8 +29,8 @@ public class TrafficDataPersistence {
      */
     public List<TrafficDataDTO> listAll(TrafficDataTypes dataType) {
         return switch (dataType) {
-            case INCIDENT -> dataService.listAll(incidentAdapter);
-            case EVENT -> dataService.listAll(eventAdapter);
+            case INCIDENT -> dataService.listAll(incidentConnector);
+            case EVENT -> dataService.listAll(eventConnector);
             default -> null;
         };
     }
@@ -42,8 +43,21 @@ public class TrafficDataPersistence {
      */
     public void persist(List<TrafficDataDTO> trafficData, TrafficDataTypes dataType) {
         switch (dataType) {
-            case INCIDENT -> dataService.persist(trafficData, incidentAdapter);
-            case EVENT -> dataService.persist(trafficData, eventAdapter);
+            case INCIDENT -> dataService.persist(trafficData, incidentConnector);
+            case EVENT -> dataService.persist(trafficData, eventConnector);
+            default -> System.out.println("Default");
+        }
+    }
+
+    /**
+     * Store the provided data in the database.
+     * @param trafficData A list of entities to be stored.
+     * @param dataType The type of data to be stored.
+     */
+    public void persistEntities(List<TrafficData> trafficData, TrafficDataTypes dataType) {
+        switch (dataType) {
+            case INCIDENT -> dataService.persistEntities(trafficData, incidentConnector);
+            case EVENT -> dataService.persistEntities(trafficData, eventConnector);
             default -> System.out.println("Default");
         }
     }

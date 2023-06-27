@@ -1,6 +1,7 @@
-package com.afsmith.tyneweartrafficviewer.business.services;
+package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
@@ -47,7 +48,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
     }
 
     @Override
-    public List<TrafficDataDTO> read(InputStream src, Class<? extends TrafficDataDTO> dataClass) throws IOException {
+    public <E extends TrafficData> List<TrafficDataExternal<E>> read(InputStream src, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         var mapper = JsonMapper.builder()
                 .findAndAddModules()
                 .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
@@ -61,13 +62,13 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
     }
 
     @Override
-    public List<TrafficDataDTO> read(String fileName, Class<? extends TrafficDataDTO> dataClass) throws IOException {
+    public <E extends TrafficData> List<TrafficDataExternal<E>> read(String fileName, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         Path inputFilePath = Paths.get(workingDir.toString(), fileName);
         return read(Files.newInputStream(inputFilePath), dataClass);
     }
 
     @Override
-    public List<TrafficDataDTO> readFromString(String input, Class<? extends TrafficDataDTO> dataClass) throws IOException {
+    public <E extends TrafficData> List<TrafficDataExternal<E>> readFromString(String input, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         return read(new ByteArrayInputStream(input.getBytes()), dataClass);
     }
 }

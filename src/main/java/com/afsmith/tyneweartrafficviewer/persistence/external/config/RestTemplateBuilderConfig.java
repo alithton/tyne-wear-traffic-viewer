@@ -1,4 +1,4 @@
-package com.afsmith.tyneweartrafficviewer.business.config;
+package com.afsmith.tyneweartrafficviewer.persistence.external.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer;

@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficDataEntity;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 
 import java.util.List;
 
@@ -17,12 +17,14 @@ public interface TrafficDataService {
       * @param connector The connector for the traffic data type.
       * @return A list of traffic data.
       */
-     <T extends TrafficDataEntity, DTO extends TrafficDataDTO, ID> List<TrafficDataDTO> listAll(TrafficDataTypeConnector<T, DTO, ID> connector);
+     <T extends TrafficData, DTO extends TrafficDataDTO, ID> List<TrafficDataDTO> listAll(TrafficDataTypeConnector<T, DTO, ID> connector);
 
      /**
       * Store the provided traffic data in the database.
       * @param trafficData A list of traffic data.
       * @param connector The connector for the traffic data type.
       */
-     <T extends TrafficDataEntity, DTO extends TrafficDataDTO, ID> void persist(List<TrafficDataDTO> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector);
+     <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persist(List<TrafficDataDTO> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector);
+
+     <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persistEntities(List<TrafficData> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector);
 }

@@ -1,0 +1,50 @@
+[
+  {
+    "systemCodeNumber": "Tyneandwear0001167026",
+    "type": "Accident",
+    "accidentTypeDescription": "COLLISION",
+    "shortDescription": "A1058 Coast Road (Eastbound) nea",
+    "longDescription": "A1058 Coast Road (Eastbound) near A186 Station Road, Wallsend.\r\n\r\n1 lane of 2 is blocked following 5 vehicle collision. Awaiting street cleansing before the 2nd lane can re-open.",
+    "point": {
+      "easting": 429069,
+      "northing": 567268,
+      "latitude": 54.9991392130443000,
+      "longitude": -1.5471294648132200
+    },
+    "locationDescription": "A1058 (EB) / A186 Station Rd",
+    "creationDate": "2023-06-23T16:09:59.750+0100",
+    "dataSourceTypeRef": "UTMC",
+    "confirmedDate": "2023-06-23T00:00:00.000+0100",
+    "modifiedDate": "2023-06-23T17:04:46.333+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": "Y",
+    "phaseTypeRef": "Current",
+    "accidentTime": "2023-06-23T14:10:08.063+0100",
+    "endTime": "2023-06-23T19:09:08.063+0100"
+  },
+  {
+    "systemCodeNumber": "UF-23-06-23-501021",
+    "type": "Accident",
+    "accidentTypeDescription": "COLLISION",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M so",
+    "longDescription": "TYPE : GDP\nLocation : The A1M southbound between junctions J63  and J62 \nLane Closures : Lane two is closed\nReason : Road traffic collision\nStatus : Currently Active\nTime To Clear : The event is expected to clear between 17:45 and 18:00 on 23 June 2023\nReturn To Normal : Normal traffic conditions are expected between 17:45 and 18:00 on 23 June 2023\nDelay : There are currently delays of 40 minutes against expected traffic\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 430685,
+      "northing": 548839,
+      "latitude": 54.8334491835293000,
+      "longitude": -1.5238247603779700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-23T16:27:20.237+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": "2023-06-23T17:08:02.167+0100",
+    "modifiedDate": "2023-06-23T17:08:34.510+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "accidentTime": "2023-06-23T16:26:12.123+0100",
+    "endTime": "2023-06-23T17:49:00.000+0100"
+  }
+]

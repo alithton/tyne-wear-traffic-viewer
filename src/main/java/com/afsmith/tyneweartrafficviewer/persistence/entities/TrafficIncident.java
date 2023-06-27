@@ -1,9 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.*;
 
 import java.time.ZonedDateTime;
@@ -13,28 +11,37 @@ import java.time.ZonedDateTime;
  */
 @Getter
 @Setter
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class TrafficIncident extends TrafficDataEntity {
-    @Id
-    private String systemCodeNumber;
-    private TrafficDataTypes type;
+public class TrafficIncident extends TrafficData {
     private String incidentTypeDescription;
-    private String shortDescription;
-    @Column(columnDefinition = "TEXT")
-    private String longDescription;
-    private String locationDescription;
-    private Point point;
-    private ZonedDateTime creationDate;
-    private String dataSourceTypeRef;
-    private ZonedDateTime confirmedDate;
-    private ZonedDateTime modifiedDate;
-    private String severityTypeRefDescription;
-    private String lanesAffectedTypeRefDescription;
-    private String diversionInForce;
-    private String phaseTypeRef;
     private ZonedDateTime incidentTime;
     private ZonedDateTime endTime;
+
+    @Builder
+    public TrafficIncident(
+            String systemCodeNumber,
+            TrafficDataTypes type,
+            String incidentTypeDescription,
+            String shortDescription,
+            String longDescription,
+            String locationDescription,
+            Point point,
+            ZonedDateTime creationDate,
+            String dataSourceTypeRef,
+            ZonedDateTime confirmedDate,
+            ZonedDateTime modifiedDate,
+            String severityTypeRefDescription,
+            String lanesAffectedTypeRefDescription,
+            String diversionInForce,
+            String phaseTypeRef,
+            ZonedDateTime incidentTime,
+            ZonedDateTime endTime) {
+        super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
+              dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription, lanesAffectedTypeRefDescription,
+              diversionInForce, phaseTypeRef);
+        this.incidentTypeDescription = incidentTypeDescription;
+        this.incidentTime = incidentTime;
+        this.endTime = endTime;
+    }
 }

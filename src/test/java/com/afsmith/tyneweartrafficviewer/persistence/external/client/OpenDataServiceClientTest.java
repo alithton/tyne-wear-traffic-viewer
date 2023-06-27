@@ -1,9 +1,11 @@
-package com.afsmith.tyneweartrafficviewer.business.client;
+package com.afsmith.tyneweartrafficviewer.persistence.external.client;
 
-import com.afsmith.tyneweartrafficviewer.business.config.RestTemplateBuilderConfig;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.persistence.external.config.RestTemplateBuilderConfig;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficIncidentDTO;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficIncidentExternal;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -52,7 +54,9 @@ class OpenDataServiceClientTest {
     @Test
     void getIncidentData() throws Exception {
         String expectedUrl = "https://www.netraveldata.co.uk/api/v2" + TrafficDataTypes.INCIDENT.getUrl();
-        String authHeaderUnencoded = "asmithstrath" + ":" + "khFiGezTeqYemoi98Mjn";
+        String username = System.getenv("UTMCODS_USERNAME");
+        String password = System.getenv("UTMCODS_PASSWORD");
+        String authHeaderUnencoded =  username + ":" + password;
         String authHeaderEncoded = Base64.getEncoder().encodeToString(authHeaderUnencoded.getBytes());
         String responseBody = getIncidentJson();
 
@@ -61,9 +65,9 @@ class OpenDataServiceClientTest {
                 .andExpect(header("Authorization", "Basic " + authHeaderEncoded))
                 .andRespond(withSuccess(responseBody, MediaType.APPLICATION_JSON));
 
-        List<TrafficDataDTO> incidents = client.getData(TrafficDataTypes.INCIDENT);
+        List<TrafficDataExternal<TrafficData>> incidents = client.getData(ExternalDataTypes.INCIDENT);
         assertThat(incidents.size()).isEqualTo(1);
-        assertThat(incidents.get(0)).isInstanceOf(TrafficIncidentDTO.class);
+        assertThat(incidents.get(0)).isInstanceOf(TrafficIncidentExternal.class);
     }
 
     private String getIncidentJson() {

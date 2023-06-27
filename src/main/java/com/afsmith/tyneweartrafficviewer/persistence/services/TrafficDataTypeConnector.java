@@ -1,11 +1,9 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficDataEntity;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.mappers.TrafficDataMapper;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Objects;
 
 /**
  * A generic connector that supplies the {@link com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataService}
@@ -16,18 +14,21 @@ import java.util.Objects;
  * @param <DTO> The corresponding data transfer object.
  * @param <ID> The type of the ID field, supplied to {@link org.springframework.data.jpa.repository}.
  */
-public class TrafficDataTypeConnector<T extends TrafficDataEntity, DTO extends TrafficDataDTO, ID> {
+public class TrafficDataTypeConnector<T extends TrafficData, DTO extends TrafficDataDTO, ID> {
     private final JpaRepository<T, ID> repository;
     private final TrafficDataMapper<DTO, T> mapper;
     private final Class<DTO> dtoClass;
+    private final Class<T> entityClass;
 
     protected TrafficDataTypeConnector(
             JpaRepository<T, ID> repository,
             TrafficDataMapper<DTO, T> mapper,
-            Class<DTO> dtoClass) {
+            Class<DTO> dtoClass,
+            Class<T> entityClass) {
         this.repository = repository;
         this.mapper = mapper;
         this.dtoClass = dtoClass;
+        this.entityClass = entityClass;
     }
 
     public JpaRepository<T, ID> getRepository() {
@@ -42,26 +43,8 @@ public class TrafficDataTypeConnector<T extends TrafficDataEntity, DTO extends T
         return dtoClass;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == this) return true;
-        if (obj == null || obj.getClass() != this.getClass()) return false;
-        var that = (TrafficDataTypeConnector) obj;
-        return Objects.equals(this.repository, that.repository) &&
-                Objects.equals(this.mapper, that.mapper) &&
-                Objects.equals(this.dtoClass, that.dtoClass);
+    public Class<T> getEntityClass() {
+        return entityClass;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(repository, mapper, dtoClass);
-    }
-
-    @Override
-    public String toString() {
-        return "TrafficDataTypeAdapter[" +
-                "repository=" + repository + ", " +
-                "mapper=" + mapper + ", " +
-                "dtoClass=" + dtoClass + ']';
-    }
 }

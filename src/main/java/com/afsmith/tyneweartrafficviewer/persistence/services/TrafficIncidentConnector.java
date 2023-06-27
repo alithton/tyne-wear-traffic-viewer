@@ -12,6 +12,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class TrafficIncidentConnector extends TrafficDataTypeConnector<TrafficIncident, TrafficIncidentDTO, String> {
     public TrafficIncidentConnector(IncidentRepository incidentRepository, TrafficIncidentMapper mapper) {
-        super(incidentRepository, mapper, TrafficIncidentDTO.class);
+        super(incidentRepository, mapper, TrafficIncidentDTO.class, TrafficIncident.class);
     }
 }

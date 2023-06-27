@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficDataEntity;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,7 +22,7 @@ public class TrafficDataServiceImpl implements TrafficDataService {
      * @return A list of traffic data DTOs.
      */
     @Override
-    public <T extends TrafficDataEntity, DTO extends TrafficDataDTO, ID> List<TrafficDataDTO> listAll(TrafficDataTypeConnector<T, DTO, ID> connector) {
+    public <T extends TrafficData, DTO extends TrafficDataDTO, ID> List<TrafficDataDTO> listAll(TrafficDataTypeConnector<T, DTO, ID> connector) {
         List<T> entities = connector.getRepository().findAll();
         return List.copyOf(connector.getMapper().entityToDto(entities));
     }
@@ -33,9 +33,17 @@ public class TrafficDataServiceImpl implements TrafficDataService {
      * @param connector The connector for the traffic data type.
      */
     @Override
-    public <T extends TrafficDataEntity, DTO extends TrafficDataDTO, ID> void persist(List<TrafficDataDTO> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector) {
+    public <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persist(List<TrafficDataDTO> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector) {
         List<DTO> eventDTOS = downcastList(trafficData, connector.getDtoClass());
         List<T> events = connector.getMapper().dtoToEntity(eventDTOS);
         connector.getRepository().saveAll(events);
     }
+
+    @Override
+    public <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persistEntities(List<TrafficData> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector) {
+        List<T> validatedData = downcastList(trafficData, connector.getEntityClass());
+        connector.getRepository().saveAll(validatedData);
+    }
+
+
 }

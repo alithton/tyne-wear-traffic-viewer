@@ -1,13 +1,13 @@
 package com.afsmith.tyneweartrafficviewer.persistence;
 
 
-import com.afsmith.tyneweartrafficviewer.business.client.OpenDataServiceClient;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficEventDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficIncidentDTO;
-import com.afsmith.tyneweartrafficviewer.business.services.TrafficDataReader;
-import com.afsmith.tyneweartrafficviewer.business.services.TrafficDataReaderImpl;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficEventExternal;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficIncidentExternal;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +24,8 @@ public class BootstrapData implements CommandLineRunner {
 
     private final TrafficDataReader trafficDataReader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");
     private final TrafficDataPersistence dataPersistence;
-    private final OpenDataServiceClient client;
+    private final ExternalDataAccessService dataAccessService;
+
     private boolean useLocalData;
 
     @Transactional
@@ -40,19 +41,25 @@ public class BootstrapData implements CommandLineRunner {
      */
     public void loadIncidents() throws IOException {
 
-        List<TrafficDataDTO> trafficIncidentDtos;
-        List<TrafficDataDTO> trafficEventDTOs;
+        List<TrafficData> trafficIncidents;
+        List<TrafficData> trafficEvents;
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
-            trafficIncidentDtos = trafficDataReader.read("incidents.json", TrafficIncidentDTO.class);
-            trafficEventDTOs = trafficDataReader.read("events.json", TrafficEventDTO.class);
+            trafficIncidents = trafficDataReader.read("incidents.json", TrafficIncidentExternal.class)
+                                                .stream()
+                                                .map(externalIncident -> (TrafficData) externalIncident.toEntity())
+                                                .toList();
+            trafficEvents = trafficDataReader.read("events.json", TrafficEventExternal.class)
+                                            .stream()
+                                            .map(externalEvent -> (TrafficData) externalEvent.toEntity())
+                                            .toList();
         } else {
-            trafficIncidentDtos = client.getData(TrafficDataTypes.INCIDENT);
-            trafficEventDTOs = client.getData(TrafficDataTypes.EVENT);
+            trafficIncidents = dataAccessService.getData(TrafficDataTypes.INCIDENT);
+            trafficEvents = dataAccessService.getData(TrafficDataTypes.EVENT);
         }
-        dataPersistence.persist(trafficIncidentDtos, TrafficDataTypes.INCIDENT);
-        dataPersistence.persist(trafficEventDTOs, TrafficDataTypes.EVENT);
+        dataPersistence.persistEntities(trafficIncidents, TrafficDataTypes.INCIDENT);
+        dataPersistence.persistEntities(trafficEvents, TrafficDataTypes.EVENT);
     }
 
     public boolean isUseLocalData() {

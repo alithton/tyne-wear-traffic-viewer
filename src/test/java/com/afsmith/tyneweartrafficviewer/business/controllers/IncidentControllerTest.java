@@ -39,7 +39,6 @@ class IncidentControllerTest {
                 new TrafficIncidentDTO(
                         "code1",
                         TrafficDataTypes.INCIDENT,
-                        "incident_type",
                         "short_description",
                         "long_description",
                         "location",
@@ -52,13 +51,13 @@ class IncidentControllerTest {
                         "T T",
                         "N",
                         "Current",
+                        "incident_type",
                         currentTime,
                         currentTime
                 ),
                 new TrafficIncidentDTO(
                         "code2",
                         TrafficDataTypes.INCIDENT,
-                        "incident_type",
                         "short_description",
                         "long_description",
                         "location",
@@ -71,6 +70,7 @@ class IncidentControllerTest {
                         "T T",
                         "N",
                         "Current",
+                        "incident_type",
                         currentTime,
                         currentTime
                 )
@@ -80,7 +80,6 @@ class IncidentControllerTest {
                 new TrafficEventDTO(
                         "event1",
                         TrafficDataTypes.EVENT,
-                        "SHOW",
                         "short description",
                         "long description",
                         "location",
@@ -93,6 +92,7 @@ class IncidentControllerTest {
                         "T T",
                         "N",
                         "Current",
+                        "SHOW",
                         plannedTime,
                         "organiser",
                         "venue"

@@ -1,13 +1,20 @@
-package com.afsmith.tyneweartrafficviewer.business.data;
+package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
+import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficIncidentExternalMapper;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
+import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
 @Getter
-public final class TrafficIncidentDTO extends TrafficDataDTO {
+public final class TrafficIncidentExternal extends TrafficPointDataExternal<TrafficIncident> {
+        @JsonIgnore
+        private final TrafficIncidentExternalMapper mapper = Mappers.getMapper(TrafficIncidentExternalMapper.class);
         String incidentTypeDescription;
         @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
         ZonedDateTime incidentTime;
@@ -15,13 +22,13 @@ public final class TrafficIncidentDTO extends TrafficDataDTO {
         ZonedDateTime endTime;
 
         @Builder
-        public TrafficIncidentDTO(
+        public TrafficIncidentExternal(
                 String systemCodeNumber,
                 TrafficDataTypes type,
                 String shortDescription,
                 String longDescription,
                 String locationDescription,
-                PointDTO point,
+                PointExternal point,
                 ZonedDateTime creationDate,
                 String dataSourceTypeRef,
                 ZonedDateTime confirmedDate,
@@ -39,6 +46,12 @@ public final class TrafficIncidentDTO extends TrafficDataDTO {
                 this.incidentTypeDescription = incidentTypeDescription;
                 this.incidentTime = incidentTime;
                 this.endTime = endTime;
+        }
+
+
+        @Override
+        public TrafficIncident toEntity() {
+                return mapper.externalToEntity(this);
         }
 }
 
