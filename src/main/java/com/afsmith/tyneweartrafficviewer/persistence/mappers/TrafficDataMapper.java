@@ -1,6 +1,5 @@
 package com.afsmith.tyneweartrafficviewer.persistence.mappers;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.List;
  * @param <DTO> The data transfer object.
  * @param <E> The data entity.
  */
-public interface TrafficDataMapper<DTO extends TrafficDataDTO, E extends TrafficData> {
+public interface TrafficDataMapper<DTO extends MappableDTO, E extends TrafficData> {
     E dtoToEntity(DTO dto);
     List<E> dtoToEntity(Iterable<DTO> dtoList);
     DTO entityToDto(E entity);

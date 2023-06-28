@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @Setter
 @NoArgsConstructor
 @Entity
-public class TrafficIncident extends TrafficData {
+public class TrafficIncident extends TrafficPointData {
     private String incidentTypeDescription;
     private ZonedDateTime incidentTime;
     private ZonedDateTime endTime;

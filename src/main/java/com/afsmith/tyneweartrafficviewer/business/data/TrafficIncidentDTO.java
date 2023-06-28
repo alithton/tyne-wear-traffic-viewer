@@ -7,7 +7,7 @@ import lombok.Getter;
 import java.time.ZonedDateTime;
 
 @Getter
-public final class TrafficIncidentDTO extends TrafficDataDTO {
+public final class TrafficIncidentDTO extends TrafficPointDataDTO {
         String incidentTypeDescription;
         @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
         ZonedDateTime incidentTime;

@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.time.ZonedDateTime;
 
 @Getter
-public final class TrafficEventDTO extends TrafficDataDTO {
+public final class TrafficEventDTO extends TrafficPointDataDTO {
         String eventTypeDescription;
         PlannedDTO planned;
         String organiser;

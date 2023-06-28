@@ -19,7 +19,10 @@ public class TrafficDataPersistence {
 
     private final TrafficIncidentConnector incidentConnector;
     private final TrafficEventConnector eventConnector;
-    private final TrafficDataServiceImpl dataService;
+    private final TrafficAccidentConnector accidentConnector;
+    private final TrafficRoadworkConnector roadworkConnector;
+    private final JourneyTimeConnector journeyTimeConnector;
+    private final TrafficDataService dataService;
 
     /**
      * Get a list of all the data stored corresponding to the provided traffic
@@ -31,6 +34,9 @@ public class TrafficDataPersistence {
         return switch (dataType) {
             case INCIDENT -> dataService.listAll(incidentConnector);
             case EVENT -> dataService.listAll(eventConnector);
+            case ACCIDENT -> dataService.listAll(accidentConnector);
+            case ROADWORKS -> dataService.listAll(roadworkConnector);
+            case SPEED -> dataService.listAll(journeyTimeConnector);
             default -> null;
         };
     }
@@ -45,6 +51,9 @@ public class TrafficDataPersistence {
         switch (dataType) {
             case INCIDENT -> dataService.persist(trafficData, incidentConnector);
             case EVENT -> dataService.persist(trafficData, eventConnector);
+            case ACCIDENT -> dataService.persist(trafficData, accidentConnector);
+            case ROADWORKS -> dataService.persist(trafficData, roadworkConnector);
+            case SPEED -> dataService.persist(trafficData, journeyTimeConnector);
             default -> System.out.println("Default");
         }
     }
@@ -58,6 +67,9 @@ public class TrafficDataPersistence {
         switch (dataType) {
             case INCIDENT -> dataService.persistEntities(trafficData, incidentConnector);
             case EVENT -> dataService.persistEntities(trafficData, eventConnector);
+            case ACCIDENT -> dataService.persistEntities(trafficData, accidentConnector);
+            case ROADWORKS -> dataService.persistEntities(trafficData, roadworkConnector);
+            case SPEED -> dataService.persistEntities(trafficData, journeyTimeConnector);
             default -> System.out.println("Default");
         }
     }

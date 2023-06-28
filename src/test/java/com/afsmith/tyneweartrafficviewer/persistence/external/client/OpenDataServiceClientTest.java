@@ -27,6 +27,9 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.response.MockRestResponseCreators.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * Test the client for fetching data from the North East open data service API.
+ */
 @RestClientTest(OpenDataServiceClient.class)
 @Import(RestTemplateBuilderConfig.class)
 class OpenDataServiceClientTest {
@@ -60,6 +63,7 @@ class OpenDataServiceClientTest {
         String authHeaderEncoded = Base64.getEncoder().encodeToString(authHeaderUnencoded.getBytes());
         String responseBody = getIncidentJson();
 
+        // Mock server expects to receive a correctly formatted HTTP GET request.
         server.expect(method(HttpMethod.GET))
                 .andExpect(requestTo(expectedUrl))
                 .andExpect(header("Authorization", "Basic " + authHeaderEncoded))

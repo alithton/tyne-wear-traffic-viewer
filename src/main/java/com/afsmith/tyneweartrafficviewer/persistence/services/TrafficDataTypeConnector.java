@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.persistence.mappers.MappableDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.mappers.TrafficDataMapper;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @param <DTO> The corresponding data transfer object.
  * @param <ID> The type of the ID field, supplied to {@link org.springframework.data.jpa.repository}.
  */
-public class TrafficDataTypeConnector<T extends TrafficData, DTO extends TrafficDataDTO, ID> {
+public class TrafficDataTypeConnector<T extends TrafficData, DTO extends MappableDTO, ID> {
     private final JpaRepository<T, ID> repository;
     private final TrafficDataMapper<DTO, T> mapper;
     private final Class<DTO> dtoClass;

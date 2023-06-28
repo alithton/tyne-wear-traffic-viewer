@@ -3,6 +3,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
+import com.afsmith.tyneweartrafficviewer.persistence.external.data.DynamicDataExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import lombok.RequiredArgsConstructor;
@@ -25,11 +26,32 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
      */
     @Override
     public <E extends TrafficData> List<E> getData(TrafficDataTypes dataType) throws IOException {
-        ExternalDataTypes externalDataType = getExternalDataType(dataType, false);
-        List<TrafficDataExternal<E>> externalData = client.getData(externalDataType);
-        return externalData.stream()
-                           .map(TrafficDataExternal::toEntity)
-                           .toList();
+
+        if (dataType == TrafficDataTypes.SPEED || dataType == TrafficDataTypes.CAMERA) {
+            ExternalDataTypes staticDataType = getExternalDataType(dataType, false);
+            ExternalDataTypes dynamicDataType = getExternalDataType(dataType, true);
+
+            List<TrafficDataExternal<E>> staticData = client.getData(staticDataType);
+            List<TrafficDataExternal<E>> dynamicData = client.getData(dynamicDataType);
+
+            return staticData.stream()
+                    .map(element -> {
+                        DynamicDataExternal<E> staticElement = (DynamicDataExternal<E>) element;
+                        List<TrafficDataExternal<E>> dynamic = findBySystemCode(element.getSystemCodeNumber(), dynamicData);
+                        return dynamic.size() > 0 ? staticElement.toEntity( (DynamicDataExternal<E>) dynamic.get(0))
+                                                  : staticElement.toEntity();
+                    })
+                    .toList();
+
+        } else {
+            ExternalDataTypes externalDataType = getExternalDataType(dataType, false);
+            List<TrafficDataExternal<E>> externalData = client.getData(externalDataType);
+            return externalData.stream()
+                               .map(TrafficDataExternal::toEntity)
+                               .toList();
+        }
+
+
     }
 
     /*
@@ -47,6 +69,16 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
             case SPEED -> dynamic ? ExternalDataTypes.JOURNEY_TIME_DYNAMIC : ExternalDataTypes.JOURNEY_TIME_STATIC;
             case CAMERA -> dynamic ? ExternalDataTypes.CCTV_DYNAMIC : ExternalDataTypes.CCTV_STATIC;
         };
+    }
+
+    /*
+     * Find all elements in a list of data whose system code number matches the provided
+     * code.
+     */
+    private <E extends TrafficData> List<TrafficDataExternal<E>> findBySystemCode(String code, List<TrafficDataExternal<E>> data) {
+        return data.stream()
+                   .filter(element -> code.equals(element.getSystemCodeNumber()))
+                   .toList();
     }
 
 }

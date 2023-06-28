@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.business.controllers;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
+import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,9 @@ import static org.hamcrest.core.Is.is;
 
 @WebMvcTest(IncidentController.class)
 class IncidentControllerTest {
+
+    String URL_PATH = "/incidents";
+    String DATA_TYPE_PARAM = "type";
 
     @Autowired
     MockMvc mockMvc;
@@ -106,7 +110,7 @@ class IncidentControllerTest {
 
         when(persistenceService.listAll(TrafficDataTypes.INCIDENT)).thenReturn(incidentList);
 
-        mockMvc.perform(get("/incidents"))
+        mockMvc.perform(get(URL_PATH))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()", is(2)));
@@ -116,7 +120,7 @@ class IncidentControllerTest {
     void getIncidentsTypeIncident() throws Exception {
         when(persistenceService.listAll(TrafficDataTypes.INCIDENT)).thenReturn(incidentList);
 
-        mockMvc.perform(get("/incidents").queryParam("type", "INCIDENT"))
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "INCIDENT"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()", is(2)));
@@ -126,9 +130,35 @@ class IncidentControllerTest {
     void getIncidentsTypeEvent() throws Exception {
         when(persistenceService.listAll(TrafficDataTypes.EVENT)).thenReturn(eventList);
 
-        mockMvc.perform(get("/incidents").queryParam("type", "EVENT"))
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "EVENT"))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                .andExpect(jsonPath("$.length()", is(1)));
+    }
+
+    @Test
+    void getIncidentsTypeAccident() throws Exception {
+        List<TrafficDataDTO> accidentList = List.of(
+                MockData.getAccidentDto("code 1"),
+                MockData.getAccidentDto("code 2"));
+        when(persistenceService.listAll(TrafficDataTypes.ACCIDENT)).thenReturn(accidentList);
+
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ACCIDENT"))
+               .andExpect(status().isOk())
+               .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+               .andExpect(jsonPath("$.length()", is(2)));
+    }
+
+    @Test
+    void getIncidentsTypeRoadwork() throws Exception {
+        List<TrafficDataDTO> roadworkList = List.of(
+                MockData.getRoadworkDto("code 1"),
+                MockData.getRoadworkDto("code 2"));
+        when(persistenceService.listAll(TrafficDataTypes.ROADWORKS)).thenReturn(roadworkList);
+
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ROADWORKS"))
+               .andExpect(status().isOk())
+               .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+               .andExpect(jsonPath("$.length()", is(2)));
     }
 }

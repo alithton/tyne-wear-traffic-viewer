@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.time.ZonedDateTime;
 
 @Getter
-public final class TrafficRoadworksDTO extends TrafficDataDTO {
+public final class TrafficRoadworksDTO extends TrafficPointDataDTO {
     String roadworkTypeDescription;
     PlannedDTO planned;
     PlannedDTO actual;

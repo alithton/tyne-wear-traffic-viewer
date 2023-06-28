@@ -1,14 +1,19 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficRoadwork;
+import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficRoadworkExternalMapper;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
+import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
 @Getter
-public final class TrafficRoadworksExternal extends TrafficPointDataExternal<TrafficData> {
+public final class TrafficRoadworksExternal extends TrafficPointDataExternal<TrafficRoadwork> {
+    @JsonIgnore
+    TrafficRoadworkExternalMapper mapper = Mappers.getMapper(TrafficRoadworkExternalMapper.class);
     String roadworkTypeDescription;
     PlannedExternal planned;
     PlannedExternal actual;
@@ -51,7 +56,7 @@ public final class TrafficRoadworksExternal extends TrafficPointDataExternal<Tra
 
 
     @Override
-    public TrafficData toEntity() {
-        return null;
+    public TrafficRoadwork toEntity() {
+        return mapper.externalToEntity(this);
     }
 }
