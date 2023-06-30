@@ -14,13 +14,26 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * {@inheritDoc}
+ */
 public class TrafficDataReaderImpl implements TrafficDataReader {
     private final Path workingDir;
 
+    /**
+     * Without arguments, the working directory of the traffic data reader defaults
+     * to the user's current system working directory.
+     */
     public TrafficDataReaderImpl() {
         workingDir = Paths.get(System.getProperty("user.dir"));
     }
 
+    /**
+     * Construct a traffic data reader with the specified path as the working
+     * directory.
+     * @param workingDir The absolute path of the directory to be used as the
+     *                   working directory.
+     */
     public TrafficDataReaderImpl(Path workingDir) {
         this.workingDir = workingDir;
     }
@@ -43,30 +56,47 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
         }
     }
 
+    /**
+     * A shortcut factory method to generate a traffic data reader with the specified
+     * working directory.
+     * @param filePath The path to use as the working directory for the data reader.
+     *                 This is interpreted as being relative to the user's system
+     *                 working directory.
+     * @return A new instance of the traffic data reader with the specified working directory set.
+     */
     public static TrafficDataReaderImpl fromFilePath(String filePath) {
         return fromFilePath(filePath, true);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <E extends TrafficData> List<TrafficDataExternal<E>> read(InputStream src, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         var mapper = JsonMapper.builder()
-                .findAndAddModules()
-                .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
-                .enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS)
-                .build()
-                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                               .findAndAddModules()
+                               .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
+                               .enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS)
+                               .build()
+                               .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         var incidentList = mapper.getTypeFactory()
-                .constructCollectionType(List.class, dataClass);
+                                 .constructCollectionType(List.class, dataClass);
         return mapper.readValue(src, incidentList);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <E extends TrafficData> List<TrafficDataExternal<E>> read(String fileName, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         Path inputFilePath = Paths.get(workingDir.toString(), fileName);
         return read(Files.newInputStream(inputFilePath), dataClass);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <E extends TrafficData> List<TrafficDataExternal<E>> readFromString(String input, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
         return read(new ByteArrayInputStream(input.getBytes()), dataClass);

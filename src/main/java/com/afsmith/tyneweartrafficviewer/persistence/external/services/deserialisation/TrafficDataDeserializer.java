@@ -1,4 +1,4 @@
-package com.afsmith.tyneweartrafficviewer.persistence.external.services;
+package com.afsmith.tyneweartrafficviewer.persistence.external.services.deserialisation;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonPointer;

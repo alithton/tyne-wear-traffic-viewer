@@ -10,7 +10,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * {@inheritDoc}
@@ -27,31 +29,14 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     @Override
     public <E extends TrafficData> List<E> getData(TrafficDataTypes dataType) throws IOException {
 
+        // Speed and camera data have dynamic and static components that need to be joined.
         if (dataType == TrafficDataTypes.SPEED || dataType == TrafficDataTypes.CAMERA) {
-            ExternalDataTypes staticDataType = getExternalDataType(dataType, false);
-            ExternalDataTypes dynamicDataType = getExternalDataType(dataType, true);
-
-            List<TrafficDataExternal<E>> staticData = client.getData(staticDataType);
-            List<TrafficDataExternal<E>> dynamicData = client.getData(dynamicDataType);
-
-            return staticData.stream()
-                    .map(element -> {
-                        DynamicDataExternal<E> staticElement = (DynamicDataExternal<E>) element;
-                        List<TrafficDataExternal<E>> dynamic = findBySystemCode(element.getSystemCodeNumber(), dynamicData);
-                        return dynamic.size() > 0 ? staticElement.toEntity( (DynamicDataExternal<E>) dynamic.get(0))
-                                                  : staticElement.toEntity();
-                    })
-                    .toList();
-
+            return combineStaticAndDynamicData(dataType);
         } else {
-            ExternalDataTypes externalDataType = getExternalDataType(dataType, false);
-            List<TrafficDataExternal<E>> externalData = client.getData(externalDataType);
-            return externalData.stream()
-                               .map(TrafficDataExternal::toEntity)
-                               .toList();
+            // For all other data types there is a 1:1 relationship between external data classes and entities.
+            List<TrafficDataExternal<E>> externalData = getExternalData(dataType, false);
+            return convertToEntities(externalData);
         }
-
-
     }
 
     /*
@@ -79,6 +64,63 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
         return data.stream()
                    .filter(element -> code.equals(element.getSystemCodeNumber()))
                    .toList();
+    }
+
+    /*
+     * Convert a list of traffic data into a map, with system code numbers as keys.
+     */
+    private <E extends TrafficData> Map<String, TrafficDataExternal<E>>
+    getSystemCodeMap(List<TrafficDataExternal<E>> data) {
+        Map<String, TrafficDataExternal<E>> map = new HashMap<>();
+        data.forEach(element -> map.put(element.getSystemCodeNumber(), element));
+        return map;
+    }
+
+    /*
+     * Get the entity constructed from the static element provided and its matching
+     * dynamic data, if present. If no matching dynamic data is found, an entity
+     * is constructed using only the static data. The provided static data must
+     * be a subclass of DynamicDataExternal, otherwise a runtime exception is
+     * thrown.
+     */
+    private <E extends TrafficData> E getEntity(TrafficDataExternal<E> element,
+                                                Map<String, TrafficDataExternal<E>> map) {
+        TrafficDataExternal<E> matching = map.get(element.getSystemCodeNumber());
+        if (! (element instanceof DynamicDataExternal<E> staticElement)) {
+            throw new RuntimeException("Expected a subclass of DynamicDataExternal, got " + element.getClass());
+        }
+        return matching instanceof DynamicDataExternal<E> dynamic ? staticElement.toEntity(dynamic)
+                                                                  : staticElement.toEntity();
+    }
+
+    /*
+     * Get entities for data types that have both static and dynamic components.
+     */
+    private <E extends TrafficData> List<E> combineStaticAndDynamicData(TrafficDataTypes dataType) throws IOException {
+        List<TrafficDataExternal<E>> staticData = getExternalData(dataType, false);
+        List<TrafficDataExternal<E>> dynamicData = getExternalData(dataType, true);
+        Map<String, TrafficDataExternal<E>> dynamicMap = getSystemCodeMap(dynamicData);
+
+        return staticData.stream()
+                         .map(element -> getEntity(element, dynamicMap))
+                         .toList();
+    }
+
+    /*
+     * Convert a list of external traffic data to the corresponding entities.
+     */
+    private <E extends TrafficData> List<E> convertToEntities(List<TrafficDataExternal<E>> externalData) {
+        return externalData.stream()
+                           .map(TrafficDataExternal::toEntity)
+                           .toList();
+    }
+
+    /*
+     * Get the external data corresponding to the given data type from the client.
+     */
+    private <E extends TrafficData> List<TrafficDataExternal<E>> getExternalData(TrafficDataTypes dataType, boolean dynamic) throws IOException {
+        var externalDataType = getExternalDataType(dataType, dynamic);
+        return client.getData(externalDataType);
     }
 
 }

@@ -22,6 +22,7 @@ public class TrafficDataPersistence {
     private final TrafficAccidentConnector accidentConnector;
     private final TrafficRoadworkConnector roadworkConnector;
     private final JourneyTimeConnector journeyTimeConnector;
+    private final CameraConnector cameraConnector;
     private final TrafficDataService dataService;
 
     /**
@@ -37,7 +38,7 @@ public class TrafficDataPersistence {
             case ACCIDENT -> dataService.listAll(accidentConnector);
             case ROADWORKS -> dataService.listAll(roadworkConnector);
             case SPEED -> dataService.listAll(journeyTimeConnector);
-            default -> null;
+            case CAMERA -> dataService.listAll(cameraConnector);
         };
     }
 
@@ -54,7 +55,7 @@ public class TrafficDataPersistence {
             case ACCIDENT -> dataService.persist(trafficData, accidentConnector);
             case ROADWORKS -> dataService.persist(trafficData, roadworkConnector);
             case SPEED -> dataService.persist(trafficData, journeyTimeConnector);
-            default -> System.out.println("Default");
+            case CAMERA -> dataService.persist(trafficData, cameraConnector);
         }
     }
 
@@ -70,7 +71,7 @@ public class TrafficDataPersistence {
             case ACCIDENT -> dataService.persistEntities(trafficData, accidentConnector);
             case ROADWORKS -> dataService.persistEntities(trafficData, roadworkConnector);
             case SPEED -> dataService.persistEntities(trafficData, journeyTimeConnector);
-            default -> System.out.println("Default");
+            case CAMERA -> dataService.persistEntities(trafficData, cameraConnector);
         }
     }
 }

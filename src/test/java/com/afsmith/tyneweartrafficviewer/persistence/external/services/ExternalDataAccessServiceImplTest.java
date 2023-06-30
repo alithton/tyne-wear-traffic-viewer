@@ -113,4 +113,8 @@ class ExternalDataAccessServiceImplTest {
         return (TrafficDataExternal<E>) journeyTime;
     }
 
+    private <T extends TrafficDataExternal<E>, E extends TrafficData> TrafficDataExternal<E> castToTrafficDataExternal(T data) {
+        return (TrafficDataExternal<E>) data;
+    }
+
 }

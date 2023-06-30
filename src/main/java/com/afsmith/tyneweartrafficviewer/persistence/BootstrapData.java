@@ -11,14 +11,12 @@ import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersist
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-@Profile("!test")
 @Component
 @RequiredArgsConstructor
 public class BootstrapData implements CommandLineRunner {
@@ -27,6 +25,7 @@ public class BootstrapData implements CommandLineRunner {
     private final TrafficDataPersistence dataPersistence;
     private final ExternalDataAccessService dataAccessService;
 
+    // Should the data be loaded from local files or downloaded from the Open Data Service?
     private boolean useLocalData;
 
     @Transactional
@@ -47,6 +46,7 @@ public class BootstrapData implements CommandLineRunner {
         List<TrafficData> trafficAccidents;
         List<TrafficData> trafficRoadworks;
         List<TrafficData> journeyTimes;
+        List<TrafficData> cameras;
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
@@ -56,18 +56,23 @@ public class BootstrapData implements CommandLineRunner {
             trafficRoadworks = readFromFile("roadworks.json", TrafficRoadworksExternal.class);
             journeyTimes = readFromFile("journeytime-static.json", "journeytime-dynamic.json",
                                         JourneytimeStaticExternal.class, JourneytimeDynamicExternal.class);
+            cameras = readFromFile("cctv-static.json", "cctv-dynamic.json",
+                                   CctvStaticExternal.class, CctvDynamicExternal.class);
+
         } else {
             trafficIncidents = dataAccessService.getData(TrafficDataTypes.INCIDENT);
             trafficEvents = dataAccessService.getData(TrafficDataTypes.EVENT);
             trafficAccidents = dataAccessService.getData(TrafficDataTypes.ACCIDENT);
             trafficRoadworks = dataAccessService.getData(TrafficDataTypes.ROADWORKS);
             journeyTimes = dataAccessService.getData(TrafficDataTypes.SPEED);
+            cameras = dataAccessService.getData(TrafficDataTypes.CAMERA);
         }
         dataPersistence.persistEntities(trafficIncidents, TrafficDataTypes.INCIDENT);
         dataPersistence.persistEntities(trafficEvents, TrafficDataTypes.EVENT);
         dataPersistence.persistEntities(trafficAccidents, TrafficDataTypes.ACCIDENT);
         dataPersistence.persistEntities(trafficRoadworks, TrafficDataTypes.ROADWORKS);
         dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
+        dataPersistence.persistEntities(cameras, TrafficDataTypes.CAMERA);
     }
 
     public boolean isUseLocalData() {

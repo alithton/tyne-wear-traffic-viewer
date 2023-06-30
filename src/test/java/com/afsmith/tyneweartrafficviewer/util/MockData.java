@@ -3,17 +3,63 @@ package com.afsmith.tyneweartrafficviewer.util;
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.*;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.ZonedDateTime;
 
 public class MockData {
-    private static final ZonedDateTime time = ZonedDateTime.now();
-    private static final PointDTO pointDTO = new PointDTO(1L, 1L, 0.0, 0.0);
-    private static final Point point = new Point(1L, 1L, 0.0, 0.0);
-    private static final PlannedTimes planned = new PlannedTimes(time, time);
-    private static final PlannedDTO plannedDto = new PlannedDTO(time, time);
+    private static final ZonedDateTime TIME = ZonedDateTime.now();
+    private static final PointDTO POINT_DTO = new PointDTO(1L, 1L, 0.0, 0.0);
+    private static final Point POINT = new Point(1L, 1L, 0.0, 0.0);
+    private static final PlannedTimes PLANNED = new PlannedTimes(TIME, TIME);
+    private static final PlannedDTO PLANNED_DTO = new PlannedDTO(TIME, TIME);
+    public static final String SHORT_DESCRIPTION = "short description";
+    public static final String LONG_DESCRIPTION = "long description";
+    public static final String LOCATION_DESCRIPTION = "location description";
+    public static final String TYPE_REF = "type ref";
+    public static final String SEVERITY = "Low";
+    public static final String LANES_AFFECTED = "| T";
+    public static final String DIVERSION = "N";
+    public static final String PHASE_TYPE = "current";
+    public static final String TYPE_DESCRIPTION = "type description";
+    public static final String IMAGE_URL_TEXT = "https://example.com/image.jpg";
+    public static final URL IMAGE_URL = getImageUrl();
+
+    private static URL getImageUrl() {
+        URL imageUrl = null;
+        try {
+            imageUrl = new URL(IMAGE_URL_TEXT);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return imageUrl;
+    }
 
 
     // Get mock DTOs
+    public static TrafficIncidentDTO getIncidentDto(String code) {
+        return TrafficIncidentDTO.builder()
+                                 .systemCodeNumber(code)
+                                 .type(TrafficDataTypes.INCIDENT)
+                                 .shortDescription(SHORT_DESCRIPTION)
+                                 .longDescription(LONG_DESCRIPTION)
+                                 .locationDescription(LOCATION_DESCRIPTION)
+                                 .incidentTime(TIME)
+                                 .point(POINT_DTO)
+                                 .confirmedDate(TIME)
+                                 .endTime(TIME)
+                                 .creationDate(TIME)
+                                 .dataSourceTypeRef(TYPE_REF)
+                                 .diversionInForce(DIVERSION)
+                                 .incidentTypeDescription(TYPE_DESCRIPTION)
+                                 .locationDescription(LANES_AFFECTED)
+                                 .severityTypeRefDescription(SEVERITY)
+                                 .modifiedDate(TIME)
+                                 .phaseTypeRef(PHASE_TYPE)
+                                 .build();
+    }
+
+
     public static TrafficAccidentDTO getAccidentDto(String code) {
         return TrafficAccidentDTO.builder()
                                  .systemCodeNumber(code)
@@ -21,18 +67,18 @@ public class MockData {
                                  .shortDescription("short description")
                                  .longDescription("long description")
                                  .locationDescription("location description")
-                                 .point(pointDTO)
-                                 .creationDate(time)
+                                 .point(POINT_DTO)
+                                 .creationDate(TIME)
                                  .dataSourceTypeRef("type ref")
-                                 .confirmedDate(time)
-                                 .modifiedDate(time)
+                                 .confirmedDate(TIME)
+                                 .modifiedDate(TIME)
                                  .severityTypeRefDescription("Low")
                                  .lanesAffectedTypeRefDescription("| T")
                                  .diversionInForce("N")
                                  .phaseTypeRef("current")
                                  .accidentTypeDescription("")
-                                 .accidentTime(time)
-                                 .endTime(time)
+                                 .accidentTime(TIME)
+                                 .endTime(TIME)
                                  .build();
     }
 
@@ -43,11 +89,11 @@ public class MockData {
                                   .shortDescription("short description")
                                   .longDescription("long description")
                                   .locationDescription("location description")
-                                  .point(pointDTO)
-                                  .creationDate(time)
+                                  .point(POINT_DTO)
+                                  .creationDate(TIME)
                                   .dataSourceTypeRef("type ref")
-                                  .confirmedDate(time)
-                                  .modifiedDate(time)
+                                  .confirmedDate(TIME)
+                                  .modifiedDate(TIME)
                                   .severityTypeRefDescription("Low")
                                   .lanesAffectedTypeRefDescription("| T")
                                   .diversionInForce("N")
@@ -56,8 +102,8 @@ public class MockData {
                                   .contractor("contractor")
                                   .contraflow("N")
                                   .trafficSignals("N")
-                                  .planned(plannedDto)
-                                  .actual(plannedDto)
+                                  .planned(PLANNED_DTO)
+                                  .actual(PLANNED_DTO)
                                   .build();
     }
 
@@ -66,15 +112,27 @@ public class MockData {
                              .systemCodeNumber(code)
                              .shortDescription("short description")
                              .longDescription("long description")
-                             .point(pointDTO)
-                             .endPoint(pointDTO)
-                             .lastUpdated(time)
+                             .point(POINT_DTO)
+                             .endPoint(POINT_DTO)
+                             .lastUpdated(TIME)
                              .linkTravelTime(100)
                              .platesIn(10)
                              .platesOut(10)
                              .plateMatches(10)
-                             .lastUpdatedDynamic(time)
+                             .lastUpdatedDynamic(TIME)
                              .build();
+    }
+
+    public static CameraDTO getCameraDto(String code) {
+        return CameraDTO.builder()
+                        .systemCodeNumber(code)
+                        .shortDescription(SHORT_DESCRIPTION)
+                        .longDescription(LONG_DESCRIPTION)
+                        .point(POINT_DTO)
+                        .lastUpdated(TIME)
+                        .lastUpdatedDynamic(TIME)
+                        .image(IMAGE_URL)
+                        .build();
     }
 
     // Get Mock entities
@@ -86,18 +144,18 @@ public class MockData {
                               .shortDescription("short description")
                               .longDescription("long description")
                               .locationDescription("location description")
-                              .point(point)
-                              .creationDate(time)
+                              .point(POINT)
+                              .creationDate(TIME)
                               .dataSourceTypeRef("type ref")
-                              .confirmedDate(time)
-                              .modifiedDate(time)
+                              .confirmedDate(TIME)
+                              .modifiedDate(TIME)
                               .severityTypeRefDescription("Low")
                               .lanesAffectedTypeRefDescription("| T")
                               .diversionInForce("N")
                               .phaseTypeRef("current")
                               .incidentTypeDescription("")
-                              .incidentTime(time)
-                              .endTime(time)
+                              .incidentTime(TIME)
+                              .endTime(TIME)
                               .build();
     }
 
@@ -108,11 +166,11 @@ public class MockData {
                            .shortDescription("short description")
                            .longDescription("long description")
                            .locationDescription("location description")
-                           .point(point)
-                           .creationDate(time)
+                           .point(POINT)
+                           .creationDate(TIME)
                            .dataSourceTypeRef("type ref")
-                           .confirmedDate(time)
-                           .modifiedDate(time)
+                           .confirmedDate(TIME)
+                           .modifiedDate(TIME)
                            .severityTypeRefDescription("Low")
                            .lanesAffectedTypeRefDescription("| T")
                            .diversionInForce("N")
@@ -120,7 +178,7 @@ public class MockData {
                            .eventTypeDescription("")
                            .organiser("An organiser")
                            .venueName("venue")
-                           .planned(planned)
+                           .planned(PLANNED)
                            .build();
     }
 
@@ -131,18 +189,18 @@ public class MockData {
                                  .shortDescription("short description")
                                  .longDescription("long description")
                                  .locationDescription("location description")
-                                 .point(point)
-                                 .creationDate(time)
+                                 .point(POINT)
+                                 .creationDate(TIME)
                                  .dataSourceTypeRef("type ref")
-                                 .confirmedDate(time)
-                                 .modifiedDate(time)
+                                 .confirmedDate(TIME)
+                                 .modifiedDate(TIME)
                                  .severityTypeRefDescription("Low")
                                  .lanesAffectedTypeRefDescription("| T")
                                  .diversionInForce("N")
                                  .phaseTypeRef("current")
                                  .accidentTypeDescription("")
-                                 .accidentTime(time)
-                                 .endTime(time)
+                                 .accidentTime(TIME)
+                                 .endTime(TIME)
                                  .build();
     }
 
@@ -153,11 +211,11 @@ public class MockData {
                                   .shortDescription("short description")
                                   .longDescription("long description")
                                   .locationDescription("location description")
-                                  .point(point)
-                                  .creationDate(time)
+                                  .point(POINT)
+                                  .creationDate(TIME)
                                   .dataSourceTypeRef("type ref")
-                                  .confirmedDate(time)
-                                  .modifiedDate(time)
+                                  .confirmedDate(TIME)
+                                  .modifiedDate(TIME)
                                   .severityTypeRefDescription("Low")
                                   .lanesAffectedTypeRefDescription("| T")
                                   .diversionInForce("N")
@@ -166,8 +224,8 @@ public class MockData {
                                   .contractor("contractor")
                                   .contraflow("N")
                                   .trafficSignals("N")
-                                  .planned(planned)
-                                  .actual(planned)
+                                  .planned(PLANNED)
+                                  .actual(PLANNED)
                                   .build();
     }
 
@@ -176,14 +234,26 @@ public class MockData {
                           .systemCodeNumber(code)
                           .shortDescription("short description")
                           .longDescription("long description")
-                          .point(point)
-                          .endPoint(point)
-                          .lastUpdated(time)
+                          .point(POINT)
+                          .endPoint(POINT)
+                          .lastUpdated(TIME)
                           .linkTravelTime(100)
                           .platesIn(10)
                           .platesOut(10)
                           .plateMatches(10)
-                          .lastUpdatedDynamic(time)
+                          .lastUpdatedDynamic(TIME)
                           .build();
+    }
+
+    public static Camera getCamera(String code) {
+        return Camera.builder()
+                        .systemCodeNumber(code)
+                        .shortDescription(SHORT_DESCRIPTION)
+                        .longDescription(LONG_DESCRIPTION)
+                        .point(POINT)
+                        .lastUpdated(TIME)
+                        .lastUpdatedDynamic(TIME)
+                        .image(IMAGE_URL)
+                        .build();
     }
 }

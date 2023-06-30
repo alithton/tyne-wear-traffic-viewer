@@ -31,7 +31,7 @@ public class RestTemplateBuilderConfig {
     @Bean
     public RestTemplateBuilder restTemplateBuilder(RestTemplateBuilderConfigurer configurer) {
         return configurer.configure(new RestTemplateBuilder())
-                .basicAuthentication(username, password)
-                .uriTemplateHandler(new DefaultUriBuilderFactory(baseUrl));
+                         .basicAuthentication(username, password)
+                         .uriTemplateHandler(new DefaultUriBuilderFactory(baseUrl));
     }
 }

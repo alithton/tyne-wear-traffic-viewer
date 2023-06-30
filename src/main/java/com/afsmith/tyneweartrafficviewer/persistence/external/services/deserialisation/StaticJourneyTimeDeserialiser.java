@@ -1,4 +1,4 @@
-package com.afsmith.tyneweartrafficviewer.persistence.external.services;
+package com.afsmith.tyneweartrafficviewer.persistence.external.services.deserialisation;
 
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.JourneytimeStaticExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.PointExternal;
