@@ -90,15 +90,16 @@ public class BootstrapData implements CommandLineRunner {
                                 .toList();
     }
 
+    @SuppressWarnings("unchecked")
     private <T extends TrafficDataExternal<E>, U extends TrafficDataExternal<E>, E extends TrafficData> List<TrafficData>
-        readFromFile(String staticFileName, String dynamicFileName, Class<T> staticClass, Class<U> dynamicClass) throws IOException {
+        readFromFile(String staticFileName, String dynamicFileName, Class<? extends T> staticClass, Class<U> dynamicClass) throws IOException {
 
-            List<TrafficDataExternal<E>> dynamicData = trafficDataReader.read(dynamicFileName, dynamicClass);
+            List<U> dynamicData = trafficDataReader.read(dynamicFileName, dynamicClass);
             return trafficDataReader.read(staticFileName, staticClass)
                                     .stream()
                                     .map(element -> {
                                         DynamicDataExternal<E> staticElement = (DynamicDataExternal<E>) element;
-                                        List<TrafficDataExternal<E>> dynamic = findBySystemCode(element.getSystemCodeNumber(), dynamicData);
+                                        List<U> dynamic = findBySystemCode(element.getSystemCodeNumber(), dynamicData);
                                         return dynamic.size() > 0 ? staticElement.toEntity( (DynamicDataExternal<E>) dynamic.get(0))
                                                 : staticElement.toEntity();
                                     })
@@ -106,7 +107,7 @@ public class BootstrapData implements CommandLineRunner {
                                     .toList();
     }
 
-    private <E extends TrafficData> List<TrafficDataExternal<E>> findBySystemCode(String code, List<TrafficDataExternal<E>> data) {
+    private <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> findBySystemCode(String code, List<T> data) {
         return data.stream()
                    .filter(element -> code.equals(element.getSystemCodeNumber()))
                    .toList();

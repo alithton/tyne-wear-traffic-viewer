@@ -72,7 +72,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <E extends TrafficData> List<TrafficDataExternal<E>> read(InputStream src, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(InputStream src, Class<T> dataClass) throws IOException {
         var mapper = JsonMapper.builder()
                                .findAndAddModules()
                                .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
@@ -89,7 +89,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <E extends TrafficData> List<TrafficDataExternal<E>> read(String fileName, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(String fileName, Class<T> dataClass) throws IOException {
         Path inputFilePath = Paths.get(workingDir.toString(), fileName);
         return read(Files.newInputStream(inputFilePath), dataClass);
     }
@@ -98,7 +98,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <E extends TrafficData> List<TrafficDataExternal<E>> readFromString(String input, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> readFromString(String input, Class<T> dataClass) throws IOException {
         return read(new ByteArrayInputStream(input.getBytes()), dataClass);
     }
 }

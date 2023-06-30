@@ -26,7 +26,7 @@ class TrafficDataReaderImplTest {
 
         assertThat(incidents.size()).isGreaterThan(0);
 
-        TrafficIncidentExternal testIncident = (TrafficIncidentExternal) incidents.get(0);
+        TrafficIncidentExternal testIncident = incidents.get(0);
 
         assertThat(testIncident.getPoint().latitude()).isGreaterThan(0);
         assertThat(testIncident.getCreationDate().getYear()).isEqualTo(2020);
@@ -40,7 +40,7 @@ class TrafficDataReaderImplTest {
 
         assertThat(events.size()).isGreaterThan(0);
 
-        TrafficEventExternal testEvent = (TrafficEventExternal) events.get(0);
+        TrafficEventExternal testEvent = events.get(0);
 
         assertThat(testEvent.getSystemCodeNumber()).isEqualTo("Tyneandwear0001152597");
         assertThat(testEvent.getCreationDate().getYear()).isEqualTo(2023);

@@ -20,7 +20,7 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <E extends TrafficData> List<TrafficDataExternal<E>> read(InputStream src, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(InputStream src, Class<T> dataClass) throws IOException;
 
     /**
      * Read the provided data into the specified subclass of TrafficDataExternal.
@@ -30,7 +30,7 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <E extends TrafficData> List<TrafficDataExternal<E>> read(String fileName, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(String fileName, Class<T> dataClass) throws IOException;
 
     /**
      * Read the provided data into the specified subclass of TrafficDataExternal.
@@ -40,5 +40,5 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <E extends TrafficData> List<TrafficDataExternal<E>> readFromString(String input, Class<? extends TrafficDataExternal<E>> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> readFromString(String input, Class<T> dataClass) throws IOException;
 }
