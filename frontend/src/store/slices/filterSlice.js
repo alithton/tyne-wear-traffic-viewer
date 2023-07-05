@@ -7,7 +7,7 @@ export const filterSlice = createSlice({
         name: 'filters',
         initialState: {
             value: {
-                dataType: [],
+                dataType: ['INCIDENT'],
                 severity: ['Low', 'Medium', 'High'],
                 startDate: null,
                 endDate: null

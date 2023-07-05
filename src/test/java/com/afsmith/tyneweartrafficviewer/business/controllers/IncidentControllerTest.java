@@ -113,7 +113,7 @@ class IncidentControllerTest {
         mockMvc.perform(get(URL_PATH))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.length()", is(2)));
+                .andExpect(jsonPath("$").isEmpty());
     }
 
     @Test
@@ -123,7 +123,7 @@ class IncidentControllerTest {
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "INCIDENT"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.length()", is(2)));
+                .andExpect(jsonPath("$.INCIDENT.length()", is(2)));
     }
 
     @Test
@@ -133,7 +133,7 @@ class IncidentControllerTest {
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "EVENT"))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-               .andExpect(jsonPath("$.length()", is(1)));
+               .andExpect(jsonPath("$.EVENT.length()", is(1)));
     }
 
     @Test
@@ -146,7 +146,7 @@ class IncidentControllerTest {
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ACCIDENT"))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-               .andExpect(jsonPath("$.length()", is(2)));
+               .andExpect(jsonPath("$.ACCIDENT.length()", is(2)));
     }
 
     @Test
@@ -159,6 +159,17 @@ class IncidentControllerTest {
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ROADWORKS"))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-               .andExpect(jsonPath("$.length()", is(2)));
+               .andExpect(jsonPath("$.ROADWORKS.length()", is(2)));
+    }
+
+    @Test
+    void getIncidentsMultipleDataTypes() throws Exception {
+        when(persistenceService.listAll(TrafficDataTypes.INCIDENT)).thenReturn(incidentList);
+        when(persistenceService.listAll(TrafficDataTypes.EVENT)).thenReturn(eventList);
+
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "INCIDENT", "EVENT"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.length()", is(2)));
     }
 }

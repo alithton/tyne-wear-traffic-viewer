@@ -59,6 +59,6 @@ function IncidentMarker(props) {
     );
 }
 
-import {update} from '../../../features/details/detailsSlice';
+import {update} from '../../../store/slices/detailsSlice.js';
 
 export default IncidentMarker;
