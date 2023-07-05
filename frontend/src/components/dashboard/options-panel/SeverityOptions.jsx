@@ -1,5 +1,5 @@
 import {useDispatch, useSelector} from "react-redux";
-import {addSeverity, removeSeverity} from "../../../features/filters/filterSlice.js";
+import {addSeverity, removeSeverity} from "../../../store/slices/filterSlice.js";
 
 import styles from './SeverityOptions.module.css';
 import SectionHeading from "./SectionHeading.jsx";

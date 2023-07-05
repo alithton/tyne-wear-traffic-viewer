@@ -1,56 +1,119 @@
-import {MapContainer, TileLayer} from "react-leaflet";
-import {useSelector} from "react-redux";
+import {MapContainer, Polyline, TileLayer} from "react-leaflet";
+import {useDispatch, useSelector} from "react-redux";
 import IncidentMarker from "./IncidentMarker.jsx";
 import 'leaflet/dist/leaflet.css'
 import {useEffect, useState} from "react";
+import 'leaflet-contextmenu';
+import {addNew} from "../../../store/slices/detailsSlice.js";
+import {useGetIncidentsQuery} from "../../../store/slices/apiSlice.js";
+import TrafficSpeedLine from "./TrafficSpeedLine.jsx";
 
 const API_URL = "http://localhost:8080/";
 const API_INCIDENT_URL = API_URL + "incidents";
 
+const TRAFFIC_POINT_TYPES = ["INCIDENT", "ACCIDENT", "ROADWORKS", "EVENT"];
+
 function Map() {
 
-    const [incidents, setIncidents] = useState([]);
-    const [filteredIncidents, setFilteredIncidents] = useState([]);
+    // const [incidents, setIncidents] = useState([]);
+    const [filteredData, setFilteredData] = useState([]);
 
     const defaultPosition = [54.97, -1.61];
     const filters = useSelector(state => state.filters.value);
 
-    // Load data from backend
-    useEffect(() => {
-        const fetchData = async (url) => {
-            const response = await fetch(url);
-            const data = await response.json();
-            const fetchedIncidents = data.map(incident => ({
-                systemCodeNumber: incident.systemCodeNumber,
-                incidentPosition: [incident.point.latitude, incident.point.longitude],
-                shortDescription: incident.shortDescription,
-                longDescription: incident.longDescription,
-                ...incident
-            }));
-            setIncidents(fetchedIncidents);
-            setFilteredIncidents(fetchedIncidents);
-        }
-        fetchData(API_INCIDENT_URL);
-    }, [API_INCIDENT_URL]);
+    const dispatch = useDispatch();
 
-    // Apply any filters
+    // Fetch incident data from back end or from store
+    const {data: trafficData, isSuccess} = useGetIncidentsQuery(filters.dataType);
+
+    // Filter the loaded data and reformat coordinates to the format expected by Leaflet
     useEffect(() => {
-        console.log('Filtering...');
-        const filteredIncidentsTemp = incidents.filter(incident => {
-            const isSelectedSeverity = filters.severity.includes(incident.severityTypeRefDescription);
-            return isSelectedSeverity;
-        });
-        setFilteredIncidents(filteredIncidentsTemp);
-    }, [filters.severity]);
+        console.log("Checking that data is loaded...");
+        if (isSuccess) {
+            const filteredDataTemp = {};
+            console.log('Filtering...');
+            Object.keys(trafficData).forEach(dataType => {
+                const data = trafficData[dataType];
+                if (TRAFFIC_POINT_TYPES.includes(dataType)) {
+                    filteredDataTemp[dataType] = data
+                        .filter(incident => filters.severity.includes(incident.severityTypeRefDescription))
+                        .map(incident => ({
+                            incidentPosition: [incident.point.latitude, incident.point.longitude],
+                            ...incident
+                        }));
+                } else if (dataType === "SPEED") {
+                    filteredDataTemp[dataType] = data.map(entry => ({
+                        positions: [
+                            [entry.point.latitude, entry.point.longitude],
+                            [entry.endPoint.latitude, entry.endPoint.longitude]
+                        ],
+                        ...entry
+                    }))
+                } else {
+                    filteredDataTemp[dataType] = data.map(entry => ({
+                        incidentPosition: [entry.point.latitude, entry.point.longitude],
+                        ...entry
+                    }))
+                }
+
+            });
+            console.log("Finished...");
+            setFilteredData(filteredDataTemp);
+        }
+    }, [trafficData, isSuccess, filters.severity]);
+
+    // Create a new custom event.
+    function createNewEvent(e) {
+        const payload = {lat: e.latlng.lat, long: e.latlng.lng};
+        dispatch(addNew(payload));
+    }
+
+    // An array of all data that is displayed as incident markers
+    const pointData = Object.keys(filteredData).filter(key => key !== "SPEED")
+                            .map(key => filteredData[key])
+                            .flat();
+
+    console.log(pointData);
+    let speedStats = {};
+    if (filteredData.SPEED) {
+        speedStats.max = filteredData.SPEED.reduce((currentMax, value) => {
+                                return Math.max(value.linkTravelTime, currentMax);
+                            }, 0);
+        speedStats.min = filteredData.SPEED.reduce((currentMin, value) => {
+            return Math.min(value.linkTravelTime, currentMin);
+        }, Number.MAX_SAFE_INTEGER);
+        console.log(speedStats);
+    }
 
     return (
-        <MapContainer center={defaultPosition} zoom={13} scrollWheelZoom={false}>
+        <MapContainer
+            center={defaultPosition}
+            zoom={13}
+            scrollWheelZoom={false}
+            contextmenu={true}
+            contextmenuwidth={140}
+            contextmenuItems={[
+                {
+                    text: 'Add custom event',
+                    callback: createNewEvent
+                }
+            ]}
+        >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {filteredIncidents.map(incident => {
-                return <IncidentMarker key={incident.systemCodeNumber} incidentData={incident} />;
+            {/*{filteredData.ACCIDENT && filteredData.ACCIDENT.map(value => {*/}
+            {/*    return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;*/}
+            {/*})}*/}
+            {/*{filteredData.CAMERA && filteredData.CAMERA.map(value => {*/}
+            {/*    return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;*/}
+            {/*})}*/}
+            {pointData.length > 0 && pointData.map(value => {
+                return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;
+            })}
+            {filteredData.SPEED && filteredData.SPEED.map(value => {
+                return <TrafficSpeedLine positions={value.positions} data={value} max={speedStats.max} min={speedStats.min} />
             })}
 
         </MapContainer>

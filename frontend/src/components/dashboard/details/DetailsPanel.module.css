@@ -7,13 +7,13 @@
 
 .details--selection {
     margin: 0;
+    width: 100%;
 }
 
 .details__card--selection {
     justify-content: flex-start;
     align-items: flex-start;
     overflow-y: scroll;
-    height: 37vh;
 }
 
 .details__header {
@@ -37,3 +37,5 @@
 .info--minor {
     margin: 0.5rem 0 0.5rem 0;
 }
+
+

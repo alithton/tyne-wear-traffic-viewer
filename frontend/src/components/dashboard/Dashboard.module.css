@@ -1,8 +1,21 @@
+/*.dashboard {*/
+/*    display: grid;*/
+/*    grid: "map options" auto*/
+/*          "map details" 1fr*/
+/*          / 52vw 30vw;*/
+/*    grid-gap: 1rem;*/
+/*    justify-content: center;*/
+/*    padding: 0.5rem;*/
+/*    max-width: 1200px;*/
+/*    margin: 3rem 0;*/
+/*}*/
+
 .dashboard {
     display: grid;
-    grid: "map options" 25rem
-          "map details" minmax(0, 1fr)
-          / 52vw 30vw;
+    grid: "map options"
+          "map details";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 52vw 30vw;
     grid-gap: 1rem;
     justify-content: center;
     padding: 0.5rem;
@@ -20,6 +33,14 @@
 
 .details {
     grid-area: details;
+}
+
+.details-with-options {
+    height: calc(70vh + 6.8rem - 23.5rem);
+}
+
+.details-no-options {
+    height: calc(70vh + 6.8rem - 5rem);
 }
 
 @media (max-width: 960px) {

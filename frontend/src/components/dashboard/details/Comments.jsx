@@ -4,7 +4,7 @@ import {useState} from "react";
 
 const dummy_comments = [
     {id: 1, name: 'Alice', text: 'So much disruption!'},
-    {id: 2, name: 'Bob', text: 'Good to now about this.'}
+    {id: 2, name: 'Bob', text: 'Good to know about this.'}
 ];
 
 function Comments() {

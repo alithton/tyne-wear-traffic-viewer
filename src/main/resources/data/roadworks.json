@@ -1,0 +1,3203 @@
+[
+  {
+    "systemCodeNumber": "RW-21-07-21-300446",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 sou",
+    "longDescription": "TYPE : GDP\nLocation : The A1 southbound\nName : A1 southbound exit at a minor junction between A692 and A167 near Washington Birtley : MAJOR SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 11:24 on 21 July 2021 to 06:00 on 31 August 2024",
+    "point": {
+      "easting": 424561,
+      "northing": 558599,
+      "latitude": 54.9214873284848000,
+      "longitude": -1.6183370570404600
+    },
+    "locationDescription": null,
+    "creationDate": "2021-07-21T11:24:47.537+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:17:46.100+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2021-06-23T20:00:00.000+0100",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-21-12-14-200771",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 nor",
+    "longDescription": "TYPE : GDP\nLocation : The A1 northbound\nName : A1 northbound access from A167 near Washington Birtley : A1 northbound exit at a minor junction between A167 near Washington Birtley and A692 : MAJOR SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 14:32 on 14 December 2021 to 06:00 on 31 August 2024",
+    "point": {
+      "easting": 426700,
+      "northing": 557427,
+      "latitude": 54.9108490919219000,
+      "longitude": -1.5850707013946100
+    },
+    "locationDescription": null,
+    "creationDate": "2021-12-14T14:32:16.080+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T07:09:35.350+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2021-08-09T00:00:00.000+0100",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-01-31-101103",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 sou",
+    "longDescription": "TYPE : GDP\nLocation : The A1 southbound between the A694  and the junction with the A194M \nName : A1 southbound at the Metro Centre between A694 and A184 : A1 southbound between A167 near Washington Birtley and A1(M)/A194(M) : MAJOR SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:01 on 20 June 2023 to 06:00 on 22 July 2023",
+    "point": {
+      "easting": 420929,
+      "northing": 562366,
+      "latitude": 54.9555024486964000,
+      "longitude": -1.6747216017359000
+    },
+    "locationDescription": null,
+    "creationDate": "2022-01-31T20:14:02.053+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:25:56.337+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-20T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-01-31-101125",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 nor",
+    "longDescription": "TYPE : GDP\nLocation : The A1 northbound between the A194M  and the junction with the A692 \nName : A1 northbound between A1(M)/A194(M) and A167 near Washington Birtley : A1 northbound exit for A692 : MAJOR SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:01 on 20 June 2023 to 06:00 on 22 July 2023",
+    "point": {
+      "easting": 428215,
+      "northing": 556592,
+      "latitude": 54.9032603476608000,
+      "longitude": -1.5615232768528900
+    },
+    "locationDescription": null,
+    "creationDate": "2022-01-31T20:14:05.930+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:25:56.493+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-20T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-09-16-500330",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 sou",
+    "longDescription": "TYPE : GDP\nLocation : The A1 southbound exit slip to the A167 \nLane Closures : Lane one is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 31 August 2024\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 426254,
+      "northing": 557765,
+      "latitude": 54.9139086246429000,
+      "longitude": -1.5919999810169600
+    },
+    "locationDescription": null,
+    "creationDate": "2022-09-16T10:52:35.160+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:19:10.757+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2021-09-13T00:00:00.000+0100",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-09-16-500332",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 sou",
+    "longDescription": "TYPE : GDP\nLocation : The A1 southbound entry slip from the A167 \nLane Closures : Lane one is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 31 August 2024\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 426817,
+      "northing": 557514,
+      "latitude": 54.9116190285106000,
+      "longitude": -1.5832409636795500
+    },
+    "locationDescription": null,
+    "creationDate": "2022-09-16T10:54:24.113+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:24:53.773+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2021-06-23T20:00:00.000+0100",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-09-16-500333",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 nor",
+    "longDescription": "TYPE : GDP\nLocation : The A1 northbound entry slip from the A167 \nLane Closures : Lane one is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 31 August 2024\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 426700,
+      "northing": 557427,
+      "latitude": 54.9108490919219000,
+      "longitude": -1.5850707013946100
+    },
+    "locationDescription": null,
+    "creationDate": "2022-09-16T10:54:24.003+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:16:03.070+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2022-01-24T04:00:00.000+0000",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-09-16-500334",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 nor",
+    "longDescription": "TYPE : GDP\nLocation : The A1 northbound\nLane Closures : Lane one is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 28 August 2024\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 425325,
+      "northing": 558529,
+      "latitude": 54.9208175881870000,
+      "longitude": -1.6064185063921200
+    },
+    "locationDescription": null,
+    "creationDate": "2022-09-16T10:54:24.050+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:15:54.617+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2022-01-05T06:00:00.000+0000",
+      "endTime": "2024-08-28T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-22-09-16-500335",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 nor",
+    "longDescription": "TYPE : GDP\nLocation : The A1 northbound\nLane Closures : Lane one is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 31 August 2024\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 424896,
+      "northing": 558518,
+      "latitude": 54.9207374962531000,
+      "longitude": -1.6131176709297700
+    },
+    "locationDescription": null,
+    "creationDate": "2022-09-16T10:54:24.190+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:25:49.923+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2021-08-09T00:00:00.000+0100",
+      "endTime": "2024-08-31T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-01-30-100040",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M so",
+    "longDescription": "TYPE : GDP\nLocation : The A1M southbound between junctions J60  and J56 \nName : A1(M) southbound between J60 and J59 : A1(M) southbound within J56 : AREA SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 06:02 on 6 February 2023 to 06:00 on 30 August 2023",
+    "point": {
+      "easting": 430022,
+      "northing": 523395,
+      "latitude": 54.6048360240593000,
+      "longitude": -1.5367628029563300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-01-30T06:11:20.340+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-15T06:02:02.177+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-02-06T06:00:00.000+0000",
+      "endTime": "2023-08-30T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-01-30-100066",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M no",
+    "longDescription": "TYPE : GDP\nLocation : The A1M northbound between junctions J58  and J59 \nName : A1(M) J58 northbound access : A1(M) northbound within J59 : AREA SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 06:01 on 20 February 2023 to 06:00 on 29 July 2023",
+    "point": {
+      "easting": 426328,
+      "northing": 518048,
+      "latitude": 54.5569908065271000,
+      "longitude": -1.5944235602663200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-03-10T14:31:40.527+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-04-11T12:31:44.220+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-02-20T06:00:00.000+0000",
+      "endTime": "2023-07-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-02-20-101031",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound\nName : A1(M) J65 northbound access : link road from A1231 to A1(M) J65 northbound access : MAJOR SCHEMES\nReason : Roadworks scheme is planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 22 July 2023",
+    "point": {
+      "easting": 428084,
+      "northing": 556489,
+      "latitude": 54.9023404254433000,
+      "longitude": -1.5635729804516000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-03-14T13:03:01.163+0000",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:18.950+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-04-17-101393",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1 sou",
+    "longDescription": "TYPE : GDP\nLocation : The A1 southbound between the A1167 south of Berwick-Upon-Tweed and the junction with the A697 \nName : A1 southbound between A1167 near Berwick-Upon-Tweed (south) and B1340 : A1 southbound between A1068 and A697 : AREA SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:02 on 5 June 2023 to 06:00 on 28 June 2023",
+    "point": {
+      "easting": 412314,
+      "northing": 632003,
+      "latitude": 55.5815261965375000,
+      "longitude": -1.8062240487890000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-04-17T20:13:15.810+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-13T20:05:02.950+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-05T20:00:00.000+0100",
+      "endTime": "2023-06-28T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-04-25-201004",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the A19  and the junction with the A1167 south of Berwick-Upon-Tweed\nName : A1 northbound at a minor junction between A19 and B1337 near Stannington (north) : A1 northbound between B1340 and A1167 near Berwick-Upon-Tweed (south) : AREA SCHEMES\nReason : Roadworks scheme is planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 29 June 2023",
+    "point": {
+      "easting": 421307,
+      "northing": 580104,
+      "latitude": 55.1148736742612000,
+      "longitude": -1.6675097932753300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-04-25T15:20:53.627+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T12:52:29.110+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-04-25-201615",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A19 no",
+    "longDescription": "TYPE : GDP\nLocation : The A19 northbound between the A179  and the junction with the A182 Murton\nName : A19 northbound between A179 and A181 : A19 northbound between A182 near Easington and A182 near Murton : MAJOR SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:03 on 19 June 2023 to 06:00 on 1 July 2023",
+    "point": {
+      "easting": 441262,
+      "northing": 537991,
+      "latitude": 54.7352132974184000,
+      "longitude": -1.3607104339414800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-04-25T20:12:33.637+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T15:08:50.370+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-19T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-05-25-400562",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound at junction J65 \nName : A1(M) southbound within J65 : MAJOR SCHEMES\nReason : Roadworks scheme is planned\nStatus : Pending\nSchedule : From 20:00 on 3 July 2023 to 06:00 on 22 July 2023",
+    "point": {
+      "easting": 427749,
+      "northing": 556979,
+      "latitude": 54.9067598236125000,
+      "longitude": -1.5687525397726100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-05-25T12:13:03.440+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:17.190+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-09-501421",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M so",
+    "longDescription": "TYPE : GDP\nLocation : The A1M southbound between junctions J62  and J61 \nName : A1(M) southbound between J62 and J61 : AREA SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:09 on 16 June 2023 to 06:00 on 12 July 2023",
+    "point": {
+      "easting": 430143,
+      "northing": 542866,
+      "latitude": 54.7798053929724000,
+      "longitude": -1.5328811952703900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-09T20:10:56.163+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T17:04:06.893+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-16T20:00:00.000+0100",
+      "endTime": "2023-07-12T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-09-501424",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M no",
+    "longDescription": "TYPE : GDP\nLocation : The A1M northbound between junctions J61  and J62 \nName : A1(M) northbound within J61 : A1(M) northbound between J61 and J62 : AREA SCHEMES\nReason : Roadworks scheme\nStatus : Currently Active\nPeriod : from 20:09 on 16 June 2023 to 06:00 on 4 July 2023",
+    "point": {
+      "easting": 430994,
+      "northing": 537387,
+      "latitude": 54.7305214148704000,
+      "longitude": -1.5202305202485300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-09T20:10:56.350+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T15:24:50.570+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-16T20:00:00.000+0100",
+      "endTime": "2023-07-04T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-12-101642",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the junctions with the A1068  and the A697 \nStatus : Cleared\nTYPE : GDP\nLocation : The A1 southbound between the junctions with the A1068  and the A697 \nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 417400,
+      "northing": 606684,
+      "latitude": 55.3538744255252000,
+      "longitude": -1.7271233827850300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-12T20:12:06.627+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:14:06.490+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T06:13:46.507+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200321",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound entry slip from the A1086 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 441969,
+      "northing": 542821,
+      "latitude": 54.7785483521930000,
+      "longitude": -1.3490338677708000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:19.320+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:11.697+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200322",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A179  and the junction with the A181 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 441262,
+      "northing": 537991,
+      "latitude": 54.7352132974184000,
+      "longitude": -1.3607104339414800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:19.400+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:11.803+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200323",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 441412,
+      "northing": 540675,
+      "latitude": 54.7593104894786000,
+      "longitude": -1.3580018748796800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:19.963+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:11.913+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200324",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 441423,
+      "northing": 541214,
+      "latitude": 54.7641599198162000,
+      "longitude": -1.3577521286193200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:20.057+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:12.007+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200325",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A181  and the junction with the A182 Murton\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 22 June 2023 to 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 440967,
+      "northing": 538302,
+      "latitude": 54.7380228954663000,
+      "longitude": -1.3652500023713100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:20.133+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T04:19:33.320+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200326",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound exit slip to the A182 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 25 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 440910,
+      "northing": 543618,
+      "latitude": 54.7857972433476000,
+      "longitude": -1.3653921795215300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T09:01:20.227+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:12.150+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200521",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound between junctions J62  and J61 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430143,
+      "northing": 542866,
+      "latitude": 54.7798053929724000,
+      "longitude": -1.5328811952703900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T10:31:24.720+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:16:12.180+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200522",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound between junctions J62  and J61 \nLane Closures : Lane one will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 4 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 12 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430143,
+      "northing": 542866,
+      "latitude": 54.7798053929724000,
+      "longitude": -1.5328811952703900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T10:31:26.470+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-04T20:00:00.000+0100",
+      "endTime": "2023-07-12T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200523",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound between junctions J61  and J62 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430994,
+      "northing": 537387,
+      "latitude": 54.7305214148704000,
+      "longitude": -1.5202305202485300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T10:31:26.610+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:17:54.103+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200524",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound between junctions J61  and J62 \nLane Closures : Lane one will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 30 June 2023\nSchedule : From 20:00 on 3 July 2023 to 06:00 on 4 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430994,
+      "northing": 537387,
+      "latitude": 54.7305214148704000,
+      "longitude": -1.5202305202485300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T10:31:26.660+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-04T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200851",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound\nLane Closures : Lane one will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 424561,
+      "northing": 558599,
+      "latitude": 54.9214873284848000,
+      "longitude": -1.6183370570404600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:10.393+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200853",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound exit slip to the A167 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 426254,
+      "northing": 557765,
+      "latitude": 54.9139086246429000,
+      "longitude": -1.5919999810169600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:10.720+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:15.093+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-08T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200864",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the junctions with the A167 Washington Birtley and the A194M \nLane Closures : Lanes 2 and 3 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 427192,
+      "northing": 557299,
+      "latitude": 54.9096693477561000,
+      "longitude": -1.5774115981203100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:18.363+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:18.393+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200865",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound at the junction with the A167 Washington Birtley\nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 426254,
+      "northing": 557765,
+      "latitude": 54.9139086246429000,
+      "longitude": -1.5919999810169600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:18.580+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:18.503+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200866",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the junctions with the A692  and the A167 Washington Birtley\nLane Closures : Lanes 2 and 3 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 425757,
+      "northing": 558297,
+      "latitude": 54.9187079397429000,
+      "longitude": -1.5996992443445500
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:18.737+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:21.893+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200867",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the A692  and the junction with the A167 Washington Birtley\nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 423816,
+      "northing": 560468,
+      "latitude": 54.9383151623654000,
+      "longitude": -1.6298064000899000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:19.003+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:22.177+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200868",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound at the junction with the A692 \nLane Closures : Lanes 2 and 3 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 423689,
+      "northing": 560968,
+      "latitude": 54.9428146002041000,
+      "longitude": -1.6317463643441100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:19.347+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:22.287+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200869",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound at junction J65 \nLane Closures : Lanes 2 and 3 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 427749,
+      "northing": 556979,
+      "latitude": 54.9067598236125000,
+      "longitude": -1.5687525397726100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:19.520+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-20T15:54:22.503+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-03T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200871",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound entry slip from the A167 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 426687,
+      "northing": 557432,
+      "latitude": 54.9108890841549000,
+      "longitude": -1.5852706784000000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T19:52:55.560+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:19.577+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200872",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound entry slip at junction J65 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 428163,
+      "northing": 556461,
+      "latitude": 54.9020804748915000,
+      "longitude": -1.5623431211694500
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:20.350+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:19.167+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200873",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound exit slip to the A167 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 427126,
+      "northing": 557312,
+      "latitude": 54.9097893179297000,
+      "longitude": -1.5784414757805900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:20.507+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:19.637+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200874",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 425325,
+      "northing": 558529,
+      "latitude": 54.9208175881870000,
+      "longitude": -1.6064185063921200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:20.660+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:18.570+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200875",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the A194M  and the junction with the A692 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 428215,
+      "northing": 556592,
+      "latitude": 54.9032603476608000,
+      "longitude": -1.5615232768528900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:20.803+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-19T15:13:17.883+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200877",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the A167 Washington Birtley and the junction with the A692 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 424645,
+      "northing": 558574,
+      "latitude": 54.9212573755318000,
+      "longitude": -1.6170272091991300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:21.083+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200878",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 424896,
+      "northing": 558518,
+      "latitude": 54.9207374962531000,
+      "longitude": -1.6131176709297700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:13:21.303+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200912",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound exit slip to the A194 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433708,
+      "northing": 563993,
+      "latitude": 54.9694238322723000,
+      "longitude": -1.4749970610813600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:30:55.037+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:17:54.353+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-08T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-13-200913",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound exit slip to the A194 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433924,
+      "northing": 563054,
+      "latitude": 54.9609748825360000,
+      "longitude": -1.4717370758870500
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-13T15:30:55.113+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:17:54.197+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-08T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-14-301283",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A19 no",
+    "longDescription": "TYPE : GDP\nLocation : The A19 northbound between the A689  and the junction with the A179 \nReason : Horticultural works\nStatus : Cleared",
+    "point": {
+      "easting": 444663,
+      "northing": 526083,
+      "latitude": 54.6279167648934000,
+      "longitude": -1.3097118061285400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-14T20:11:20.643+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T03:10:50.763+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T03:10:49.807+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-14-301284",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A19 so",
+    "longDescription": "TYPE : GDP\nLocation : The A19 southbound between the A179  and the junction with the A689 \nReason : Horticultural works\nStatus : Cleared",
+    "point": {
+      "easting": 445255,
+      "northing": 530609,
+      "latitude": 54.6685321169359000,
+      "longitude": -1.2998448817233800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-14T20:11:20.520+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T03:10:50.920+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T03:10:49.973+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400825",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound exit slip to the A690 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 24 July 2023 to 29 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 31 July 2023 to 5 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 7 August 2023 to 12 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 14 August 2023 to 17 August 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 435817,
+      "northing": 552170,
+      "latitude": 54.8630369071903000,
+      "longitude": -1.4435260627622900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:38.353+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-24T20:00:00.000+0100",
+      "endTime": "2023-08-17T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400826",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A182 Murton and the junction with the A183 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 24 July 2023 to 29 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 31 July 2023 to 5 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 7 August 2023 to 12 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 14 August 2023 to 17 August 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 440370,
+      "northing": 548494,
+      "latitude": 54.8296619360029000,
+      "longitude": -1.3731032460368300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:38.477+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-24T20:00:00.000+0100",
+      "endTime": "2023-08-17T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400827",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound entry slip from the A1018 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 24 July 2023 to 29 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 31 July 2023 to 5 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 7 August 2023 to 12 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 14 August 2023 to 17 August 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 439982,
+      "northing": 550097,
+      "latitude": 54.8441001383752000,
+      "longitude": -1.3789231915221100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:38.227+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-24T20:00:00.000+0100",
+      "endTime": "2023-08-17T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400828",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A183  and the junction with the A182 Murton\nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 24 July 2023 to 29 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 31 July 2023 to 5 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 7 August 2023 to 12 August 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 14 August 2023 to 17 August 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 435350,
+      "northing": 552963,
+      "latitude": 54.8701959501485000,
+      "longitude": -1.4507055023628300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:39.087+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-24T20:00:00.000+0100",
+      "endTime": "2023-08-17T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400829",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound exit slip to the A1018 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 439906,
+      "northing": 550351,
+      "latitude": 54.8463798509792000,
+      "longitude": -1.3800731543165600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:38.807+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:13:07.710+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400830",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound entry slip from the A690 \nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 435715,
+      "northing": 552369,
+      "latitude": 54.8648366703405000,
+      "longitude": -1.4450859522544400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:38.697+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:13:07.507+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400831",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A183  and the junction with the A182 Murton\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : All lanes will be closed",
+    "point": {
+      "easting": 435350,
+      "northing": 552963,
+      "latitude": 54.8701959501485000,
+      "longitude": -1.4507055023628300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:39.460+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:13:07.600+0100",
+    "severityTypeRefDescription": "High",
+    "lanesAffectedTypeRefDescription": "T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-400832",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A182 Murton and the junction with the A183 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 26 June 2023 to 1 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 3 July 2023 to 8 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 10 July 2023 to 15 July 2023\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 17 July 2023 to 22 July 2023\nLanes Closed : There will be one of two lanes closed\nTYPE : GDP\nLocation : The A19 northbound between the A182 Murton and the junction with the A183 \nLane Closures : Lane two is closed\nReason : Roadworks\nStatus : Currently Active\nPeriod : expect disruption until 06:00 on 24 June 2023\nLanes Closed : There is one of two lanes closed",
+    "point": {
+      "easting": 440370,
+      "northing": 548494,
+      "latitude": 54.8296619360029000,
+      "longitude": -1.3731032460368300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T13:51:39.290+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T14:15:26.473+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Current",
+    "planned": {
+      "startTime": "2023-06-21T20:00:00.000+0100",
+      "endTime": "2023-07-22T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401413",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M no",
+    "longDescription": "TYPE : GDP\nLocation : The A1M northbound entry slip at junction J63 \nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 427973,
+      "northing": 552460,
+      "latitude": 54.8661446779478000,
+      "longitude": -1.5656910647282100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.397+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:46.693+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.327+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401414",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M no",
+    "longDescription": "TYPE : GDP\nLocation : The A1M northbound exit slip at junction J63 \nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 428233,
+      "northing": 552117,
+      "latitude": 54.8630451056715000,
+      "longitude": -1.5616814203973200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.303+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:46.960+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.443+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401415",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M so",
+    "longDescription": "TYPE : GDP\nLocation : The A1M southbound entry slip at junction J63 \nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 428138,
+      "northing": 552402,
+      "latitude": 54.8656147795138000,
+      "longitude": -1.5631313578843800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.613+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:47.100+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.547+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401416",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A1M so",
+    "longDescription": "TYPE : GDP\nLocation : The A1M southbound exit slip at junction J63 \nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 427846,
+      "northing": 553000,
+      "latitude": 54.8710040734792000,
+      "longitude": -1.5676210471277600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.507+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:47.240+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.680+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401417",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A167 r",
+    "longDescription": "TYPE : GDP\nLocation : The A167 roundabout\nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 427995,
+      "northing": 552478,
+      "latitude": 54.8663046641699000,
+      "longitude": -1.5653511141706400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.787+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:47.630+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.840+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-15-401418",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A167 r",
+    "longDescription": "TYPE : GDP\nLocation : The A167 roundabout\nReason : Emergency roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 427973,
+      "northing": 552460,
+      "latitude": 54.8661446779478000,
+      "longitude": -1.5656910647282100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-15T20:10:52.710+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T00:30:47.570+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:00:00.000+0100",
+      "endTime": "2023-06-23T00:30:43.953+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-500522",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the A19  and the junction with the A197 \nLane Closures : Lane one will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 28 June 2023 to 06:00 on 29 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 421307,
+      "northing": 580104,
+      "latitude": 55.1148736742612000,
+      "longitude": -1.6675097932753300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T11:51:03.857+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T12:52:29.343+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-28T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501579",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the A697  and the junction with the A1167 south of Berwick-Upon-Tweed\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 417594,
+      "northing": 608742,
+      "latitude": 55.3723522804385000,
+      "longitude": -1.7239346430719900
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:04.970+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501580",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the A1167 south of Berwick-Upon-Tweed and the junction with the A697 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 28 June 2023 to 06:00 on 29 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 420288,
+      "northing": 612575,
+      "latitude": 55.4066888515180000,
+      "longitude": -1.6811516232799300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:05.327+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-28T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501600",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A179  and the junction with the A689 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 27 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444205,
+      "northing": 534270,
+      "latitude": 54.7015179755187000,
+      "longitude": -1.3155744567268300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:19.517+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-06-27T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501601",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A179  and the junction with the A689 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444205,
+      "northing": 534270,
+      "latitude": 54.7015179755187000,
+      "longitude": -1.3155744567268300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:19.733+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501602",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A689  and the junction with the A179 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 445244,
+      "northing": 530607,
+      "latitude": 54.6685121166801000,
+      "longitude": -1.3000148598614600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:19.953+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-16-501603",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A689  and the junction with the A179 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 27 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 445244,
+      "northing": 530607,
+      "latitude": 54.6685121166801000,
+      "longitude": -1.3000148598614600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-16T20:11:20.077+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-06-27T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-19-100928",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound entry slip from the A1086 \nLane Closures : Lane two will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 08:00 on 10 July 2023 to 15:00 on 15 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 441969,
+      "northing": 542821,
+      "latitude": 54.7785483521930000,
+      "longitude": -1.3490338677708000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-19T14:31:53.423+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-07-10T08:00:00.000+0100",
+      "endTime": "2023-07-15T15:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-19-101464",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound between junctions J63  and J62 \nLane Closures : Lane two will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 27 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 427908,
+      "northing": 552740,
+      "latitude": 54.8686643646843000,
+      "longitude": -1.5666810569327700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-19T20:12:38.500+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-06-27T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-19-101465",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound between junctions J62  and J63 \nLane Closures : Lane two will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 26 June 2023 to 06:00 on 27 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430677,
+      "northing": 548724,
+      "latitude": 54.8324093044552000,
+      "longitude": -1.5239646955760000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-19T20:12:38.533+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-26T20:00:00.000+0100",
+      "endTime": "2023-06-27T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201514",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A179  and the junction with the A181 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 27 June 2023 to 06:00 on 28 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444188,
+      "northing": 534276,
+      "latitude": 54.7015779644230000,
+      "longitude": -1.3158344274200300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:00.610+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-27T20:00:00.000+0100",
+      "endTime": "2023-06-28T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201515",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A179  and the junction with the A181 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 28 June 2023 to 06:00 on 29 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444188,
+      "northing": 534276,
+      "latitude": 54.7015779644230000,
+      "longitude": -1.3158344274200300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:00.640+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-28T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201516",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A181  and the junction with the A179 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 28 June 2023 to 06:00 on 29 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444032,
+      "northing": 534978,
+      "latitude": 54.7078971816447000,
+      "longitude": -1.3181544314939200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:00.687+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-28T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201517",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A181  and the junction with the A179 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 27 June 2023 to 06:00 on 28 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 444032,
+      "northing": 534978,
+      "latitude": 54.7078971816447000,
+      "longitude": -1.3181544314939200
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:00.717+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-27T20:00:00.000+0100",
+      "endTime": "2023-06-28T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201532",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound exit slip at junction J62 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 30 June 2023 to 02:00 on 1 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430298,
+      "northing": 544069,
+      "latitude": 54.7906041538353000,
+      "longitude": -1.5303519994194300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.157+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T20:00:00.000+0100",
+      "endTime": "2023-07-01T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201533",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound exit slip at junction J62 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 30 June 2023 to 02:00 on 1 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430561,
+      "northing": 544797,
+      "latitude": 54.7971334447158000,
+      "longitude": -1.5261828125359600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.330+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T20:00:00.000+0100",
+      "endTime": "2023-07-01T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201535",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A177 r",
+    "longDescription": "TYPE : AWP\nLocation : The A177 roundabout\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of three lanes closed",
+    "point": {
+      "easting": 431076,
+      "northing": 537371,
+      "latitude": 54.7303714519058000,
+      "longitude": -1.5189606703073700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.453+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201536",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A177 r",
+    "longDescription": "TYPE : AWP\nLocation : The A177 roundabout\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430879,
+      "northing": 537419,
+      "latitude": 54.7308113533806000,
+      "longitude": -1.5220203123094600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.703+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201537",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A177 r",
+    "longDescription": "TYPE : AWP\nLocation : The A177 roundabout\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of three lanes closed",
+    "point": {
+      "easting": 430873,
+      "northing": 537383,
+      "latitude": 54.7304913898558000,
+      "longitude": -1.5221102866776100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.813+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201538",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A177 r",
+    "longDescription": "TYPE : AWP\nLocation : The A177 roundabout\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430883,
+      "northing": 537346,
+      "latitude": 54.7301514323422000,
+      "longitude": -1.5219602897827300
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:21.877+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201539",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A177 r",
+    "longDescription": "TYPE : AWP\nLocation : The A177 roundabout\nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of three lanes closed",
+    "point": {
+      "easting": 431051,
+      "northing": 537306,
+      "latitude": 54.7297815155995000,
+      "longitude": -1.5193605941350100
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:22.020+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201540",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound exit slip at junction J61 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 431154,
+      "northing": 537723,
+      "latitude": 54.7335310972054000,
+      "longitude": -1.5177109680922700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:22.237+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201541",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound exit slip at junction J61 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 430878,
+      "northing": 536912,
+      "latitude": 54.7262518915668000,
+      "longitude": -1.5220900968470000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:22.253+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201542",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M so",
+    "longDescription": "TYPE : AWP\nLocation : The A1M southbound exit slip at junction J60 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 431810,
+      "northing": 528925,
+      "latitude": 54.6544205920606000,
+      "longitude": -1.5084785240274500
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:22.330+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-20-201543",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound exit slip at junction J60 \nLane Closures : Lane one will be closed\nReason : Emergency roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 02:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 431398,
+      "northing": 528382,
+      "latitude": 54.6495710673959000,
+      "longitude": -1.5149275098344400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-20T20:11:22.440+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T02:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-21-301142",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1M no",
+    "longDescription": "TYPE : AWP\nLocation : The A1M northbound entry slip at junction J60 \nLane Closures : Lane two will be closed\nReason : Emergency barrier repairs are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 06:00 on 24 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 431568,
+      "northing": 528762,
+      "latitude": 54.6529707061940000,
+      "longitude": -1.5122479937638600
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-21T18:14:13.547+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-23T06:04:58.283+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-24T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-21-301442",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the junctions with the A184  and the A694 \nLane Closures : Lanes 2 and 3 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 06:00 on 30 June 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 422216,
+      "northing": 561962,
+      "latitude": 54.9518131882639000,
+      "longitude": -1.6546639268111000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-21T20:12:23.820+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-21-301443",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 nor",
+    "longDescription": "TYPE : AWP\nLocation : The A1 northbound between the junctions with the A184  and the A694 \nLane Closures : Lanes 1 and 2 will be closed\nReason : Roadworks are planned\nStatus : Pending\nSchedule : From 20:00 on 28 June 2023 to 06:00 on 29 June 2023\nLanes Closed : There will be two of three lanes closed",
+    "point": {
+      "easting": 422216,
+      "northing": 561962,
+      "latitude": 54.9518131882639000,
+      "longitude": -1.6546639268111000
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-21T20:12:23.900+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-28T20:00:00.000+0100",
+      "endTime": "2023-06-29T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-400369",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A182 Murton and the junction with the A181 \nLane Closures : Lane two will be closed\nReason : Barrier repairs are planned\nStatus : Pending\nSchedule : From 20:00 on 23 June 2023 to 05:00 on 24 June 2023\nSchedule : Expect disruption everyday between 20:00 and 05:00 from 25 June 2023 to 27 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 440922,
+      "northing": 543627,
+      "latitude": 54.7858772368052000,
+      "longitude": -1.3652022066849800
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T09:50:57.080+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": "2023-06-22T19:51:24.090+0100",
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-23T20:00:00.000+0100",
+      "endTime": "2023-06-27T05:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-401448",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A185  and the junction with the A184 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 06:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433388,
+      "northing": 564839,
+      "latitude": 54.9770428551827000,
+      "longitude": -1.4798968041892400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T20:11:47.473+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-401449",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 so",
+    "longDescription": "TYPE : AWP\nLocation : The A19 southbound between the A185  and the junction with the A184 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 30 June 2023 to 06:00 on 1 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433388,
+      "northing": 564839,
+      "latitude": 54.9770428551827000,
+      "longitude": -1.4798968041892400
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T20:11:47.507+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-401450",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A184  and the junction with the A185 \nLane Closures : Lane one will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 30 June 2023 to 06:00 on 1 July 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433793,
+      "northing": 561843,
+      "latitude": 54.9500961371437000,
+      "longitude": -1.4739263018857700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T20:11:47.567+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-30T20:00:00.000+0100",
+      "endTime": "2023-07-01T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-401451",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "VERGE ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A19 no",
+    "longDescription": "TYPE : AWP\nLocation : The A19 northbound between the A184  and the junction with the A185 \nLane Closures : Lane two will be closed\nReason : Horticultural works are planned\nStatus : Pending\nSchedule : From 20:00 on 29 June 2023 to 06:00 on 30 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 433793,
+      "northing": 561843,
+      "latitude": 54.9500961371437000,
+      "longitude": -1.4739263018857700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T20:11:47.427+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "I T",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-29T20:00:00.000+0100",
+      "endTime": "2023-06-30T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-22-401456",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : GDP\nLocation : The A19 so",
+    "longDescription": "TYPE : GDP\nLocation : The A19 southbound between the junctions with the A690  and the A1018 \nReason : Roadworks\nStatus : Cleared",
+    "point": {
+      "easting": 435837,
+      "northing": 552170,
+      "latitude": 54.8630369119320000,
+      "longitude": -1.4432161011651700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-22T20:16:26.467+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": "2023-06-23T04:11:10.383+0100",
+    "modifiedDate": "2023-06-23T04:11:11.020+0100",
+    "severityTypeRefDescription": "Low",
+    "lanesAffectedTypeRefDescription": " ",
+    "diversionInForce": null,
+    "phaseTypeRef": "Past",
+    "planned": {
+      "startTime": "2023-06-22T20:15:42.070+0100",
+      "endTime": "2023-06-23T04:11:10.383+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  },
+  {
+    "systemCodeNumber": "RW-23-06-23-500131",
+    "type": "Roadworks",
+    "roadworkTypeDescription": "GENERAL ROADWORKS",
+    "shortDescription": "TYPE : AWP\nLocation : The A1 sou",
+    "longDescription": "TYPE : AWP\nLocation : The A1 southbound between the A197  and the junction with the A19 \nLane Closures : Lane one will be closed\nReason : Emergency barrier repairs are planned\nStatus : Pending\nSchedule : Expect disruption everyday between 20:00 and 06:00 from 24 June 2023 to 26 June 2023\nLanes Closed : There will be one of two lanes closed",
+    "point": {
+      "easting": 420092,
+      "northing": 582872,
+      "latitude": 55.1398004346304000,
+      "longitude": -1.6863585868057700
+    },
+    "locationDescription": null,
+    "creationDate": "2023-06-23T08:21:09.527+0100",
+    "dataSourceTypeRef": "NTIS",
+    "confirmedDate": null,
+    "modifiedDate": null,
+    "severityTypeRefDescription": "Medium",
+    "lanesAffectedTypeRefDescription": "T I",
+    "diversionInForce": null,
+    "phaseTypeRef": "Future",
+    "planned": {
+      "startTime": "2023-06-24T20:00:00.000+0100",
+      "endTime": "2023-06-26T06:00:00.000+0100"
+    },
+    "actual": {
+      "startTime": null,
+      "endTime": null
+    },
+    "contractor": null,
+    "trafficSignals": null,
+    "contraflow": null
+  }
+]

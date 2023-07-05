@@ -1,25 +1,20 @@
-import {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 
 import Card from "../../ui/Card.jsx";
 import styles from './DetailsPanel.module.css';
 import {utcToLocal, hasOccurred} from "../../../util/dateHelpers.js";
 import Comments from "./Comments.jsx";
+import CustomEventForm from "./CustomEventForm.jsx";
 
-const COORDINATE_PRECISION = 4;
+export const COORDINATE_PRECISION = 4;
 
 
 function DetailsPanel(props) {
-    const [eventSelected, setEventSelected] = useState(false);
 
-    const eventDetails = useSelector((state) => state.details.value);
+    const {markerSelected, newMarker, data: eventDetails} = useSelector((state) => state.details.value);
     console.log(eventDetails);
-
-    useEffect(() => {
-        if (eventDetails.systemCodeNumber) {
-            setEventSelected(true);
-        }
-    }, [eventDetails]);
+    console.log("Selected: " + markerSelected);
+    console.log("New Marker: " + newMarker);
 
     // Default display if no events are selected by the user
     let  detailsDisplay = (
@@ -28,7 +23,7 @@ function DetailsPanel(props) {
         </div>
     );
 
-    if (eventSelected) {
+    if (markerSelected) {
         const lat = eventDetails.incidentPosition[0].toFixed(COORDINATE_PRECISION);
         const long = eventDetails.incidentPosition[1].toFixed(COORDINATE_PRECISION);
         const startTime = eventDetails.incidentTime;
@@ -58,7 +53,13 @@ function DetailsPanel(props) {
                 <Comments />
             </div>
         );
+    } else if (newMarker) {
+        detailsDisplay = (
+            <CustomEventForm handleShowModal={props.handleShowModal} position={eventDetails} />
+        );
     }
+
+
 
     return (
         <Card className={`${props.className} ${eventDetails ? styles['details__card--selection'] : ''}`}>

@@ -1,0 +1,2468 @@
+[
+  {
+    "systemCodeNumber": "CM_A69A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/CM_A69A1.jpg",
+        "lastUpdated": "2023-06-23T17:17:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A1114A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A1114A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:05.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A1114B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A1114B1.jpg",
+        "lastUpdated": "2023-06-23T17:15:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167F1.jpg",
+        "lastUpdated": "2023-06-23T17:21:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167G1.jpg",
+        "lastUpdated": "2023-06-23T17:20:46.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167H1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167H1.jpg",
+        "lastUpdated": "2023-06-23T17:17:01.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167I1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167I1.jpg",
+        "lastUpdated": "2023-06-23T17:19:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167J1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167J1.jpg",
+        "lastUpdated": "2023-06-23T17:20:34.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167K1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167K1.jpg",
+        "lastUpdated": "2023-06-23T17:18:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167L1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167L1.jpg",
+        "lastUpdated": "2023-06-23T17:17:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167M1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167M1.jpg",
+        "lastUpdated": "2023-06-23T17:18:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167N1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167N1.jpg",
+        "lastUpdated": "2023-06-23T17:20:52.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167O1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167O1.jpg",
+        "lastUpdated": "2023-06-23T17:17:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A167P1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A167P1.jpg",
+        "lastUpdated": "2023-06-23T17:16:43.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184A2.jpg",
+        "lastUpdated": "2023-06-23T17:18:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184B1.jpg",
+        "lastUpdated": "2023-06-23T17:21:35.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184C1.jpg",
+        "lastUpdated": "2023-06-23T17:20:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:26.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184E1.jpg",
+        "lastUpdated": "2023-06-23T17:20:26.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A184F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A184F1.jpg",
+        "lastUpdated": "2023-06-23T17:18:02.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A195B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A195B1.jpg",
+        "lastUpdated": "2023-06-23T17:17:41.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A692A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A692A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:10.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A692B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A692B1.jpg",
+        "lastUpdated": "2023-06-23T17:22:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A694A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A694A1.jpg",
+        "lastUpdated": "2023-06-23T17:16:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A695A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A695A1.jpg",
+        "lastUpdated": "2020-10-27T12:55:33.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A695B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A695B1.jpg",
+        "lastUpdated": "2023-06-23T17:22:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A695C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A695C1.jpg",
+        "lastUpdated": "2023-06-23T17:22:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_A695D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_A695D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:02.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1288A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1288A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:18.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1296A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1296A1.jpg",
+        "lastUpdated": "2023-06-23T17:13:06.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1296B0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1296B0.jpg",
+        "lastUpdated": "2023-06-23T17:19:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1296B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1296B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1296C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1296C1.jpg",
+        "lastUpdated": "2023-06-23T17:18:50.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1296D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1296D1.jpg",
+        "lastUpdated": "2023-06-23T17:18:42.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426A1.jpg",
+        "lastUpdated": "2023-06-23T17:17:13.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426B1.jpg",
+        "lastUpdated": "2023-06-23T17:17:10.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426C1.jpg",
+        "lastUpdated": "2023-06-23T17:20:52.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426D1.jpg",
+        "lastUpdated": "2023-06-23T17:17:31.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426E1.jpg",
+        "lastUpdated": "2023-06-23T17:22:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B1426F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B1426F1.jpg",
+        "lastUpdated": "2023-06-23T17:19:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_B6317A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_B6317A1.jpg",
+        "lastUpdated": "2023-06-23T17:18:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_CBSA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_CBSA1.jpg",
+        "lastUpdated": "2023-06-23T17:16:31.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_DNRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_DNRA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "GH_KSWA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/GH_KSWA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:37.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MC4092",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MC4092.jpg",
+        "lastUpdated": "2023-06-23T17:17:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MCA1Onslip",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MCA1Onslip.jpg",
+        "lastUpdated": "2023-06-23T17:20:14.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MCJ05111",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MCJ05111.jpg",
+        "lastUpdated": "2023-06-23T17:20:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MCJ05141",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MCJ05141.jpg",
+        "lastUpdated": "2023-06-23T17:18:49.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MCJ05161",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MCJ05161.jpg",
+        "lastUpdated": "2023-06-23T17:20:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "MCJ05171",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/MCJ05171.jpg",
+        "lastUpdated": "2023-06-23T17:21:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00002",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00002.jpg",
+        "lastUpdated": "2023-06-23T17:20:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00003",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00003.jpg",
+        "lastUpdated": "2023-06-23T17:20:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00007",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00007.jpg",
+        "lastUpdated": "2023-06-23T17:20:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00009",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00009.jpg",
+        "lastUpdated": "2023-06-23T17:20:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00010",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00010.jpg",
+        "lastUpdated": "2023-06-23T17:20:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00011",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00011.jpg",
+        "lastUpdated": "2023-06-23T17:20:37.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00012",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00012.jpg",
+        "lastUpdated": "2023-06-23T17:22:43.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00013",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00013.jpg",
+        "lastUpdated": "2023-06-23T17:20:36.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00014",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00014.jpg",
+        "lastUpdated": "2023-06-23T17:20:36.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00018",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00018.jpg",
+        "lastUpdated": "2023-06-23T17:20:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00019",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00019.jpg",
+        "lastUpdated": "2023-06-23T17:20:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00020",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00020.jpg",
+        "lastUpdated": "2023-06-23T17:18:29.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00021",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00021.jpg",
+        "lastUpdated": "2023-06-23T17:20:37.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00022",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00022.jpg",
+        "lastUpdated": "2023-06-23T17:20:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00023",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00023.jpg",
+        "lastUpdated": "2018-07-09T15:31:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "METCCTV00024",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/METCCTV00024.jpg",
+        "lastUpdated": "2018-07-09T15:31:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A1061A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A1061A1.jpg",
+        "lastUpdated": "2023-06-23T17:18:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A1061B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A1061B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:46.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A1068A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A1068A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:51.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A1068B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A1068B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:14.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A1167A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A1167A1.jpg",
+        "lastUpdated": "2023-06-23T17:16:54.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A189A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A189A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:10.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A189A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A189A2.jpg",
+        "lastUpdated": "2023-06-23T17:19:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A192A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A192A1.jpg",
+        "lastUpdated": "2023-06-23T17:22:29.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A193A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A193A2.jpg",
+        "lastUpdated": "2023-06-23T17:17:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A193A3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A193A3.jpg",
+        "lastUpdated": "2023-06-23T17:19:05.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A193B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A193B1.jpg",
+        "lastUpdated": "2023-06-23T17:21:53.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_A6079A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_A6079A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:24.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NB_B1329A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NB_B1329A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:18.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A1056B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A1056B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:46.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A1058A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A1058A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A1058B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A1058B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:24.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A1058C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A1058C1.jpg",
+        "lastUpdated": "2023-06-23T17:15:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A1058D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A1058D1.jpg",
+        "lastUpdated": "2023-06-23T17:11:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167A1.jpg",
+        "lastUpdated": "2023-06-23T17:17:31.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167B1.jpg",
+        "lastUpdated": "2023-06-23T17:19:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167C1.jpg",
+        "lastUpdated": "2023-06-23T17:19:46.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167D1.jpg",
+        "lastUpdated": "2023-06-23T17:17:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167D2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167D2.jpg",
+        "lastUpdated": "2023-06-23T17:21:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A167E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A167E1.jpg",
+        "lastUpdated": "2023-06-23T17:21:26.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A186A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A186A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:43.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A186B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A186B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:48.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A186B2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A186B2.jpg",
+        "lastUpdated": "2023-06-23T17:16:10.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A186B3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A186B3.jpg",
+        "lastUpdated": "2023-06-23T17:17:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A187A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A187A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:03.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A188A0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A188A0.jpg",
+        "lastUpdated": "2023-06-23T17:17:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A188A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A188A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:32.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A188B0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A188B0.jpg",
+        "lastUpdated": "2023-06-23T17:18:43.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A188B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A188B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A188C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A188C1.jpg",
+        "lastUpdated": "2023-06-23T17:20:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A189B3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A189B3.jpg",
+        "lastUpdated": "2023-06-23T17:16:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A189C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A189C1.jpg",
+        "lastUpdated": "2023-06-23T17:17:36.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A189D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A189D1.jpg",
+        "lastUpdated": "2023-06-23T17:16:26.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A191A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A191A2.jpg",
+        "lastUpdated": "2023-06-23T17:19:46.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A193J1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A193J1.jpg",
+        "lastUpdated": "2023-06-23T17:18:02.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A193L1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A193L1.jpg",
+        "lastUpdated": "2023-06-23T17:20:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A695E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A695E1.jpg",
+        "lastUpdated": "2023-06-23T17:17:27.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_A695F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_A695F1.jpg",
+        "lastUpdated": "2023-06-23T17:17:33.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1307A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1307A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:11.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1307B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1307B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:49.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1312A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1312A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:50.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318A0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318A0.jpg",
+        "lastUpdated": "2023-06-23T17:18:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318A2.jpg",
+        "lastUpdated": "2023-06-23T17:19:52.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:50.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318B2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318B2.jpg",
+        "lastUpdated": "2023-06-23T17:20:32.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318B3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318B3.jpg",
+        "lastUpdated": "2023-06-23T17:19:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318C1.jpg",
+        "lastUpdated": "2023-06-23T17:19:27.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B1318D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B1318D1.jpg",
+        "lastUpdated": "2023-06-23T17:20:34.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B6324A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B6324A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:12.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B6324A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B6324A2.jpg",
+        "lastUpdated": "2023-06-23T17:19:04.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B6324B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B6324B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:22.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_B6918A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_B6918A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:11.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_CHLA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_CHLA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:17.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_FMRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_FMRA1.jpg",
+        "lastUpdated": "2023-06-23T17:18:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_JDSA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_JDSA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:27.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_KPRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_KPRA1.jpg",
+        "lastUpdated": "2023-06-23T17:17:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PGSA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PGSA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:09.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PS_001_c1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PS_001_c1.jpg",
+        "lastUpdated": "2023-06-20T00:06:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PS_002_c1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PS_002_c1.jpg",
+        "lastUpdated": "2023-06-23T17:19:35.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PS_003_c1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PS_003_c1.jpg",
+        "lastUpdated": "2023-06-19T20:02:29.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PS_004",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PS_004.jpg",
+        "lastUpdated": "2023-06-23T17:14:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_PS_005",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_PS_005.jpg",
+        "lastUpdated": "2023-06-23T17:19:42.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NC_WNGA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NC_WNGA1.jpg",
+        "lastUpdated": "2023-06-23T17:17:03.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A1056A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A1056A1.jpg",
+        "lastUpdated": "2023-06-23T17:18:32.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A1058E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A1058E1.jpg",
+        "lastUpdated": "2023-06-23T17:20:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A1058E2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A1058E2.jpg",
+        "lastUpdated": "2023-06-23T17:16:52.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A1058F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A1058F1.jpg",
+        "lastUpdated": "2023-06-23T17:20:49.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A188A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A188A2.jpg",
+        "lastUpdated": "2023-06-23T17:18:19.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A188A3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A188A3.jpg",
+        "lastUpdated": "2023-06-23T17:22:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A189B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A189B1.jpg",
+        "lastUpdated": "2023-06-23T17:17:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A189B2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A189B2.jpg",
+        "lastUpdated": "2023-06-23T17:18:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191B1.jpg",
+        "lastUpdated": "2023-06-23T17:19:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191C1.jpg",
+        "lastUpdated": "2023-06-23T17:21:59.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191D1.jpg",
+        "lastUpdated": "2023-06-23T17:18:59.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191D2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191D2.jpg",
+        "lastUpdated": "2023-06-23T17:21:49.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191E1.jpg",
+        "lastUpdated": "2023-06-23T17:20:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191E2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191E2.jpg",
+        "lastUpdated": "2023-06-23T17:15:50.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A191G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A191G1.jpg",
+        "lastUpdated": "2023-06-23T17:18:22.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193C1.jpg",
+        "lastUpdated": "2023-06-23T17:19:27.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:44.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193E1.jpg",
+        "lastUpdated": "2023-06-23T17:18:42.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193F1.jpg",
+        "lastUpdated": "2023-06-23T17:19:22.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193F2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193F2.jpg",
+        "lastUpdated": "2023-06-23T17:21:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193G1.jpg",
+        "lastUpdated": "2023-06-23T17:19:26.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193H1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193H1.jpg",
+        "lastUpdated": "2023-06-23T17:20:06.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_A193I1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_A193I1.jpg",
+        "lastUpdated": "2023-06-23T17:19:13.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_NORA0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_NORA0.jpg",
+        "lastUpdated": "2023-06-23T17:18:11.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_NORB1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_NORB1.jpg",
+        "lastUpdated": "2023-06-23T17:18:23.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "NT_SVLA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/NT_SVLA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "PS190",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/PS190.jpg",
+        "lastUpdated": "2020-10-27T12:55:33.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "PS191",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/PS191.jpg",
+        "lastUpdated": "2023-06-23T17:20:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "PS192",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/PS192.jpg",
+        "lastUpdated": "2023-06-23T17:05:33.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "PS303",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/PS303.jpg",
+        "lastUpdated": "2023-06-23T17:20:29.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1018C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1018C1.jpg",
+        "lastUpdated": "2023-06-23T17:18:35.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1018D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1018D1.jpg",
+        "lastUpdated": "2023-06-23T17:20:18.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1018E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1018E1.jpg",
+        "lastUpdated": "2023-06-23T17:20:05.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1018F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1018F1.jpg",
+        "lastUpdated": "2023-06-23T17:19:02.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231C1.jpg",
+        "lastUpdated": "2023-06-23T17:20:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:14.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231D2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231D2.jpg",
+        "lastUpdated": "2023-06-23T17:21:36.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231D3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231D3.jpg",
+        "lastUpdated": "2023-06-23T17:19:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231E1.jpg",
+        "lastUpdated": "2023-06-23T17:21:44.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231E2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231E2.jpg",
+        "lastUpdated": "2023-06-23T17:21:16.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1231G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1231G1.jpg",
+        "lastUpdated": "2023-06-23T17:20:05.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1290A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1290A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:12.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1290B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1290B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:23.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1290E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1290E1.jpg",
+        "lastUpdated": "2023-06-23T17:18:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A1290F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A1290F1.jpg",
+        "lastUpdated": "2023-06-23T17:19:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A182B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A182B1.jpg",
+        "lastUpdated": "2020-10-27T12:55:33.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183A2.jpg",
+        "lastUpdated": "2023-06-23T17:20:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183A3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183A3.jpg",
+        "lastUpdated": "2023-06-23T17:01:35.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183B1.jpg",
+        "lastUpdated": "2023-06-23T17:21:21.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183C1.jpg",
+        "lastUpdated": "2023-06-23T17:18:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183E1.jpg",
+        "lastUpdated": "2023-06-23T17:19:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183F1.jpg",
+        "lastUpdated": "2023-06-23T17:20:19.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183G1.jpg",
+        "lastUpdated": "2023-06-23T17:18:09.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183H1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183H1.jpg",
+        "lastUpdated": "2023-06-23T17:19:24.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183I1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183I1.jpg",
+        "lastUpdated": "2023-06-23T17:17:59.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183J1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183J1.jpg",
+        "lastUpdated": "2023-06-23T17:21:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183K1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183K1.jpg",
+        "lastUpdated": "2023-06-23T17:17:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183K2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183K2.jpg",
+        "lastUpdated": "2023-06-23T17:19:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A183L1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A183L1.jpg",
+        "lastUpdated": "2023-06-23T17:16:59.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A195A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A195A1.jpg",
+        "lastUpdated": "2023-06-23T17:16:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:30.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690B1.jpg",
+        "lastUpdated": "2023-06-23T17:19:53.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690C1.jpg",
+        "lastUpdated": "2020-10-27T12:55:33.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690E1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690E1.jpg",
+        "lastUpdated": "2023-06-23T17:17:08.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690E2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690E2.jpg",
+        "lastUpdated": "2023-06-23T17:20:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690F1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690F1.jpg",
+        "lastUpdated": "2023-06-23T17:17:35.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_A690G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_A690G1.jpg",
+        "lastUpdated": "2023-06-23T17:17:19.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_B1284A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_B1284A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:29.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_B1405A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_B1405A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:27.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_B1522A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_B1522A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:03.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_B1522B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_B1522B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_B1522C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_B1522C1.jpg",
+        "lastUpdated": "2023-06-23T17:18:24.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_BRRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_BRRA1.jpg",
+        "lastUpdated": "2023-06-23T17:20:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_BRRB1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_BRRB1.jpg",
+        "lastUpdated": "2023-06-23T17:21:42.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_HLRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_HLRA1.jpg",
+        "lastUpdated": "2023-06-23T17:16:40.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "SL_HLRB1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/SL_HLRB1.jpg",
+        "lastUpdated": "2023-06-23T17:20:02.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1018A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1018A1.jpg",
+        "lastUpdated": "2023-06-23T17:21:11.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1018B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1018B1.jpg",
+        "lastUpdated": "2023-06-23T17:20:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1018B2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1018B2.jpg",
+        "lastUpdated": "2023-06-23T17:16:44.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1018B3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1018B3.jpg",
+        "lastUpdated": "2023-06-23T17:18:13.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1290C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1290C1.jpg",
+        "lastUpdated": "2023-06-23T17:20:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1290D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1290D1.jpg",
+        "lastUpdated": "2023-06-23T17:20:48.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300A0",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300A0.jpg",
+        "lastUpdated": "2023-06-23T17:20:14.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300A1.jpg",
+        "lastUpdated": "2023-06-23T17:21:03.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300A2.jpg",
+        "lastUpdated": "2023-06-23T17:19:24.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300A3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300A3.jpg",
+        "lastUpdated": "2023-06-23T17:18:25.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300B1.jpg",
+        "lastUpdated": "2023-06-23T17:19:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A1300C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A1300C1.jpg",
+        "lastUpdated": "2023-06-23T17:19:20.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A183A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A183A1.jpg",
+        "lastUpdated": "2023-06-23T17:17:30.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A183A4",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A183A4.jpg",
+        "lastUpdated": "2023-06-23T17:03:13.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A184G1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A184G1.jpg",
+        "lastUpdated": "2023-06-23T17:20:54.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A184H1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A184H1.jpg",
+        "lastUpdated": "2023-06-23T17:20:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185A1.jpg",
+        "lastUpdated": "2023-06-23T17:18:55.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185A2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185A2.jpg",
+        "lastUpdated": "2023-06-23T17:20:14.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185A3",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185A3.jpg",
+        "lastUpdated": "2023-06-23T17:16:19.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185A4",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185A4.jpg",
+        "lastUpdated": "2023-06-23T17:16:37.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185B1.jpg",
+        "lastUpdated": "2023-06-06T15:11:41.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A185C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A185C1.jpg",
+        "lastUpdated": "2023-06-23T17:16:47.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194A1.jpg",
+        "lastUpdated": "2023-06-23T17:18:16.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194A5",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194A5.jpg",
+        "lastUpdated": "2023-06-23T17:18:11.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194B1.jpg",
+        "lastUpdated": "2023-06-23T17:18:23.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194B2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194B2.jpg",
+        "lastUpdated": "2023-06-23T17:21:51.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194B4",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194B4.jpg",
+        "lastUpdated": "2023-06-23T17:19:30.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194C1.jpg",
+        "lastUpdated": "2023-06-23T17:21:49.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194C2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194C2.jpg",
+        "lastUpdated": "2023-06-23T17:21:54.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_A194D1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_A194D1.jpg",
+        "lastUpdated": "2023-06-23T17:19:05.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1297A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1297A1.jpg",
+        "lastUpdated": "2023-06-23T17:19:57.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1298A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1298A1.jpg",
+        "lastUpdated": "2023-06-23T17:21:28.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1298B1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1298B1.jpg",
+        "lastUpdated": "2023-06-23T17:16:34.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1298C1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1298C1.jpg",
+        "lastUpdated": "2023-06-23T17:19:56.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1298C2",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1298C2.jpg",
+        "lastUpdated": "2023-06-23T17:17:48.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1301A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1301A1.jpg",
+        "lastUpdated": "2023-06-23T17:21:34.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_B1344A1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_B1344A1.jpg",
+        "lastUpdated": "2023-06-23T17:20:59.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_FOWA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_FOWA1.jpg",
+        "lastUpdated": "2023-06-23T17:19:18.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ST_SLRA1",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/ST_SLRA1.jpg",
+        "lastUpdated": "2023-06-23T17:18:07.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_BKTST01",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_BKTST01.jpg",
+        "lastUpdated": "2023-06-23T17:20:53.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_BKTST02",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_BKTST02.jpg",
+        "lastUpdated": "2023-06-23T17:20:58.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_GRYST01",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_GRYST01.jpg",
+        "lastUpdated": "2023-06-23T17:20:39.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_KWALK01",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_KWALK01.jpg",
+        "lastUpdated": "2023-06-23T17:20:42.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_NBSTW01",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_NBSTW01.jpg",
+        "lastUpdated": "2023-06-23T17:21:48.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "UO_NGATE02",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/UO_NGATE02.jpg",
+        "lastUpdated": "2023-06-23T17:17:38.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV12",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV12.jpg",
+        "lastUpdated": "2023-06-23T17:21:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV13",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV13.jpg",
+        "lastUpdated": "2023-06-23T17:22:16.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV2359",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV2359.jpg",
+        "lastUpdated": "2023-06-23T17:21:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV2360",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV2360.jpg",
+        "lastUpdated": "2023-06-23T17:22:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV2394",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV2394.jpg",
+        "lastUpdated": "2023-06-23T17:21:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV30",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV30.jpg",
+        "lastUpdated": "2023-06-23T17:21:45.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV3382",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV3382.jpg",
+        "lastUpdated": "2023-06-23T17:22:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV49",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV49.jpg",
+        "lastUpdated": "2023-06-23T17:22:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV50",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV50.jpg",
+        "lastUpdated": "2023-06-23T17:21:30.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV51",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV51.jpg",
+        "lastUpdated": "2023-06-23T17:22:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV54",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV54.jpg",
+        "lastUpdated": "2023-06-23T17:22:15.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV56",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV56.jpg",
+        "lastUpdated": "2023-06-23T17:23:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV57",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV57.jpg",
+        "lastUpdated": "2023-06-23T17:22:30.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV58",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV58.jpg",
+        "lastUpdated": "2023-06-23T17:23:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "VAISALACCTV59",
+    "dynamics": [
+      {
+        "image": "https://www.netraveldata.co.uk/api/v1/cctv/images/VAISALACCTV59.jpg",
+        "lastUpdated": "2023-06-23T17:21:30.000+0100"
+      }
+    ]
+  }
+]
