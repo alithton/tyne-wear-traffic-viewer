@@ -1,7 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,8 +17,10 @@ import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downc
  * traffic data. Supplied data connectors allow the generic methods to be applied
  * to concrete traffic data types.
  */
+@RequiredArgsConstructor
 @Service
 public class TrafficDataServiceImpl implements TrafficDataService {
+    private final RoutingService routingService;
 
     /**
      * Get a list of traffic data of the type specified by the connector.
@@ -34,16 +40,29 @@ public class TrafficDataServiceImpl implements TrafficDataService {
      */
     @Override
     public <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persist(List<TrafficDataDTO> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector) {
-        List<DTO> eventDTOS = downcastList(trafficData, connector.getDtoClass());
-        List<T> events = connector.getMapper().dtoToEntity(eventDTOS);
-        connector.getRepository().saveAll(events);
+        List<DTO> dtos = downcastList(trafficData, connector.getDtoClass());
+        List<T> entities = connector.getMapper().dtoToEntity(dtos);
+        connector.getRepository().saveAll(entities);
     }
 
     @Override
     public <T extends TrafficData, DTO extends TrafficDataDTO, ID> void persistEntities(List<TrafficData> trafficData, TrafficDataTypeConnector<T, DTO, ID> connector) {
         List<T> validatedData = downcastList(trafficData, connector.getEntityClass());
+
+        if (connector.getEntityClass() == JourneyTime.class) {
+            validatedData.forEach(e -> loadRoute((JourneyTime) e));
+        }
+
         connector.getRepository().saveAll(validatedData);
     }
 
+    private void loadRoute(JourneyTime journeyTime) {
+
+        // Avoid re-calculating existing routes.
+        if (journeyTime.getRoute() != null) return;
+
+        SimpleRoute route = routingService.calculateRoute(journeyTime.getPoint(), journeyTime.getEndPoint());
+        journeyTime.setRoute(route);
+    }
 
 }

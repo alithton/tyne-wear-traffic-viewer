@@ -1,13 +1,19 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
 import com.afsmith.tyneweartrafficviewer.persistence.mappers.*;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
@@ -56,7 +62,13 @@ class TrafficDataPersistenceRetrievalTest {
     List<TrafficDataDTO> incidentDTOS = List.of(MockData.getIncidentDto("code1"),
                                                     MockData.getIncidentDto("code2"));
 
-    TrafficDataService dataService = new TrafficDataServiceImpl();
+    TrafficDataService dataService;
+
+    @MockBean
+    RoutingService routingService;
+
+    @Captor
+    ArgumentCaptor<List<JourneyTime>> journeyTimeCaptor;
 
     @BeforeEach
     void setUp() {
@@ -66,6 +78,7 @@ class TrafficDataPersistenceRetrievalTest {
         roadworkConnector = new TrafficRoadworkConnector(roadworkRepository, roadworkMapper);
         journeyTimeConnector = new JourneyTimeConnector(journeyTimeRepository, journeyTimeMapper);
         cameraConnector = new CameraConnector(cameraRepository, cameraMapper);
+        dataService = new TrafficDataServiceImpl(routingService);
 
         dataPersistence = new TrafficDataPersistence(incidentConnector, eventConnector, accidentConnector,
                                                      roadworkConnector, journeyTimeConnector, cameraConnector,
@@ -89,6 +102,9 @@ class TrafficDataPersistenceRetrievalTest {
         when(cameraRepository.findAll())
                 .thenReturn(List.of(MockData.getCamera("code1"),
                                     MockData.getCamera("code2")));
+
+        when(routingService.calculateRoute(any(Point.class), any(Point.class)))
+                .thenReturn(MockData.getSimpleRoute());
 
     }
 
@@ -126,6 +142,22 @@ class TrafficDataPersistenceRetrievalTest {
     void persistIncidents() {
         dataPersistence.persist(incidentDTOS, TrafficDataTypes.INCIDENT);
         verify(incidentRepository, times(1)).saveAll(anyList());
+    }
+
+    // Ensure that the routing service is being used to set a route for journeytime entities without existing
+    // route information.
+    @Test
+    void persistJourneyTimeEntities() {
+        List<TrafficData> journeyTimes = List.of(MockData.getJourneyTime("code1"),
+                                                 MockData.getJourneyTime("code2"));
+
+        dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
+
+        verify(journeyTimeRepository, times(1)).saveAll(journeyTimeCaptor.capture());
+
+        List<JourneyTime> capturedJourneyTimes = journeyTimeCaptor.getValue();
+        assertThat(capturedJourneyTimes.size()).isEqualTo(2);
+        assertThat(capturedJourneyTimes.get(0).getRoute()).isNotNull();
     }
 
     private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficDataDTO> expectedClass) {

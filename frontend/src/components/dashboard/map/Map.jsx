@@ -1,4 +1,4 @@
-import {MapContainer, Polyline, TileLayer} from "react-leaflet";
+import {MapContainer, TileLayer} from "react-leaflet";
 import {useDispatch, useSelector} from "react-redux";
 import IncidentMarker from "./IncidentMarker.jsx";
 import 'leaflet/dist/leaflet.css'
@@ -72,15 +72,14 @@ function Map() {
     const pointData = Object.keys(filteredData).filter(key => key !== "SPEED")
                             .map(key => filteredData[key])
                             .flat();
-
     console.log(pointData);
     let speedStats = {};
     if (filteredData.SPEED) {
         speedStats.max = filteredData.SPEED.reduce((currentMax, value) => {
-                                return Math.max(value.linkTravelTime, currentMax);
+                                return Math.max(value.averageSpeed, currentMax);
                             }, 0);
         speedStats.min = filteredData.SPEED.reduce((currentMin, value) => {
-            return Math.min(value.linkTravelTime, currentMin);
+            return Math.min(value.averageSpeed, currentMin);
         }, Number.MAX_SAFE_INTEGER);
         console.log(speedStats);
     }
@@ -103,17 +102,14 @@ function Map() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {/*{filteredData.ACCIDENT && filteredData.ACCIDENT.map(value => {*/}
-            {/*    return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;*/}
-            {/*})}*/}
-            {/*{filteredData.CAMERA && filteredData.CAMERA.map(value => {*/}
-            {/*    return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;*/}
-            {/*})}*/}
+
             {pointData.length > 0 && pointData.map(value => {
                 return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;
             })}
             {filteredData.SPEED && filteredData.SPEED.map(value => {
-                return <TrafficSpeedLine positions={value.positions} data={value} max={speedStats.max} min={speedStats.min} />
+                console.log("Plotting speed data at ");
+                console.log(value.route.coordinates);
+                return <TrafficSpeedLine positions={value.route.coordinates} data={value} max={speedStats.max} min={speedStats.min} />
             })}
 
         </MapContainer>

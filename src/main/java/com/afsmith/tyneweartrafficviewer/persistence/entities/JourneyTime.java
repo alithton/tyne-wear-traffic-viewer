@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.ZonedDateTime;
 
@@ -32,6 +33,9 @@ public class JourneyTime extends TrafficData {
     })
     Point endPoint;
 
+    @Setter
+    SimpleRoute route;
+
     ZonedDateTime lastUpdated;
     int linkTravelTime;
     int platesIn;
@@ -45,6 +49,7 @@ public class JourneyTime extends TrafficData {
                        String longDescription,
                        Point point,
                        Point endPoint,
+                       SimpleRoute route,
                        ZonedDateTime lastUpdated,
                        int linkTravelTime,
                        int platesIn,
@@ -56,6 +61,7 @@ public class JourneyTime extends TrafficData {
         this.longDescription = longDescription;
         this.point = point;
         this.endPoint = endPoint;
+        this.route = route;
         this.lastUpdated = lastUpdated;
         this.linkTravelTime = linkTravelTime;
         this.platesIn = platesIn;

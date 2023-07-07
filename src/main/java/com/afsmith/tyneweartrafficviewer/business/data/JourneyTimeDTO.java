@@ -12,6 +12,8 @@ public class JourneyTimeDTO extends TrafficDataDTO implements MappableDTO {
     String longDescription;
     PointDTO point;
     PointDTO endPoint;
+    SimpleRouteDTO route;
+    double averageSpeed;
     ZonedDateTime lastUpdated;
     int linkTravelTime;
     int platesIn;
@@ -25,6 +27,8 @@ public class JourneyTimeDTO extends TrafficDataDTO implements MappableDTO {
                           String longDescription,
                           PointDTO point,
                           PointDTO endPoint,
+                          SimpleRouteDTO route,
+                          double averageSpeed,
                           ZonedDateTime lastUpdated,
                           int linkTravelTime,
                           int platesIn,
@@ -36,6 +40,8 @@ public class JourneyTimeDTO extends TrafficDataDTO implements MappableDTO {
         this.longDescription = longDescription;
         this.point = point;
         this.endPoint = endPoint;
+        this.route = route;
+        this.averageSpeed = averageSpeed;
         this.lastUpdated = lastUpdated;
         this.linkTravelTime = linkTravelTime;
         this.platesIn = platesIn;
