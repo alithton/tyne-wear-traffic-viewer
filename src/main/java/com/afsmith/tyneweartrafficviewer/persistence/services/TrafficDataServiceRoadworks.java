@@ -7,8 +7,8 @@ import com.afsmith.tyneweartrafficviewer.persistence.repositories.RoadworkReposi
 import org.springframework.stereotype.Service;
 
 @Service
-public class TrafficRoadworkConnector extends TrafficDataTypeConnector<TrafficRoadwork, TrafficRoadworksDTO, String>{
-    public TrafficRoadworkConnector(RoadworkRepository repository, TrafficRoadworkMapper mapper) {
-        super(repository, mapper, TrafficRoadworksDTO.class, TrafficRoadwork.class);
+public class TrafficDataServiceRoadworks extends AbstractTrafficDataService<TrafficRoadwork, TrafficRoadworksDTO, String> {
+    public TrafficDataServiceRoadworks(TrafficRoadworkMapper mapper, RoadworkRepository repository) {
+        super(mapper, repository, TrafficRoadworksDTO.class, TrafficRoadwork.class);
     }
 }

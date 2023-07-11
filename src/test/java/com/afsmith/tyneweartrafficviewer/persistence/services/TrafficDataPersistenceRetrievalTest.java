@@ -27,12 +27,12 @@ class TrafficDataPersistenceRetrievalTest {
 
     TrafficDataPersistence dataPersistence;
 
-    TrafficIncidentConnector incidentConnector;
-    TrafficEventConnector eventConnector;
-    TrafficAccidentConnector accidentConnector;
-    TrafficRoadworkConnector roadworkConnector;
-    JourneyTimeConnector journeyTimeConnector;
-    CameraConnector cameraConnector;
+    TrafficDataServiceIncidents incidentService;
+    TrafficDataServiceEvent eventService;
+    TrafficDataServiceAccident accidentService;
+    TrafficDataServiceRoadworks roadworkService;
+    TrafficDataServiceJourneyTimes journeyTimeService;
+    TrafficDataServiceCamera cameraService;
 
     // Mappers for each data type
     TrafficIncidentMapper incidentMapper = Mappers.getMapper(TrafficIncidentMapper.class);
@@ -61,9 +61,6 @@ class TrafficDataPersistenceRetrievalTest {
 
     List<TrafficDataDTO> incidentDTOS = List.of(MockData.getIncidentDto("code1"),
                                                     MockData.getIncidentDto("code2"));
-
-    TrafficDataService dataService;
-
     @MockBean
     RoutingService routingService;
 
@@ -72,17 +69,15 @@ class TrafficDataPersistenceRetrievalTest {
 
     @BeforeEach
     void setUp() {
-        incidentConnector = new TrafficIncidentConnector(incidentRepository, incidentMapper);
-        eventConnector = new TrafficEventConnector(eventRepository, eventMapper);
-        accidentConnector = new TrafficAccidentConnector(accidentRepository, accidentMapper);
-        roadworkConnector = new TrafficRoadworkConnector(roadworkRepository, roadworkMapper);
-        journeyTimeConnector = new JourneyTimeConnector(journeyTimeRepository, journeyTimeMapper);
-        cameraConnector = new CameraConnector(cameraRepository, cameraMapper);
-        dataService = new TrafficDataServiceImpl(routingService);
+        incidentService = new TrafficDataServiceIncidents(incidentMapper, incidentRepository);
+        eventService = new TrafficDataServiceEvent(eventMapper, eventRepository);
+        accidentService = new TrafficDataServiceAccident(accidentMapper, accidentRepository);
+        roadworkService = new TrafficDataServiceRoadworks(roadworkMapper, roadworkRepository);
+        journeyTimeService = new TrafficDataServiceJourneyTimes(journeyTimeMapper, journeyTimeRepository, routingService);
+        cameraService = new TrafficDataServiceCamera(cameraMapper, cameraRepository);
 
-        dataPersistence = new TrafficDataPersistence(incidentConnector, eventConnector, accidentConnector,
-                                                     roadworkConnector, journeyTimeConnector, cameraConnector,
-                                                     dataService);
+        dataPersistence = new TrafficDataPersistence(incidentService, eventService, accidentService,
+                                                     roadworkService, journeyTimeService, cameraService);
 
         // Set up mock repositories to return mocked data
         when(incidentRepository.findAll())

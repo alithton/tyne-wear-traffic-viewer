@@ -4,11 +4,12 @@ import com.afsmith.tyneweartrafficviewer.business.data.TrafficAccidentDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficAccident;
 import com.afsmith.tyneweartrafficviewer.persistence.mappers.TrafficAccidentMapper;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.AccidentRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-public class TrafficAccidentConnector extends TrafficDataTypeConnector<TrafficAccident, TrafficAccidentDTO, String>{
-    public TrafficAccidentConnector(AccidentRepository repository, TrafficAccidentMapper mapper) {
-        super(repository, mapper, TrafficAccidentDTO.class, TrafficAccident.class);
+@Service
+public class TrafficDataServiceAccident extends AbstractTrafficDataService<TrafficAccident, TrafficAccidentDTO, String> {
+
+    public TrafficDataServiceAccident(TrafficAccidentMapper mapper, AccidentRepository repository) {
+        super(mapper, repository, TrafficAccidentDTO.class, TrafficAccident.class);
     }
 }

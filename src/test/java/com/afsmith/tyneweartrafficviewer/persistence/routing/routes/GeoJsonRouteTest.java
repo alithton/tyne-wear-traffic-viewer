@@ -1,7 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.routes;
 
 import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.LineString;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,17 +25,6 @@ class GeoJsonRouteTest {
 
         assertThat(point.getLongitudeString()).isEqualTo("-1.58476");
         assertThat(point.getLatitudeString()).isEqualTo("54.910179");
-    }
-
-    @Test
-    void readLineString() throws JsonProcessingException {
-        String coordJson = getCoordinatesJson();
-        LineString lineString = mapper.readValue(coordJson, LineString.class);
-
-        assertThat(lineString).isNotNull();
-        assertThat(lineString.route().size()).isEqualTo(14);
-        assertThat(lineString.route().get(0).getLongitudeString())
-                .isEqualTo("-1.58476");
     }
 
     @Test

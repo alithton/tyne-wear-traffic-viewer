@@ -73,6 +73,8 @@ function Map() {
                             .map(key => filteredData[key])
                             .flat();
     console.log(pointData);
+
+    // Calculate maximum and minimum speeds (used for determining colour).
     let speedStats = {};
     if (filteredData.SPEED) {
         speedStats.max = filteredData.SPEED.reduce((currentMax, value) => {
