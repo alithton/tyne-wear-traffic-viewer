@@ -2,10 +2,12 @@ package com.afsmith.tyneweartrafficviewer.util;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.*;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.ZonedDateTime;
+import java.util.List;
 
 public class MockData {
     private static final ZonedDateTime TIME = ZonedDateTime.now();
@@ -245,6 +247,12 @@ public class MockData {
                           .build();
     }
 
+    public static JourneyTime getJourneyTimeWithRoute(String code) {
+        JourneyTime journeyTime = getJourneyTime(code);
+        journeyTime.setRoute(getSimpleRoute());
+        return journeyTime;
+    }
+
     public static Camera getCamera(String code) {
         return Camera.builder()
                         .systemCodeNumber(code)
@@ -256,4 +264,29 @@ public class MockData {
                         .image(IMAGE_URL)
                         .build();
     }
+
+    public static SimpleRoute getSimpleRoute() {
+        List<GeoJsonPoint> coordinates = List.of(
+                new GeoJsonPoint(59.1, -1.0),
+                new GeoJsonPoint(58.9, 1.2));
+
+        return SimpleRoute.builder()
+                          .coordinates(coordinates)
+                          .distance(627.5)
+                          .duration(59.6)
+                          .build();
+    }
+
+//    public static SimpleRoute getSimpleRouteWithCode(String code) {
+//        List<GeoJsonPoint> coordinates = List.of(
+//                new GeoJsonPoint(59.1, -1.0),
+//                new GeoJsonPoint(58.9, 1.2));
+//
+//        return SimpleRoute.builder()
+//                          .systemCodeNumber(code)
+//                          .coordinates(coordinates)
+//                          .distance(627.5)
+//                          .duration(59.6)
+//                          .build();
+//    }
 }

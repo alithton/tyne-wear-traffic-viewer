@@ -32,5 +32,16 @@ class JourneyTimeMapperTest {
         assertThat(dto).isNotNull();
         assertThat(dto.getSystemCodeNumber()).isEqualTo(CODE);
         assertThat(dto.getEndPoint()).isInstanceOf(PointDTO.class);
+        assertThat(dto.getAverageSpeed()).isEqualTo(0.0);
+    }
+
+    @Test
+    public void entityToDtoWithRoute() {
+        JourneyTime entity = MockData.getJourneyTimeWithRoute(CODE);
+        JourneyTimeDTO dto = mapper.entityToDto(entity);
+
+        assertThat(dto.getRoute()).isNotNull();
+        assertThat(dto.getRoute().getCoordinates().size()).isEqualTo(2);
+        assertThat(dto.getAverageSpeed()).isGreaterThan(0.0);
     }
 }

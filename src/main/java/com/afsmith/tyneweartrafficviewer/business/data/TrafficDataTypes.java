@@ -5,11 +5,11 @@ package com.afsmith.tyneweartrafficviewer.business.data;
  */
 public enum TrafficDataTypes {
     INCIDENT("/traffic/incident", TrafficIncidentDTO.class),
-    ACCIDENT("", null),
-    ROADWORKS("", null),
+    ACCIDENT("", TrafficAccidentDTO.class),
+    ROADWORKS("", TrafficRoadworksDTO.class),
     EVENT("/traffic/event", TrafficEventDTO.class),
-    SPEED("", null),
-    CAMERA("", null);
+    SPEED("", JourneyTimeDTO.class),
+    CAMERA("", CameraDTO.class);
 
     private final String url;
     private final Class<? extends TrafficDataDTO> dtoClass;

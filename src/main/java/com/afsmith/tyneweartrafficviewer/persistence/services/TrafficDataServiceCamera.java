@@ -4,11 +4,11 @@ import com.afsmith.tyneweartrafficviewer.business.data.CameraDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.Camera;
 import com.afsmith.tyneweartrafficviewer.persistence.mappers.CameraMapper;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.CameraRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-public class CameraConnector extends TrafficDataTypeConnector<Camera, CameraDTO, String>{
-    public CameraConnector(CameraRepository repository, CameraMapper mapper) {
-        super(repository, mapper, CameraDTO.class, Camera.class);
+@Service
+public class TrafficDataServiceCamera extends AbstractTrafficDataService<Camera, CameraDTO, String> {
+    public TrafficDataServiceCamera(CameraMapper mapper, CameraRepository repository) {
+        super(mapper, repository, CameraDTO.class, Camera.class);
     }
 }

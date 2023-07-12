@@ -17,13 +17,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TrafficDataPersistence {
 
-    private final TrafficIncidentConnector incidentConnector;
-    private final TrafficEventConnector eventConnector;
-    private final TrafficAccidentConnector accidentConnector;
-    private final TrafficRoadworkConnector roadworkConnector;
-    private final JourneyTimeConnector journeyTimeConnector;
-    private final CameraConnector cameraConnector;
-    private final TrafficDataService dataService;
+    private final TrafficDataServiceIncidents incidentService;
+    private final TrafficDataServiceEvent eventService;
+    private final TrafficDataServiceAccident accidentService;
+    private final TrafficDataServiceRoadworks roadworksService;
+    private final TrafficDataServiceJourneyTimes journeyTimeService;
+    private final TrafficDataServiceCamera cameraService;
 
     /**
      * Get a list of all the data stored corresponding to the provided traffic
@@ -32,14 +31,8 @@ public class TrafficDataPersistence {
      * @return A list of traffic data.
      */
     public List<TrafficDataDTO> listAll(TrafficDataTypes dataType) {
-        return switch (dataType) {
-            case INCIDENT -> dataService.listAll(incidentConnector);
-            case EVENT -> dataService.listAll(eventConnector);
-            case ACCIDENT -> dataService.listAll(accidentConnector);
-            case ROADWORKS -> dataService.listAll(roadworkConnector);
-            case SPEED -> dataService.listAll(journeyTimeConnector);
-            case CAMERA -> dataService.listAll(cameraConnector);
-        };
+        var dataService = getDataService(dataType);
+        return List.copyOf(dataService.listAll());
     }
 
     /**
@@ -49,14 +42,8 @@ public class TrafficDataPersistence {
      * @param dataType The type of data to be stored.
      */
     public void persist(List<TrafficDataDTO> trafficData, TrafficDataTypes dataType) {
-        switch (dataType) {
-            case INCIDENT -> dataService.persist(trafficData, incidentConnector);
-            case EVENT -> dataService.persist(trafficData, eventConnector);
-            case ACCIDENT -> dataService.persist(trafficData, accidentConnector);
-            case ROADWORKS -> dataService.persist(trafficData, roadworkConnector);
-            case SPEED -> dataService.persist(trafficData, journeyTimeConnector);
-            case CAMERA -> dataService.persist(trafficData, cameraConnector);
-        }
+        var dataService = getDataService(dataType);
+        dataService.persist(trafficData);
     }
 
     /**
@@ -65,13 +52,18 @@ public class TrafficDataPersistence {
      * @param dataType The type of data to be stored.
      */
     public void persistEntities(List<TrafficData> trafficData, TrafficDataTypes dataType) {
-        switch (dataType) {
-            case INCIDENT -> dataService.persistEntities(trafficData, incidentConnector);
-            case EVENT -> dataService.persistEntities(trafficData, eventConnector);
-            case ACCIDENT -> dataService.persistEntities(trafficData, accidentConnector);
-            case ROADWORKS -> dataService.persistEntities(trafficData, roadworkConnector);
-            case SPEED -> dataService.persistEntities(trafficData, journeyTimeConnector);
-            case CAMERA -> dataService.persistEntities(trafficData, cameraConnector);
-        }
+        var dataService = getDataService(dataType);
+        dataService.persistEntities(trafficData);
+    }
+
+    private TrafficDataService<? extends TrafficData, ? extends TrafficDataDTO, String> getDataService(TrafficDataTypes dataType) {
+        return switch (dataType) {
+            case INCIDENT -> incidentService;
+            case EVENT -> eventService;
+            case ACCIDENT -> accidentService;
+            case ROADWORKS -> roadworksService;
+            case SPEED -> journeyTimeService;
+            case CAMERA -> cameraService;
+        };
     }
 }

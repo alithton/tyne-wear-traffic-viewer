@@ -4,24 +4,27 @@ import Gradient from "javascript-color-gradient";
 const NUM_COLOURS = 20;
 
 const gradientArray = new Gradient()
-    .setColorGradient("#47d234", "#ecc52b", "#f31c1c")
+    .setColorGradient( "#f31c1c", "#ecc52b", "#47d234")
     .setMidpoint(NUM_COLOURS)
     .getColors();
 
 function calculateColour(min, max, actual) {
-    const percent = actual / (max - min);
+    const percent = (actual - min) / (max - min);
     const index = Math.floor(percent * NUM_COLOURS);
-    console.log(index);
     return gradientArray[index];
 }
 
 function TrafficSpeedLine({positions, data, ...props}) {
 
-    const colour = calculateColour(props.min, props.max, data.linkTravelTime);
+    const colour = calculateColour(props.min, props.max, data.averageSpeed);
 
     return (
         <Polyline pathOptions={ {color: colour} } positions={positions} >
-            <Tooltip>{data.shortDescription}</Tooltip>
+            <Tooltip>
+                <p>{`${Math.ceil(data.averageSpeed)} mph`}</p>
+                <p>{data.systemCodeNumber}</p>
+                <p>{data.shortDescription}</p>
+            </Tooltip>
         </Polyline>
     );
 }

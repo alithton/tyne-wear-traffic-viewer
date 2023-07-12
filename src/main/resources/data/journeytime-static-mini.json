@@ -1,0 +1,46 @@
+[
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR3_NR2_BUS",
+    "definitions": [
+      {
+        "shortDescription": "A184 WB A195 - A185/B1426",
+        "longDescription": "A184 Felling Bypass (Westbound) - A195 Sunderland Road to A185/B1426 Shields Road (BUS)",
+        "point": {
+          "easting": 430607,
+          "northing": 561425,
+          "latitude": 54.9465457979282000,
+          "longitude": -1.5237099557577300
+        },
+        "endPoint": {
+          "easting": 428727,
+          "northing": 561958,
+          "latitude": 54.9514447720293000,
+          "longitude": -1.5530065417375800
+        },
+        "lastUpdated": "2023-06-19T09:54:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_PR_A167",
+    "definitions": [
+      {
+        "shortDescription": "A184 WB GH Stdm - A167",
+        "longDescription": "A184 Park Lane/Park Road (Westbound) - Gateshead Stadium to A167 Gateshead Highway",
+        "point": {
+          "easting": 427145,
+          "northing": 562735,
+          "latitude": 54.9585235596700000,
+          "longitude": -1.5776338065370400
+        },
+        "endPoint": {
+          "easting": 425860,
+          "northing": 563114,
+          "latitude": 54.9619928450293000,
+          "longitude": -1.5976614765067500
+        },
+        "lastUpdated": "2023-06-19T09:58:00.000+0100"
+      }
+    ]
+  }
+]
