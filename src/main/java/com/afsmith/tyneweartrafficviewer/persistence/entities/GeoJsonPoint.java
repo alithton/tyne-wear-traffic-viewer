@@ -1,15 +1,16 @@
-package com.afsmith.tyneweartrafficviewer.persistence.routing.geometries;
+package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
-import com.afsmith.tyneweartrafficviewer.persistence.routing.services.deserialisation.GeoJsonPointDeserialiser;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Embeddable;
 import lombok.NoArgsConstructor;
 
 import java.util.Objects;
 
-@JsonDeserialize(using = GeoJsonPointDeserialiser.class)
+//@JsonDeserialize(using = GeoJsonPointDeserialiser.class)
 @Embeddable
 @NoArgsConstructor
+@JsonFormat(shape= JsonFormat.Shape.ARRAY)
 public final class GeoJsonPoint {
     private double latitude;
     private double longitude;
@@ -27,18 +28,20 @@ public final class GeoJsonPoint {
         this.longitude = Double.parseDouble(longitude);
     }
 
-    public double latitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public double longitude() {
+    public double getLongitude() {
         return longitude;
     }
 
+    @JsonIgnore
     public String getLatitudeString() {
         return Double.toString(latitude);
     }
 
+    @JsonIgnore
     public String getLongitudeString() {
         return Double.toString(longitude);
     }

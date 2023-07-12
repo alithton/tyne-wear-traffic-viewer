@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.client;
 
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,8 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import java.net.MalformedURLException;
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.*;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.*;
@@ -42,10 +40,10 @@ class OsrmClientTest {
     @Test
     void getRouteResponse() {
         server.expect(method(HttpMethod.GET))
-              .andExpect(requestTo(stringContainsInOrder(Double.toString(start.longitude()),
-                                                         Double.toString(start.latitude()),
-                                                         Double.toString(end.longitude()),
-                                                         Double.toString(end.latitude()))))
+              .andExpect(requestTo(stringContainsInOrder(Double.toString(start.getLongitude()),
+                                                         Double.toString(start.getLatitude()),
+                                                         Double.toString(end.getLongitude()),
+                                                         Double.toString(end.getLatitude()))))
               .andExpect(queryParam("geometries", "geojson"))
               .andRespond(withSuccess("{}", MediaType.APPLICATION_JSON));
 
@@ -59,10 +57,10 @@ class OsrmClientTest {
     @Test
     void getRoute() {
         server.expect(method(HttpMethod.GET))
-              .andExpect(requestTo(stringContainsInOrder(Double.toString(start.longitude()),
-                                                         Double.toString(start.latitude()),
-                                                         Double.toString(end.longitude()),
-                                                         Double.toString(end.latitude()))))
+              .andExpect(requestTo(stringContainsInOrder(Double.toString(start.getLongitude()),
+                                                         Double.toString(start.getLatitude()),
+                                                         Double.toString(end.getLongitude()),
+                                                         Double.toString(end.getLatitude()))))
               .andExpect(queryParam("geometries", "geojson"))
               .andRespond(withSuccess(getExampleResponseBody(), MediaType.APPLICATION_JSON));
 

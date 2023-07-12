@@ -2,7 +2,7 @@ package com.afsmith.tyneweartrafficviewer.util;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.*;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -269,6 +269,24 @@ public class MockData {
         List<GeoJsonPoint> coordinates = List.of(
                 new GeoJsonPoint(59.1, -1.0),
                 new GeoJsonPoint(58.9, 1.2));
-        return new SimpleRoute(coordinates, 627.5, 59.6);
+
+        return SimpleRoute.builder()
+                          .coordinates(coordinates)
+                          .distance(627.5)
+                          .duration(59.6)
+                          .build();
     }
+
+//    public static SimpleRoute getSimpleRouteWithCode(String code) {
+//        List<GeoJsonPoint> coordinates = List.of(
+//                new GeoJsonPoint(59.1, -1.0),
+//                new GeoJsonPoint(58.9, 1.2));
+//
+//        return SimpleRoute.builder()
+//                          .systemCodeNumber(code)
+//                          .coordinates(coordinates)
+//                          .distance(627.5)
+//                          .duration(59.6)
+//                          .build();
+//    }
 }

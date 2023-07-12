@@ -1,7 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.mappers;
 
 import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPointExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -18,9 +19,12 @@ public interface GeoJsonExternalToSimpleRouteMapper {
     SimpleRoute externalToEntity(GeoJsonRouteExternal external);
 
     default List<GeoJsonPoint> mapCoordinates(GeoJsonRouteExternal external) {
-        return external.getRoutes().get(0)
-                       .getGeometry()
-                       .getCoordinates();
+        List<GeoJsonPointExternal> externalCoords =  external.getRoutes().get(0)
+                                                       .getGeometry()
+                                                       .getCoordinates();
+        return externalCoords.stream()
+                             .map(point -> new GeoJsonPoint(point.getLatitude(), point.getLongitude()))
+                             .toList();
     }
 
     @Named("distance")

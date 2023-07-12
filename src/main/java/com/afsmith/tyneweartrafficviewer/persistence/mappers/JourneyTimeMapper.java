@@ -3,7 +3,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.mappers;
 import com.afsmith.tyneweartrafficviewer.business.data.GeoJsonPointDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
 import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -18,7 +18,7 @@ public interface JourneyTimeMapper extends TrafficDataMapper<JourneyTimeDTO, Jou
     }
 
     default GeoJsonPointDTO map(GeoJsonPoint value) {
-        return new GeoJsonPointDTO(value.latitude(), value.longitude());
+        return new GeoJsonPointDTO(value.getLatitude(), value.getLongitude());
     }
 
     /**

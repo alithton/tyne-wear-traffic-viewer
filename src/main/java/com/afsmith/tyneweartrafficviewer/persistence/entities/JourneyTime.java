@@ -1,14 +1,12 @@
 package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.ZonedDateTime;
 
 @Getter
+@ToString
 @NoArgsConstructor
 @Entity
 public class JourneyTime extends TrafficData {

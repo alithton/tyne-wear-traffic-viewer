@@ -1,9 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.entities;
 
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.OrderColumn;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
@@ -16,19 +13,21 @@ import java.util.List;
 
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @Embeddable
 public class SimpleRoute {
+
     // A list of point coordinates that defines the route.
     @ElementCollection
     @OrderColumn(name = "coord_index")
-    List<GeoJsonPoint> coordinates;
+    private List<GeoJsonPoint> coordinates;
 
     // The distance of the route, in metres.
-    double distance;
+    private double distance;
 
     // The estimated time taken to complete the route, in seconds.
-    double duration;
+    private double duration;
 }

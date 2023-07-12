@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.routes;
 
-import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPointExternal;
 import lombok.*;
 
 import java.util.List;
@@ -27,7 +27,7 @@ public class GeoJsonRouteExternal {
 
     @Data
     public static class Geometry {
-        private List<GeoJsonPoint> coordinates;
+        private List<GeoJsonPointExternal> coordinates;
         private String type;
     }
 

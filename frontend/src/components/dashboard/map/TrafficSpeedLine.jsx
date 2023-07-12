@@ -11,7 +11,6 @@ const gradientArray = new Gradient()
 function calculateColour(min, max, actual) {
     const percent = (actual - min) / (max - min);
     const index = Math.floor(percent * NUM_COLOURS);
-    console.log(index);
     return gradientArray[index];
 }
 
@@ -23,6 +22,7 @@ function TrafficSpeedLine({positions, data, ...props}) {
         <Polyline pathOptions={ {color: colour} } positions={positions} >
             <Tooltip>
                 <p>{`${Math.ceil(data.averageSpeed)} mph`}</p>
+                <p>{data.systemCodeNumber}</p>
                 <p>{data.shortDescription}</p>
             </Tooltip>
         </Polyline>
