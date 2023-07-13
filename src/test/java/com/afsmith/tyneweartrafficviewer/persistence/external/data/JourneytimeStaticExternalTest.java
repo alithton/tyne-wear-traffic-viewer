@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.persistence.external.util.MockExternalData;
 import org.junit.jupiter.api.Test;
 

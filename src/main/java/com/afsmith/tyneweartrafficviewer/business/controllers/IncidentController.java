@@ -2,13 +2,12 @@ package com.afsmith.tyneweartrafficviewer.business.controllers;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
+import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +21,7 @@ import java.util.Map;
 @RestController
 public class IncidentController {
 
-    private final TrafficDataPersistence persistenceService;
+    private final DtoService dtoService;
 
     /**
      * Get a list of all stored traffic data of the requested type. If no data
@@ -39,7 +38,7 @@ public class IncidentController {
         if (dataTypes == null) return ResponseEntity.ok(response);
 
         for (var dataType : dataTypes) {
-            List<? extends TrafficDataDTO> incidents = persistenceService.listAll(dataType);
+            List<? extends TrafficDataDTO> incidents = dtoService.listAll(dataType);
             response.put(dataType.name(), incidents);
         }
         return ResponseEntity.ok(response);

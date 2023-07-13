@@ -1,22 +1,27 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
+import com.afsmith.tyneweartrafficviewer.entities.*;
+
 /**
  * All categories of traffic data that are used within the application.
  */
 public enum TrafficDataTypes {
-    INCIDENT("/traffic/incident", TrafficIncidentDTO.class),
-    ACCIDENT("", TrafficAccidentDTO.class),
-    ROADWORKS("", TrafficRoadworksDTO.class),
-    EVENT("/traffic/event", TrafficEventDTO.class),
-    SPEED("", JourneyTimeDTO.class),
-    CAMERA("", CameraDTO.class);
+    INCIDENT("/traffic/incident", TrafficIncidentDTO.class, TrafficIncident.class),
+    ACCIDENT("", TrafficAccidentDTO.class, TrafficAccident.class),
+    ROADWORKS("", TrafficRoadworksDTO.class, TrafficRoadwork.class),
+    EVENT("/traffic/event", TrafficEventDTO.class, TrafficEvent.class),
+    SPEED("", JourneyTimeDTO.class, JourneyTime.class),
+    TYPICAL_SPEED("", JourneyTimeDTO.class, TypicalJourneyTime.class),
+    CAMERA("", CameraDTO.class, Camera.class);
 
     private final String url;
     private final Class<? extends TrafficDataDTO> dtoClass;
+    private final Class<? extends TrafficEntity> entityClass;
 
-    TrafficDataTypes(String url, Class<? extends TrafficDataDTO> dtoClass) {
+    TrafficDataTypes(String url, Class<? extends TrafficDataDTO> dtoClass, Class<? extends TrafficEntity> entityClass) {
         this.url = url;
         this.dtoClass = dtoClass;
+        this.entityClass = entityClass;
     }
 
     public String getUrl() {
@@ -25,5 +30,9 @@ public enum TrafficDataTypes {
 
     public Class<? extends TrafficDataDTO> getDtoClass() {
         return dtoClass;
+    }
+
+    public Class<? extends TrafficEntity> getEntityClass() {
+        return entityClass;
     }
 }

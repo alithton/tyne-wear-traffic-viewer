@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TypicalJourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import com.opencsv.exceptions.CsvValidationException;
 import org.junit.jupiter.api.Test;
 

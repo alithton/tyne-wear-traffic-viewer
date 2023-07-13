@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
+import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

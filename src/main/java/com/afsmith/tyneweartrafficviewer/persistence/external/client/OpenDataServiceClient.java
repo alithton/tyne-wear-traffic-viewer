@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.client;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
@@ -36,7 +36,7 @@ public class OpenDataServiceClient {
      * @return A list of data of the requested type.
      * @throws IOException In the event that data cannot be accessed.
      */
-    public <E extends TrafficData> List<TrafficDataExternal<E>> getData(ExternalDataTypes dataType) throws IOException {
+    public <E extends TrafficEntity> List<TrafficDataExternal<E>> getData(ExternalDataTypes dataType) throws IOException {
         String dataUrl = dataType.getUrl();
 
         ResponseEntity<String> response = restTemplate.getForEntity(dataUrl, String.class);

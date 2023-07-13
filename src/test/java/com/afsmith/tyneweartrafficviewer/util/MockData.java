@@ -1,8 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.util;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.*;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -59,6 +58,29 @@ public class MockData {
                                  .modifiedDate(TIME)
                                  .phaseTypeRef(PHASE_TYPE)
                                  .build();
+    }
+
+    public static TrafficEventDTO getEventDto(String code) {
+        return TrafficEventDTO.builder()
+                              .systemCodeNumber(code)
+                              .type(TrafficDataTypes.ACCIDENT)
+                              .shortDescription("short description")
+                              .longDescription("long description")
+                              .locationDescription("location description")
+                              .point(POINT_DTO)
+                              .creationDate(TIME)
+                              .dataSourceTypeRef("type ref")
+                              .confirmedDate(TIME)
+                              .modifiedDate(TIME)
+                              .severityTypeRefDescription("Low")
+                              .lanesAffectedTypeRefDescription("| T")
+                              .diversionInForce("N")
+                              .phaseTypeRef("current")
+                              .eventTypeDescription("")
+                              .organiser("An organiser")
+                              .venueName("venue")
+                              .planned(PLANNED_DTO)
+                              .build();
     }
 
 

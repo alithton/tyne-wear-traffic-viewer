@@ -1,9 +1,9 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.external.util.MockExternalData;
@@ -35,7 +35,7 @@ class ExternalDataAccessServiceImplTest {
 
     @Test
     void getIncidentData() throws IOException {
-        List<TrafficDataExternal<TrafficData>> mockData = List.of(
+        List<TrafficDataExternal<TrafficEntity>> mockData = List.of(
                 buildIncident("incident1"),
                 buildIncident("incident2"));
         when(client.getData(ExternalDataTypes.INCIDENT)).thenReturn(mockData);
@@ -46,11 +46,11 @@ class ExternalDataAccessServiceImplTest {
 
     @Test
     void getJourneyTimeData() throws IOException {
-        List<TrafficDataExternal<TrafficData>> mockStatic = List.of(
+        List<TrafficDataExternal<TrafficEntity>> mockStatic = List.of(
                 buildJourneyTimeStatic("code1"),
                 buildJourneyTimeStatic("code2")
         );
-        List<TrafficDataExternal<TrafficData>> mockDynamic = List.of(
+        List<TrafficDataExternal<TrafficEntity>> mockDynamic = List.of(
                 buildJourneyTimeDynamic("code1"),
                 buildJourneyTimeDynamic("code2")
         );
@@ -69,11 +69,11 @@ class ExternalDataAccessServiceImplTest {
      */
     @Test
     void getJourneyTimeDataMismatchedCodes() throws IOException {
-        List<TrafficDataExternal<TrafficData>> mockStatic = List.of(
+        List<TrafficDataExternal<TrafficEntity>> mockStatic = List.of(
                 buildJourneyTimeStatic("code1"),
                 buildJourneyTimeStatic("code2")
         );
-        List<TrafficDataExternal<TrafficData>> mockDynamic = List.of(
+        List<TrafficDataExternal<TrafficEntity>> mockDynamic = List.of(
                 buildJourneyTimeDynamic("code3"),
                 buildJourneyTimeDynamic("code2")
         );
@@ -94,7 +94,7 @@ class ExternalDataAccessServiceImplTest {
      * as subtypes of the returned type.
      */
     @SuppressWarnings("unchecked")
-    private <E extends TrafficData> TrafficDataExternal<E> buildIncident(String code) {
+    private <E extends TrafficEntity> TrafficDataExternal<E> buildIncident(String code) {
         TrafficIncidentExternal incident = TrafficIncidentExternal.builder()
                                                                   .systemCodeNumber(code)
                                                                   .build();
@@ -102,18 +102,18 @@ class ExternalDataAccessServiceImplTest {
     }
 
     @SuppressWarnings("unchecked")
-    private <E extends TrafficData> TrafficDataExternal<E> buildJourneyTimeStatic(String code) {
+    private <E extends TrafficEntity> TrafficDataExternal<E> buildJourneyTimeStatic(String code) {
         JourneytimeStaticExternal journeyTime = MockExternalData.getJourneyTimeStaticExternal(code);
         return (TrafficDataExternal<E>) journeyTime;
     }
 
     @SuppressWarnings("unchecked")
-    private <E extends TrafficData> TrafficDataExternal<E> buildJourneyTimeDynamic(String code) {
+    private <E extends TrafficEntity> TrafficDataExternal<E> buildJourneyTimeDynamic(String code) {
         JourneytimeDynamicExternal journeyTime = MockExternalData.getJourneyTimeDynamicExternal(code);
         return (TrafficDataExternal<E>) journeyTime;
     }
 
-    private <T extends TrafficDataExternal<E>, E extends TrafficData> TrafficDataExternal<E> getExternalData(T data) {
+    private <T extends TrafficDataExternal<E>, E extends TrafficEntity> TrafficDataExternal<E> getExternalData(T data) {
         return data;
     }
 

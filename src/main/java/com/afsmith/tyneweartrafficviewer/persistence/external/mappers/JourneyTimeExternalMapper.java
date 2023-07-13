@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.JourneytimeDynamicExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.JourneytimeStaticExternal;
 import org.mapstruct.Mapper;

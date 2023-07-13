@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 
 import java.io.IOException;
@@ -20,7 +20,7 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(InputStream src, Class<T> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> read(InputStream src, Class<T> dataClass) throws IOException;
 
     /**
      * Read the provided data into the specified subclass of TrafficDataExternal.
@@ -30,7 +30,7 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(String fileName, Class<T> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> read(String fileName, Class<T> dataClass) throws IOException;
 
     /**
      * Read the provided data into the specified subclass of TrafficDataExternal.
@@ -40,5 +40,5 @@ public interface TrafficDataReader {
      * @return A list of the specified class.
      * @param <E> The corresponding entity.
      */
-    <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> readFromString(String input, Class<T> dataClass) throws IOException;
+    <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> readFromString(String input, Class<T> dataClass) throws IOException;
 }

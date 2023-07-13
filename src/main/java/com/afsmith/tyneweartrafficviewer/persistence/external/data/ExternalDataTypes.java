@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 
 public enum ExternalDataTypes {
     INCIDENT("/traffic/incident", TrafficIncidentExternal.class),
@@ -25,7 +25,7 @@ public enum ExternalDataTypes {
     }
 
     @SuppressWarnings("unchecked")
-    public <T extends TrafficDataExternal<E>, E extends TrafficData> Class<T> getExternalClass() {
+    public <T extends TrafficDataExternal<E>, E extends TrafficEntity> Class<T> getExternalClass() {
         // I know this is safe because all possible enumerations return subtypes of TrafficDataExternal
         return (Class<T>) externalClass;
     }

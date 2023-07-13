@@ -1,10 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
-import com.afsmith.tyneweartrafficviewer.persistence.mappers.JourneyTimeMapper;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -33,7 +31,7 @@ import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downc
  * generated dynamically by a routing service.
  */
 @Service
-public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<JourneyTime, JourneyTimeDTO, String> {
+public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<JourneyTime> {
     private final RoutingService routingService;
 
     @Getter
@@ -43,22 +41,22 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
     private boolean routesFromFile;
 
     @Autowired
-    public TrafficDataServiceJourneyTimes(JourneyTimeMapper mapper, JourneyTimeRepository repository, RoutingService routingService, ApplicationArguments args) {
-        super(mapper, repository, JourneyTimeDTO.class, JourneyTime.class);
+    public TrafficDataServiceJourneyTimes(JourneyTimeRepository repository, RoutingService routingService, ApplicationArguments args) {
+        super(repository, JourneyTime.class);
         this.routingService = routingService;
         routesFromFile = args.containsOption("local-routes");
         Set<String> options = args.getOptionNames();
         System.out.println(options);
     }
 
-    public TrafficDataServiceJourneyTimes(JourneyTimeMapper mapper, JourneyTimeRepository repository, RoutingService routingService) {
-        super(mapper, repository, JourneyTimeDTO.class, JourneyTime.class);
+    public TrafficDataServiceJourneyTimes(JourneyTimeRepository repository, RoutingService routingService) {
+        super(repository, JourneyTime.class);
         this.routingService = routingService;
         routesFromFile = false;
     }
 
     @Override
-    public void persistEntities(List<TrafficData> trafficData) {
+    public void persistEntities(List<TrafficEntity> trafficData) {
         List<JourneyTime> journeyTimes = downcastList(trafficData, JourneyTime.class);
 
         if (routesFromFile) {

@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.repositories;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficEvent;
+import com.afsmith.tyneweartrafficviewer.entities.Point;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEvent;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

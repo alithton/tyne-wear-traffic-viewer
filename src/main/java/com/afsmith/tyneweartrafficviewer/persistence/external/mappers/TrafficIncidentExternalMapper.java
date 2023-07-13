@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficIncidentExternal;
 import org.mapstruct.Mapper;
 

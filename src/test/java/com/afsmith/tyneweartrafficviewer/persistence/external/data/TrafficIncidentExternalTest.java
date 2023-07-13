@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
