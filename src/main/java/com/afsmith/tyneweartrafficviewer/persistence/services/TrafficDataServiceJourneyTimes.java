@@ -26,6 +26,12 @@ import java.util.Set;
 
 import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downcastList;
 
+/**
+ * Provides data access and persistence services for static and dynamic journey time data.
+ * This includes loading route data for the links along which the journey time data was
+ * measured. Route data can be loaded from a local JSON-formatted file or it can be
+ * generated dynamically by a routing service.
+ */
 @Service
 public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<JourneyTime, JourneyTimeDTO, String> {
     private final RoutingService routingService;
