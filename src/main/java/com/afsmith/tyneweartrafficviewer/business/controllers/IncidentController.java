@@ -1,8 +1,10 @@
 package com.afsmith.tyneweartrafficviewer.business.controllers;
 
+import com.afsmith.tyneweartrafficviewer.business.data.SpeedType;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
+import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,7 @@ import java.util.Map;
 public class IncidentController {
 
     private final DtoService dtoService;
+    private final TypicalJourneyTimeService typicalJourneyTimeService;
 
     /**
      * Get a list of all stored traffic data of the requested type. If no data
@@ -31,14 +34,23 @@ public class IncidentController {
      * JSON format.
      */
     @GetMapping("/incidents")
-    public ResponseEntity<Map<String, List<? extends TrafficDataDTO>>> getIncidents(@RequestParam(name="type", required = false) List<TrafficDataTypes> dataTypes) {
+    public ResponseEntity<Map<String, List<? extends TrafficDataDTO>>>
+        getIncidents(@RequestParam(name="type", required = false) List<TrafficDataTypes> dataTypes,
+                     @RequestParam(name="speedType", required = false) SpeedType speedType) {
+
         Map<String, List<? extends TrafficDataDTO>> response = new HashMap<>();
 
         // With no data types specified, return a response with an empty body.
         if (dataTypes == null) return ResponseEntity.ok(response);
+        if (speedType == null) speedType = SpeedType.CURRENT;
 
         for (var dataType : dataTypes) {
-            List<? extends TrafficDataDTO> incidents = dtoService.listAll(dataType);
+            List<? extends TrafficDataDTO> incidents;
+            if (dataType == TrafficDataTypes.SPEED && speedType != SpeedType.CURRENT) {
+                incidents = typicalJourneyTimeService.listAll();
+            } else {
+                incidents = dtoService.listAll(dataType);
+            }
             response.put(dataType.name(), incidents);
         }
         return ResponseEntity.ok(response);

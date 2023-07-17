@@ -44,4 +44,23 @@ class TypicalJourneyTimeReaderTest {
         }
     }
 
+    @Test
+    void readDoublesWithThousandsSeparator() throws IOException {
+        String dataPath = "src/test/resources/data/journey-time-large-doubles.csv";
+        List<TypicalJourneyTime> typicalJourneyTimes = reader.read(dataPath, false);
+
+        assertThat(typicalJourneyTimes.size()).isEqualTo(1);
+        TypicalJourneyTime value = typicalJourneyTimes.get(0);
+
+        assertThat(value.getTravelTime()).isEqualTo(1039.25);
+    }
+
+    @Test
+    void readIgnoresSubsectionHeadings() throws IOException {
+        String dataPath = "src/test/resources/data/journey-time-subsection-heading.csv";
+        List<TypicalJourneyTime> typicalJourneyTimes = reader.read(dataPath, true);
+
+        assertThat(typicalJourneyTimes.size()).isEqualTo(2);
+    }
+
 }

@@ -2,7 +2,6 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -40,11 +39,15 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
     @Setter
     private boolean routesFromFile;
 
+    @Setter
+    private boolean updateRoutesFile;
+
     @Autowired
     public TrafficDataServiceJourneyTimes(JourneyTimeRepository repository, RoutingService routingService, ApplicationArguments args) {
         super(repository, JourneyTime.class);
         this.routingService = routingService;
         routesFromFile = args.containsOption("local-routes");
+        updateRoutesFile = args.containsOption("update-routes");
         Set<String> options = args.getOptionNames();
         System.out.println(options);
     }
@@ -53,10 +56,11 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
         super(repository, JourneyTime.class);
         this.routingService = routingService;
         routesFromFile = false;
+        updateRoutesFile = false;
     }
 
     @Override
-    public void persistEntities(List<TrafficEntity> trafficData) {
+    public void persistEntities(List<JourneyTime> trafficData) {
         List<JourneyTime> journeyTimes = downcastList(trafficData, JourneyTime.class);
 
         if (routesFromFile) {
@@ -68,7 +72,7 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
         } else {
             journeyTimes.forEach(this::loadRoute);
         }
-        writeRoutesToFile(journeyTimes);
+        if (updateRoutesFile) writeRoutesToFile(journeyTimes);
         repository.saveAll(journeyTimes);
     }
 
@@ -117,7 +121,4 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
         this.routeOutputFile = Paths.get(System.getProperty("user.dir") + path);
     }
 
-    public boolean isRoutesFromFile() {
-        return routesFromFile;
-    }
 }

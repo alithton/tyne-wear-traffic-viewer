@@ -4,8 +4,6 @@ import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downcastList;
-
 import java.util.List;
 
 /**
@@ -30,9 +28,8 @@ public abstract class AbstractTrafficDataService<T extends TrafficEntity> implem
      * Store a list of traffic data of the type specified by the connector.
      * @param trafficData A list of traffic data.
      */
-    public void persistEntities(List<TrafficEntity> trafficData) {
-        List<T> validatedEntities = downcastList(trafficData, entityClass);
-        repository.saveAll(validatedEntities);
+    public void persistEntities(List<T> trafficData) {
+        repository.saveAll(trafficData);
     }
 
 }

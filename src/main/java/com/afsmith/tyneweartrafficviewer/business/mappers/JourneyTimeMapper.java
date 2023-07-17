@@ -4,6 +4,7 @@ import com.afsmith.tyneweartrafficviewer.business.data.GeoJsonPointDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -12,6 +13,10 @@ public interface JourneyTimeMapper extends TrafficDataMapper<JourneyTimeDTO, Jou
 
     @Mapping(source = "entity", target = "averageSpeed")
     JourneyTimeDTO entityToDto(JourneyTime entity);
+
+    @Mapping(target = "averageSpeed", expression = "java( mapAverageSpeed(journeyTime, typical) )")
+    @Mapping(source = "journeyTime.systemCodeNumber", target = "systemCodeNumber")
+    JourneyTimeDTO entityToDto(JourneyTime journeyTime, TypicalJourneyTime typical);
 
     default GeoJsonPoint map(GeoJsonPointDTO value) {
         return new GeoJsonPoint(value.getLatitude(), value.getLongitude());
@@ -31,7 +36,18 @@ public interface JourneyTimeMapper extends TrafficDataMapper<JourneyTimeDTO, Jou
         if (source.getRoute() == null || source.getLinkTravelTime() == 0) return 0.0;
         double distanceMetres = source.getRoute().getDistance();
         double timeSeconds = source.getLinkTravelTime();
-        double speedKmh = (distanceMetres / timeSeconds) * 3.6;
+        return calculateAverageSpeedMph(distanceMetres, timeSeconds);
+    }
+
+    default double mapAverageSpeed(JourneyTime journeyTime, TypicalJourneyTime typical) {
+        if (journeyTime.getRoute() == null) return 0.0;
+        double distance = journeyTime.getRoute().getDistance();
+        double time = typical.getTravelTime();
+        return calculateAverageSpeedMph(distance, time);
+    }
+
+    default double calculateAverageSpeedMph(double distance, double time) {
+        double speedKmh = (distance / time) * 3.6;
         return speedKmh * 0.621371;
     }
 }

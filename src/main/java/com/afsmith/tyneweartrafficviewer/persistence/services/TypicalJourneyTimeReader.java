@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import com.opencsv.bean.CsvToBeanBuilder;
+import com.opencsv.bean.CsvToBeanFilter;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -41,12 +42,28 @@ public class TypicalJourneyTimeReader {
         String profile = isWeekend ? "weekend" : "weekday";
         List<TypicalJourneyTime> data = new CsvToBeanBuilder<TypicalJourneyTime>(reader)
                 .withProfile(profile)
-                                        .withType(TypicalJourneyTime.class)
-                                        .build()
-                                        .parse();
+                .withType(TypicalJourneyTime.class)
+                .withFilter(getIncompleteLinesFilter())
+                .build()
+                .parse();
 
         return data.stream().filter(e -> !"".equals(e.getSystemCodeNumber()))
                    .peek(e -> e.setWeekend(isWeekend))
                    .toList();
+    }
+
+    /*
+     * Get a filter that removes any line for which the first field is empty.
+     * This skips over empty lines but also some subsection headings that were
+     * presumably included for human readability but which caused the parser to
+     * crash.
+     */
+    private CsvToBeanFilter getIncompleteLinesFilter() {
+        return new CsvToBeanFilter() {
+            @Override
+            public boolean allowLine(String[] strings) {
+                return !strings[0].isEmpty();
+            }
+        };
     }
 }

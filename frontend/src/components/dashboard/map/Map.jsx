@@ -22,9 +22,10 @@ function Map() {
     const filters = useSelector(state => state.filters.value);
 
     const dispatch = useDispatch();
+    console.log(filters.speedType);
 
     // Fetch incident data from back end or from store
-    const {data: trafficData, isSuccess} = useGetIncidentsQuery(filters.dataType);
+    const {data: trafficData, isSuccess} = useGetIncidentsQuery({dataType: filters.dataType, speedType: filters.speedType});
 
     // Filter the loaded data and reformat coordinates to the format expected by Leaflet
     useEffect(() => {

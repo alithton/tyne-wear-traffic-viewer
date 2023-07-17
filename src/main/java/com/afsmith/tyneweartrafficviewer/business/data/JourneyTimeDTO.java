@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.time.ZonedDateTime;
 
+@ToString
 @Getter
 @NoArgsConstructor
 public class JourneyTimeDTO extends TrafficDataDTO implements MappableDTO {

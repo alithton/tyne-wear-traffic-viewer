@@ -87,6 +87,10 @@ class TrafficDataPersistenceRetrievalTest {
                 .thenReturn(List.of(MockData.getCamera("code1"),
                                     MockData.getCamera("code2")));
 
+        when(typicalJourneyTimeRepository.findAll())
+                .thenReturn(List.of(MockData.getTypicalJourneyTime("code1"),
+                                    MockData.getTypicalJourneyTime("code2")));
+
         when(routingService.calculateRoute(any(Point.class), any(Point.class)))
                 .thenReturn(MockData.getSimpleRoute());
 
@@ -120,6 +124,11 @@ class TrafficDataPersistenceRetrievalTest {
     @Test
     void listAllCamera() {
         testListAll(TrafficDataTypes.CAMERA, Camera.class);
+    }
+
+    @Test
+    void listAllTypicalJourneyTimes() {
+        testListAll(TrafficDataTypes.TYPICAL_SPEED, TypicalJourneyTime.class);
     }
 
     // Ensure that the routing service is being used to set a route for journeytime entities without existing

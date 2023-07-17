@@ -9,6 +9,8 @@ import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalD
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
+import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
+import com.afsmith.tyneweartrafficviewer.persistence.services.TypicalJourneyTimeReader;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -25,6 +27,9 @@ public class BootstrapData implements CommandLineRunner {
     private final TrafficDataReader trafficDataReader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");
     private final TrafficDataPersistence dataPersistence;
     private final ExternalDataAccessService dataAccessService;
+    private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    private final String WEEKDAY_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekdays.csv";
+    private final String WEEKEND_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekends.csv";
 
     // Should the data be loaded from local files or downloaded from the Open Data Service?
     private boolean useLocalData;
@@ -48,6 +53,7 @@ public class BootstrapData implements CommandLineRunner {
         List<TrafficEntity> trafficRoadworks;
         List<TrafficEntity> journeyTimes;
         List<TrafficEntity> cameras;
+        List<TrafficEntity> typicalJourneyTimes = List.copyOf(typicalJourneyTimeService.loadFromFile(WEEKDAY_JOURNEY_TIMES_FILE, WEEKEND_JOURNEY_TIMES_FILE));
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
@@ -74,6 +80,7 @@ public class BootstrapData implements CommandLineRunner {
         dataPersistence.persistEntities(trafficRoadworks, TrafficDataTypes.ROADWORKS);
         dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
         dataPersistence.persistEntities(cameras, TrafficDataTypes.CAMERA);
+        dataPersistence.persistEntities(typicalJourneyTimes, TrafficDataTypes.TYPICAL_SPEED);
     }
 
     public boolean isUseLocalData() {

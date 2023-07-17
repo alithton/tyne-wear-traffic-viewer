@@ -5,6 +5,7 @@ import com.afsmith.tyneweartrafficviewer.entities.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.util.List;
 
@@ -287,6 +288,17 @@ public class MockData {
                         .build();
     }
 
+    public static TypicalJourneyTime getTypicalJourneyTime(String code) {
+        return TypicalJourneyTime.builder()
+                                 .systemCodeNumber(code)
+                                 .id(1L)
+                                 .isWeekend(false)
+                                 .travelTime(10.0)
+                                 .standardDeviation(1.0)
+                                 .timeOfDay(LocalTime.now())
+                                 .build();
+    }
+
     public static SimpleRoute getSimpleRoute() {
         List<GeoJsonPoint> coordinates = List.of(
                 new GeoJsonPoint(59.1, -1.0),
@@ -299,16 +311,4 @@ public class MockData {
                           .build();
     }
 
-//    public static SimpleRoute getSimpleRouteWithCode(String code) {
-//        List<GeoJsonPoint> coordinates = List.of(
-//                new GeoJsonPoint(59.1, -1.0),
-//                new GeoJsonPoint(58.9, 1.2));
-//
-//        return SimpleRoute.builder()
-//                          .systemCodeNumber(code)
-//                          .coordinates(coordinates)
-//                          .distance(627.5)
-//                          .duration(59.6)
-//                          .build();
-//    }
 }

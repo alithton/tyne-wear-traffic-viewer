@@ -3,6 +3,7 @@ package com.afsmith.tyneweartrafficviewer.business.controllers;
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.mappers.MappableDTO;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
+import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,9 +28,13 @@ class IncidentControllerTest {
 
     String URL_PATH = "/incidents";
     String DATA_TYPE_PARAM = "type";
+    String SPEED_TYPE_PARAM = "speedType";
 
     @MockBean
     DtoService dtoService;
+
+    @MockBean
+    TypicalJourneyTimeService typicalJourneyTimeService;
 
     @Autowired
     MockMvc mockMvc;
@@ -111,5 +116,19 @@ class IncidentControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()", is(2)));
+    }
+
+    @Test
+    void getTypicalSpeed() throws Exception {
+        when(typicalJourneyTimeService.listAll())
+                .thenReturn(List.of(MockData.getJourneyTimeDto("code1"),
+                            MockData.getJourneyTimeDto("code2")));
+
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "SPEED")
+                                .queryParam(SPEED_TYPE_PARAM, "TYPICAL"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.length()", is(1)))
+                .andExpect(jsonPath("$.SPEED.length()", is(2)));
     }
 }

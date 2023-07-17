@@ -2,7 +2,6 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.Point;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
@@ -31,7 +30,7 @@ class TrafficDataServiceJourneyTimesTest {
     @Mock
     JourneyTimeRepository repository;
 
-    List<TrafficEntity> mockJourneyTimes;
+    List<JourneyTime> mockJourneyTimes;
 
     @Captor
     ArgumentCaptor<List<JourneyTime>> captor;

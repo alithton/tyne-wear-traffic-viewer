@@ -21,5 +21,5 @@ public interface TrafficDataService<T extends TrafficEntity> {
       * Store the provided traffic data in the database.
       * @param trafficData A list of traffic data.
       */
-     void persistEntities(List<TrafficEntity> trafficData);
+     void persistEntities(List<T> trafficData);
 }

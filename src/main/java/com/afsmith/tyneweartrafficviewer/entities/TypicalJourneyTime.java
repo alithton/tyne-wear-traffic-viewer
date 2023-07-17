@@ -3,11 +3,11 @@ package com.afsmith.tyneweartrafficviewer.entities;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
 import com.opencsv.bean.CsvIgnore;
+import com.opencsv.bean.CsvNumber;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalTime;
 
@@ -19,13 +19,19 @@ import java.time.LocalTime;
 @ToString
 @Setter
 @Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class TypicalJourneyTime implements TrafficEntity {
+
+    @GeneratedValue
+    @Id
+    private long id;
 
     // An identifying code for the link.
     @CsvBindByName(column = "Site Name", profiles = "weekday")
     @CsvBindByName(column = "Link Name", profiles = "weekend")
-    @Id
     private String systemCodeNumber;
 
     // Does the data represent a weekend?
@@ -35,6 +41,7 @@ public class TypicalJourneyTime implements TrafficEntity {
     // The average time taken to traverse the link.
     @CsvBindByName(column = "Average", profiles = "weekday")
     @CsvBindByName(column = "Average Travel Time (s)", profiles = "weekend")
+    @CsvNumber("#,##0.00")
     private double travelTime;
 
     // The standard deviation of the travel time data.
