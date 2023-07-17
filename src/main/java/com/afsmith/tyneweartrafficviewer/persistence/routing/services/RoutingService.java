@@ -1,9 +1,9 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
+import com.afsmith.tyneweartrafficviewer.entities.Point;
+import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.client.OsrmClient;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.GeoJsonPoint;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.GeoJsonExternalToSimpleRouteMapper;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
 import com.fasterxml.jackson.databind.ObjectMapper;

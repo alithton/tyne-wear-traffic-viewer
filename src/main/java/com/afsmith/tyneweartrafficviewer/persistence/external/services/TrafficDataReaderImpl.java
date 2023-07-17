@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
@@ -72,7 +72,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(InputStream src, Class<T> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> read(InputStream src, Class<T> dataClass) throws IOException {
         var mapper = JsonMapper.builder()
                                .findAndAddModules()
                                .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
@@ -89,7 +89,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> read(String fileName, Class<T> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> read(String fileName, Class<T> dataClass) throws IOException {
         Path inputFilePath = Paths.get(workingDir.toString(), fileName);
         return read(Files.newInputStream(inputFilePath), dataClass);
     }
@@ -98,7 +98,7 @@ public class TrafficDataReaderImpl implements TrafficDataReader {
      * {@inheritDoc}
      */
     @Override
-    public <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> readFromString(String input, Class<T> dataClass) throws IOException {
+    public <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> readFromString(String input, Class<T> dataClass) throws IOException {
         return read(new ByteArrayInputStream(input.getBytes()), dataClass);
     }
 }

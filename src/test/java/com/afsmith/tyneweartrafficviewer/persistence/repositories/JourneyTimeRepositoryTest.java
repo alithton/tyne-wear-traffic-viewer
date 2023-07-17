@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.repositories;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

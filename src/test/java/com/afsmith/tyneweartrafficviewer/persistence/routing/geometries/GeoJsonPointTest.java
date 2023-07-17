@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.geometries;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.GeoJsonPoint;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;

@@ -1,16 +1,13 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
-import com.afsmith.tyneweartrafficviewer.persistence.mappers.JourneyTimeMapper;
+import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.Point;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mapstruct.factory.Mappers;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -29,12 +26,11 @@ class TrafficDataServiceJourneyTimesTest {
 
     @Mock
     RoutingService routingService;
-    JourneyTimeMapper mapper = Mappers.getMapper(JourneyTimeMapper.class);
 
     @Mock
     JourneyTimeRepository repository;
 
-    List<TrafficData> mockJourneyTimes;
+    List<JourneyTime> mockJourneyTimes;
 
     @Captor
     ArgumentCaptor<List<JourneyTime>> captor;
@@ -42,7 +38,7 @@ class TrafficDataServiceJourneyTimesTest {
     @BeforeEach
     void setUp() {
 
-        journeyTimeService = new TrafficDataServiceJourneyTimes(mapper, repository, routingService);
+        journeyTimeService = new TrafficDataServiceJourneyTimes(repository, routingService);
         journeyTimeService.setRouteOutputFile("/src/test/output/routes.json");
 
         mockJourneyTimes = List.of(MockData.getJourneyTime("code1"),

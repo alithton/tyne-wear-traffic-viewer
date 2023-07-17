@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 
 import java.io.IOException;
 import java.util.List;
@@ -20,6 +20,6 @@ public interface ExternalDataAccessService {
      * @throws IOException If an issue arises when reading the data, an IOException
      * will be thrown.
      */
-    <E extends TrafficData> List<E> getData(TrafficDataTypes dataType) throws IOException;
+    <E extends TrafficEntity> List<E> getData(TrafficDataTypes dataType) throws IOException;
 
 }

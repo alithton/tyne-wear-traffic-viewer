@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
+import com.afsmith.tyneweartrafficviewer.entities.GeoJsonPoint;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.geometries.GeoJsonPointExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
 import org.mapstruct.Mapper;

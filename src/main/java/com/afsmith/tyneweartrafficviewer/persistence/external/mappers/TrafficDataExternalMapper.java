@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 
 import java.util.List;

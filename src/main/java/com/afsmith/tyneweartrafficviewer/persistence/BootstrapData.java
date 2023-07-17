@@ -1,13 +1,15 @@
 package com.afsmith.tyneweartrafficviewer.persistence;
 
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
+import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -24,6 +26,9 @@ public class BootstrapData implements CommandLineRunner {
     private final TrafficDataReader trafficDataReader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");
     private final TrafficDataPersistence dataPersistence;
     private final ExternalDataAccessService dataAccessService;
+    private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    private final String WEEKDAY_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekdays.csv";
+    private final String WEEKEND_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekends.csv";
 
     // Should the data be loaded from local files or downloaded from the Open Data Service?
     private boolean useLocalData;
@@ -41,12 +46,13 @@ public class BootstrapData implements CommandLineRunner {
      */
     public void loadIncidents() throws IOException {
 
-        List<TrafficData> trafficIncidents;
-        List<TrafficData> trafficEvents;
-        List<TrafficData> trafficAccidents;
-        List<TrafficData> trafficRoadworks;
-        List<TrafficData> journeyTimes;
-        List<TrafficData> cameras;
+        List<TrafficEntity> trafficIncidents;
+        List<TrafficEntity> trafficEvents;
+        List<TrafficEntity> trafficAccidents;
+        List<TrafficEntity> trafficRoadworks;
+        List<TrafficEntity> journeyTimes;
+        List<TrafficEntity> cameras;
+        List<TrafficEntity> typicalJourneyTimes = List.copyOf(typicalJourneyTimeService.loadFromFile(WEEKDAY_JOURNEY_TIMES_FILE, WEEKEND_JOURNEY_TIMES_FILE));
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
@@ -73,6 +79,7 @@ public class BootstrapData implements CommandLineRunner {
         dataPersistence.persistEntities(trafficRoadworks, TrafficDataTypes.ROADWORKS);
         dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
         dataPersistence.persistEntities(cameras, TrafficDataTypes.CAMERA);
+        dataPersistence.persistEntities(typicalJourneyTimes, TrafficDataTypes.TYPICAL_SPEED);
     }
 
     public boolean isUseLocalData() {
@@ -83,15 +90,15 @@ public class BootstrapData implements CommandLineRunner {
         this.useLocalData = useLocalData;
     }
 
-    private <T extends TrafficDataExternal<E>, E extends TrafficData> List<TrafficData> readFromFile(String fileName, Class<T> clazz) throws IOException {
+    private <T extends TrafficDataExternal<E>, E extends TrafficData> List<TrafficEntity> readFromFile(String fileName, Class<T> clazz) throws IOException {
         return trafficDataReader.read(fileName, clazz)
                                 .stream()
-                                .map(external -> (TrafficData) external.toEntity())
+                                .map(external -> (TrafficEntity) external.toEntity())
                                 .toList();
     }
 
     @SuppressWarnings("unchecked")
-    private <T extends TrafficDataExternal<E>, U extends TrafficDataExternal<E>, E extends TrafficData> List<TrafficData>
+    private <T extends TrafficDataExternal<E>, U extends TrafficDataExternal<E>, E extends TrafficEntity> List<TrafficEntity>
         readFromFile(String staticFileName, String dynamicFileName, Class<? extends T> staticClass, Class<U> dynamicClass) throws IOException {
 
             List<U> dynamicData = trafficDataReader.read(dynamicFileName, dynamicClass);
@@ -103,11 +110,11 @@ public class BootstrapData implements CommandLineRunner {
                                         return dynamic.size() > 0 ? staticElement.toEntity( (DynamicDataExternal<E>) dynamic.get(0))
                                                 : staticElement.toEntity();
                                     })
-                                    .map(element -> (TrafficData) element)
+                                    .map(element -> (TrafficEntity) element)
                                     .toList();
     }
 
-    private <T extends TrafficDataExternal<E>, E extends TrafficData> List<T> findBySystemCode(String code, List<T> data) {
+    private <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> findBySystemCode(String code, List<T> data) {
         return data.stream()
                    .filter(element -> code.equals(element.getSystemCodeNumber()))
                    .toList();

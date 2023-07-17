@@ -9,11 +9,13 @@ export const filterSlice = createSlice({
             value: {
                 dataType: ['INCIDENT'],
                 severity: ['Low', 'Medium', 'High'],
+                speedType: 'CURRENT',
                 startDate: null,
                 endDate: null
             }
         },
         reducers: {
+            // Add a traffic data type, if it is not already present.
             addDataType: (state, action) => {
                 const current = state.value.dataType;
                 if (!current.includes(action.payload)) {
@@ -28,10 +30,19 @@ export const filterSlice = createSlice({
             },
             removeSeverity: (state, action) => {
                 state.value.severity = state.value.severity.filter(severity => severity !== action.payload);
+            },
+            changeSpeedType: (state, action) => {
+                state.value.speedType = action.payload;
             }
         }
     }
 );
 
-export const { addDataType, removeDataType, addSeverity, removeSeverity } = filterSlice.actions;
+export const {
+    addDataType,
+    removeDataType,
+    addSeverity,
+    removeSeverity,
+    changeSpeedType
+} = filterSlice.actions;
 export default filterSlice.reducer;

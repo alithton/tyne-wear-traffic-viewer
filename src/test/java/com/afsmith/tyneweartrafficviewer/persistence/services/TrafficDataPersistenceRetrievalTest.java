@@ -1,17 +1,12 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Point;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficIncident;
-import com.afsmith.tyneweartrafficviewer.persistence.mappers.*;
+import com.afsmith.tyneweartrafficviewer.entities.*;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mapstruct.factory.Mappers;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -33,14 +28,7 @@ class TrafficDataPersistenceRetrievalTest {
     TrafficDataServiceRoadworks roadworkService;
     TrafficDataServiceJourneyTimes journeyTimeService;
     TrafficDataServiceCamera cameraService;
-
-    // Mappers for each data type
-    TrafficIncidentMapper incidentMapper = Mappers.getMapper(TrafficIncidentMapper.class);
-    TrafficEventMapper eventMapper = Mappers.getMapper(TrafficEventMapper.class);
-    TrafficAccidentMapper accidentMapper = Mappers.getMapper(TrafficAccidentMapper.class);
-    TrafficRoadworkMapper roadworkMapper = Mappers.getMapper(TrafficRoadworkMapper.class);
-    JourneyTimeMapper journeyTimeMapper = Mappers.getMapper(JourneyTimeMapper.class);
-    CameraMapper cameraMapper = Mappers.getMapper(CameraMapper.class);
+    TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
 
     // Mocked repositories for each data type
     @MockBean
@@ -55,12 +43,12 @@ class TrafficDataPersistenceRetrievalTest {
     JourneyTimeRepository journeyTimeRepository;
     @MockBean
     CameraRepository cameraRepository;
+    @MockBean
+    TypicalJourneyTimeRepository typicalJourneyTimeRepository;
 
     List<TrafficIncident> incidents = List.of(MockData.getIncident("code1"),
                                               MockData.getIncident("code2"));
 
-    List<TrafficDataDTO> incidentDTOS = List.of(MockData.getIncidentDto("code1"),
-                                                    MockData.getIncidentDto("code2"));
     @MockBean
     RoutingService routingService;
 
@@ -69,15 +57,16 @@ class TrafficDataPersistenceRetrievalTest {
 
     @BeforeEach
     void setUp() {
-        incidentService = new TrafficDataServiceIncidents(incidentMapper, incidentRepository);
-        eventService = new TrafficDataServiceEvent(eventMapper, eventRepository);
-        accidentService = new TrafficDataServiceAccident(accidentMapper, accidentRepository);
-        roadworkService = new TrafficDataServiceRoadworks(roadworkMapper, roadworkRepository);
-        journeyTimeService = new TrafficDataServiceJourneyTimes(journeyTimeMapper, journeyTimeRepository, routingService);
-        cameraService = new TrafficDataServiceCamera(cameraMapper, cameraRepository);
+        incidentService = new TrafficDataServiceIncidents(incidentRepository);
+        eventService = new TrafficDataServiceEvent(eventRepository);
+        accidentService = new TrafficDataServiceAccident(accidentRepository);
+        roadworkService = new TrafficDataServiceRoadworks(roadworkRepository);
+        journeyTimeService = new TrafficDataServiceJourneyTimes(journeyTimeRepository, routingService);
+        cameraService = new TrafficDataServiceCamera(cameraRepository);
+        typicalJourneyTimeService = new TrafficDataServiceTypicalJourneyTime(typicalJourneyTimeRepository);
 
         dataPersistence = new TrafficDataPersistence(incidentService, eventService, accidentService,
-                                                     roadworkService, journeyTimeService, cameraService);
+                                                     roadworkService, journeyTimeService, cameraService, typicalJourneyTimeService);
 
         // Set up mock repositories to return mocked data
         when(incidentRepository.findAll())
@@ -98,6 +87,10 @@ class TrafficDataPersistenceRetrievalTest {
                 .thenReturn(List.of(MockData.getCamera("code1"),
                                     MockData.getCamera("code2")));
 
+        when(typicalJourneyTimeRepository.findAll())
+                .thenReturn(List.of(MockData.getTypicalJourneyTime("code1"),
+                                    MockData.getTypicalJourneyTime("code2")));
+
         when(routingService.calculateRoute(any(Point.class), any(Point.class)))
                 .thenReturn(MockData.getSimpleRoute());
 
@@ -105,45 +98,44 @@ class TrafficDataPersistenceRetrievalTest {
 
     @Test
     void listAllIncidents() {
-        testListAll(TrafficDataTypes.INCIDENT, TrafficIncidentDTO.class);
+        testListAll(TrafficDataTypes.INCIDENT, TrafficIncident.class);
     }
 
     @Test
     void listAllEvents() {
-        testListAll(TrafficDataTypes.EVENT, TrafficEventDTO.class);
+        testListAll(TrafficDataTypes.EVENT, TrafficEvent.class);
     }
 
     @Test
     void listAllAccidents() {
-        testListAll(TrafficDataTypes.ACCIDENT, TrafficAccidentDTO.class);
+        testListAll(TrafficDataTypes.ACCIDENT, TrafficAccident.class);
     }
 
     @Test
     void listAllRoadworks() {
-        testListAll(TrafficDataTypes.ROADWORKS, TrafficRoadworksDTO.class);
+        testListAll(TrafficDataTypes.ROADWORKS, TrafficRoadwork.class);
     }
 
     @Test
     void listAllJourneyTimes() {
-        testListAll(TrafficDataTypes.SPEED, JourneyTimeDTO.class);
+        testListAll(TrafficDataTypes.SPEED, JourneyTime.class);
     }
 
     @Test
     void listAllCamera() {
-        testListAll(TrafficDataTypes.CAMERA, CameraDTO.class);
+        testListAll(TrafficDataTypes.CAMERA, Camera.class);
     }
 
     @Test
-    void persistIncidents() {
-        dataPersistence.persist(incidentDTOS, TrafficDataTypes.INCIDENT);
-        verify(incidentRepository, times(1)).saveAll(anyList());
+    void listAllTypicalJourneyTimes() {
+        testListAll(TrafficDataTypes.TYPICAL_SPEED, TypicalJourneyTime.class);
     }
 
     // Ensure that the routing service is being used to set a route for journeytime entities without existing
     // route information.
     @Test
     void persistJourneyTimeEntities() {
-        List<TrafficData> journeyTimes = List.of(MockData.getJourneyTime("code1"),
+        List<TrafficEntity> journeyTimes = List.of(MockData.getJourneyTime("code1"),
                                                  MockData.getJourneyTime("code2"));
 
         dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
@@ -155,8 +147,8 @@ class TrafficDataPersistenceRetrievalTest {
         assertThat(capturedJourneyTimes.get(0).getRoute()).isNotNull();
     }
 
-    private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficDataDTO> expectedClass) {
-        List<TrafficDataDTO> trafficData = dataPersistence.listAll(dataType);
+    private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficEntity> expectedClass) {
+        List<TrafficEntity> trafficData = dataPersistence.listAll(dataType);
         assertThat(trafficData).isNotNull();
         assertThat(trafficData.size()).isEqualTo(2);
         assertThat(trafficData.get(0)).isInstanceOf(expectedClass);

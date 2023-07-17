@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficRoadwork;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficRoadwork;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficRoadworkExternalMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;

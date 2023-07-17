@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.mappers;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Camera;
+import com.afsmith.tyneweartrafficviewer.entities.Camera;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.CctvDynamicExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.CctvStaticExternal;
 import org.mapstruct.Mapper;

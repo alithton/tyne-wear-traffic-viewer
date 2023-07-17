@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.services;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.SimpleRoute;
+import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.client.OsrmClient;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.GeoJsonExternalToSimpleRouteMapper;
 import org.junit.jupiter.api.BeforeEach;

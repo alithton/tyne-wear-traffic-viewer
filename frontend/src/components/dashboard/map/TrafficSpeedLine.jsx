@@ -16,12 +16,12 @@ function calculateColour(min, max, actual) {
 
 function TrafficSpeedLine({positions, data, ...props}) {
 
-    const colour = calculateColour(props.min, props.max, data.averageSpeed);
+    const colour = calculateColour(props.min, props.max, data.speed);
 
     return (
         <Polyline pathOptions={ {color: colour} } positions={positions} >
             <Tooltip>
-                <p>{`${Math.ceil(data.averageSpeed)} mph`}</p>
+                <p>{`${Math.ceil(data.speed)} mph`}</p>
                 <p>{data.systemCodeNumber}</p>
                 <p>{data.shortDescription}</p>
             </Tooltip>

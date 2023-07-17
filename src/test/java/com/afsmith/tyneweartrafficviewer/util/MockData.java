@@ -1,11 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.util;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.*;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.GeoJsonPoint;
+import com.afsmith.tyneweartrafficviewer.entities.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.util.List;
 
@@ -61,6 +61,29 @@ public class MockData {
                                  .build();
     }
 
+    public static TrafficEventDTO getEventDto(String code) {
+        return TrafficEventDTO.builder()
+                              .systemCodeNumber(code)
+                              .type(TrafficDataTypes.ACCIDENT)
+                              .shortDescription("short description")
+                              .longDescription("long description")
+                              .locationDescription("location description")
+                              .point(POINT_DTO)
+                              .creationDate(TIME)
+                              .dataSourceTypeRef("type ref")
+                              .confirmedDate(TIME)
+                              .modifiedDate(TIME)
+                              .severityTypeRefDescription("Low")
+                              .lanesAffectedTypeRefDescription("| T")
+                              .diversionInForce("N")
+                              .phaseTypeRef("current")
+                              .eventTypeDescription("")
+                              .organiser("An organiser")
+                              .venueName("venue")
+                              .planned(PLANNED_DTO)
+                              .build();
+    }
+
 
     public static TrafficAccidentDTO getAccidentDto(String code) {
         return TrafficAccidentDTO.builder()
@@ -114,15 +137,21 @@ public class MockData {
                              .systemCodeNumber(code)
                              .shortDescription("short description")
                              .longDescription("long description")
-                             .point(POINT_DTO)
-                             .endPoint(POINT_DTO)
-                             .lastUpdated(TIME)
-                             .linkTravelTime(100)
-                             .platesIn(10)
-                             .platesOut(10)
-                             .plateMatches(10)
-                             .lastUpdatedDynamic(TIME)
                              .build();
+    }
+
+    public static ComparisonDTO getComparisonDTO(String code, double typicalSpeed, double currentSpeed) {
+        return ComparisonDTO.comparisonBuilder()
+                            .shortDescription(SHORT_DESCRIPTION)
+                            .longDescription(LONG_DESCRIPTION)
+                            .systemCodeNumber(code)
+                            .speed(currentSpeed)
+                            .typicalSpeed(typicalSpeed)
+                            .build();
+    }
+
+    public static ComparisonDTO getComparisonDTO(String code) {
+        return getComparisonDTO(code, 30.0, 30.0);
     }
 
     public static CameraDTO getCameraDto(String code) {
@@ -265,6 +294,17 @@ public class MockData {
                         .build();
     }
 
+    public static TypicalJourneyTime getTypicalJourneyTime(String code) {
+        return TypicalJourneyTime.builder()
+                                 .systemCodeNumber(code)
+                                 .id(1L)
+                                 .isWeekend(false)
+                                 .travelTime(10.0)
+                                 .standardDeviation(1.0)
+                                 .timeOfDay(LocalTime.now())
+                                 .build();
+    }
+
     public static SimpleRoute getSimpleRoute() {
         List<GeoJsonPoint> coordinates = List.of(
                 new GeoJsonPoint(59.1, -1.0),
@@ -277,16 +317,4 @@ public class MockData {
                           .build();
     }
 
-//    public static SimpleRoute getSimpleRouteWithCode(String code) {
-//        List<GeoJsonPoint> coordinates = List.of(
-//                new GeoJsonPoint(59.1, -1.0),
-//                new GeoJsonPoint(58.9, 1.2));
-//
-//        return SimpleRoute.builder()
-//                          .systemCodeNumber(code)
-//                          .coordinates(coordinates)
-//                          .distance(627.5)
-//                          .duration(59.6)
-//                          .build();
-//    }
 }

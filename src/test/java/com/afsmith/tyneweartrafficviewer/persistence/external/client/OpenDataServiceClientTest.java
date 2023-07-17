@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.client;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.config.RestTemplateBuilderConfig;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;

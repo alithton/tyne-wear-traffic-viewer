@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.PlannedTimes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficRoadwork;
+import com.afsmith.tyneweartrafficviewer.entities.PlannedTimes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficRoadwork;
 import org.junit.jupiter.api.Test;
 
 import java.time.ZonedDateTime;

@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficAccident;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficAccident;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficAccidentExternalMapper;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;

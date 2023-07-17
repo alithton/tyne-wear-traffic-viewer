@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.DynamicDataExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
@@ -27,7 +27,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
      * {@inheritDoc}
      */
     @Override
-    public <E extends TrafficData> List<E> getData(TrafficDataTypes dataType) throws IOException {
+    public <E extends TrafficEntity> List<E> getData(TrafficDataTypes dataType) throws IOException {
 
         // Speed and camera data have dynamic and static components that need to be joined.
         if (dataType == TrafficDataTypes.SPEED || dataType == TrafficDataTypes.CAMERA) {
@@ -53,6 +53,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
             case ROADWORKS -> ExternalDataTypes.ROADWORKS;
             case SPEED -> dynamic ? ExternalDataTypes.JOURNEY_TIME_DYNAMIC : ExternalDataTypes.JOURNEY_TIME_STATIC;
             case CAMERA -> dynamic ? ExternalDataTypes.CCTV_DYNAMIC : ExternalDataTypes.CCTV_STATIC;
+            case TYPICAL_SPEED -> null;
         };
     }
 
@@ -60,7 +61,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
      * Find all elements in a list of data whose system code number matches the provided
      * code.
      */
-    private <E extends TrafficData> List<TrafficDataExternal<E>> findBySystemCode(String code, List<TrafficDataExternal<E>> data) {
+    private <E extends TrafficEntity> List<TrafficDataExternal<E>> findBySystemCode(String code, List<TrafficDataExternal<E>> data) {
         return data.stream()
                    .filter(element -> code.equals(element.getSystemCodeNumber()))
                    .toList();
@@ -69,7 +70,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     /*
      * Convert a list of traffic data into a map, with system code numbers as keys.
      */
-    private <E extends TrafficData> Map<String, TrafficDataExternal<E>>
+    private <E extends TrafficEntity> Map<String, TrafficDataExternal<E>>
     getSystemCodeMap(List<TrafficDataExternal<E>> data) {
         Map<String, TrafficDataExternal<E>> map = new HashMap<>();
         data.forEach(element -> map.put(element.getSystemCodeNumber(), element));
@@ -83,7 +84,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
      * be a subclass of DynamicDataExternal, otherwise a runtime exception is
      * thrown.
      */
-    private <E extends TrafficData> E getEntity(TrafficDataExternal<E> element,
+    private <E extends TrafficEntity> E getEntity(TrafficDataExternal<E> element,
                                                 Map<String, TrafficDataExternal<E>> map) {
         TrafficDataExternal<E> matching = map.get(element.getSystemCodeNumber());
         if (! (element instanceof DynamicDataExternal<E> staticElement)) {
@@ -96,7 +97,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     /*
      * Get entities for data types that have both static and dynamic components.
      */
-    private <E extends TrafficData> List<E> combineStaticAndDynamicData(TrafficDataTypes dataType) throws IOException {
+    private <E extends TrafficEntity> List<E> combineStaticAndDynamicData(TrafficDataTypes dataType) throws IOException {
         List<TrafficDataExternal<E>> staticData = getExternalData(dataType, false);
         List<TrafficDataExternal<E>> dynamicData = getExternalData(dataType, true);
         Map<String, TrafficDataExternal<E>> dynamicMap = getSystemCodeMap(dynamicData);
@@ -109,7 +110,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     /*
      * Convert a list of external traffic data to the corresponding entities.
      */
-    private <E extends TrafficData> List<E> convertToEntities(List<TrafficDataExternal<E>> externalData) {
+    private <E extends TrafficEntity> List<E> convertToEntities(List<TrafficDataExternal<E>> externalData) {
         return externalData.stream()
                            .map(TrafficDataExternal::toEntity)
                            .toList();
@@ -118,7 +119,7 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     /*
      * Get the external data corresponding to the given data type from the client.
      */
-    private <E extends TrafficData> List<TrafficDataExternal<E>> getExternalData(TrafficDataTypes dataType, boolean dynamic) throws IOException {
+    private <E extends TrafficEntity> List<TrafficDataExternal<E>> getExternalData(TrafficDataTypes dataType, boolean dynamic) throws IOException {
         var externalDataType = getExternalDataType(dataType, dynamic);
         return client.getData(externalDataType);
     }

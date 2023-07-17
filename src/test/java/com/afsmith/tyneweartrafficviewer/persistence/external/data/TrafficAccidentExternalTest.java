@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.TrafficAccident;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficAccident;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

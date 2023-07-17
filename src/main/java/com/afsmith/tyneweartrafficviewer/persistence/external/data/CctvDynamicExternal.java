@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.persistence.entities.Camera;
+import com.afsmith.tyneweartrafficviewer.entities.Camera;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.CctvExternalMapper;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.deserialisation.DynamicCctvDeserialiser;
 import com.fasterxml.jackson.annotation.JsonIgnore;
