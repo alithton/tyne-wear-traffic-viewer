@@ -120,7 +120,7 @@ class IncidentControllerTest {
 
     @Test
     void getTypicalSpeed() throws Exception {
-        when(typicalJourneyTimeService.listAll())
+        when(typicalJourneyTimeService.listAll(SpeedType.TYPICAL))
                 .thenReturn(List.of(MockData.getJourneyTimeDto("code1"),
                             MockData.getJourneyTimeDto("code2")));
 
@@ -130,5 +130,19 @@ class IncidentControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()", is(1)))
                 .andExpect(jsonPath("$.SPEED.length()", is(2)));
+    }
+
+    @Test
+    void getSpeedComparison() throws Exception {
+        when(typicalJourneyTimeService.listAll(SpeedType.COMPARISON))
+                .thenReturn(List.of(MockData.getComparisonDTO("code1"),
+                                    MockData.getComparisonDTO("code2")));
+
+        mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "SPEED")
+                                .queryParam(SPEED_TYPE_PARAM, "COMPARISON"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+               .andExpect(jsonPath("$.length()", is(1)))
+               .andExpect(jsonPath("$.SPEED.length()", is(2)));
     }
 }

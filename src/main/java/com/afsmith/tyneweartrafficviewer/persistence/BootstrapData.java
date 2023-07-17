@@ -10,7 +10,6 @@ import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDa
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
-import com.afsmith.tyneweartrafficviewer.persistence.services.TypicalJourneyTimeReader;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;

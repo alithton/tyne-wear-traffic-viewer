@@ -137,15 +137,21 @@ public class MockData {
                              .systemCodeNumber(code)
                              .shortDescription("short description")
                              .longDescription("long description")
-                             .point(POINT_DTO)
-                             .endPoint(POINT_DTO)
-                             .lastUpdated(TIME)
-                             .linkTravelTime(100)
-                             .platesIn(10)
-                             .platesOut(10)
-                             .plateMatches(10)
-                             .lastUpdatedDynamic(TIME)
                              .build();
+    }
+
+    public static ComparisonDTO getComparisonDTO(String code, double typicalSpeed, double currentSpeed) {
+        return ComparisonDTO.comparisonBuilder()
+                            .shortDescription(SHORT_DESCRIPTION)
+                            .longDescription(LONG_DESCRIPTION)
+                            .systemCodeNumber(code)
+                            .speed(currentSpeed)
+                            .typicalSpeed(typicalSpeed)
+                            .build();
+    }
+
+    public static ComparisonDTO getComparisonDTO(String code) {
+        return getComparisonDTO(code, 30.0, 30.0);
     }
 
     public static CameraDTO getCameraDto(String code) {

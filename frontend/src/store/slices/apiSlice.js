@@ -34,6 +34,7 @@ function prepareFetchDataUrl(dataTypes, speedType) {
     const url = new URL(API_BASE_URL + "/incidents");
     dataTypes.forEach(param => url.searchParams.append("type", param));
     url.searchParams.append("speedType", speedType);
+    console.log(url);
     return url.toString();
 }
 

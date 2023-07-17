@@ -14,7 +14,7 @@ class TypicalJourneyTimeReaderTest {
     TypicalJourneyTimeReader reader = new TypicalJourneyTimeReader();
 
     @Test
-    void readWeekdayDataFromFile() throws IOException, CsvValidationException {
+    void readWeekdayDataFromFile() throws IOException {
         String dataPath = "/src/test/resources/data/journey-time-weekday-test.csv";
         List<TypicalJourneyTime> typicalJourneyTimes = reader.read(dataPath, false);
 

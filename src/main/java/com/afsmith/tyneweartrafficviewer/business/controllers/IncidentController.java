@@ -47,7 +47,7 @@ public class IncidentController {
         for (var dataType : dataTypes) {
             List<? extends TrafficDataDTO> incidents;
             if (dataType == TrafficDataTypes.SPEED && speedType != SpeedType.CURRENT) {
-                incidents = typicalJourneyTimeService.listAll();
+                incidents = typicalJourneyTimeService.listAll(speedType);
             } else {
                 incidents = dtoService.listAll(dataType);
             }

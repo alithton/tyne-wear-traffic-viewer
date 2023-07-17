@@ -1,9 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.business.mappers;
 
-import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.PointDTO;
+import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
-import com.afsmith.tyneweartrafficviewer.entities.Point;
+import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
@@ -21,7 +20,7 @@ class JourneyTimeMapperTest {
 
         assertThat(entity).isNotNull();
         assertThat(entity.getSystemCodeNumber()).isEqualTo(CODE);
-        assertThat(entity.getEndPoint()).isInstanceOf(Point.class);
+        assertThat(entity.getEndPoint()).isNull();
     }
 
     @Test
@@ -31,8 +30,8 @@ class JourneyTimeMapperTest {
 
         assertThat(dto).isNotNull();
         assertThat(dto.getSystemCodeNumber()).isEqualTo(CODE);
-        assertThat(dto.getEndPoint()).isInstanceOf(PointDTO.class);
-        assertThat(dto.getAverageSpeed()).isEqualTo(0.0);
+//        assertThat(dto.getEndPoint()).isInstanceOf(PointDTO.class);
+        assertThat(dto.getSpeed()).isEqualTo(0.0);
     }
 
     @Test
@@ -42,6 +41,19 @@ class JourneyTimeMapperTest {
 
         assertThat(dto.getRoute()).isNotNull();
         assertThat(dto.getRoute().getCoordinates().size()).isEqualTo(2);
-        assertThat(dto.getAverageSpeed()).isGreaterThan(0.0);
+        assertThat(dto.getSpeed()).isGreaterThan(0.0);
+    }
+
+    @Test
+    public void comparison() {
+        JourneyTime entity = MockData.getJourneyTimeWithRoute(CODE);
+        TypicalJourneyTime typical = MockData.getTypicalJourneyTime(CODE);
+        ComparisonDTO dto = mapper.comparison(entity, typical);
+        JourneyTimeDTO currentDTO = mapper.entityToDto(entity);
+        JourneyTimeDTO typicalDTO = mapper.entityToDto(entity, typical);
+        System.out.println(dto.getSpeed() + " : " + dto.getTypicalSpeed());
+        assertThat(dto.getSpeed()).isEqualTo(currentDTO.getSpeed());
+        assertThat(dto.getTypicalSpeed()).isEqualTo(typicalDTO.getSpeed());
+        assertThat(dto.getComparison()).isEqualTo(ComparisonResult.MUCH_SLOWER);
     }
 }

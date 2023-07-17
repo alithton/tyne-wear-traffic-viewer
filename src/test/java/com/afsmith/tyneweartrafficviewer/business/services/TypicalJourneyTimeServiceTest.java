@@ -1,9 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.mappers.JourneyTimeMapper;
-import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,15 +11,9 @@ import org.mapstruct.factory.Mappers;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.ZoneId;
-import java.util.EnumSet;
 import java.util.List;
-import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
@@ -48,12 +40,20 @@ class TypicalJourneyTimeServiceTest {
 
     @Test
     void listAllDTOsGetAverageSpeedFromTypicalJourneyTime() {
-        List<JourneyTimeDTO> dtos = service.listAll();
+        List<JourneyTimeDTO> dtos = service.listAll(SpeedType.TYPICAL);
         JourneyTimeDTO refJourneyTime = mapper.entityToDto(MockData.getJourneyTimeWithRoute("ref"));
 
         assertThat(dtos.size()).isEqualTo(2);
-        assertThat(dtos.get(0).getAverageSpeed()).isNotEqualTo(0.0);
-        assertThat(dtos.get(0).getAverageSpeed()).isNotEqualTo(refJourneyTime.getAverageSpeed());
+        assertThat(dtos.get(0).getSpeed()).isNotEqualTo(0.0);
+        assertThat(dtos.get(0).getSpeed()).isNotEqualTo(refJourneyTime.getSpeed());
+    }
+
+    @Test
+    void listAllSpeedComparisons() {
+        List<ComparisonDTO> dtos = service.listAll(SpeedType.COMPARISON);
+
+        assertThat(dtos.size()).isEqualTo(2);
+        assertThat(dtos.get(0).getComparison()).isEqualTo(ComparisonResult.MUCH_SLOWER);
     }
 
 

@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.business.mappers;
 
+import com.afsmith.tyneweartrafficviewer.business.data.ComparisonDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.GeoJsonPointDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
@@ -11,12 +12,17 @@ import org.mapstruct.Mapping;
 @Mapper
 public interface JourneyTimeMapper extends TrafficDataMapper<JourneyTimeDTO, JourneyTime>{
 
-    @Mapping(source = "entity", target = "averageSpeed")
+    @Mapping(source = "entity", target = "speed")
     JourneyTimeDTO entityToDto(JourneyTime entity);
 
-    @Mapping(target = "averageSpeed", expression = "java( mapAverageSpeed(journeyTime, typical) )")
+    @Mapping(target = "speed", expression = "java( mapAverageSpeed(journeyTime, typical) )")
     @Mapping(source = "journeyTime.systemCodeNumber", target = "systemCodeNumber")
     JourneyTimeDTO entityToDto(JourneyTime journeyTime, TypicalJourneyTime typical);
+
+    @Mapping(source = "journeyTime", target = "speed")
+    @Mapping(target = "typicalSpeed", expression = "java( mapAverageSpeed(journeyTime, typical) )")
+    @Mapping(source = "journeyTime.systemCodeNumber", target = "systemCodeNumber")
+    ComparisonDTO comparison(JourneyTime journeyTime, TypicalJourneyTime typical);
 
     default GeoJsonPoint map(GeoJsonPointDTO value) {
         return new GeoJsonPoint(value.getLatitude(), value.getLongitude());
