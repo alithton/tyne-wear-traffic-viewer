@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface DtoService {
     <DTO extends MappableDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType);
+
+    byte[] getImage(String systemCodeNumber);
 }

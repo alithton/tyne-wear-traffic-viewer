@@ -19,6 +19,17 @@ export const apiSlice = createApi({
          */
         getIncidents: builder.query({
             query: params => prepareFetchDataUrl(params.dataType, params.speedType)
+        }),
+
+        // Get the latest CCTV image from the specified camera.
+        // getCctvImage: builder.query({
+        //     query: codeNumber => prepareFetchImageUrl(codeNumber)
+        // })
+        getCctvImage: builder.query({
+            query: codeNumber => ({
+                url: prepareFetchImageUrl(codeNumber),
+                responseHandler: response => response.blob()
+            })
         })
     })
 });
@@ -38,4 +49,17 @@ function prepareFetchDataUrl(dataTypes, speedType) {
     return url.toString();
 }
 
-export const { useGetIncidentsQuery } = apiSlice;
+/*
+ * Prepare URL to fetch the latest CCTV image from the camera referred to by the
+ * provided code number.
+ */
+function prepareFetchImageUrl(codeNumber) {
+    console.log('Provided code: ' + codeNumber);
+    const url = new URL(API_BASE_URL + "/image/" + codeNumber);
+    console.log(url)
+    return url.toString();
+}
+
+export const { useGetIncidentsQuery,
+                useGetCctvImageQuery
+                } = apiSlice;

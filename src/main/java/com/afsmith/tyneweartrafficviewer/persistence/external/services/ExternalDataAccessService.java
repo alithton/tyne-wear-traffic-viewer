@@ -4,6 +4,7 @@ import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -21,5 +22,12 @@ public interface ExternalDataAccessService {
      * will be thrown.
      */
     <E extends TrafficEntity> List<E> getData(TrafficDataTypes dataType) throws IOException;
+
+    /**
+     * Get the image specified by the provided URL.
+     * @param imageUrl The URL for the requested image.
+     * @return An array of image bytes.
+     */
+    byte[] getImage(URL imageUrl);
 
 }

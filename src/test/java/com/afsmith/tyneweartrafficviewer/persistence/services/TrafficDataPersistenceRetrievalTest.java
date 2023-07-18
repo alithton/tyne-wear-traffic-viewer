@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.*;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
@@ -12,6 +13,7 @@ import org.mockito.Captor;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
+import java.net.URL;
 import java.util.List;
 
 import static org.mockito.Mockito.*;
@@ -52,6 +54,9 @@ class TrafficDataPersistenceRetrievalTest {
     @MockBean
     RoutingService routingService;
 
+    @MockBean
+    ExternalDataAccessService dataAccessService;
+
     @Captor
     ArgumentCaptor<List<JourneyTime>> journeyTimeCaptor;
 
@@ -66,7 +71,8 @@ class TrafficDataPersistenceRetrievalTest {
         typicalJourneyTimeService = new TrafficDataServiceTypicalJourneyTime(typicalJourneyTimeRepository);
 
         dataPersistence = new TrafficDataPersistence(incidentService, eventService, accidentService,
-                                                     roadworkService, journeyTimeService, cameraService, typicalJourneyTimeService);
+                                                     roadworkService, journeyTimeService, cameraService, typicalJourneyTimeService,
+                                                     dataAccessService);
 
         // Set up mock repositories to return mocked data
         when(incidentRepository.findAll())
@@ -147,12 +153,27 @@ class TrafficDataPersistenceRetrievalTest {
         assertThat(capturedJourneyTimes.get(0).getRoute()).isNotNull();
     }
 
+    @Test
+    void getImage() {
+        Camera mockCamera = MockData.getCamera("code1");
+        when(cameraRepository.getReferenceById("code1"))
+                .thenReturn(mockCamera);
+
+        dataPersistence.getImage("code1");
+        ArgumentCaptor<URL> urlCaptor = ArgumentCaptor.forClass(URL.class);
+        verify(dataAccessService, times(1)).getImage(urlCaptor.capture());
+
+        assertThat(urlCaptor.getValue()).isEqualTo(mockCamera.getImage());
+    }
+
     private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficEntity> expectedClass) {
         List<TrafficEntity> trafficData = dataPersistence.listAll(dataType);
         assertThat(trafficData).isNotNull();
         assertThat(trafficData.size()).isEqualTo(2);
         assertThat(trafficData.get(0)).isInstanceOf(expectedClass);
     }
+
+
 
 
 }

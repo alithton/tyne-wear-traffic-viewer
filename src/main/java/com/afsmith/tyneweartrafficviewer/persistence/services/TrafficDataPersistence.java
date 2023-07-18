@@ -1,11 +1,14 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.Camera;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.net.URL;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -25,6 +28,7 @@ public class TrafficDataPersistence {
     private final TrafficDataServiceJourneyTimes journeyTimeService;
     private final TrafficDataServiceCamera cameraService;
     private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    private final ExternalDataAccessService dataAccessService;
 
     /**
      * Get a list of all the data stored corresponding to the provided traffic
@@ -49,10 +53,32 @@ public class TrafficDataPersistence {
         dataService.persistEntities(List.copyOf(trafficData));
     }
 
+    /**
+     * List all typical journey time data for the specified time. Data is binned
+     * into 5 minute intervals so the provided time will be rounded to the nearest
+     * 5 minutes. Data is available for either weekdays or the weekend.
+     * @param time The time of day for which to retrieve data.
+     * @param isWeekend Should weekend data be retrieved? If false, will return
+     *                  data for weekdays.
+     * @return A list of typical journey time data for the requested time and day.
+     */
     public List<TypicalJourneyTime> findTypicalJourneyTimesByTime(LocalTime time, boolean isWeekend) {
         return typicalJourneyTimeService.findByTime(time, isWeekend);
     }
 
+    /**
+     * Get the most recent image from the traffic camera specified by the system
+     * code number.
+     * @param systemCodeNumber The ID of the requested camera.
+     * @return The image as an array of bytes.
+     */
+    public byte[] getImage(String systemCodeNumber) {
+        Camera camera = cameraService.findById(systemCodeNumber);
+        URL imageUrl = camera.getImage();
+        return dataAccessService.getImage(imageUrl);
+    }
+
+    // Get the appropriate data service for the requested data type.
     private TrafficDataService<? extends TrafficEntity> getDataService(TrafficDataTypes dataType) {
         return switch (dataType) {
             case INCIDENT -> incidentService;

@@ -7,8 +7,11 @@ export const detailsSlice = createSlice({
     name: 'details',
     initialState: {
         value: {
+            // Has a marker been selected?
             markerSelected: false,
+            // Did the user opt to create a new custom marker?
             newMarker: false,
+            // The data associated with the selected marker.
             data: {}
         }
     },
