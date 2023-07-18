@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +38,14 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
             List<TrafficDataExternal<E>> externalData = getExternalData(dataType, false);
             return convertToEntities(externalData);
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public byte[] getImage(URL imageUrl) {
+        return client.getImage(imageUrl);
     }
 
     /*

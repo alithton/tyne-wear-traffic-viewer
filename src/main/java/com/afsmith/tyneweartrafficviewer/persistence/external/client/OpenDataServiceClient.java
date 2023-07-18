@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -43,6 +44,15 @@ public class OpenDataServiceClient {
         String body = response.getBody();
 
         return dataReader.readFromString(body, dataType.getExternalClass());
+    }
+
+    /**
+     * Get the image specified by the provided URL from the open data service.
+     * @param imageUrl The URL of the requested image.
+     * @return The image as an array of bytes.
+     */
+    public byte[] getImage(URL imageUrl) {
+        return restTemplate.getForObject(imageUrl.toString(), byte[].class);
     }
 
 }

@@ -145,4 +145,17 @@ class IncidentControllerTest {
                .andExpect(jsonPath("$.length()", is(1)))
                .andExpect(jsonPath("$.SPEED.length()", is(2)));
     }
+
+    @Test
+    void getImage() throws Exception {
+        String codeNumber = "code1";
+        byte[] returnByte = new byte[0];
+        when(dtoService.getImage(codeNumber))
+                .thenReturn(returnByte);
+
+        mockMvc.perform(get("/image/" + codeNumber))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.IMAGE_JPEG))
+                .andExpect(content().bytes(returnByte));
+    }
 }

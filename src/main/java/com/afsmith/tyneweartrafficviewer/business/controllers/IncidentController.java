@@ -7,6 +7,7 @@ import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -54,6 +55,16 @@ public class IncidentController {
             response.put(dataType.name(), incidents);
         }
         return ResponseEntity.ok(response);
+    }
+
+    /**
+     * Serve the image specified by the given code number.
+     * @param codeNumber The code number identifying the image.
+     * @return An HTTP response with a body containing the image.
+     */
+    @GetMapping(value = "image/{codeNumber}", produces = MediaType.IMAGE_JPEG_VALUE)
+    public @ResponseBody byte[] getImage(@PathVariable String codeNumber) {
+        return dtoService.getImage(codeNumber);
     }
 
 }
