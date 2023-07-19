@@ -1,0 +1,38 @@
+.login-card {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    bottom: 40%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    text-align: end;
+}
+
+.heading,
+.text {
+    margin: 0;
+}
+
+.link {
+    color: #b0830d;
+    border-bottom: 1px solid #b0830d;
+}
+
+.link:hover {
+    color: #f6d076;
+    border-bottom: 1px solid #f6d076;
+    cursor: pointer;
+}
+

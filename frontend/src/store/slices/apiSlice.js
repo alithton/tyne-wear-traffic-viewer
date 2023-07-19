@@ -22,13 +22,38 @@ export const apiSlice = createApi({
         }),
 
         // Get the latest CCTV image from the specified camera.
-        // getCctvImage: builder.query({
-        //     query: codeNumber => prepareFetchImageUrl(codeNumber)
-        // })
         getCctvImage: builder.query({
             query: codeNumber => ({
                 url: prepareFetchImageUrl(codeNumber),
                 responseHandler: response => response.blob()
+            })
+        }),
+
+        // Allow a new user to create an account.
+        signUp: builder.mutation({
+            query: credentials => ({
+                url: '/users/signup',
+                method: 'PUT',
+                // Username and password being used to sign up.
+                body: credentials
+            })
+        }),
+
+        // Log in with existing user credentials.
+        login: builder.mutation({
+            query: credentials => ({
+                url: '/users/login',
+                method: 'POST',
+                body: credentials
+            })
+        }),
+
+        // Make changes to user details or credentials.
+        editDetails: builder.mutation({
+            query: details => ({
+                url: '/users/edit',
+                method: 'PATCH',
+                body: details
             })
         })
     })
@@ -61,5 +86,8 @@ function prepareFetchImageUrl(codeNumber) {
 }
 
 export const { useGetIncidentsQuery,
-                useGetCctvImageQuery
+                useGetCctvImageQuery,
+                useSignUpMutation,
+                useLoginMutation,
+                useEditDetailsMutation
                 } = apiSlice;
