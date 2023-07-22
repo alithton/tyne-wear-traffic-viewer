@@ -8,7 +8,10 @@ const API_BASE_URL = "http://localhost:8080";
  */
 export const apiSlice = createApi({
     reducerPath: "api",
-    baseQuery: fetchBaseQuery({baseUrl: API_BASE_URL}),
+    baseQuery: fetchBaseQuery({
+        baseUrl: API_BASE_URL,
+        credentials: "include"
+    }),
     endpoints: builder => ({
 
         /*
@@ -33,7 +36,7 @@ export const apiSlice = createApi({
         signUp: builder.mutation({
             query: credentials => ({
                 url: '/users/signup',
-                method: 'PUT',
+                method: 'POST',
                 // Username and password being used to sign up.
                 body: credentials
             })
@@ -52,7 +55,7 @@ export const apiSlice = createApi({
         editDetails: builder.mutation({
             query: details => ({
                 url: '/users/edit',
-                method: 'PATCH',
+                method: 'PUT',
                 body: details
             })
         })

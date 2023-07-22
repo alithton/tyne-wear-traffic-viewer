@@ -29,7 +29,7 @@ function ProfileItem(props) {
         e.preventDefault();
         const updatedCredentials = {...credentials};
         updatedCredentials[props.name.toLowerCase()] = value;
-        await triggerEdit({current: credentials, updated: updatedCredentials}).unwrap();
+        await triggerEdit(updatedCredentials).unwrap();
         dispatch(updateCredentials(updatedCredentials));
         setIsEditing(false);
     }

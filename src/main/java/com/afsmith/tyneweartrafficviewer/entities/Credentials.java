@@ -1,9 +1,17 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import lombok.Value;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Value
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Embeddable
 public class Credentials {
-    String username;
-    String password;
+    @Column(unique = true)
+    private String username;
+    private String password;
 }
