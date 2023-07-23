@@ -317,4 +317,9 @@ public class MockData {
                           .build();
     }
 
+    public static User getUser(String username, String password) {
+        Credentials credentials = new Credentials(username, password);
+        return new User(credentials);
+    }
+
 }

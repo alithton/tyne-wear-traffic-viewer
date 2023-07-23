@@ -20,7 +20,7 @@ import java.util.Map;
  */
 @Slf4j
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:5173"})
+@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:5173"}, allowCredentials = "true")
 @RestController
 public class IncidentController {
 

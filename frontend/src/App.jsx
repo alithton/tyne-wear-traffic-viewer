@@ -15,7 +15,7 @@ function App() {
             <div onClick={handleHideModal} className={`${showModalBackdrop ? styles['modal-backdrop'] : ''}`}></div>
             <div className={styles.background}></div>
             <div className={styles['app-container']}>
-                <Header className={styles.header} />
+                <Header className={styles.header} handleShowModal={handleShowModal} handleHideModal={handleHideModal} showModal={showModalBackdrop} />
                 <Dashboard handleShowModal={handleShowModal} />
                 <Footer />
             </div>

@@ -1,0 +1,28 @@
+.form-element {
+    align-self: flex-start;
+    display: flex;
+    gap: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    align-self: flex-end;
+}
+
+.error-message, .error {
+    color: red;
+}
+
+.error {
+    background: #ffdfdf;
+}
+
+.error-message {
+    font-size: 0.7rem;
+    align-self: flex-end;
+    margin: 0;
+}

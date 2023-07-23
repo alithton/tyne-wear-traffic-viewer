@@ -1,0 +1,13 @@
+.profile-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.profile-item-label {
+    font-weight: bold;
+}
+
+.profile-item-button {
+    padding: 0.5rem;
+}
