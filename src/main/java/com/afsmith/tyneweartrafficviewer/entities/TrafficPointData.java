@@ -1,16 +1,17 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import jakarta.persistence.Column;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Setter
 @Getter
 @NoArgsConstructor
-@MappedSuperclass
+@Inheritance(strategy = InheritanceType.JOINED)
+@Entity
 public class TrafficPointData extends TrafficData {
     private TrafficDataTypes type;
     private String shortDescription;
@@ -27,6 +28,9 @@ public class TrafficPointData extends TrafficData {
     private String diversionInForce;
     private String phaseTypeRef;
 
+    @OneToMany(mappedBy = "trafficData")
+    private List<Comment> comments;
+
     public TrafficPointData(String systemCodeNumber,
                             TrafficDataTypes type,
                             String shortDescription,
@@ -40,7 +44,8 @@ public class TrafficPointData extends TrafficData {
                             String severityTypeRefDescription,
                             String lanesAffectedTypeRefDescription,
                             String diversionInForce,
-                            String phaseTypeRef) {
+                            String phaseTypeRef,
+                            List<Comment> comments) {
         super(systemCodeNumber);
         this.type = type;
         this.shortDescription = shortDescription;
@@ -55,5 +60,14 @@ public class TrafficPointData extends TrafficData {
         this.lanesAffectedTypeRefDescription = lanesAffectedTypeRefDescription;
         this.diversionInForce = diversionInForce;
         this.phaseTypeRef = phaseTypeRef;
+        this.comments = comments;
+    }
+
+    /**
+     * Add a comment.
+     * @param comment The comment to add.
+     */
+    public void addComment(Comment comment) {
+        comments.add(comment);
     }
 }

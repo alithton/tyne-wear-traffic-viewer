@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 
 @Getter
@@ -45,11 +46,12 @@ public class TrafficRoadwork extends TrafficPointData {
                            PlannedTimes actual,
                            String contractor,
                            String trafficSignals,
-                           String contraflow) {
+                           String contraflow,
+                           List<Comment> comments) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
               lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef);
+              diversionInForce, phaseTypeRef, comments);
         this.roadworkTypeDescription = roadworkTypeDescription;
         this.planned = planned;
         this.actual = actual;

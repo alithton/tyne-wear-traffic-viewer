@@ -1,7 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.repositories;
 
 import com.afsmith.tyneweartrafficviewer.entities.TrafficRoadwork;
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface RoadworkRepository extends JpaRepository<TrafficRoadwork, String> {
+public interface RoadworkRepository extends PointDataRepository<TrafficRoadwork> {
 }

@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -25,6 +26,7 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
     String lanesAffectedTypeRefDescription;
     String diversionInForce;
     String phaseTypeRef;
+    List<CommentDTO> comments;
 
     public TrafficPointDataDTO(String systemCodeNumber,
                                TrafficDataTypes type,
@@ -39,7 +41,8 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
                                String severityTypeRefDescription,
                                String lanesAffectedTypeRefDescription,
                                String diversionInForce,
-                               String phaseTypeRef) {
+                               String phaseTypeRef,
+                               List<CommentDTO> comments) {
         super(systemCodeNumber);
         this.type = type;
         this.shortDescription = shortDescription;
@@ -54,5 +57,6 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
         this.lanesAffectedTypeRefDescription = lanesAffectedTypeRefDescription;
         this.diversionInForce = diversionInForce;
         this.phaseTypeRef = phaseTypeRef;
+        this.comments = comments;
     }
 }

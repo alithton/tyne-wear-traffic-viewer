@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import lombok.*;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 /**
  * A JPA entity representing traffic event data.
@@ -38,10 +39,11 @@ public class TrafficEvent extends TrafficPointData {
             String phaseTypeRef,
             PlannedTimes planned,
             String organiser,
-            String venueName) {
+            String venueName,
+            List<Comment> comments) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription, lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef);
+              diversionInForce, phaseTypeRef, comments);
         this.eventTypeDescription = eventTypeDescription;
         this.planned = planned;
         this.organiser = organiser;

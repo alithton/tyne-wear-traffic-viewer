@@ -31,6 +31,7 @@ class TrafficDataPersistenceRetrievalTest {
     TrafficDataServiceJourneyTimes journeyTimeService;
     TrafficDataServiceCamera cameraService;
     TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    TrafficPointDataService pointDataService;
 
     // Mocked repositories for each data type
     @MockBean
@@ -47,6 +48,10 @@ class TrafficDataPersistenceRetrievalTest {
     CameraRepository cameraRepository;
     @MockBean
     TypicalJourneyTimeRepository typicalJourneyTimeRepository;
+    @MockBean
+    PointDataRepository<TrafficPointData> pointDataRepository;
+    @MockBean
+    CommentRepository commentRepository;
 
     List<TrafficIncident> incidents = List.of(MockData.getIncident("code1"),
                                               MockData.getIncident("code2"));
@@ -69,10 +74,11 @@ class TrafficDataPersistenceRetrievalTest {
         journeyTimeService = new TrafficDataServiceJourneyTimes(journeyTimeRepository, routingService);
         cameraService = new TrafficDataServiceCamera(cameraRepository);
         typicalJourneyTimeService = new TrafficDataServiceTypicalJourneyTime(typicalJourneyTimeRepository);
+        pointDataService = new TrafficPointDataService(pointDataRepository, commentRepository);
 
         dataPersistence = new TrafficDataPersistence(incidentService, eventService, accidentService,
                                                      roadworkService, journeyTimeService, cameraService, typicalJourneyTimeService,
-                                                     dataAccessService);
+                                                     pointDataService, dataAccessService);
 
         // Set up mock repositories to return mocked data
         when(incidentRepository.findAll())
@@ -164,6 +170,18 @@ class TrafficDataPersistenceRetrievalTest {
         verify(dataAccessService, times(1)).getImage(urlCaptor.capture());
 
         assertThat(urlCaptor.getValue()).isEqualTo(mockCamera.getImage());
+    }
+
+    @Test
+    void findByCodeNumber() {
+        String code = "code1";
+        TrafficPointData mockData = MockData.getIncident(code);
+        when(pointDataRepository.getReferenceById(code))
+                .thenReturn(mockData);
+
+        TrafficIncident incident = dataPersistence.find(code);
+
+        assertThat(incident).isNotNull();
     }
 
     private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficEntity> expectedClass) {

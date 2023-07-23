@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Getter
 public final class TrafficEventDTO extends TrafficPointDataDTO {
@@ -30,12 +31,13 @@ public final class TrafficEventDTO extends TrafficPointDataDTO {
                                String eventTypeDescription,
                                PlannedDTO planned,
                                String organiser,
-                               String venueName) {
+                               String venueName,
+                               List<CommentDTO> comments) {
                 super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point,
                       creationDate,
                       dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
                       lanesAffectedTypeRefDescription,
-                      diversionInForce, phaseTypeRef);
+                      diversionInForce, phaseTypeRef, comments);
                 this.eventTypeDescription = eventTypeDescription;
                 this.planned = planned;
                 this.organiser = organiser;

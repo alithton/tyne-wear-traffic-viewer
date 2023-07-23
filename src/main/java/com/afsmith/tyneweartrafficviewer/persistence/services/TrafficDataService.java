@@ -22,4 +22,24 @@ public interface TrafficDataService<T extends TrafficEntity> {
       * @param trafficData A list of traffic data.
       */
      void persistEntities(List<T> trafficData);
+
+     /**
+      * Store a traffic data object in the database.
+      * @param trafficData The data to be stored.
+      */
+     void persist(T trafficData);
+
+     /**
+      * Attempt to find traffic data using the system code number.
+      * @param codeNumber The code number of the data.
+      * @return The traffic data matching the code number.
+      */
+     T findByCodeNumber(String codeNumber);
+
+     /**
+      * Convert provided traffic data to the concrete type T.
+      * @param entity The traffic data to be converted.
+      * @return Traffic data of concrete type T.
+      */
+     T convert(TrafficEntity entity);
 }
