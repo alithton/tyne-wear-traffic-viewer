@@ -15,6 +15,9 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 public class CommentDTO {
 
+    // An identifier for the comment.
+    private long id;
+
     // Name of the user who left the comment.
     private String userName;
 

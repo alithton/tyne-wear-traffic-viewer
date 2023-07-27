@@ -13,7 +13,7 @@ function LoginModal(props) {
     const [errorMessage, setErrorMessage] = useState('');
     const dispatch = useDispatch();
 
-    const [triggerLogin, {isLoading, isError, isSuccess}] = useLoginMutation();
+    const [triggerLogin, {}] = useLoginMutation();
     const [triggerSignUp, {}] = useSignUpMutation();
 
     const actionText = isSignUp ? 'Sign Up' : 'Log In';

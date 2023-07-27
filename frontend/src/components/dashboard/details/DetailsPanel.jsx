@@ -28,7 +28,7 @@ function DetailsPanel(props) {
         );
     } else if (markerSelected) {
         detailsDisplay = (
-            <SelectedIncidentDetails eventDetails={eventDetails} />
+            <SelectedIncidentDetails codeNumber={eventDetails.systemCodeNumber} />
         );
     } else if (newMarker) {
         detailsDisplay = (

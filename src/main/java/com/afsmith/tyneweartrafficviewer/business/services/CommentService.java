@@ -33,7 +33,6 @@ public class CommentService {
     public void save(String codeNumber, String token, CommentDTO commentDTO) throws DataNotFoundException, NotAuthenticatedException {
         System.out.println("Searching for " + codeNumber + "...");
         TrafficPointData pointData = persistenceService.find(codeNumber);
-        if (pointData == null) throw new DataNotFoundException("No data found that matches the provided code number.");
 
         System.out.println("Validating user " + commentDTO.getUserName() + "...");
         User user = userService.findByToken(token);

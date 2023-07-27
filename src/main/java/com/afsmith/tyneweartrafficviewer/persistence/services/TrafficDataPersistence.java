@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.*;
+import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -80,8 +81,9 @@ public class TrafficDataPersistence {
      * @param codeNumber The system code number to search for.
      * @return Return the traffic data, if found, or else null.
      */
-    public <T extends TrafficPointData> T find(String codeNumber) {
+    public <T extends TrafficPointData> T find(String codeNumber) throws DataNotFoundException {
         TrafficPointData pointData = pointDataService.findByCodeNumber(codeNumber);
+        if (pointData == null) throw new DataNotFoundException("No data found that matches the provided code number.");
         TrafficDataTypes dataType = pointData.getType();
         @SuppressWarnings("unchecked")
         var dataService = (TrafficDataService<T>) getDataService(dataType);

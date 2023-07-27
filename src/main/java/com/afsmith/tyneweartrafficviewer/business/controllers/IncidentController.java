@@ -65,15 +65,44 @@ public class IncidentController {
     }
 
     /**
+     * Get the data for the incident specified by the provided code number. If no
+     * incident can be found, return a 404 not found exception.
+     * @param codeNumber The system code number of the incident.
+     * @return An Http response with the requested incident data in the body in
+     * JSON format.
+     */
+    @GetMapping("/incidents/{codeNumber}")
+    public @ResponseBody TrafficDataDTO getIncident(@PathVariable String codeNumber) {
+        try {
+            return dtoService.getIncident(codeNumber);
+        } catch (DataNotFoundException e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
+    }
+
+    /**
      * Serve the image specified by the given code number.
      * @param codeNumber The code number identifying the image.
-     * @return An HTTP response with a body containing the image.
+     * @return An HTTP response with a body containing the image as a binary large object (BLOB).
      */
     @GetMapping(value = "image/{codeNumber}", produces = MediaType.IMAGE_JPEG_VALUE)
     public @ResponseBody byte[] getImage(@PathVariable String codeNumber) {
         return dtoService.getImage(codeNumber);
     }
 
+    /**
+     * Add a comment to the traffic incident specified by the provided code number.
+     * Note that comments can only be added to data types that subclass
+     * {@link com.afsmith.tyneweartrafficviewer.entities.TrafficPointData}. Attempting
+     * to add comments to any other data type will result in a 404 NOT FOUND response.
+     * In order to add comments, users must be logged in and this
+     * method expects a valid authentication cookie.
+     * @param codeNumber The system code number of the traffic data to which the comment
+     *                   should be added.
+     * @param comment The comment being added.
+     * @param token An authentication token. This is provided when a user signs up
+     *              or provides a valid login.
+     */
     @PostMapping(value = "/incidents/{codeNumber}")
     public void addComment(@PathVariable String codeNumber,
                            @RequestBody CommentDTO comment,
