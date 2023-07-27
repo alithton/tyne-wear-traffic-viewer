@@ -5,12 +5,12 @@ import com.afsmith.tyneweartrafficviewer.business.data.TrafficIncidentDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.*;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mapstruct.factory.Mappers;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.List;
 
@@ -18,24 +18,23 @@ import static org.mockito.Mockito.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
+@SpringBootTest(classes = {
+        DtoServiceImpl.class,
+        TrafficIncidentMapperImpl.class,
+        TrafficEventMapperImpl.class,
+        TrafficAccidentMapperImpl.class,
+        TrafficRoadworkMapperImpl.class,
+        JourneyTimeMapperImpl.class,
+        CameraMapperImpl.class,
+        CommentMapperImpl.class
+})
 class DtoServiceImplTest {
 
+    @Autowired
     DtoService dtoService;
-    TrafficIncidentMapper incidentMapper = Mappers.getMapper(TrafficIncidentMapper.class);
-    TrafficEventMapper eventMapper = Mappers.getMapper(TrafficEventMapper.class);
-    TrafficAccidentMapper accidentMapper = Mappers.getMapper(TrafficAccidentMapper.class);
-    TrafficRoadworkMapper roadworkMapper = Mappers.getMapper(TrafficRoadworkMapper.class);
-    JourneyTimeMapper journeyTimeMapper = Mappers.getMapper(JourneyTimeMapper.class);
-    CameraMapper cameraMapper = Mappers.getMapper(CameraMapper.class);
 
-    @Mock
+    @MockBean
     TrafficDataPersistence dataPersistence;
-
-    @BeforeEach
-    void setUp() {
-        dtoService = new DtoServiceImpl(incidentMapper, eventMapper, accidentMapper,
-                                        roadworkMapper, journeyTimeMapper, cameraMapper, dataPersistence);
-    }
 
     @Test
     void listIncidents() {

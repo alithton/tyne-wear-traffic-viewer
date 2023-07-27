@@ -7,5 +7,5 @@ import org.mapstruct.Mapper;
 /**
  * A MapStruct mapper for traffic events.
  */
-@Mapper
+@Mapper(uses = CommentMapper.class)
 public interface TrafficEventMapper extends TrafficDataMapper<TrafficEventDTO, TrafficEvent>{ }

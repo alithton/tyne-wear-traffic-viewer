@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.*;
+import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
@@ -15,6 +16,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.net.URL;
 import java.util.List;
+import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -31,6 +33,7 @@ class TrafficDataPersistenceRetrievalTest {
     TrafficDataServiceJourneyTimes journeyTimeService;
     TrafficDataServiceCamera cameraService;
     TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    TrafficPointDataService pointDataService;
 
     // Mocked repositories for each data type
     @MockBean
@@ -47,6 +50,10 @@ class TrafficDataPersistenceRetrievalTest {
     CameraRepository cameraRepository;
     @MockBean
     TypicalJourneyTimeRepository typicalJourneyTimeRepository;
+    @MockBean
+    PointDataRepository<TrafficPointData> pointDataRepository;
+    @MockBean
+    CommentRepository commentRepository;
 
     List<TrafficIncident> incidents = List.of(MockData.getIncident("code1"),
                                               MockData.getIncident("code2"));
@@ -69,10 +76,11 @@ class TrafficDataPersistenceRetrievalTest {
         journeyTimeService = new TrafficDataServiceJourneyTimes(journeyTimeRepository, routingService);
         cameraService = new TrafficDataServiceCamera(cameraRepository);
         typicalJourneyTimeService = new TrafficDataServiceTypicalJourneyTime(typicalJourneyTimeRepository);
+        pointDataService = new TrafficPointDataService(pointDataRepository, commentRepository);
 
         dataPersistence = new TrafficDataPersistence(incidentService, eventService, accidentService,
                                                      roadworkService, journeyTimeService, cameraService, typicalJourneyTimeService,
-                                                     dataAccessService);
+                                                     pointDataService, dataAccessService);
 
         // Set up mock repositories to return mocked data
         when(incidentRepository.findAll())
@@ -156,14 +164,26 @@ class TrafficDataPersistenceRetrievalTest {
     @Test
     void getImage() {
         Camera mockCamera = MockData.getCamera("code1");
-        when(cameraRepository.getReferenceById("code1"))
-                .thenReturn(mockCamera);
+        when(cameraRepository.findById("code1"))
+                .thenReturn(Optional.of(mockCamera));
 
         dataPersistence.getImage("code1");
         ArgumentCaptor<URL> urlCaptor = ArgumentCaptor.forClass(URL.class);
         verify(dataAccessService, times(1)).getImage(urlCaptor.capture());
 
         assertThat(urlCaptor.getValue()).isEqualTo(mockCamera.getImage());
+    }
+
+    @Test
+    void findByCodeNumber() throws DataNotFoundException {
+        String code = "code1";
+        TrafficPointData mockData = MockData.getIncident(code);
+        when(pointDataRepository.findById(code))
+                .thenReturn(Optional.of(mockData));
+
+        TrafficIncident incident = dataPersistence.find(code);
+
+        assertThat(incident).isNotNull();
     }
 
     private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficEntity> expectedClass) {

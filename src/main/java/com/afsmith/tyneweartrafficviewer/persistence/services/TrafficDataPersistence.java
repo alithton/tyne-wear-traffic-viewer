@@ -1,9 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.entities.Camera;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
-import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
+import com.afsmith.tyneweartrafficviewer.entities.*;
+import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -28,6 +27,7 @@ public class TrafficDataPersistence {
     private final TrafficDataServiceJourneyTimes journeyTimeService;
     private final TrafficDataServiceCamera cameraService;
     private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    private final TrafficPointDataService pointDataService;
     private final ExternalDataAccessService dataAccessService;
 
     /**
@@ -51,6 +51,54 @@ public class TrafficDataPersistence {
         @SuppressWarnings("unchecked")
         var dataService = (TrafficDataService<T>) getDataService(dataType);
         dataService.persistEntities(List.copyOf(trafficData));
+    }
+
+    /**
+     * Store the provided data in the database.
+     * @param trafficData The data to be stored.
+     * @param dataType The type of data to be stored.
+     */
+    public <T extends TrafficEntity> void persist(T trafficData,  TrafficDataTypes dataType) {
+        @SuppressWarnings("unchecked")
+        var dataService = (TrafficDataService<T>) getDataService(dataType);
+        dataService.persist(trafficData);
+    }
+
+    /**
+     * Find traffic data of the specified type that matches the provided code number.
+     * @param codeNumber The system code number to search for.
+     * @param dataType The type of data to search.
+     * @return The located traffic data, or null.
+     */
+    public <T extends TrafficEntity> T find(String codeNumber, TrafficDataTypes dataType) {
+        @SuppressWarnings("unchecked")
+        var dataService = (TrafficDataService<T>) getDataService(dataType);
+        return dataService.findByCodeNumber(codeNumber);
+    }
+
+    /**
+     * Find traffic point data matching the provided code number.
+     * @param codeNumber The system code number to search for.
+     * @return Return the traffic data, if found, or else null.
+     */
+    public <T extends TrafficPointData> T find(String codeNumber) throws DataNotFoundException {
+        TrafficPointData pointData = pointDataService.findByCodeNumber(codeNumber);
+        if (pointData == null) throw new DataNotFoundException("No data found that matches the provided code number.");
+        TrafficDataTypes dataType = pointData.getType();
+        @SuppressWarnings("unchecked")
+        var dataService = (TrafficDataService<T>) getDataService(dataType);
+        return dataService.convert(pointData);
+    }
+
+    /**
+     * Save a comment that is being added to the provided point data.
+     * @param pointData The traffic data to which the comment is being added.
+     * @param comment The comment being added.
+     */
+    public void saveComment(TrafficPointData pointData, Comment comment) {
+        TrafficDataTypes dataType = pointData.getType();
+        persist(pointData, dataType);
+        pointDataService.saveComment(comment);
     }
 
     /**

@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Getter
 public final class TrafficAccidentDTO extends TrafficPointDataDTO {
@@ -32,10 +33,11 @@ public final class TrafficAccidentDTO extends TrafficPointDataDTO {
             String phaseTypeRef,
             String accidentTypeDescription,
             ZonedDateTime accidentTime,
-            ZonedDateTime endTime) {
+            ZonedDateTime endTime,
+            List<CommentDTO> comments) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription,
               point, creationDate, dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
-              lanesAffectedTypeRefDescription, diversionInForce, phaseTypeRef);
+              lanesAffectedTypeRefDescription, diversionInForce, phaseTypeRef, comments);
         this.accidentTypeDescription = accidentTypeDescription;
         this.accidentTime = accidentTime;
         this.endTime = endTime;

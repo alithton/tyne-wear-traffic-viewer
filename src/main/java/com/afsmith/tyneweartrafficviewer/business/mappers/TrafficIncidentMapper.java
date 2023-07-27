@@ -7,5 +7,5 @@ import org.mapstruct.Mapper;
 /**
  * A MapStruct mapper for traffic incidents.
  */
-@Mapper
+@Mapper(uses = CommentMapper.class)
 public interface TrafficIncidentMapper extends TrafficDataMapper<TrafficIncidentDTO, TrafficIncident> { }

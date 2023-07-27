@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import lombok.*;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 /**
  * A JPA entity representing traffic incident data.
@@ -36,10 +37,11 @@ public class TrafficIncident extends TrafficPointData {
             String diversionInForce,
             String phaseTypeRef,
             ZonedDateTime incidentTime,
-            ZonedDateTime endTime) {
+            ZonedDateTime endTime,
+            List<Comment> comments) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription, lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef);
+              diversionInForce, phaseTypeRef, comments);
         this.incidentTypeDescription = incidentTypeDescription;
         this.incidentTime = incidentTime;
         this.endTime = endTime;

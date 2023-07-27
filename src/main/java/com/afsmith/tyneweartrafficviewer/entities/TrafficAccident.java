@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -33,11 +34,12 @@ public class TrafficAccident extends TrafficPointData {
                            String phaseTypeRef,
                            String accidentTypeDescription,
                            ZonedDateTime accidentTime,
-                           ZonedDateTime endTime) {
+                           ZonedDateTime endTime,
+                           List<Comment> comments) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
               lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef);
+              diversionInForce, phaseTypeRef, comments);
         this.accidentTypeDescription = accidentTypeDescription;
         this.accidentTime = accidentTime;
         this.endTime = endTime;

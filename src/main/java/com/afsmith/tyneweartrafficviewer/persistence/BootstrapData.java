@@ -13,14 +13,19 @@ import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataService
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Populate the database on startup.
+ */
 @Component
 @RequiredArgsConstructor
+@Profile("!test")
 public class BootstrapData implements CommandLineRunner {
 
     private final TrafficDataReader trafficDataReader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");

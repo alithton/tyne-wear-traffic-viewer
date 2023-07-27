@@ -64,7 +64,7 @@ public class MockData {
     public static TrafficEventDTO getEventDto(String code) {
         return TrafficEventDTO.builder()
                               .systemCodeNumber(code)
-                              .type(TrafficDataTypes.ACCIDENT)
+                              .type(TrafficDataTypes.EVENT)
                               .shortDescription("short description")
                               .longDescription("long description")
                               .locationDescription("location description")
@@ -171,7 +171,7 @@ public class MockData {
     public static TrafficIncident getIncident(String code) {
         return TrafficIncident.builder()
                               .systemCodeNumber(code)
-                              .type(TrafficDataTypes.ACCIDENT)
+                              .type(TrafficDataTypes.INCIDENT)
                               .shortDescription("short description")
                               .longDescription("long description")
                               .locationDescription("location description")
@@ -320,6 +320,15 @@ public class MockData {
     public static User getUser(String username, String password) {
         Credentials credentials = new Credentials(username, password);
         return new User(credentials);
+    }
+
+    public static Comment getComment(String content, User user, TrafficPointData pointData) {
+        return Comment.builder()
+                      .content(content)
+                      .created(TIME)
+                      .user(user)
+                      .trafficData(pointData)
+                      .build();
     }
 
 }

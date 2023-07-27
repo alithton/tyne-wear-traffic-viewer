@@ -12,6 +12,7 @@ export const apiSlice = createApi({
         baseUrl: API_BASE_URL,
         credentials: "include"
     }),
+    tagTypes: ['Comment'],
     endpoints: builder => ({
 
         /*
@@ -22,6 +23,12 @@ export const apiSlice = createApi({
          */
         getIncidents: builder.query({
             query: params => prepareFetchDataUrl(params.dataType, params.speedType)
+        }),
+
+        // Get data for a single traffic incident specified by a code number.
+        getIncident: builder.query({
+           query: codeNumber => "/incidents/" + codeNumber,
+            providesTags: ['Comment']
         }),
 
         // Get the latest CCTV image from the specified camera.
@@ -58,6 +65,15 @@ export const apiSlice = createApi({
                 method: 'PUT',
                 body: details
             })
+        }),
+
+        addComment: builder.mutation({
+            query: commentDetails => ({
+                url: '/incidents/' + commentDetails.codeNumber,
+                method: 'POST',
+                body: commentDetails.comment
+            }),
+            invalidatesTags: ['Comment']
         })
     })
 });
@@ -89,8 +105,10 @@ function prepareFetchImageUrl(codeNumber) {
 }
 
 export const { useGetIncidentsQuery,
+                useGetIncidentQuery,
                 useGetCctvImageQuery,
                 useSignUpMutation,
                 useLoginMutation,
-                useEditDetailsMutation
+                useEditDetailsMutation,
+                useAddCommentMutation
                 } = apiSlice;

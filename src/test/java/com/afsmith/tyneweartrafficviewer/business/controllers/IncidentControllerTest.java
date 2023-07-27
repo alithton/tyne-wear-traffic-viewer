@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.business.controllers;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.mappers.MappableDTO;
+import com.afsmith.tyneweartrafficviewer.business.services.CommentService;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
@@ -35,6 +36,9 @@ class IncidentControllerTest {
 
     @MockBean
     TypicalJourneyTimeService typicalJourneyTimeService;
+
+    @MockBean
+    CommentService commentService;
 
     @Autowired
     MockMvc mockMvc;
@@ -144,6 +148,18 @@ class IncidentControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                .andExpect(jsonPath("$.length()", is(1)))
                .andExpect(jsonPath("$.SPEED.length()", is(2)));
+    }
+
+    @Test
+    void getIncident() throws Exception {
+        String codeNumber = "code1";
+        when(dtoService.getIncident(codeNumber))
+                .thenReturn(MockData.getIncidentDto(codeNumber));
+
+        mockMvc.perform(get(URL_PATH + "/" + codeNumber))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.systemCodeNumber", is(codeNumber)));
     }
 
     @Test

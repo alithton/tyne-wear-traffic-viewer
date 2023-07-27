@@ -1,36 +1,48 @@
 import styles from './Comments.module.css';
 import Comment from "./Comment.jsx";
 import {useState} from "react";
+import {useSelector} from "react-redux";
+import {useAddCommentMutation} from "../../../store/slices/apiSlice.js";
 
-const dummy_comments = [
-    {id: 1, name: 'Alice', text: 'So much disruption!'},
-    {id: 2, name: 'Bob', text: 'Good to know about this.'}
-];
-
-function Comments() {
-    const [comments, setComments] = useState(dummy_comments);
+function Comments(props) {
+    const [text, setText] = useState('');
+    const userDetails = useSelector(state => state.authentication.value);
+    const [triggerAddComment, {}] = useAddCommentMutation();
 
     const handleComment = (e) => {
         e.preventDefault();
-        const index = comments.at(-1).id + 1;
-        const newComment = {id: index, name: 'Anon', text: e.target[0].value};
-        setComments([...comments, newComment]);
+        const newComment = {
+            codeNumber: props.codeNumber,
+            comment: {
+                userName: userDetails.credentials.username,
+                created: new Date(),
+                content: e.target[0].value
+            }
+        };
+        triggerAddComment(newComment);
+        setText('');
     }
+
+    const handleChange = (e) => setText(e.target.value);
+
+    const commentForm = (
+        <form className={styles.comment__form} onSubmit={handleComment}>
+            <label htmlFor='comment'>Leave a comment</label>
+            <textarea className={styles.comment__text} id='comment' name='comment' value={text} onChange={handleChange} />
+            <button type='submit'  className={styles.comment__button}>Submit</button>
+        </form>
+    );
 
     return (
         <>
             <h2>Comments</h2>
             <div data-testid='comments'>
-                {comments.map(comment => (
-                    <Comment key={comment.id} name={comment.name} text={comment.text} />
+                {props.comments.map(comment => (
+                    <Comment key={comment.id} comment={comment} />
                 ))}
             </div>
 
-            <form className={styles.comment__form} onSubmit={handleComment}>
-                <label htmlFor='comment'>Leave a comment</label>
-                <textarea className={styles.comment__text} id='comment' name='comment' />
-                <button type='submit'  className={styles.comment__button}>Submit</button>
-            </form>
+            {userDetails.isLoggedIn && commentForm}
         </>
     );
 }

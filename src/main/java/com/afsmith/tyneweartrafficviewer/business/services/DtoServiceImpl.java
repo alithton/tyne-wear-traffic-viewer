@@ -1,8 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficPointDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.*;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficPointData;
+import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -59,6 +62,24 @@ public class DtoServiceImpl implements DtoService {
     @Override
     public byte[] getImage(String systemCodeNumber) {
         return dataPersistence.getImage(systemCodeNumber);
+    }
+
+    /**
+     * Get data for a single traffic incident as specified by the provided system code
+     * number.
+     * @param codeNumber The system code number of the incident.
+     * @return The traffic incident data transfer object.
+     * @param <DTO> The type of data transfer object corresponding to the data to be retrieved.
+     * @param <T> The entity type of the data being retrieved.
+     * @throws DataNotFoundException When no incident matching the provided code number can be found.
+     */
+    @Override
+    public <DTO extends TrafficPointDataDTO, T extends TrafficPointData> DTO
+    getIncident(String codeNumber) throws DataNotFoundException {
+        T entity = dataPersistence.find(codeNumber);
+        @SuppressWarnings("unchecked")
+        var mapper = (TrafficDataMapper<DTO, T>) getMapper(entity.getType());
+        return mapper.entityToDto(entity);
     }
 
     // Get the appropriate mapper for the requested data type.
