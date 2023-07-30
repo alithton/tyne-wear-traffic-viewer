@@ -21,7 +21,7 @@ class RoadworkRepositoryTest {
         String CODE = "code1";
         TrafficRoadwork roadwork = TrafficRoadwork.builder()
                                                   .systemCodeNumber(CODE)
-                                                  .point(new Point(1L, 1L, 0.0, 0.0))
+                                                  .point(new Point(0.0, 0.0))
                                                   .build();
 
         TrafficRoadwork savedRoadwork = repository.save(roadwork);

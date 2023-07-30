@@ -5,6 +5,7 @@ import styles from './DetailsPanel.module.css';
 import CustomEventForm from "./CustomEventForm.jsx";
 import SelectedIncidentDetails from "./SelectedIncidentDetails.jsx";
 import CctvDetails from "./CctvDetails.jsx";
+import PanelMessage from "./PanelMessage.jsx";
 
 export const COORDINATE_PRECISION = 4;
 
@@ -17,9 +18,7 @@ function DetailsPanel(props) {
 
     // Default display if no events are selected by the user
     let  detailsDisplay = (
-        <div className={styles['details--no-selection']}>
-            <h3 className={styles['no-selection-text']}>Click an icon for further information.</h3>
-        </div>
+        <PanelMessage message={'Click an icon for further information.'} />
     );
 
     if (cctvSelected) {

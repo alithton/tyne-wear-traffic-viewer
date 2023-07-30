@@ -21,7 +21,7 @@ class EventRepositoryTest {
     public void save() {
         TrafficEvent event = TrafficEvent.builder()
                                            .systemCodeNumber("code1")
-                                           .point(new Point(1L, 1L, 0.0, 0.0))
+                                           .point(new Point(0.0, 0.0))
                                            .build();
 
         TrafficEvent savedEvent = eventRepository.save(event);

@@ -24,6 +24,10 @@ function SelectedIncidentDetails({codeNumber}) {
         const endTime = eventDetails.endTime;
         const diversion = eventDetails.diversionInForce;
         const lanes = eventDetails.lanesAffectedTypeRefDescription;
+        const incidentType = eventDetails.incidentTypeDescription
+                             || eventDetails.eventTypeDescription
+                             || eventDetails.roadworkTypeDescription
+                             || eventDetails.accidentTypeDescription;
 
         const startTimeDisplay = (
             <p className={styles['info--date']}>{hasOccurred(startTime) ? 'Starting' : 'Started'}: <b>{utcToLocal(startTime)} </b></p>
@@ -35,11 +39,11 @@ function SelectedIncidentDetails({codeNumber}) {
 
         content = (
             <div className={styles['details--selection']}>
-                <h3 className={styles.details__header}>{eventDetails.incidentTypeDescription}</h3>
+                <h3 className={styles.details__header}>{incidentType}</h3>
                 <p className={styles['info--minor']}>{eventDetails.systemCodeNumber}</p>
                 <p className={styles['info--minor']}>Location: {eventDetails.locationDescription} [{lat}, {long}]</p>
                 <p className={styles['info--important']}>Impact: {eventDetails.severityTypeRefDescription}</p>
-                <p className={styles['info--main']}>{eventDetails.longDescription}</p>
+                <p className={styles['info--main']}>{eventDetails.longDescription || eventDetails.shortDescription}</p>
                 {lanes && lanes.trim() && <p className={styles['info--main']}>Lanes affected: {lanes}</p>}
                 {diversion && diversion.trim() && <p className={styles['info--main']}>Diversion: {diversion}</p>}
                 {startTimeDisplay}

@@ -22,6 +22,7 @@
 
 .form-label {
     justify-self: end;
+    align-self: start;
 }
 
 .form-button {
@@ -37,4 +38,8 @@
     height: 100vh;
     top: 0;
     left: 0;
+}
+
+.error-message {
+    color: red;
 }

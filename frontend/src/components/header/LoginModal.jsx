@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux";
 import {logIn} from "../../store/slices/authenticationSlice.js";
 import {useLoginMutation, useSignUpMutation} from "../../store/slices/apiSlice.js";
 import {useState} from "react";
-import FormElement from "../ui/FormElement.jsx";
+import FormInputElement from "../ui/FormInputElement.jsx";
 
 function LoginModal(props) {
     const [username, setUsername] = useState('');
@@ -42,7 +42,7 @@ function LoginModal(props) {
             <form onSubmit={handleSubmit} className={styles['login-form']}>
                 <h3 className={styles.heading}>{actionText}</h3>
                 <div className={styles.inputs}>
-                    <FormElement
+                    <FormInputElement
                         label='Username'
                         name='username'
                         type='text'
@@ -50,7 +50,7 @@ function LoginModal(props) {
                         setValue={setUsername}
                         error={errorMessage}
                     />
-                    <FormElement
+                    <FormInputElement
                         label='Password'
                         name='password'
                         type='password'

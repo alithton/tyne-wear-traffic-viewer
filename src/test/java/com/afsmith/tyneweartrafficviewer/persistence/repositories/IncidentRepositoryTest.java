@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 class IncidentRepositoryTest {
@@ -20,12 +20,14 @@ class IncidentRepositoryTest {
     public void save() {
         TrafficIncident incident = TrafficIncident.builder()
                                                   .systemCodeNumber("code1")
-                                                  .point(new Point(1L, 1L, 0.0, 0.0))
+                                                  .point(new Point(0.0, 0.0))
                                                   .build();
 
         TrafficIncident savedIncident = incidentRepository.save(incident);
-        assertNotNull(savedIncident);
-        assertNotNull(savedIncident.getSystemCodeNumber());
-        assertNotEquals(0, incidentRepository.count());
+        assertThat(savedIncident).isNotNull();
+        assertThat(savedIncident.getSystemCodeNumber()).isNotEmpty();
+        assertThat(savedIncident.getCreatedBy()).isNull();
+        assertThat(incidentRepository.count()).isGreaterThan(0L);
+
     }
 }

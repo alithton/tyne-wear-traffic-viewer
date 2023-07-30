@@ -31,6 +31,11 @@ public class TrafficPointData extends TrafficData {
     @OneToMany(mappedBy = "trafficData")
     private List<Comment> comments;
 
+    // The user who created the item, if the item was user-created; null otherwise.
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User createdBy;
+
     public TrafficPointData(String systemCodeNumber,
                             TrafficDataTypes type,
                             String shortDescription,
@@ -45,7 +50,8 @@ public class TrafficPointData extends TrafficData {
                             String lanesAffectedTypeRefDescription,
                             String diversionInForce,
                             String phaseTypeRef,
-                            List<Comment> comments) {
+                            List<Comment> comments,
+                            User createdBy) {
         super(systemCodeNumber);
         this.type = type;
         this.shortDescription = shortDescription;
@@ -61,6 +67,31 @@ public class TrafficPointData extends TrafficData {
         this.diversionInForce = diversionInForce;
         this.phaseTypeRef = phaseTypeRef;
         this.comments = comments;
+        this.createdBy = createdBy;
+    }
+
+    /**
+     * Copy the contents of a TrafficPointData instance into a new instance. This is intended to allow
+     * subclasses to be instantiated using an instance of this class.
+     * @param pointData The traffic point data to be copied into the new object.
+     */
+    protected TrafficPointData(TrafficPointData pointData) {
+        super(pointData.getSystemCodeNumber());
+        type = pointData.getType();
+        shortDescription = pointData.getShortDescription();
+        longDescription = pointData.getLongDescription();
+        locationDescription = pointData.getLocationDescription();
+        point = pointData.getPoint();
+        creationDate = pointData.getCreationDate();
+        dataSourceTypeRef = pointData.getDataSourceTypeRef();
+        confirmedDate = pointData.getConfirmedDate();
+        modifiedDate = pointData.getModifiedDate();
+        severityTypeRefDescription = pointData.getSeverityTypeRefDescription();
+        lanesAffectedTypeRefDescription = pointData.getLanesAffectedTypeRefDescription();
+        diversionInForce = pointData.getDiversionInForce();
+        phaseTypeRef = pointData.getPhaseTypeRef();
+        comments = pointData.getComments();
+        createdBy = pointData.getCreatedBy();
     }
 
     /**

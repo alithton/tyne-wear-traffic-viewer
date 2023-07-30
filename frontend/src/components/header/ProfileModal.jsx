@@ -12,7 +12,7 @@ function ProfileModal(props) {
 
     const handleLogout = () => {
         props.handleCloseModal()
-        dispatch(logOut())
+        dispatch(logOut(false))
     };
 
     return (

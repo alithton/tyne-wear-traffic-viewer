@@ -5,16 +5,19 @@ export const authenticationSlice = createSlice({
     initialState: {
         value: {
             isLoggedIn: false,
+            sessionExpired: false,
             credentials: {username: '', password: ''}
         }
     },
     reducers: {
         logIn: (state, action) => {
             state.value.isLoggedIn = true;
+            state.value.sessionExpired = false;
             state.value.credentials = action.payload;
         },
-        logOut: state => {
+        logOut: (state, action) => {
             state.value.isLoggedIn = false;
+            state.value.sessionExpired = !!action.payload;
         },
         updateCredentials: (state, action) => {
             state.value.credentials = action.payload;

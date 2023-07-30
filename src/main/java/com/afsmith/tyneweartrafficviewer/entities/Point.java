@@ -12,8 +12,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Embeddable
 public class Point {
-    private Long easting;
-    private Long northing;
+//    private Long easting;
+//    private Long northing;
     private double latitude;
     private double longitude;
 }

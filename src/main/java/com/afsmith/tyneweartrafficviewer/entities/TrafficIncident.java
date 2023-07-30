@@ -38,12 +38,17 @@ public class TrafficIncident extends TrafficPointData {
             String phaseTypeRef,
             ZonedDateTime incidentTime,
             ZonedDateTime endTime,
-            List<Comment> comments) {
+            List<Comment> comments,
+            User createdBy) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription, lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef, comments);
+              diversionInForce, phaseTypeRef, comments, createdBy);
         this.incidentTypeDescription = incidentTypeDescription;
         this.incidentTime = incidentTime;
         this.endTime = endTime;
+    }
+
+    public TrafficIncident(TrafficPointData pointData) {
+        super(pointData);
     }
 }

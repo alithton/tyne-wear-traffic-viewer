@@ -1,23 +1,13 @@
 import styles from './FormElement.module.css';
+import {cloneElement} from "react";
 
-function FormElement({name, label, type, value, setValue, error, ...props}) {
-
-    const handleChange = (e) => {
-        setValue(e.target.value);
-    }
+function FormElement({label, error, ...props}) {
 
     return (
         <>
-            <label className={styles.label} htmlFor={name}>{label}</label>
+            <label className={`${styles.label} ${props.className}`} htmlFor={name}>{label}</label>
             <div className={styles['input-container']}>
-                <input
-                    name={name}
-                    type={type}
-                    value={value}
-                    onChange={handleChange}
-                    className={`${error ? styles.error : ''} ${props.className}`}
-                    {...props}
-                />
+                {props.children}
                 {error && <p className={styles['error-message']}>{error}</p>}
             </div>
 

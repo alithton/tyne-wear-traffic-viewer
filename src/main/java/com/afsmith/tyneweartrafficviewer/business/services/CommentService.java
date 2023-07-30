@@ -36,7 +36,6 @@ public class CommentService {
 
         System.out.println("Validating user " + commentDTO.getUserName() + "...");
         User user = userService.findByToken(token);
-        if (user == null) throw new NotAuthenticatedException("Provided authentication token is not valid.");
 
         Comment comment = buildComment(commentDTO, user, pointData);
 

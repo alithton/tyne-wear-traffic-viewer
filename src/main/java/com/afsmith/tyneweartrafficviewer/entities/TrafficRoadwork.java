@@ -5,11 +5,12 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.ZonedDateTime;
 import java.util.List;
 
-
+@Setter
 @Getter
 @NoArgsConstructor
 @Entity
@@ -47,16 +48,21 @@ public class TrafficRoadwork extends TrafficPointData {
                            String contractor,
                            String trafficSignals,
                            String contraflow,
-                           List<Comment> comments) {
+                           List<Comment> comments,
+                           User createdBy) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
               lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef, comments);
+              diversionInForce, phaseTypeRef, comments, createdBy);
         this.roadworkTypeDescription = roadworkTypeDescription;
         this.planned = planned;
         this.actual = actual;
         this.contractor = contractor;
         this.trafficSignals = trafficSignals;
         this.contraflow = contraflow;
+    }
+
+    public TrafficRoadwork(TrafficPointData pointData) {
+        super(pointData);
     }
 }

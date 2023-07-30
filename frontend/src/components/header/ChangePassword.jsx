@@ -1,5 +1,5 @@
 import {useState} from "react";
-import FormElement from "../ui/FormElement.jsx";
+import FormInputElement from "../ui/FormInputElement.jsx";
 import styles from './ChangePassword.module.css';
 import {useDispatch, useSelector} from "react-redux";
 import {useEditDetailsMutation} from "../../store/slices/apiSlice.js";
@@ -45,7 +45,7 @@ function ChangePassword() {
     const changing = (
         <>
             <div className={styles['form-elements']}>
-                <FormElement
+                <FormInputElement
                     name='passwordFirstEntry'
                     label='Enter new password'
                     type='password'
@@ -53,7 +53,7 @@ function ChangePassword() {
                     setValue={setFirstEntry}
                     error={errorMessage}
                 />
-                <FormElement
+                <FormInputElement
                     name='passwordSecondEntry'
                     label='Re-enter password'
                     type='password'

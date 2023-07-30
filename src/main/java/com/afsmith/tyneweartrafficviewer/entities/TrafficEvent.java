@@ -40,13 +40,18 @@ public class TrafficEvent extends TrafficPointData {
             PlannedTimes planned,
             String organiser,
             String venueName,
-            List<Comment> comments) {
+            List<Comment> comments,
+            User createdBy) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription, lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef, comments);
+              diversionInForce, phaseTypeRef, comments, createdBy);
         this.eventTypeDescription = eventTypeDescription;
         this.planned = planned;
         this.organiser = organiser;
         this.venueName = venueName;
+    }
+
+    public TrafficEvent(TrafficPointData pointData) {
+        super(pointData);
     }
 }

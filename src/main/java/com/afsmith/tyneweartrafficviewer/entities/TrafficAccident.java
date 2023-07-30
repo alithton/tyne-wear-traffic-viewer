@@ -5,10 +5,12 @@ import jakarta.persistence.Entity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.ZonedDateTime;
 import java.util.List;
 
+@Setter
 @Getter
 @NoArgsConstructor
 @Entity
@@ -35,13 +37,18 @@ public class TrafficAccident extends TrafficPointData {
                            String accidentTypeDescription,
                            ZonedDateTime accidentTime,
                            ZonedDateTime endTime,
-                           List<Comment> comments) {
+                           List<Comment> comments,
+                           User createdBy) {
         super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point, creationDate,
               dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
               lanesAffectedTypeRefDescription,
-              diversionInForce, phaseTypeRef, comments);
+              diversionInForce, phaseTypeRef, comments, createdBy);
         this.accidentTypeDescription = accidentTypeDescription;
         this.accidentTime = accidentTime;
         this.endTime = endTime;
+    }
+
+    public TrafficAccident(TrafficPointData pointData) {
+        super(pointData);
     }
 }
