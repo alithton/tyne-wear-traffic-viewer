@@ -10,9 +10,12 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 public class MockData {
-    private static final ZonedDateTime TIME = ZonedDateTime.now();
-    private static final PointDTO POINT_DTO = new PointDTO(1L, 1L, 0.0, 0.0);
-    private static final Point POINT = new Point(1L, 1L, 0.0, 0.0);
+    public static final ZonedDateTime TIME = ZonedDateTime.now();
+    public static final ZonedDateTime END_TIME = TIME.plusHours(1L);
+    public static final double LATITUDE = 96.0;
+    public static final double LONGITUDE = -1.0;
+    private static final PointDTO POINT_DTO = new PointDTO(LATITUDE, LONGITUDE);
+    private static final Point POINT = new Point(LATITUDE, LONGITUDE);
     private static final PlannedTimes PLANNED = new PlannedTimes(TIME, TIME);
     private static final PlannedDTO PLANNED_DTO = new PlannedDTO(TIME, TIME);
     public static final String SHORT_DESCRIPTION = "short description";
@@ -164,6 +167,23 @@ public class MockData {
                         .lastUpdatedDynamic(TIME)
                         .image(IMAGE_URL)
                         .build();
+    }
+
+    public static NewTrafficDataDTO getNewTrafficDataDto(TrafficDataTypes dataType) {
+        return NewTrafficDataDTO.builder()
+                                .type(dataType)
+                                .shortDescription(SHORT_DESCRIPTION)
+                                .longDescription(LONG_DESCRIPTION)
+                                .locationDescription(LOCATION_DESCRIPTION)
+                                .latitude(LATITUDE)
+                                .longitude(LONGITUDE)
+                                .start(TIME)
+                                .end(END_TIME)
+                                .diversionInForce(DIVERSION)
+                                .severityTypeRefDescription(SEVERITY)
+                                .lanesAffectedTypeRefDescription(LANES_AFFECTED)
+                                .phaseTypeRef(PHASE_TYPE)
+                                .build();
     }
 
     // Get Mock entities

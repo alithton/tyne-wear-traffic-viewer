@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.business.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.Credentials;
 import com.afsmith.tyneweartrafficviewer.entities.User;
+import com.afsmith.tyneweartrafficviewer.exceptions.NotAuthenticatedException;
 import com.afsmith.tyneweartrafficviewer.exceptions.UserAlreadyExistsException;
 import com.afsmith.tyneweartrafficviewer.persistence.services.UserPersistenceService;
 import lombok.Getter;
@@ -31,12 +32,14 @@ public class UserService {
 
     /**
      * Find a user with a currently valid token matching the one provided.
-     * @param token The user token.
-     * @return The user that was found or else null.
+     * @param token The authentication token.
+     * @return The user that was found.
+     * @throws NotAuthenticatedException if the provided token is not valid.
      */
-    public User findByToken(String token) {
+    public User findByToken(String token) throws NotAuthenticatedException {
         User user = userPersistence.findByToken(token);
-        return hasValidToken(user) ? user : null;
+        if (!hasValidToken(user)) throw new NotAuthenticatedException("Provided authentication token is not valid.");
+        return user;
     }
 
     public String save(Credentials credentials) throws UserAlreadyExistsException {

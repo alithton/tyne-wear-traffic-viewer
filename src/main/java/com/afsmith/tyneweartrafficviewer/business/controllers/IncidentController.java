@@ -1,13 +1,12 @@
 package com.afsmith.tyneweartrafficviewer.business.controllers;
 
-import com.afsmith.tyneweartrafficviewer.business.data.CommentDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.SpeedType;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.services.CommentService;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficPointData;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
+import com.afsmith.tyneweartrafficviewer.exceptions.InvalidTrafficDataException;
 import com.afsmith.tyneweartrafficviewer.exceptions.NotAuthenticatedException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -113,6 +112,19 @@ public class IncidentController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         } catch (NotAuthenticatedException e) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, e.getMessage());
+        }
+    }
+
+    @PostMapping("/incidents")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void addIncident(@RequestBody NewTrafficDataDTO incident,
+                            @CookieValue(name = "token", required = false) String token) {
+        try {
+            dtoService.save(incident, token);
+        } catch (NotAuthenticatedException e) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, e.getMessage());
+        } catch (InvalidTrafficDataException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }
     }
 

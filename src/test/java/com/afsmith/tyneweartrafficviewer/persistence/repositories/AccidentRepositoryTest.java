@@ -19,7 +19,7 @@ class AccidentRepositoryTest {
         String code = "code1";
         TrafficAccident accident = TrafficAccident.builder()
                                                   .systemCodeNumber(code)
-                                                  .point(new Point(1L, 1L, 0.0, 0.0))
+                                                  .point(new Point(0.0, 0.0))
                                                   .build();
         TrafficAccident savedAccident = repository.save(accident);
 

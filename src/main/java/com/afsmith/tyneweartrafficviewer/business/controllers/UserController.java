@@ -3,6 +3,7 @@ package com.afsmith.tyneweartrafficviewer.business.controllers;
 import com.afsmith.tyneweartrafficviewer.business.services.UserService;
 import com.afsmith.tyneweartrafficviewer.entities.Credentials;
 import com.afsmith.tyneweartrafficviewer.entities.User;
+import com.afsmith.tyneweartrafficviewer.exceptions.NotAuthenticatedException;
 import com.afsmith.tyneweartrafficviewer.exceptions.UserAlreadyExistsException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
@@ -47,9 +48,12 @@ public class UserController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void edit(@RequestBody Credentials credentials, @CookieValue("token") String token) {
         System.out.println(token);
-        User user = userService.findByToken(token);
-        if (user == null) {
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "No user found with a valid token matching the one provided.");
+        User user;
+        try {
+            user = userService.findByToken(token);
+        }
+        catch (NotAuthenticatedException e) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, e.getMessage());
         }
         userService.update(user, credentials);
     }

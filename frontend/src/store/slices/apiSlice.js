@@ -12,7 +12,7 @@ export const apiSlice = createApi({
         baseUrl: API_BASE_URL,
         credentials: "include"
     }),
-    tagTypes: ['Comment'],
+    tagTypes: ['Comment', 'Data'],
     endpoints: builder => ({
 
         /*
@@ -22,7 +22,8 @@ export const apiSlice = createApi({
          * for the speed data type specifically.
          */
         getIncidents: builder.query({
-            query: params => prepareFetchDataUrl(params.dataType, params.speedType)
+            query: params => prepareFetchDataUrl(params.dataType, params.speedType),
+            providesTags: ['Data']
         }),
 
         // Get data for a single traffic incident specified by a code number.
@@ -73,7 +74,18 @@ export const apiSlice = createApi({
                 method: 'POST',
                 body: commentDetails.comment
             }),
+            // Causes incident data to be reloaded when a comment is added.
             invalidatesTags: ['Comment']
+        }),
+
+        // Add a new user-created incident
+        addIncident: builder.mutation({
+            query: incident => ({
+                url: '/incidents',
+                method: 'POST',
+                body: incident
+            }),
+            invalidatesTags: ['Data']
         })
     })
 });
@@ -110,5 +122,6 @@ export const { useGetIncidentsQuery,
                 useSignUpMutation,
                 useLoginMutation,
                 useEditDetailsMutation,
-                useAddCommentMutation
+                useAddCommentMutation,
+                useAddIncidentMutation
                 } = apiSlice;
