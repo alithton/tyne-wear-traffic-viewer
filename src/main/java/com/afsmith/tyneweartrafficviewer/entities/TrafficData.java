@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import lombok.*;
@@ -17,4 +18,8 @@ import lombok.*;
 public class TrafficData implements TrafficEntity {
     @Id
     private String systemCodeNumber;
+
+    public boolean isIncluded(FilterService filterService) {
+        return true;
+    }
 }

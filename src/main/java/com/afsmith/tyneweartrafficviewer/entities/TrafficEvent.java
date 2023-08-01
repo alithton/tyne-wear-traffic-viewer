@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.Entity;
 import lombok.*;
 
@@ -53,5 +54,12 @@ public class TrafficEvent extends TrafficPointData {
 
     public TrafficEvent(TrafficPointData pointData) {
         super(pointData);
+    }
+
+    @Override
+    public boolean isIncluded(FilterService filter) {
+        return filter.filterSeverity(getSeverityTypeRefDescription())
+                && filter.filterCustom(this)
+                && filter.filterDate(getPlanned().getStartTime(), getPlanned().getEndTime());
     }
 }

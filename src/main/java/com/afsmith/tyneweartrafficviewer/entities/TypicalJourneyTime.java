@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
 import com.opencsv.bean.CsvIgnore;
@@ -53,4 +54,9 @@ public class TypicalJourneyTime implements TrafficEntity {
     @CsvBindByName(column = "Time")
     @CsvDate("HH:mm")
     private LocalTime timeOfDay;
+
+    @Override
+    public boolean isIncluded(FilterService filter) {
+        return true;
+    }
 }

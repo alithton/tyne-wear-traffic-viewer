@@ -23,6 +23,7 @@ import java.util.Map;
 public class ExternalDataAccessServiceImpl implements ExternalDataAccessService {
 
     private final OpenDataServiceClient client;
+    private TrafficDataReader reader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");
 
     /**
      * {@inheritDoc}
@@ -32,7 +33,9 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
 
         // Speed and camera data have dynamic and static components that need to be joined.
         if (dataType == TrafficDataTypes.SPEED || dataType == TrafficDataTypes.CAMERA) {
-            return combineStaticAndDynamicData(dataType);
+            List<TrafficDataExternal<E>> staticData = getExternalData(dataType, false);
+            List<TrafficDataExternal<E>> dynamicData = getExternalData(dataType, true);
+            return convertToEntities(staticData, dynamicData);
         } else {
             // For all other data types there is a 1:1 relationship between external data classes and entities.
             List<TrafficDataExternal<E>> externalData = getExternalData(dataType, false);
@@ -44,8 +47,37 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
      * {@inheritDoc}
      */
     @Override
+    public <E extends TrafficEntity> List<E> getData(TrafficDataTypes dataType, String filePath) throws IOException {
+        List<TrafficDataExternal<E>> externalData = getExternalData(dataType, filePath, false);
+        return convertToEntities(externalData);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public <E extends TrafficEntity> List<E> getData(TrafficDataTypes dataType, String staticDataFilePath, String dynamicDataFilePath) throws IOException {
+        List<TrafficDataExternal<E>> staticData = getExternalData(dataType, staticDataFilePath, false);
+        List<TrafficDataExternal<E>> dynamicData = getExternalData(dataType, dynamicDataFilePath, true);
+        return convertToEntities(staticData, dynamicData);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public byte[] getImage(URL imageUrl) {
         return client.getImage(imageUrl);
+    }
+
+    /**
+     * Configure the base directory to be used when reading data from files. File paths
+     * are interpreted relative to this base directory path.
+     * @param baseDirectory The file path to set as the base.
+     */
+    @Override
+    public void setBaseDirectory(String baseDirectory) {
+        reader = TrafficDataReaderImpl.fromFilePath(baseDirectory);
     }
 
     /*
@@ -106,9 +138,9 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     /*
      * Get entities for data types that have both static and dynamic components.
      */
-    private <E extends TrafficEntity> List<E> combineStaticAndDynamicData(TrafficDataTypes dataType) throws IOException {
-        List<TrafficDataExternal<E>> staticData = getExternalData(dataType, false);
-        List<TrafficDataExternal<E>> dynamicData = getExternalData(dataType, true);
+    private <E extends TrafficEntity> List<E> convertToEntities(List<TrafficDataExternal<E>> staticData, List<TrafficDataExternal<E>> dynamicData)
+            throws IOException {
+
         Map<String, TrafficDataExternal<E>> dynamicMap = getSystemCodeMap(dynamicData);
 
         return staticData.stream()
@@ -131,6 +163,14 @@ public class ExternalDataAccessServiceImpl implements ExternalDataAccessService 
     private <E extends TrafficEntity> List<TrafficDataExternal<E>> getExternalData(TrafficDataTypes dataType, boolean dynamic) throws IOException {
         var externalDataType = getExternalDataType(dataType, dynamic);
         return client.getData(externalDataType);
+    }
+
+    /*
+     * Get external data from the specified file.
+     */
+    private <E extends TrafficEntity> List<TrafficDataExternal<E>> getExternalData(TrafficDataTypes dataType, String filePath, boolean dynamic) throws IOException {
+        ExternalDataTypes externalDataType = getExternalDataType(dataType, dynamic);
+        return reader.read(filePath, externalDataType.getExternalClass());
     }
 
 }

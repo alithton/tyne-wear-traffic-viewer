@@ -11,6 +11,7 @@ import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDa
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
 import jakarta.transaction.Transactional;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -36,6 +37,7 @@ public class BootstrapData implements CommandLineRunner {
     private final String WEEKEND_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekends.csv";
 
     // Should the data be loaded from local files or downloaded from the Open Data Service?
+    @Getter
     private boolean useLocalData;
 
     @Transactional
@@ -61,15 +63,14 @@ public class BootstrapData implements CommandLineRunner {
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
-            trafficIncidents = readFromFile("incidents.json", TrafficIncidentExternal.class);
-            trafficEvents = readFromFile("events.json", TrafficEventExternal.class);
-            trafficAccidents = readFromFile("accidents.json", TrafficAccidentExternal.class);
-            trafficRoadworks = readFromFile("roadworks.json", TrafficRoadworksExternal.class);
-            journeyTimes = readFromFile("journeytime-static.json", "journeytime-dynamic.json",
-                                        JourneytimeStaticExternal.class, JourneytimeDynamicExternal.class);
-            cameras = readFromFile("cctv-static.json", "cctv-dynamic.json",
-                                   CctvStaticExternal.class, CctvDynamicExternal.class);
-
+            trafficIncidents = dataAccessService.getData(TrafficDataTypes.INCIDENT, "incidents.json");
+            trafficEvents = dataAccessService.getData(TrafficDataTypes.EVENT, "events.json");
+            trafficAccidents = dataAccessService.getData(TrafficDataTypes.ACCIDENT, "accidents.json");
+            trafficRoadworks = dataAccessService.getData(TrafficDataTypes.ROADWORKS, "roadworks.json");
+            journeyTimes = dataAccessService.getData(TrafficDataTypes.SPEED,"journeytime-static.json",
+                                                     "journeytime-dynamic.json");
+            cameras = dataAccessService.getData(TrafficDataTypes.CAMERA, "cctv-static.json",
+                                                "cctv-dynamic.json");
         } else {
             trafficIncidents = dataAccessService.getData(TrafficDataTypes.INCIDENT);
             trafficEvents = dataAccessService.getData(TrafficDataTypes.EVENT);
@@ -87,41 +88,7 @@ public class BootstrapData implements CommandLineRunner {
         dataPersistence.persistEntities(typicalJourneyTimes, TrafficDataTypes.TYPICAL_SPEED);
     }
 
-    public boolean isUseLocalData() {
-        return useLocalData;
-    }
-
     public void setUseLocalData(boolean useLocalData) {
         this.useLocalData = useLocalData;
-    }
-
-    private <T extends TrafficDataExternal<E>, E extends TrafficData> List<TrafficEntity> readFromFile(String fileName, Class<T> clazz) throws IOException {
-        return trafficDataReader.read(fileName, clazz)
-                                .stream()
-                                .map(external -> (TrafficEntity) external.toEntity())
-                                .toList();
-    }
-
-    @SuppressWarnings("unchecked")
-    private <T extends TrafficDataExternal<E>, U extends TrafficDataExternal<E>, E extends TrafficEntity> List<TrafficEntity>
-        readFromFile(String staticFileName, String dynamicFileName, Class<? extends T> staticClass, Class<U> dynamicClass) throws IOException {
-
-            List<U> dynamicData = trafficDataReader.read(dynamicFileName, dynamicClass);
-            return trafficDataReader.read(staticFileName, staticClass)
-                                    .stream()
-                                    .map(element -> {
-                                        DynamicDataExternal<E> staticElement = (DynamicDataExternal<E>) element;
-                                        List<U> dynamic = findBySystemCode(element.getSystemCodeNumber(), dynamicData);
-                                        return dynamic.size() > 0 ? staticElement.toEntity( (DynamicDataExternal<E>) dynamic.get(0))
-                                                : staticElement.toEntity();
-                                    })
-                                    .map(element -> (TrafficEntity) element)
-                                    .toList();
-    }
-
-    private <T extends TrafficDataExternal<E>, E extends TrafficEntity> List<T> findBySystemCode(String code, List<T> data) {
-        return data.stream()
-                   .filter(element -> code.equals(element.getSystemCodeNumber()))
-                   .toList();
     }
 }

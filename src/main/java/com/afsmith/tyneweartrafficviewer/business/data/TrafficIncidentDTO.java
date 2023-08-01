@@ -34,10 +34,12 @@ public final class TrafficIncidentDTO extends TrafficPointDataDTO {
                 String incidentTypeDescription,
                 ZonedDateTime incidentTime,
                 ZonedDateTime endTime,
-                List<CommentDTO> comments) {
+                List<CommentDTO> comments,
+                PlannedDTO times,
+                String typeDescription) {
                 super(systemCodeNumber, type, shortDescription, longDescription, locationDescription,
                       point, creationDate, dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
-                      lanesAffectedTypeRefDescription, diversionInForce, phaseTypeRef, comments);
+                      lanesAffectedTypeRefDescription, diversionInForce, phaseTypeRef, comments, times, typeDescription);
                 this.incidentTypeDescription = incidentTypeDescription;
                 this.incidentTime = incidentTime;
                 this.endTime = endTime;

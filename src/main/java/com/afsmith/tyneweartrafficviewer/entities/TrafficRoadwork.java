@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -64,5 +65,36 @@ public class TrafficRoadwork extends TrafficPointData {
 
     public TrafficRoadwork(TrafficPointData pointData) {
         super(pointData);
+    }
+
+    /**
+     * Get the actual start time, if that is available. Otherwise, get the planned
+     * start time. If neither are available, return null.
+     * @return The actual or planned start time, or null if those are unavailable.
+     */
+    public ZonedDateTime getStart() {
+        if ((planned == null || planned.getStartTime() == null)
+                && (actual == null || actual.getStartTime() == null)) return null;
+        if (actual == null || actual.getStartTime() == null) return planned.getStartTime();
+        return actual.getStartTime();
+    }
+
+    /**
+     * Get the actual end time, if that is available. Otherwise, get the planned
+     * end time. If neither are available, return null.
+     * @return The actual or planned end time, or null if those are unavailable.
+     */
+    public ZonedDateTime getEnd() {
+        if ((planned == null || planned.getEndTime() == null)
+                && (actual == null || actual.getEndTime() == null)) return null;
+        if (actual == null || actual.getEndTime() == null) return planned.getEndTime();
+        return actual.getEndTime();
+    }
+
+    @Override
+    public boolean isIncluded(FilterService filter) {
+        return filter.filterSeverity(getSeverityTypeRefDescription())
+                && filter.filterCustom(this)
+                && filter.filterDate(getStart(), getEnd());
     }
 }

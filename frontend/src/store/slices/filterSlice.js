@@ -8,10 +8,12 @@ export const filterSlice = createSlice({
         initialState: {
             value: {
                 dataType: ['INCIDENT'],
+                includeCustomIncidents: false,
                 severity: ['Low', 'Medium', 'High'],
                 speedType: 'CURRENT',
-                startDate: null,
-                endDate: null
+                currentOnly: true,
+                startDate: '',
+                endDate: ''
             }
         },
         reducers: {
@@ -25,6 +27,9 @@ export const filterSlice = createSlice({
             removeDataType: (state, action) => {
                 state.value.dataType = state.value.dataType.filter(dataType => dataType !== action.payload);
             },
+            setCustomIncidents: (state, action) => {
+                state.value.includeCustomIncidents = action.payload;
+            },
             addSeverity: (state, action) => {
                 state.value.severity.push(action.payload);
             },
@@ -33,6 +38,15 @@ export const filterSlice = createSlice({
             },
             changeSpeedType: (state, action) => {
                 state.value.speedType = action.payload;
+            },
+            setCurrentOnly: (state, action) => {
+                state.value.currentOnly = action.payload;
+            },
+            setStartDate: (state, action) => {
+                state.value.startDate = action.payload;
+            },
+            setEndDate: (state, action) => {
+                state.value.endDate = action.payload;
             }
         }
     }
@@ -41,8 +55,12 @@ export const filterSlice = createSlice({
 export const {
     addDataType,
     removeDataType,
+    setCustomIncidents,
     addSeverity,
     removeSeverity,
-    changeSpeedType
+    changeSpeedType,
+    setCurrentOnly,
+    setStartDate,
+    setEndDate
 } = filterSlice.actions;
 export default filterSlice.reducer;

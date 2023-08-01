@@ -4,6 +4,7 @@ import com.afsmith.tyneweartrafficviewer.business.data.NewTrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficPointDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.*;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import com.afsmith.tyneweartrafficviewer.entities.*;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.exceptions.InvalidTrafficDataException;
@@ -52,11 +53,19 @@ public class DtoServiceImpl implements DtoService {
         // These casts are known to be safe as there is a finite number of possible return values (based on the
         // enum dataType), all of which are safe.
         var mapper = (TrafficDataMapper<DTO, T>) getMapper(dataType);
-        Class<T> entityClass = (Class<T>) dataType.getEntityClass();
+        List<T> entities = listEntities(dataType);
+        return mapper.entityToDto(entities);
+    }
 
-        List<TrafficEntity> entities = dataPersistence.listAll(dataType);
-        List<T> validatedEntities = downcastList(entities, entityClass);
-        return mapper.entityToDto(validatedEntities);
+    @Override
+    @SuppressWarnings("unchecked")
+    public <DTO extends MappableDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter) {
+        // These casts are known to be safe as there is a finite number of possible return values (based on the
+        // enum dataType), all of which are safe.
+        var mapper = (TrafficDataMapper<DTO, T>) getMapper(dataType);
+        List<T> entities = listEntities(dataType);
+        List<T> filtered = filter.filter(entities);
+        return mapper.entityToDto(filtered);
     }
 
     /**
@@ -133,6 +142,15 @@ public class DtoServiceImpl implements DtoService {
             case ROADWORKS -> convert(newTrafficData).toRoadwork();
             default -> throw new UnsupportedOperationException("Unable to save traffic data of type " + dataType + ".");
         };
+    }
+
+    // Get a list of all entities in the database of the specified traffic data type.
+    @SuppressWarnings("unchecked")
+    private <T extends TrafficEntity>
+    List<T> listEntities(TrafficDataTypes dataType) {
+        Class<T> entityClass = (Class<T>) dataType.getEntityClass();
+        List<TrafficEntity> entities = dataPersistence.listAll(dataType);
+        return downcastList(entities, entityClass);
     }
 
 }

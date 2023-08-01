@@ -2,6 +2,9 @@ package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.*;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.MapperFeature;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -11,6 +14,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.ZoneId;
 import java.time.Month;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -48,4 +52,28 @@ class TrafficDataReaderImplTest {
         assertThat(testEvent.getPlanned().startTime().getMonth()).isEqualTo(Month.JUNE);
         assertThat(testEvent.getType()).isEqualTo(TrafficDataTypes.EVENT);
     }
+
+    @Test
+    void readDynamicJourneytimeDataFromFile() throws IOException {
+        var journeytimeDynamic = reader.read("journeytime-dynamic-full-test.json", JourneytimeDynamicExternal.class);
+
+        assertThat(journeytimeDynamic.size()).isGreaterThan(0);
+    }
+
+//    @Test
+//    void createCollectionClass() {
+//        var mapper = JsonMapper.builder()
+//                               .findAndAddModules()
+//                               .disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
+//                               .enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS)
+//                               .build()
+//                               .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//
+//        var incidentList = mapper.getTypeFactory()
+//                                 .constructCollectionType(List.class, JourneytimeDynamicExternal.class);
+//
+//        System.out.println(incidentList);
+//
+//        assertThat(incidentList).isNotNull();
+//    }
  }

@@ -1,7 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.Point;
+import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
@@ -12,7 +16,9 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.Mock;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
@@ -62,6 +68,25 @@ class TrafficDataServiceJourneyTimesTest {
 
         journeyTimeService.setRoutesFromFile(true);
         journeyTimeService.persistEntities(mockJourneyTimes);
+
+        verify(repository).saveAll(captor.capture());
+
+        JourneyTime firstJourney = captor.getValue()
+                                         .get(0);
+
+        assertThat(firstJourney.getRoute()).isNotNull();
+    }
+
+    @Test
+    void routesReadFromFileRealJourneyTimeData() throws IOException {
+        ExternalDataAccessService externalDataAccessService = new ExternalDataAccessServiceImpl(new OpenDataServiceClient(
+                new RestTemplateBuilder()));
+        externalDataAccessService.setBaseDirectory("src/test/resources/data");
+
+        List<JourneyTime> journeyTimes = externalDataAccessService.getData(TrafficDataTypes.SPEED, "journeytime-static-full-test.json", "journeytime-dynamic-full-test.json");
+
+        journeyTimeService.setRoutesFromFile(true);
+        journeyTimeService.persistEntities(journeyTimes);
 
         verify(repository).saveAll(captor.capture());
 

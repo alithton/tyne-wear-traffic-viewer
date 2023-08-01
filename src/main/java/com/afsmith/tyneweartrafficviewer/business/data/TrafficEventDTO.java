@@ -32,12 +32,14 @@ public final class TrafficEventDTO extends TrafficPointDataDTO {
                                PlannedDTO planned,
                                String organiser,
                                String venueName,
-                               List<CommentDTO> comments) {
+                               List<CommentDTO> comments,
+                               PlannedDTO times,
+                               String typeDescription) {
                 super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point,
                       creationDate,
                       dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
                       lanesAffectedTypeRefDescription,
-                      diversionInForce, phaseTypeRef, comments);
+                      diversionInForce, phaseTypeRef, comments, times, typeDescription);
                 this.eventTypeDescription = eventTypeDescription;
                 this.planned = planned;
                 this.organiser = organiser;

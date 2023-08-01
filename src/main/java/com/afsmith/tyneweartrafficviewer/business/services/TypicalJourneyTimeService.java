@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.JourneyTimeDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.SpeedType;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.SpeedType;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.mappers.JourneyTimeMapper;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;

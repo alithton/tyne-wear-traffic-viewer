@@ -22,7 +22,7 @@ export const apiSlice = createApi({
          * for the speed data type specifically.
          */
         getIncidents: builder.query({
-            query: params => prepareFetchDataUrl(params.dataType, params.speedType),
+            query: params => prepareFetchDataUrl(params),
             providesTags: ['Data']
         }),
 
@@ -94,15 +94,40 @@ export const apiSlice = createApi({
  * Prepare URL to fetch traffic data from the backend. Takes data type and speed
  * type parameters that are used as URL query parameters to specify the type(s)
  * of data to be returned.
- * dataTypes - a list of traffic data types to retrieve.
- * speedType - the speed type data to return.
+ * options - An object containing the filter parameter options. This is expected
+ * to be in the same format as the filter state slice value.
  */
-function prepareFetchDataUrl(dataTypes, speedType) {
+function prepareFetchDataUrl(options) {
     const url = new URL(API_BASE_URL + "/incidents");
-    dataTypes.forEach(param => url.searchParams.append("type", param));
-    url.searchParams.append("speedType", speedType);
+    appendParamList(url, options.dataType, "type");
+    url.searchParams.append("includeCustomIncidents", options.includeCustomIncidents);
+    appendParamList(url, options.severity, "severity");
+    url.searchParams.append("speedType", options.speedType);
+    url.searchParams.append("currentOnly", options.currentOnly);
+    if (options.startDate) appendDateParam(url, options.startDate, "startDate");
+    if (options.endDate) appendDateParam(url, options.endDate, "endDate");
     console.log(url);
     return url.toString();
+}
+
+/*
+ * Append a list of URL search parameters of the same type to a provided URL.
+ * url - The URL to which the parameters are to be appended.
+ * paramList - The list of parameter values.
+ * paramName - The name of the parameter.
+ */
+function appendParamList(url, paramList, paramName) {
+    paramList.forEach(param => url.searchParams.append(paramName, param));
+}
+
+/*
+ * Append an ISO-formatted date parameter to a provided URL.
+ * url - The URL to which the parameter is to be appended.
+ * date - The date value.
+ * paramName - The name of the parameter.
+ */
+function appendDateParam(url, date, paramName) {
+    url.searchParams.append(paramName, date);
 }
 
 /*

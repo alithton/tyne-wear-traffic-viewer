@@ -67,7 +67,11 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
             Map<String, SimpleRoute> routeMap = getRoutesFromFile();
             journeyTimes.forEach(journey -> {
                 SimpleRoute route = routeMap.get(journey.getSystemCodeNumber());
-                journey.setRoute(route);
+                if (route == null) {
+                    loadRoute(journey);
+                } else {
+                    journey.setRoute(route);
+                }
             });
         } else {
             journeyTimes.forEach(this::loadRoute);

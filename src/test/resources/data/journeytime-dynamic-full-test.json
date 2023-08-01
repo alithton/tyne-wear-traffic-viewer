@@ -1,0 +1,5498 @@
+[
+  {
+    "systemCodeNumber": "ANPR35",
+    "dynamics": [
+      {
+        "linkTravelTime": 0,
+        "platesIn": 37,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2022-09-08T11:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "ANPR67",
+    "dynamics": [
+      {
+        "linkTravelTime": 0,
+        "platesIn": 0,
+        "platesOut": 37,
+        "plateMatches": 0,
+        "lastUpdated": "2022-09-08T11:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_DUMMY_TEST1_TEST2",
+    "dynamics": [
+      {
+        "linkTravelTime": 128,
+        "platesIn": 0,
+        "platesOut": 5,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_CR2_HD3",
+    "dynamics": [
+      {
+        "linkTravelTime": 92,
+        "platesIn": 0,
+        "platesOut": 9,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_CR2_TEAMST1",
+    "dynamics": [
+      {
+        "linkTravelTime": 109,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_CR2_TEAMST1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-17T09:28:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_HD3_CR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 92,
+        "platesIn": 15,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_HD3_CR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 108,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-26T08:01:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_TEAMST1_CR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 119,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA1114_TEAMST1_CR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 139,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-17T09:36:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_A184_TB",
+    "dynamics": [
+      {
+        "linkTravelTime": 104,
+        "platesIn": 114,
+        "platesOut": 123,
+        "plateMatches": 70,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR1_DR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 302,
+        "platesIn": 25,
+        "platesOut": 38,
+        "plateMatches": 27,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR1_DR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 268,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR1_TB",
+    "dynamics": [
+      {
+        "linkTravelTime": 113,
+        "platesIn": 33,
+        "platesOut": 123,
+        "plateMatches": 20,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2A_DR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 85,
+        "platesIn": 0,
+        "platesOut": 28,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2A_DR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 181,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-02-27T09:28:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2_DR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 266,
+        "platesIn": 24,
+        "platesOut": 29,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2_DR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 179,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2_DR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 238,
+        "platesIn": 38,
+        "platesOut": 43,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR2_DR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 189,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR3_DR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 235,
+        "platesIn": 26,
+        "platesOut": 24,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR3_DR2A",
+    "dynamics": [
+      {
+        "linkTravelTime": 110,
+        "platesIn": 23,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR3_DR2A_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 84,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-02-27T09:24:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR3_DR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 285,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR3_NB4",
+    "dynamics": [
+      {
+        "linkTravelTime": 52,
+        "platesIn": 43,
+        "platesOut": 21,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR5_NB4",
+    "dynamics": [
+      {
+        "linkTravelTime": 494,
+        "platesIn": 27,
+        "platesOut": 24,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_DR5_NB4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 565,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_NB4_DR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 40,
+        "platesIn": 24,
+        "platesOut": 26,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_NB4_DR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 38,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_NB4_DR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 252,
+        "platesIn": 21,
+        "platesOut": 16,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_NB4_DR5_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 439,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:25:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_TB_A184",
+    "dynamics": [
+      {
+        "linkTravelTime": 53,
+        "platesIn": 88,
+        "platesOut": 64,
+        "plateMatches": 59,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA167_TB_DR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 101,
+        "platesIn": 83,
+        "platesOut": 14,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_A1114_A184",
+    "dynamics": [
+      {
+        "linkTravelTime": 141,
+        "platesIn": 42,
+        "platesOut": 20,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_A167_B1426",
+    "dynamics": [
+      {
+        "linkTravelTime": 182,
+        "platesIn": 164,
+        "platesOut": 20,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_A167_PR",
+    "dynamics": [
+      {
+        "linkTravelTime": 125,
+        "platesIn": 101,
+        "platesOut": 55,
+        "plateMatches": 50,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_A184_A1J69",
+    "dynamics": [
+      {
+        "linkTravelTime": 144,
+        "platesIn": 25,
+        "platesOut": 77,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_ASKWRD_WLKTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 54,
+        "platesIn": 29,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_B1426_A167",
+    "dynamics": [
+      {
+        "linkTravelTime": 72,
+        "platesIn": 28,
+        "platesOut": 36,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_DWR1_RB",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 35,
+        "platesOut": 61,
+        "plateMatches": 32,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR2_NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 99,
+        "platesIn": 61,
+        "platesOut": 56,
+        "plateMatches": 53,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR2_NR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 99,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR2_PR",
+    "dynamics": [
+      {
+        "linkTravelTime": 127,
+        "platesIn": 83,
+        "platesOut": 97,
+        "plateMatches": 74,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR3_NR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 64,
+        "platesOut": 83,
+        "plateMatches": 57,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_NR3_NR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 115,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_PR_A167",
+    "dynamics": [
+      {
+        "linkTravelTime": 142,
+        "platesIn": 100,
+        "platesOut": 115,
+        "plateMatches": 95,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_PR_NR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 170,
+        "platesIn": 72,
+        "platesOut": 61,
+        "plateMatches": 44,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_PR_TB",
+    "dynamics": [
+      {
+        "linkTravelTime": 257,
+        "platesIn": 97,
+        "platesOut": 123,
+        "plateMatches": 51,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_RB_A1",
+    "dynamics": [
+      {
+        "linkTravelTime": 125,
+        "platesIn": 59,
+        "platesOut": 77,
+        "plateMatches": 29,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_TB_PR",
+    "dynamics": [
+      {
+        "linkTravelTime": 164,
+        "platesIn": 83,
+        "platesOut": 72,
+        "plateMatches": 44,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA184_WLKTCE_ASKWRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 54,
+        "platesIn": 0,
+        "platesOut": 32,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA185_B1306_LHEWLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 183,
+        "platesIn": 56,
+        "platesOut": 37,
+        "plateMatches": 18,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA185_LHEWLN_B1306",
+    "dynamics": [
+      {
+        "linkTravelTime": 206,
+        "platesIn": 27,
+        "platesOut": 20,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA695_SB_SG",
+    "dynamics": [
+      {
+        "linkTravelTime": 279,
+        "platesIn": 77,
+        "platesOut": 37,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHA695_SG_SB",
+    "dynamics": [
+      {
+        "linkTravelTime": 254,
+        "platesIn": 39,
+        "platesOut": 61,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR1_ODR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 91,
+        "platesIn": 30,
+        "platesOut": 24,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR1_ODR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 88,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR2_ODR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 116,
+        "platesIn": 13,
+        "platesOut": 31,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR2_ODR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 97,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR2_ODR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 203,
+        "platesIn": 24,
+        "platesOut": 27,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR2_ODR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 203,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR3_ODR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 188,
+        "platesIn": 21,
+        "platesOut": 13,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1296_ODR3_ODR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 227,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_A184_MLTNSQ",
+    "dynamics": [
+      {
+        "linkTravelTime": 81,
+        "platesIn": 20,
+        "platesOut": 26,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_MLTNSQ_A184",
+    "dynamics": [
+      {
+        "linkTravelTime": 100,
+        "platesIn": 36,
+        "platesOut": 34,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR1_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 176,
+        "platesIn": 26,
+        "platesOut": 7,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR1_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-28T15:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR2_SR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 179,
+        "platesIn": 22,
+        "platesOut": 34,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR2_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 62,
+        "platesIn": 7,
+        "platesOut": 22,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR2_SR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 65,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR3_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 61,
+        "platesIn": 40,
+        "platesOut": 21,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB1426_SR3_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 70,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB601_BR1_LHR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 156,
+        "platesIn": 50,
+        "platesOut": 25,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB601_BR1_LHR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 171,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB601_LHR2_BR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 164,
+        "platesIn": 33,
+        "platesOut": 26,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB601_LHR2_BR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 199,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB6317_B6316_B6317",
+    "dynamics": [
+      {
+        "linkTravelTime": 180,
+        "platesIn": 17,
+        "platesOut": 42,
+        "plateMatches": 2,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHB6317_B6317_B6316",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 83,
+        "platesOut": 24,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHKNGWAY_ELVAVE_WSTAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 182,
+        "platesIn": 61,
+        "platesOut": 26,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_GHKNGWAY_WSTAVE_ELVAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 100,
+        "platesIn": 45,
+        "platesOut": 61,
+        "plateMatches": 20,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NBA189_MF8_RB9",
+    "dynamics": [
+      {
+        "linkTravelTime": 340,
+        "platesIn": 33,
+        "platesOut": 73,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NBA189_RB9_MF8",
+    "dynamics": [
+      {
+        "linkTravelTime": 351,
+        "platesIn": 83,
+        "platesOut": 35,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA1058_JR1_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 235,
+        "platesIn": 103,
+        "platesOut": 72,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA1058_SR2_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 206,
+        "platesIn": 22,
+        "platesOut": 71,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA1058_SR3_JR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 433,
+        "platesIn": 95,
+        "platesOut": 89,
+        "plateMatches": 47,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA1058_SR3_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 95,
+        "platesOut": 26,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_CG_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 282,
+        "platesIn": 100,
+        "platesOut": 30,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_CG_TB",
+    "dynamics": [
+      {
+        "linkTravelTime": 315,
+        "platesIn": 100,
+        "platesOut": 83,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_NBS1_CG",
+    "dynamics": [
+      {
+        "linkTravelTime": 293,
+        "platesIn": 47,
+        "platesOut": 81,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_NBS1_TB",
+    "dynamics": [
+      {
+        "linkTravelTime": 90,
+        "platesIn": 47,
+        "platesOut": 83,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_PR1_PR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 92,
+        "platesIn": 46,
+        "platesOut": 52,
+        "plateMatches": 41,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_PR2_PR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 90,
+        "platesIn": 56,
+        "platesOut": 63,
+        "plateMatches": 60,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_TB_CG",
+    "dynamics": [
+      {
+        "linkTravelTime": 312,
+        "platesIn": 123,
+        "platesOut": 81,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA167_TB_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 123,
+        "platesIn": 123,
+        "platesOut": 30,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR1_WR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 143,
+        "platesIn": 12,
+        "platesOut": 13,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR1_WR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 160,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR2_WR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 172,
+        "platesIn": 20,
+        "platesOut": 15,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR2_WR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 181,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR2_WR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 295,
+        "platesIn": 13,
+        "platesOut": 19,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR2_WR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 212,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR3_WR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 170,
+        "platesIn": 43,
+        "platesOut": 20,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR3_WR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 193,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR3_WR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 681,
+        "platesIn": 19,
+        "platesOut": 15,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR3_WR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 492,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR4_WR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 409,
+        "platesIn": 49,
+        "platesOut": 43,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA186_WR4_WR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 354,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_BR4_BR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 211,
+        "platesIn": 42,
+        "platesOut": 42,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_BR4_CR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 194,
+        "platesIn": 58,
+        "platesOut": 33,
+        "plateMatches": 18,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_BR4_CR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 210,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_BR5_BR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 201,
+        "platesIn": 19,
+        "platesOut": 58,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_BR5_BR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 252,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_CHAPST_MELTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 42,
+        "platesIn": 47,
+        "platesOut": 34,
+        "plateMatches": 33,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_CR3_BR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 174,
+        "platesIn": 39,
+        "platesOut": 42,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_CR3_BR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 183,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_HRSYRD_MELTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 133,
+        "platesIn": 55,
+        "platesOut": 45,
+        "plateMatches": 25,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_MELTCE_CHAPST",
+    "dynamics": [
+      {
+        "linkTravelTime": 48,
+        "platesIn": 45,
+        "platesOut": 33,
+        "plateMatches": 31,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA188_MELTCE_HRSYRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 119,
+        "platesIn": 38,
+        "platesOut": 51,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_BPR2A_JDR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 241,
+        "platesIn": 23,
+        "platesOut": 37,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_BR3_GR",
+    "dynamics": [
+      {
+        "linkTravelTime": 188,
+        "platesIn": 25,
+        "platesOut": 38,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_BR3_SJB2",
+    "dynamics": [
+      {
+        "linkTravelTime": 157,
+        "platesIn": 22,
+        "platesOut": 31,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_DWR1_SJB1",
+    "dynamics": [
+      {
+        "linkTravelTime": 178,
+        "platesIn": 35,
+        "platesOut": 89,
+        "plateMatches": 19,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_GNR0_JDR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 103,
+        "platesIn": 12,
+        "platesOut": 27,
+        "plateMatches": 1,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_GNR0_JDR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 172,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:27:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_GR_BR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 155,
+        "platesIn": 25,
+        "platesOut": 22,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_GR_JDR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 38,
+        "platesOut": 27,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_JDR4_BPR2A",
+    "dynamics": [
+      {
+        "linkTravelTime": 215,
+        "platesIn": 27,
+        "platesOut": 15,
+        "plateMatches": 2,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_JDR4_GNR0",
+    "dynamics": [
+      {
+        "linkTravelTime": 185,
+        "platesIn": 37,
+        "platesOut": 18,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_JDR4_GNR0_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 195,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:31:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_JDR4_GR",
+    "dynamics": [
+      {
+        "linkTravelTime": 121,
+        "platesIn": 37,
+        "platesOut": 25,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_JDR4_SL6",
+    "dynamics": [
+      {
+        "linkTravelTime": 273,
+        "platesIn": 27,
+        "platesOut": 26,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_RB_SJB1",
+    "dynamics": [
+      {
+        "linkTravelTime": 58,
+        "platesIn": 79,
+        "platesOut": 49,
+        "plateMatches": 33,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_SJB1_RB",
+    "dynamics": [
+      {
+        "linkTravelTime": 49,
+        "platesIn": 25,
+        "platesOut": 59,
+        "plateMatches": 20,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_SJB1_SJB2",
+    "dynamics": [
+      {
+        "linkTravelTime": 99,
+        "platesIn": 89,
+        "platesOut": 22,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_SJB2_BR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 159,
+        "platesIn": 22,
+        "platesOut": 25,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_SJB2_SJB1",
+    "dynamics": [
+      {
+        "linkTravelTime": 135,
+        "platesIn": 31,
+        "platesOut": 39,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA189_SL6_JDR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 247,
+        "platesIn": 40,
+        "platesOut": 37,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_BPR2A_FS2",
+    "dynamics": [
+      {
+        "linkTravelTime": 153,
+        "platesIn": 15,
+        "platesOut": 30,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_BPR2A_SR1A",
+    "dynamics": [
+      {
+        "linkTravelTime": 99,
+        "platesIn": 23,
+        "platesOut": 40,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_CR1_SR1A",
+    "dynamics": [
+      {
+        "linkTravelTime": 133,
+        "platesIn": 32,
+        "platesOut": 46,
+        "plateMatches": 23,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_FS2_BPR2A",
+    "dynamics": [
+      {
+        "linkTravelTime": 159,
+        "platesIn": 32,
+        "platesOut": 23,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_SR1A_BPR2A",
+    "dynamics": [
+      {
+        "linkTravelTime": 66,
+        "platesIn": 46,
+        "platesOut": 15,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA191_SR1A_CR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 143,
+        "platesIn": 40,
+        "platesOut": 38,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_A187_B1312",
+    "dynamics": [
+      {
+        "linkTravelTime": 70,
+        "platesIn": 29,
+        "platesOut": 45,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_A187_CHAPST",
+    "dynamics": [
+      {
+        "linkTravelTime": 43,
+        "platesIn": 25,
+        "platesOut": 38,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_A187_DEPORD",
+    "dynamics": [
+      {
+        "linkTravelTime": 63,
+        "platesIn": 25,
+        "platesOut": 26,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_B1312_A187",
+    "dynamics": [
+      {
+        "linkTravelTime": 69,
+        "platesIn": 34,
+        "platesOut": 25,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_CHAPST_A187",
+    "dynamics": [
+      {
+        "linkTravelTime": 33,
+        "platesIn": 30,
+        "platesOut": 29,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_DEPORD_A187",
+    "dynamics": [
+      {
+        "linkTravelTime": 79,
+        "platesIn": 27,
+        "platesOut": 23,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_NBS1_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 164,
+        "platesIn": 36,
+        "platesOut": 20,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_NBS1_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 135,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_NBS1_SRB2",
+    "dynamics": [
+      {
+        "linkTravelTime": 132,
+        "platesIn": 36,
+        "platesOut": 36,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA193_SRB2_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 145,
+        "platesIn": 37,
+        "platesOut": 40,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SB_SWR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 35,
+        "platesIn": 62,
+        "platesOut": 35,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SWR1_SWR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 196,
+        "platesIn": 26,
+        "platesOut": 25,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SWR2_SWR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 174,
+        "platesIn": 29,
+        "platesOut": 9,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SWR2_SWR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 110,
+        "platesIn": 25,
+        "platesOut": 44,
+        "plateMatches": 25,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SWR3_SB",
+    "dynamics": [
+      {
+        "linkTravelTime": 32,
+        "platesIn": 44,
+        "platesOut": 74,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCA695_SWR3_SWR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 121,
+        "platesIn": 49,
+        "platesOut": 31,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1307_SR1_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 129,
+        "platesIn": 12,
+        "platesOut": 22,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1307_SR1_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 130,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1307_SR2_SR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 171,
+        "platesIn": 26,
+        "platesOut": 12,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1307_SR2_SR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 158,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1312_SR2_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 187,
+        "platesIn": 26,
+        "platesOut": 40,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1312_SR2_NBS1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 185,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR0_ELDONSQCPIN",
+    "dynamics": [
+      {
+        "linkTravelTime": 182,
+        "platesIn": 18,
+        "platesOut": 8,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR0_GNR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 183,
+        "platesIn": 8,
+        "platesOut": 32,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR0_GNR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 157,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR1_GNR0",
+    "dynamics": [
+      {
+        "linkTravelTime": 172,
+        "platesIn": 28,
+        "platesOut": 18,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR1_GNR0_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 155,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR1_GNR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 185,
+        "platesIn": 32,
+        "platesOut": 35,
+        "plateMatches": 22,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR1_GNR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 333,
+        "platesIn": 33,
+        "platesOut": 48,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR1_GNR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 353,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR2_GNR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 128,
+        "platesIn": 55,
+        "platesOut": 29,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR2_GNR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 157,
+        "platesIn": 35,
+        "platesOut": 42,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR3_GNR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 564,
+        "platesIn": 47,
+        "platesOut": 28,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR3_GNR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 516,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR3_GNR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 386,
+        "platesIn": 40,
+        "platesOut": 55,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR3_GNR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 119,
+        "platesIn": 42,
+        "platesOut": 46,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR3_GNR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 115,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR4_GNR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 113,
+        "platesIn": 39,
+        "platesOut": 40,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR4_GNR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 102,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_GNR4_SL2",
+    "dynamics": [
+      {
+        "linkTravelTime": 148,
+        "platesIn": 70,
+        "platesOut": 44,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1318_SL2_GNR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 95,
+        "platesIn": 45,
+        "platesOut": 45,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_A186_BRDCHR",
+    "dynamics": [
+      {
+        "linkTravelTime": 46,
+        "platesIn": 41,
+        "platesOut": 28,
+        "plateMatches": 27,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_BRDCHR_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 54,
+        "platesIn": 31,
+        "platesOut": 39,
+        "plateMatches": 22,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_BRDCHR_GLDHLL",
+    "dynamics": [
+      {
+        "linkTravelTime": 73,
+        "platesIn": 34,
+        "platesOut": 19,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_GLDHLL_BRDCHR",
+    "dynamics": [
+      {
+        "linkTravelTime": 69,
+        "platesIn": 33,
+        "platesOut": 31,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_GLDHLL_PIPWGT",
+    "dynamics": [
+      {
+        "linkTravelTime": 29,
+        "platesIn": 19,
+        "platesOut": 7,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB1600_PIPWGT_GLDHLL",
+    "dynamics": [
+      {
+        "linkTravelTime": 81,
+        "platesIn": 20,
+        "platesOut": 33,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR1_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 136,
+        "platesIn": 44,
+        "platesOut": 72,
+        "plateMatches": 33,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR1_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 217,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR2_SR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 129,
+        "platesIn": 59,
+        "platesOut": 43,
+        "plateMatches": 25,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR2_SR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 184,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T09:21:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR2_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 162,
+        "platesIn": 72,
+        "platesOut": 17,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR2_SR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 227,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR3_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 163,
+        "platesIn": 33,
+        "platesOut": 59,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCB6324_SR3_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 197,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2017-04-27T23:12:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCCOACHLN_COACH2_REDHL1",
+    "dynamics": [
+      {
+        "linkTravelTime": 146,
+        "platesIn": 12,
+        "platesOut": 6,
+        "plateMatches": 2,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCCOACHLN_COACH2_REDHL1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 115,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2017-04-29T23:53:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCCOACHLN_REDHL1_COACH2",
+    "dynamics": [
+      {
+        "linkTravelTime": 156,
+        "platesIn": 20,
+        "platesOut": 11,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NCCOACHLN_REDHL1_COACH2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 170,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-31T20:09:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1056_IPK2B_SL2",
+    "dynamics": [
+      {
+        "linkTravelTime": 101,
+        "platesIn": 60,
+        "platesOut": 53,
+        "plateMatches": 49,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_A192_A193",
+    "dynamics": [
+      {
+        "linkTravelTime": 99,
+        "platesIn": 86,
+        "platesOut": 40,
+        "plateMatches": 27,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_A193_A192",
+    "dynamics": [
+      {
+        "linkTravelTime": 98,
+        "platesIn": 37,
+        "platesOut": 61,
+        "plateMatches": 29,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_BR6_CR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 127,
+        "platesIn": 63,
+        "platesOut": 80,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_CR4_CR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 164,
+        "platesIn": 81,
+        "platesOut": 71,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_CR4_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 110,
+        "platesOut": 95,
+        "plateMatches": 66,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_CR5_BR6",
+    "dynamics": [
+      {
+        "linkTravelTime": 108,
+        "platesIn": 71,
+        "platesOut": 86,
+        "plateMatches": 64,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_CR5_CR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 156,
+        "platesIn": 80,
+        "platesOut": 110,
+        "plateMatches": 29,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA1058_SR3_CR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 110,
+        "platesIn": 72,
+        "platesOut": 81,
+        "plateMatches": 33,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA186_A187_A193",
+    "dynamics": [
+      {
+        "linkTravelTime": 24,
+        "platesIn": 6,
+        "platesOut": 6,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA186_A192_PARKLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 45,
+        "platesIn": 50,
+        "platesOut": 57,
+        "plateMatches": 54,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA186_A193_A187",
+    "dynamics": [
+      {
+        "linkTravelTime": 38,
+        "platesIn": 59,
+        "platesOut": 5,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA186_PARKLN_A192",
+    "dynamics": [
+      {
+        "linkTravelTime": 40,
+        "platesIn": 45,
+        "platesOut": 46,
+        "plateMatches": 41,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA187_A186_HDRSTN",
+    "dynamics": [
+      {
+        "linkTravelTime": 95,
+        "platesIn": 28,
+        "platesOut": 14,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA187_HDRSTN_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 78,
+        "platesIn": 17,
+        "platesOut": 32,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA187_RYLQYS_WAGNWF",
+    "dynamics": [
+      {
+        "linkTravelTime": 78,
+        "platesIn": 33,
+        "platesOut": 39,
+        "plateMatches": 22,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA187_WAGNWF_RYLQYS",
+    "dynamics": [
+      {
+        "linkTravelTime": 68,
+        "platesIn": 30,
+        "platesOut": 29,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_BR5_BR6",
+    "dynamics": [
+      {
+        "linkTravelTime": 117,
+        "platesIn": 55,
+        "platesOut": 26,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_BR5_BR6_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 162,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-27T07:01:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_BR6_BR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 152,
+        "platesIn": 29,
+        "platesOut": 19,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_BR6_BR5_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 397,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_BR6_SPR6B",
+    "dynamics": [
+      {
+        "linkTravelTime": 119,
+        "platesIn": 28,
+        "platesOut": 44,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA188_SPR6B_BR6",
+    "dynamics": [
+      {
+        "linkTravelTime": 100,
+        "platesIn": 37,
+        "platesOut": 33,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA189_MF8_SPR6B",
+    "dynamics": [
+      {
+        "linkTravelTime": 239,
+        "platesIn": 35,
+        "platesOut": 37,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA189_SL6_SPR6B",
+    "dynamics": [
+      {
+        "linkTravelTime": 175,
+        "platesIn": 26,
+        "platesOut": 44,
+        "plateMatches": 19,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA189_SPR6B_MF8",
+    "dynamics": [
+      {
+        "linkTravelTime": 248,
+        "platesIn": 44,
+        "platesOut": 33,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA189_SPR6B_SL6",
+    "dynamics": [
+      {
+        "linkTravelTime": 219,
+        "platesIn": 37,
+        "platesOut": 40,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_B1505_CHOLDR",
+    "dynamics": [
+      {
+        "linkTravelTime": 49,
+        "platesIn": 63,
+        "platesOut": 39,
+        "plateMatches": 29,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_BNTNRD_PARKLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 61,
+        "platesIn": 37,
+        "platesOut": 50,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_CHOLDR_B1505",
+    "dynamics": [
+      {
+        "linkTravelTime": 44,
+        "platesIn": 82,
+        "platesOut": 33,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_MENGLN_PARKLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 98,
+        "platesIn": 49,
+        "platesOut": 64,
+        "plateMatches": 28,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_PARKLN_BNTNRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 46,
+        "platesIn": 79,
+        "platesOut": 53,
+        "plateMatches": 36,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA191_PARKLN_MENGLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 101,
+        "platesIn": 72,
+        "platesOut": 33,
+        "plateMatches": 22,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A1058_A191",
+    "dynamics": [
+      {
+        "linkTravelTime": 65,
+        "platesIn": 65,
+        "platesOut": 53,
+        "plateMatches": 45,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A1058_A193",
+    "dynamics": [
+      {
+        "linkTravelTime": 168,
+        "platesIn": 140,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A1148_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 42,
+        "platesIn": 61,
+        "platesOut": 77,
+        "plateMatches": 68,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A186_A1148",
+    "dynamics": [
+      {
+        "linkTravelTime": 47,
+        "platesIn": 46,
+        "platesOut": 52,
+        "plateMatches": 46,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A191_A1058",
+    "dynamics": [
+      {
+        "linkTravelTime": 68,
+        "platesIn": 32,
+        "platesOut": 67,
+        "plateMatches": 28,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA192_A193_A1058",
+    "dynamics": [
+      {
+        "linkTravelTime": 168,
+        "platesIn": 0,
+        "platesOut": 124,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_A1149_A192",
+    "dynamics": [
+      {
+        "linkTravelTime": 55,
+        "platesIn": 36,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_A186_BORDRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 64,
+        "platesIn": 44,
+        "platesOut": 14,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_A186_NTHTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 132,
+        "platesIn": 46,
+        "platesOut": 34,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_A192_A1149",
+    "dynamics": [
+      {
+        "linkTravelTime": 50,
+        "platesIn": 0,
+        "platesOut": 46,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_B1315_HOWDLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 56,
+        "platesIn": 58,
+        "platesOut": 39,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_B1315_NTHTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 92,
+        "platesIn": 26,
+        "platesOut": 22,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_BORDRD_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 72,
+        "platesIn": 13,
+        "platesOut": 18,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_HOWDLN_B1315",
+    "dynamics": [
+      {
+        "linkTravelTime": 47,
+        "platesIn": 15,
+        "platesOut": 12,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_HS4_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 229,
+        "platesIn": 13,
+        "platesOut": 27,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_NTHTCE_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 159,
+        "platesIn": 22,
+        "platesOut": 18,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_NTHTCE_B1315",
+    "dynamics": [
+      {
+        "linkTravelTime": 90,
+        "platesIn": 34,
+        "platesOut": 44,
+        "plateMatches": 30,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_SR3_HS4",
+    "dynamics": [
+      {
+        "linkTravelTime": 210,
+        "platesIn": 21,
+        "platesOut": 13,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTA193_SR3_HS4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 427,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTB1505_A191_B1317",
+    "dynamics": [
+      {
+        "linkTravelTime": 174,
+        "platesIn": 51,
+        "platesOut": 11,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTB1505_B1317_A191",
+    "dynamics": [
+      {
+        "linkTravelTime": 158,
+        "platesIn": 51,
+        "platesOut": 33,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTCRHLST_A1058_A193",
+    "dynamics": [
+      {
+        "linkTravelTime": 104,
+        "platesIn": 34,
+        "platesOut": 25,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTCRHLST_A193_A1058",
+    "dynamics": [
+      {
+        "linkTravelTime": 108,
+        "platesIn": 31,
+        "platesOut": 32,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTMENGLN_NRHMRD_WAGNWE",
+    "dynamics": [
+      {
+        "linkTravelTime": 47,
+        "platesIn": 52,
+        "platesOut": 23,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTMENGLN_WAGNWE_NRHMRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 54,
+        "platesIn": 28,
+        "platesOut": 24,
+        "plateMatches": 23,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTPARKLN_A186_A191",
+    "dynamics": [
+      {
+        "linkTravelTime": 122,
+        "platesIn": 22,
+        "platesOut": 30,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTPARKLN_A191_A186",
+    "dynamics": [
+      {
+        "linkTravelTime": 154,
+        "platesIn": 73,
+        "platesOut": 16,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTWFMAVE_A188_A189",
+    "dynamics": [
+      {
+        "linkTravelTime": 212,
+        "platesIn": 74,
+        "platesOut": 18,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_NTWFMAVE_A189_A188",
+    "dynamics": [
+      {
+        "linkTravelTime": 152,
+        "platesIn": 12,
+        "platesOut": 14,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_CK4_IS3",
+    "dynamics": [
+      {
+        "linkTravelTime": 203,
+        "platesIn": 19,
+        "platesOut": 30,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_CR3_CK4",
+    "dynamics": [
+      {
+        "linkTravelTime": 217,
+        "platesIn": 20,
+        "platesOut": 19,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_IS3_WW",
+    "dynamics": [
+      {
+        "linkTravelTime": 414,
+        "platesIn": 30,
+        "platesOut": 50,
+        "plateMatches": 18,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NBS1_NR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 104,
+        "platesIn": 73,
+        "platesOut": 22,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NBS1_WW",
+    "dynamics": [
+      {
+        "linkTravelTime": 87,
+        "platesIn": 77,
+        "platesOut": 48,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NBS1_WW1",
+    "dynamics": [
+      {
+        "linkTravelTime": 108,
+        "platesIn": 93,
+        "platesOut": 27,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR2_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 135,
+        "platesIn": 34,
+        "platesOut": 90,
+        "plateMatches": 18,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR2_NBS1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 158,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR2_NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 192,
+        "platesIn": 22,
+        "platesOut": 26,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR2_NR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 175,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR3_NR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 193,
+        "platesIn": 49,
+        "platesOut": 34,
+        "plateMatches": 22,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_NR3_NR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 188,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_WW1_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 148,
+        "platesIn": 48,
+        "platesOut": 77,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_WW_CR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 325,
+        "platesIn": 48,
+        "platesOut": 20,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1018_WW_NBS1",
+    "dynamics": [
+      {
+        "linkTravelTime": 129,
+        "platesIn": 50,
+        "platesOut": 93,
+        "plateMatches": 25,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_GT1_RR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 146,
+        "platesIn": 23,
+        "platesOut": 10,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_GT1_RR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 100,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-31T07:55:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_QABNB_WW1",
+    "dynamics": [
+      {
+        "linkTravelTime": 187,
+        "platesIn": 17,
+        "platesOut": 48,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_QABNB_WW3A",
+    "dynamics": [
+      {
+        "linkTravelTime": 77,
+        "platesIn": 17,
+        "platesOut": 13,
+        "plateMatches": 1,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_RR1_GT1",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 21,
+        "platesOut": 23,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_RR1_GT1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 63,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T00:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_SH4_SH5",
+    "dynamics": [
+      {
+        "linkTravelTime": 95,
+        "platesIn": 76,
+        "platesOut": 10,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_SH4_WW3",
+    "dynamics": [
+      {
+        "linkTravelTime": 231,
+        "platesIn": 66,
+        "platesOut": 70,
+        "plateMatches": 19,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_SH5_SH4",
+    "dynamics": [
+      {
+        "linkTravelTime": 67,
+        "platesIn": 24,
+        "platesOut": 66,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_WW1_QABSB",
+    "dynamics": [
+      {
+        "linkTravelTime": 177,
+        "platesIn": 27,
+        "platesOut": 28,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_WW3A_QABSB",
+    "dynamics": [
+      {
+        "linkTravelTime": 159,
+        "platesIn": 95,
+        "platesOut": 28,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_WW3A_WW3",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 29,
+        "platesOut": 63,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_WW3_SH4",
+    "dynamics": [
+      {
+        "linkTravelTime": 237,
+        "platesIn": 63,
+        "platesOut": 76,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1231_WW3_WW3A",
+    "dynamics": [
+      {
+        "linkTravelTime": 202,
+        "platesIn": 70,
+        "platesOut": 95,
+        "plateMatches": 28,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_DL1_NO2",
+    "dynamics": [
+      {
+        "linkTravelTime": 83,
+        "platesIn": 15,
+        "platesOut": 7,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_DL1_NO2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 59,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2022-12-21T23:27:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NG3_NO2",
+    "dynamics": [
+      {
+        "linkTravelTime": 58,
+        "platesIn": 9,
+        "platesOut": 10,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NG3_NO2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 57,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NO2_DL1",
+    "dynamics": [
+      {
+        "linkTravelTime": 58,
+        "platesIn": 10,
+        "platesOut": 10,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NO2_DL1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 64,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NO2_NG3",
+    "dynamics": [
+      {
+        "linkTravelTime": 64,
+        "platesIn": 7,
+        "platesOut": 8,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA1290_NO2_NG3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 69,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_B3_CR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 161,
+        "platesIn": 42,
+        "platesOut": 31,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_B3_CR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 179,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_B3_CR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 142,
+        "platesIn": 50,
+        "platesOut": 49,
+        "plateMatches": 27,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR1_CR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 169,
+        "platesIn": 15,
+        "platesOut": 34,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR1_CR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 250,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR2_B3",
+    "dynamics": [
+      {
+        "linkTravelTime": 159,
+        "platesIn": 34,
+        "platesOut": 50,
+        "plateMatches": 20,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR2_CR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 129,
+        "platesIn": 31,
+        "platesOut": 19,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR4_B3",
+    "dynamics": [
+      {
+        "linkTravelTime": 172,
+        "platesIn": 17,
+        "platesOut": 42,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR4_CR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 140,
+        "platesIn": 49,
+        "platesOut": 3,
+        "plateMatches": 1,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA183_CR5_CR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 227,
+        "platesIn": 35,
+        "platesOut": 17,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_BPR1_DR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 158,
+        "platesIn": 14,
+        "platesOut": 22,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_BPR1_DR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR2_BPR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 132,
+        "platesIn": 33,
+        "platesOut": 30,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR2_BPR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 118,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR2_DR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 164,
+        "platesIn": 22,
+        "platesOut": 51,
+        "plateMatches": 20,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR2_DR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 177,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR3_DR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 181,
+        "platesIn": 46,
+        "platesOut": 33,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR3_DR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 179,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR3_DR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 239,
+        "platesIn": 51,
+        "platesOut": 41,
+        "plateMatches": 11,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR3_DR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 234,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLA690_DR4_DR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 218,
+        "platesIn": 11,
+        "platesOut": 46,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLB1522_RR1_RR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 206,
+        "platesIn": 12,
+        "platesOut": 22,
+        "plateMatches": 3,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLB1522_RR2_RR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 270,
+        "platesIn": 25,
+        "platesOut": 21,
+        "plateMatches": 9,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLB1522_RR2_RR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 312,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_1_2",
+    "dynamics": [
+      {
+        "linkTravelTime": 109,
+        "platesIn": 28,
+        "platesOut": 27,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_1_2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 131,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_2_1",
+    "dynamics": [
+      {
+        "linkTravelTime": 91,
+        "platesIn": 22,
+        "platesOut": 21,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_2_1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 115,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_2_3",
+    "dynamics": [
+      {
+        "linkTravelTime": 236,
+        "platesIn": 27,
+        "platesOut": 12,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_SLHYLTONRD_3_2",
+    "dynamics": [
+      {
+        "linkTravelTime": 290,
+        "platesIn": 13,
+        "platesOut": 22,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_A194_VCTRRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 34,
+        "platesIn": 19,
+        "platesOut": 40,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_B1301_VCTRRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 88,
+        "platesIn": 35,
+        "platesOut": 41,
+        "plateMatches": 25,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_GR4_NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 282,
+        "platesIn": 26,
+        "platesOut": 35,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_GR4_WR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 227,
+        "platesIn": 33,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_GR4_WR5_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 557,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2019-02-07T20:23:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_NR3_GR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 291,
+        "platesIn": 27,
+        "platesOut": 33,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_VCTRRD_A194",
+    "dynamics": [
+      {
+        "linkTravelTime": 45,
+        "platesIn": 41,
+        "platesOut": 38,
+        "plateMatches": 31,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_VCTRRD_B1301",
+    "dynamics": [
+      {
+        "linkTravelTime": 67,
+        "platesIn": 40,
+        "platesOut": 22,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_WR5_GR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 229,
+        "platesIn": 0,
+        "platesOut": 26,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1018_WR5_GR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 686,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2017-10-30T18:20:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_GORAVE_WSTAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 62,
+        "platesIn": 29,
+        "platesOut": 28,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_HADRRD_PERAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 81,
+        "platesIn": 92,
+        "platesOut": 14,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_JRR1_LL2",
+    "dynamics": [
+      {
+        "linkTravelTime": 303,
+        "platesIn": 43,
+        "platesOut": 82,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_JRR1_LL2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 308,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2022-09-11T08:56:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_LL2_JRR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 300,
+        "platesIn": 99,
+        "platesOut": 39,
+        "plateMatches": 19,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_PERAVE_HADRRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 74,
+        "platesIn": 59,
+        "platesOut": 84,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_PERAVE_TEMPPK",
+    "dynamics": [
+      {
+        "linkTravelTime": 203,
+        "platesIn": 28,
+        "platesOut": 39,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_TEMPPK_PERAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 225,
+        "platesIn": 51,
+        "platesOut": 47,
+        "plateMatches": 24,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_TEMPPK_WSTAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 33,
+        "platesIn": 37,
+        "platesOut": 43,
+        "plateMatches": 21,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_WSTAVE_GORAVE",
+    "dynamics": [
+      {
+        "linkTravelTime": 87,
+        "platesIn": 43,
+        "platesOut": 32,
+        "plateMatches": 26,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA1300_WSTAVE_TEMPPK",
+    "dynamics": [
+      {
+        "linkTravelTime": 24,
+        "platesIn": 26,
+        "platesOut": 47,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_A1018NR3_AR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 374,
+        "platesIn": 27,
+        "platesOut": 28,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_A1018NR3_AR4_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 394,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-30T17:19:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_AR4_A1018NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 345,
+        "platesIn": 33,
+        "platesOut": 35,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_AR4_A1018NR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 339,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-07-31T19:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_AR4_NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 294,
+        "platesIn": 28,
+        "platesOut": 64,
+        "plateMatches": 4,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA184_NR3_AR4",
+    "dynamics": [
+      {
+        "linkTravelTime": 244,
+        "platesIn": 56,
+        "platesOut": 33,
+        "plateMatches": 2,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA185_AR1A_HS2",
+    "dynamics": [
+      {
+        "linkTravelTime": 195,
+        "platesIn": 74,
+        "platesOut": 44,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA185_HS2_AR1A",
+    "dynamics": [
+      {
+        "linkTravelTime": 171,
+        "platesIn": 43,
+        "platesOut": 42,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA185_HS2_TD1",
+    "dynamics": [
+      {
+        "linkTravelTime": 228,
+        "platesIn": 47,
+        "platesOut": 78,
+        "plateMatches": 12,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA185_TD1_HS2",
+    "dynamics": [
+      {
+        "linkTravelTime": 229,
+        "platesIn": 57,
+        "platesOut": 38,
+        "plateMatches": 10,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_A1018_B1301",
+    "dynamics": [
+      {
+        "linkTravelTime": 75,
+        "platesIn": 37,
+        "platesOut": 44,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_A195_B1306",
+    "dynamics": [
+      {
+        "linkTravelTime": 133,
+        "platesIn": 49,
+        "platesOut": 76,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_AR1A_LL2",
+    "dynamics": [
+      {
+        "linkTravelTime": 174,
+        "platesIn": 115,
+        "platesOut": 75,
+        "plateMatches": 33,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_AR1A_TD1",
+    "dynamics": [
+      {
+        "linkTravelTime": 45,
+        "platesIn": 93,
+        "platesOut": 83,
+        "plateMatches": 72,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_B1301_A1018",
+    "dynamics": [
+      {
+        "linkTravelTime": 106,
+        "platesIn": 63,
+        "platesOut": 42,
+        "plateMatches": 30,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_B1301_B1302",
+    "dynamics": [
+      {
+        "linkTravelTime": 132,
+        "platesIn": 57,
+        "platesOut": 63,
+        "plateMatches": 31,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_B1302_B1301",
+    "dynamics": [
+      {
+        "linkTravelTime": 127,
+        "platesIn": 83,
+        "platesOut": 63,
+        "plateMatches": 44,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_B1306_A195",
+    "dynamics": [
+      {
+        "linkTravelTime": 140,
+        "platesIn": 82,
+        "platesOut": 69,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_B1306_HADRRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 173,
+        "platesIn": 104,
+        "platesOut": 92,
+        "plateMatches": 27,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_HADRRD_B1306",
+    "dynamics": [
+      {
+        "linkTravelTime": 163,
+        "platesIn": 92,
+        "platesOut": 67,
+        "plateMatches": 34,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_LL2_AR1A",
+    "dynamics": [
+      {
+        "linkTravelTime": 191,
+        "platesIn": 99,
+        "platesOut": 74,
+        "plateMatches": 56,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_LL2_NR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 326,
+        "platesIn": 82,
+        "platesOut": 64,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_NR3_LL2",
+    "dynamics": [
+      {
+        "linkTravelTime": 315,
+        "platesIn": 56,
+        "platesOut": 99,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_NR3_LL2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 278,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2017-09-22T07:31:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_TD1_AR1A",
+    "dynamics": [
+      {
+        "linkTravelTime": 37,
+        "platesIn": 77,
+        "platesOut": 82,
+        "plateMatches": 62,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STA194_WR5_TD1",
+    "dynamics": [
+      {
+        "linkTravelTime": 144,
+        "platesIn": 0,
+        "platesOut": 57,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_B1298_BOKRLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 154,
+        "platesIn": 18,
+        "platesOut": 30,
+        "plateMatches": 16,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_BOKRLN_B1298",
+    "dynamics": [
+      {
+        "linkTravelTime": 156,
+        "platesIn": 24,
+        "platesOut": 17,
+        "plateMatches": 14,
+        "lastUpdated": "2023-08-01T10:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_BOKRLN_NRTHRD",
+    "dynamics": [
+      {
+        "linkTravelTime": 122,
+        "platesIn": 32,
+        "platesOut": 29,
+        "plateMatches": 17,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_NRTHRD_BOKRLN",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": 19,
+        "platesOut": 16,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR1_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 125,
+        "platesIn": 25,
+        "platesOut": 11,
+        "plateMatches": 6,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR1_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 124,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR1_WR5",
+    "dynamics": [
+      {
+        "linkTravelTime": 106,
+        "platesIn": 15,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR2_SR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 103,
+        "platesIn": 18,
+        "platesOut": 15,
+        "plateMatches": 8,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR2_SR1_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 117,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR2_SR3",
+    "dynamics": [
+      {
+        "linkTravelTime": 46,
+        "platesIn": 11,
+        "platesOut": 23,
+        "plateMatches": 5,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR2_SR3_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 49,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR3_SR2",
+    "dynamics": [
+      {
+        "linkTravelTime": 44,
+        "platesIn": 19,
+        "platesOut": 18,
+        "plateMatches": 7,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_SR3_SR2_BUS",
+    "dynamics": [
+      {
+        "linkTravelTime": 41,
+        "platesIn": 0,
+        "platesOut": 0,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1298_WR5_SR1",
+    "dynamics": [
+      {
+        "linkTravelTime": 107,
+        "platesIn": 0,
+        "platesOut": 17,
+        "plateMatches": 0,
+        "lastUpdated": "2023-08-01T10:43:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1306_A185_A194",
+    "dynamics": [
+      {
+        "linkTravelTime": 137,
+        "platesIn": 38,
+        "platesOut": 28,
+        "plateMatches": 13,
+        "lastUpdated": "2023-08-01T10:41:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "CAJT_STB1306_A194_A185",
+    "dynamics": [
+      {
+        "linkTravelTime": 122,
+        "platesIn": 41,
+        "platesOut": 31,
+        "plateMatches": 15,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800W1KYRBPM",
+    "dynamics": [
+      {
+        "linkTravelTime": 536,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:55:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800W1L06VLV",
+    "dynamics": [
+      {
+        "linkTravelTime": 85,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T01:10:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800W385HJOT",
+    "dynamics": [
+      {
+        "linkTravelTime": 60,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800W9M7YTXV",
+    "dynamics": [
+      {
+        "linkTravelTime": 256,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-02-20T11:25:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WB7XQEZI",
+    "dynamics": [
+      {
+        "linkTravelTime": 238,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-06-30T09:55:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WBQ7IUUK",
+    "dynamics": [
+      {
+        "linkTravelTime": 65,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WDVSCOMA",
+    "dynamics": [
+      {
+        "linkTravelTime": 136,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WJWQXMSJ",
+    "dynamics": [
+      {
+        "linkTravelTime": 64,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WKYVFB0P",
+    "dynamics": [
+      {
+        "linkTravelTime": 214,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-31T22:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WLJIEJKL",
+    "dynamics": [
+      {
+        "linkTravelTime": 269,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:55:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WS0BICQU",
+    "dynamics": [
+      {
+        "linkTravelTime": 274,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WSHWSTHC",
+    "dynamics": [
+      {
+        "linkTravelTime": 207,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WTYQ025Y",
+    "dynamics": [
+      {
+        "linkTravelTime": 330,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:45:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WUFQ7SBA",
+    "dynamics": [
+      {
+        "linkTravelTime": 75,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WV7ZCIIM",
+    "dynamics": [
+      {
+        "linkTravelTime": 783,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WY2EZ8DH",
+    "dynamics": [
+      {
+        "linkTravelTime": 110,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-31T23:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800WY4NGZ0P",
+    "dynamics": [
+      {
+        "linkTravelTime": 114,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800X0FIN641",
+    "dynamics": [
+      {
+        "linkTravelTime": 579,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800X3E07FGF",
+    "dynamics": [
+      {
+        "linkTravelTime": 78,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800X5ICLEBH",
+    "dynamics": [
+      {
+        "linkTravelTime": 288,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:36:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XFTM4EWR",
+    "dynamics": [
+      {
+        "linkTravelTime": 180,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-02-20T11:31:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XHAC4TBA",
+    "dynamics": [
+      {
+        "linkTravelTime": 93,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XJWADHHR",
+    "dynamics": [
+      {
+        "linkTravelTime": 110,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:37:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XMPIUI1D",
+    "dynamics": [
+      {
+        "linkTravelTime": 181,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:38:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XOTR0TOJ",
+    "dynamics": [
+      {
+        "linkTravelTime": 116,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-02-20T11:26:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XQJE10VQ",
+    "dynamics": [
+      {
+        "linkTravelTime": 75,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T00:31:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XQWWXGAM",
+    "dynamics": [
+      {
+        "linkTravelTime": 178,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:40:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XSIYQIAX",
+    "dynamics": [
+      {
+        "linkTravelTime": 49,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T00:01:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XSZT46MM",
+    "dynamics": [
+      {
+        "linkTravelTime": 223,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:56:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XT5KUWO0",
+    "dynamics": [
+      {
+        "linkTravelTime": 79,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T00:51:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XT7VPOWA",
+    "dynamics": [
+      {
+        "linkTravelTime": 47,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XUCFHBKS",
+    "dynamics": [
+      {
+        "linkTravelTime": 142,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:39:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XXDTC3IV",
+    "dynamics": [
+      {
+        "linkTravelTime": 79,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T00:36:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800XXOGWYFN",
+    "dynamics": [
+      {
+        "linkTravelTime": 48,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-31T23:56:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YATIMKI0",
+    "dynamics": [
+      {
+        "linkTravelTime": 41,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-31T22:52:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YAUXQTCE",
+    "dynamics": [
+      {
+        "linkTravelTime": 224,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:38:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YCRAR7LM",
+    "dynamics": [
+      {
+        "linkTravelTime": 405,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-31T23:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YDHY9AYT",
+    "dynamics": [
+      {
+        "linkTravelTime": 92,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YERKS56H",
+    "dynamics": [
+      {
+        "linkTravelTime": 100,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YG2EMW8J",
+    "dynamics": [
+      {
+        "linkTravelTime": 149,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-07T12:52:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YKXV0AN6",
+    "dynamics": [
+      {
+        "linkTravelTime": 32,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T00:32:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YLGYPC0X",
+    "dynamics": [
+      {
+        "linkTravelTime": 191,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:42:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800YQYJENFR",
+    "dynamics": [
+      {
+        "linkTravelTime": 51,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800Z6DCZNCO",
+    "dynamics": [
+      {
+        "linkTravelTime": 50,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-10T09:57:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800Z8WCLWJX",
+    "dynamics": [
+      {
+        "linkTravelTime": 87,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZDKWP49J",
+    "dynamics": [
+      {
+        "linkTravelTime": 65,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-07-26T01:02:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZJPW66EX",
+    "dynamics": [
+      {
+        "linkTravelTime": 131,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZLDKWF80",
+    "dynamics": [
+      {
+        "linkTravelTime": 89,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZLK770WZ",
+    "dynamics": [
+      {
+        "linkTravelTime": 156,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-07-07T12:58:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZM6NQBHM",
+    "dynamics": [
+      {
+        "linkTravelTime": 188,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-02-20T11:33:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZPEIYGCW",
+    "dynamics": [
+      {
+        "linkTravelTime": 94,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZQS7GOJC",
+    "dynamics": [
+      {
+        "linkTravelTime": 54,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZTA1IZ5S",
+    "dynamics": [
+      {
+        "linkTravelTime": 64,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZTKTHAOA",
+    "dynamics": [
+      {
+        "linkTravelTime": 187,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:33:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZU8RVSQF",
+    "dynamics": [
+      {
+        "linkTravelTime": 177,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-06-30T09:48:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "R9800ZYCPVAC8",
+    "dynamics": [
+      {
+        "linkTravelTime": 129,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:34:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "TT20001",
+    "dynamics": [
+      {
+        "linkTravelTime": 3880,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2016-06-14T16:03:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_11_6",
+    "dynamics": [
+      {
+        "linkTravelTime": 33,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2021-11-27T00:41:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_2_5",
+    "dynamics": [
+      {
+        "linkTravelTime": 25,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2020-11-20T15:46:00.000+0000"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_4_5",
+    "dynamics": [
+      {
+        "linkTravelTime": 61,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-05-31T22:18:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_5_10",
+    "dynamics": [
+      {
+        "linkTravelTime": 90,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_5_7",
+    "dynamics": [
+      {
+        "linkTravelTime": 46,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_6_1",
+    "dynamics": [
+      {
+        "linkTravelTime": 51,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2021-04-30T09:29:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_6_3",
+    "dynamics": [
+      {
+        "linkTravelTime": 79,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2022-05-31T22:18:00.000+0100"
+      }
+    ]
+  },
+  {
+    "systemCodeNumber": "Vivacity_jtlink_9_6",
+    "dynamics": [
+      {
+        "linkTravelTime": 67,
+        "platesIn": null,
+        "platesOut": null,
+        "plateMatches": null,
+        "lastUpdated": "2023-08-01T10:35:00.000+0100"
+      }
+    ]
+  }
+]

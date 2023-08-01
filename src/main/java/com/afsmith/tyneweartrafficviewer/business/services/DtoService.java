@@ -4,6 +4,7 @@ import com.afsmith.tyneweartrafficviewer.business.data.NewTrafficDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficPointDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.MappableDTO;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficPointData;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
@@ -14,6 +15,8 @@ import java.util.List;
 
 public interface DtoService {
     <DTO extends MappableDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType);
+
+    <DTO extends MappableDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter);
 
     byte[] getImage(String systemCodeNumber);
 

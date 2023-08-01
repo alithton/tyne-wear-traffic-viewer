@@ -2,6 +2,8 @@ package com.afsmith.tyneweartrafficviewer.business.data;
 
 import com.afsmith.tyneweartrafficviewer.entities.*;
 
+import java.util.List;
+
 /**
  * All categories of traffic data that are used within the application.
  */
@@ -34,5 +36,9 @@ public enum TrafficDataTypes {
 
     public Class<? extends TrafficEntity> getEntityClass() {
         return entityClass;
+    }
+
+    public static List<TrafficDataTypes> listTypes() {
+        return List.of(TrafficDataTypes.values());
     }
 }

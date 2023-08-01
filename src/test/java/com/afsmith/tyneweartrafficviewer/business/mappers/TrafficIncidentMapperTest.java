@@ -31,6 +31,9 @@ class TrafficIncidentMapperTest {
 
         assertThat(dto).isNotNull();
         assertThat(dto.getSystemCodeNumber()).isEqualTo(CODE);
+        assertThat(dto.getTimes().startTime()).isEqualTo(MockData.TIME);
+        assertThat(dto.getTimes().endTime()).isEqualTo(MockData.END_TIME);
+        assertThat(dto.getTypeDescription()).isEqualTo(MockData.TYPE_DESCRIPTION);
     }
 
     @Test

@@ -8,9 +8,9 @@ public enum ExternalDataTypes {
     ROADWORKS("/traffic/roadwork", TrafficRoadworksExternal.class),
     EVENT("/traffic/event", TrafficEventExternal.class),
     JOURNEY_TIME_STATIC("/journeytime/static", JourneytimeStaticExternal.class),
-    JOURNEY_TIME_DYNAMIC("/journeytime/dynamic", null),
-    CCTV_STATIC("/cctv/static", null),
-    CCTV_DYNAMIC("/cctv/dynamic", null);
+    JOURNEY_TIME_DYNAMIC("/journeytime/dynamic", JourneytimeDynamicExternal.class),
+    CCTV_STATIC("/cctv/static", CctvStaticExternal.class),
+    CCTV_DYNAMIC("/cctv/dynamic", CctvDynamicExternal.class);
 
     private final String url;
     private final Class<?> externalClass;
