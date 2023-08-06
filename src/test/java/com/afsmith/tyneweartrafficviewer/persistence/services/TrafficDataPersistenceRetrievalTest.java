@@ -1,9 +1,10 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.*;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
+import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
+import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
@@ -13,7 +14,9 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
@@ -184,6 +187,24 @@ class TrafficDataPersistenceRetrievalTest {
         TrafficIncident incident = dataPersistence.find(code);
 
         assertThat(incident).isNotNull();
+    }
+
+    @Test
+    void persistJourneytimesFromFile() throws IOException {
+        ExternalDataAccessService externalDataAccessService = new ExternalDataAccessServiceImpl(new OpenDataServiceClient(
+                new RestTemplateBuilder()));
+        externalDataAccessService.setBaseDirectory("src/test/resources/data");
+
+        List<JourneyTime> journeyTimes = externalDataAccessService.getData(TrafficDataTypes.SPEED, "journeytime-static-full-test.json", "journeytime-dynamic-full-test.json");
+
+        dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
+
+        verify(journeyTimeRepository, times(1)).saveAll(journeyTimeCaptor.capture());
+
+        List<JourneyTime> capturedJourneyTimes = journeyTimeCaptor.getValue();
+        assertThat(capturedJourneyTimes.size()).isGreaterThan(0);
+        assertThat(capturedJourneyTimes.get(0).getRoute()).isNotNull();
+        System.out.println(capturedJourneyTimes.get(0));
     }
 
     private void testListAll(TrafficDataTypes dataType, Class<? extends TrafficEntity> expectedClass) {

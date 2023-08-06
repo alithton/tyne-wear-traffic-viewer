@@ -27,6 +27,12 @@ public class OpenDataServiceClient {
     private final RestTemplate restTemplate;
     private final TrafficDataReader dataReader = new TrafficDataReaderImpl();
 
+    /**
+     * Constructor for Open Data Service client. It accepts a RestTemplateBuilder instance,
+     * which can be used to configure how the client accesses the external REST API.
+     * When run within the Spring context, a RestTemplateBuilder bean is autowired in.
+     * @param restTemplateBuilder Provides configuration for the client.
+     */
     public OpenDataServiceClient(RestTemplateBuilder restTemplateBuilder) {
         restTemplate = restTemplateBuilder.build();
     }

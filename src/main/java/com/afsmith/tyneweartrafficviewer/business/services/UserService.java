@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Provides services for managing user data and for user authentication.
+ */
 @Getter
 @RequiredArgsConstructor
 @Service
@@ -21,6 +24,12 @@ public class UserService {
     // The duration of user tokens, in minutes.
     private static final long TOKEN_DURATION = 60L;
 
+    /**
+     * Attempt to find a user using the provided credentials. If no users matching
+     * the provided username and password combination are found, returns null.
+     * @param credentials The user credentials to search for.
+     * @return A user matching the credentials, or null.
+     */
     public User find(Credentials credentials) {
         User user =  userPersistence.find(credentials.getUsername());
         if (user == null ||
@@ -42,6 +51,14 @@ public class UserService {
         return user;
     }
 
+    /**
+     * Save the provided user credentials, provided that no user with the provided
+     * username already exists. The password is combined with a randomly generated
+     * salt and then stored as a hash.
+     * @param credentials The credentials to be stored.
+     * @return An authentication token.
+     * @throws UserAlreadyExistsException If a user with the provided username already exists.
+     */
     public String save(Credentials credentials) throws UserAlreadyExistsException {
         String salt = passwordHashingService.getSalt();
         String passwordHash = passwordHashingService.hash(credentials.getPassword(), salt);
@@ -51,12 +68,22 @@ public class UserService {
         return user.getToken();
     }
 
+    /**
+     * Update the provided user's details with the provided new credentials.
+     * @param user The user whose credentials should be updated.
+     * @param credentials The new credentials.
+     */
     public void update(User user, Credentials credentials) {
         String password = passwordHashingService.hash(credentials.getPassword(), user.getSalt());
         user.setCredentials(new Credentials(credentials.getUsername(), password));
         update(user);
     }
 
+    /**
+     * Update the details of the provided user, replacing whatever details were
+     * saved previously.
+     * @param user The updated user details.
+     */
     public void update(User user) {
         userPersistence.update(user);
     }
@@ -75,6 +102,7 @@ public class UserService {
         return truePassword.equals(providedPasswordHash);
     }
 
+    // Set a new authentication token.
     private void setNewToken(User user) {
         user.setToken(passwordHashingService.getToken(20), TOKEN_DURATION);
     }

@@ -30,13 +30,13 @@ class GeoJsonRouteTest {
     @Test
     void readOsrmResponse() throws JsonProcessingException {
         String response = getExampleResponseBody();
-        GeoJsonRouteExternal route = mapper.readValue(response, GeoJsonRouteExternal.class);
+        OsrmRoute route = mapper.readValue(response, OsrmRoute.class);
 
         assertThat(route).isNotNull();
         assertThat(route.getCode()).isEqualTo("Ok");
         assertThat(route.getRoutes().size()).isEqualTo(1);
 
-        GeoJsonRouteExternal.Route firstRoute = route.getRoutes().get(0);
+        OsrmRoute.Route firstRoute = route.getRoutes().get(0);
 
         assertThat(firstRoute.getGeometry().getCoordinates().size()).isEqualTo(14);
         assertThat(firstRoute.getDistance()).isBetween(627.6, 627.8);

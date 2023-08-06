@@ -1,11 +1,15 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import lombok.Builder;
 import lombok.Getter;
 
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * A data transfer object for transferring traffic event data to the frontend.
+ */
 @Getter
 public final class TrafficEventDTO extends TrafficPointDataDTO {
         String eventTypeDescription;
@@ -13,6 +17,9 @@ public final class TrafficEventDTO extends TrafficPointDataDTO {
         String organiser;
         String venueName;
 
+        /**
+         * An all-arguments constructor for traffic event data transfer objects.
+         */
         @Builder
         public TrafficEventDTO(String systemCodeNumber,
                                TrafficDataTypes type,
@@ -32,12 +39,14 @@ public final class TrafficEventDTO extends TrafficPointDataDTO {
                                PlannedDTO planned,
                                String organiser,
                                String venueName,
-                               List<CommentDTO> comments) {
+                               List<CommentDTO> comments,
+                               PlannedDTO times,
+                               String typeDescription) {
                 super(systemCodeNumber, type, shortDescription, longDescription, locationDescription, point,
                       creationDate,
                       dataSourceTypeRef, confirmedDate, modifiedDate, severityTypeRefDescription,
                       lanesAffectedTypeRefDescription,
-                      diversionInForce, phaseTypeRef, comments);
+                      diversionInForce, phaseTypeRef, comments, times, typeDescription);
                 this.eventTypeDescription = eventTypeDescription;
                 this.planned = planned;
                 this.organiser = organiser;

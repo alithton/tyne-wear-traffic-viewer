@@ -10,9 +10,13 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * A traffic data service providing access to typical journey time data.
+ */
 @Service
 public class TrafficDataServiceTypicalJourneyTime extends AbstractTrafficDataService<TypicalJourneyTime> {
 
+    // A reader for reading typical journey time data from file.
     private final TypicalJourneyTimeReader reader = new TypicalJourneyTimeReader();
 
     public TrafficDataServiceTypicalJourneyTime(TypicalJourneyTimeRepository repository) {

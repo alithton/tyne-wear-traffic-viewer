@@ -2,7 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.external.client;
 
 import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.config.RestTemplateBuilderConfig;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficIncidentExternal;
@@ -56,7 +56,7 @@ class OpenDataServiceClientTest {
 
     @Test
     void getIncidentData() throws Exception {
-        String expectedUrl = "https://www.netraveldata.co.uk/api/v2" + TrafficDataTypes.INCIDENT.getUrl();
+        String expectedUrl = "https://www.netraveldata.co.uk/api/v2" + ExternalDataTypes.INCIDENT.getUrl();
         String username = System.getenv("UTMCODS_USERNAME");
         String password = System.getenv("UTMCODS_PASSWORD");
         String authHeaderUnencoded =  username + ":" + password;

@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.*;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
@@ -12,9 +12,8 @@ import java.time.LocalTime;
 import java.util.List;
 
 /**
- * Presents a unified interface for storing and accessing traffic data. This is
- * the intended API by which external classes should interact with the persistence
- * layer.
+ * Presents a unified interface for storing and accessing traffic data of any
+ * supported type.
  */
 @Service
 @RequiredArgsConstructor

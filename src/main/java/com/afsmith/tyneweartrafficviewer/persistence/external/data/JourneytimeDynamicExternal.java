@@ -11,6 +11,10 @@ import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents dynamic journey time data. This is journey time data that is typically
+ * updated frequently.
+ */
 @Getter
 @JsonDeserialize(using = DynamicJourneyTimeDeserialiser.class)
 public class JourneytimeDynamicExternal extends DynamicDataExternal<JourneyTime> {
@@ -24,6 +28,9 @@ public class JourneytimeDynamicExternal extends DynamicDataExternal<JourneyTime>
     int plateMatches;
     ZonedDateTime lastUpdated;
 
+    /**
+     * Constructor for dynamic journey time data.
+     */
     @Builder
     public JourneytimeDynamicExternal(String systemCodeNumber,
                                       int linkTravelTime,
@@ -39,11 +46,17 @@ public class JourneytimeDynamicExternal extends DynamicDataExternal<JourneyTime>
         this.lastUpdated = lastUpdated;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public JourneyTime toEntity() {
         return mapper.externalToEntity(this);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <T extends DynamicDataExternal<JourneyTime>> JourneyTime toEntity(T other) {
         if (! (other instanceof JourneytimeStaticExternal staticData)) {

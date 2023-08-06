@@ -2,6 +2,7 @@ package com.afsmith.tyneweartrafficviewer.business.data;
 
 import com.afsmith.tyneweartrafficviewer.entities.PlannedTimes;
 import com.afsmith.tyneweartrafficviewer.entities.Point;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
@@ -32,10 +33,18 @@ public class NewTrafficDataDTO {
     @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSX")
     ZonedDateTime end;
 
+    /**
+     * Get the location of the new incident as a Point object.
+     * @return A point containing the coordinates of the incident.
+     */
     public Point getPoint() {
         return new Point(latitude, longitude);
     }
 
+    /**
+     * Get the time interval over which the incident occurs.
+     * @return The time interval over which the incident occurs.
+     */
     public PlannedTimes getTimes() {
         return new PlannedTimes(start, end);
     }

@@ -4,6 +4,9 @@ import com.afsmith.tyneweartrafficviewer.entities.TrafficAccident;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.AccidentRepository;
 import org.springframework.stereotype.Service;
 
+/**
+ * A traffic data service providing access to accident data.
+ */
 @Service
 public class TrafficDataServiceAccident extends AbstractTrafficDataService<TrafficAccident> {
 

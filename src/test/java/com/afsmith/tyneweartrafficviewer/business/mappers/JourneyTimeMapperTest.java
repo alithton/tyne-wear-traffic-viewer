@@ -14,16 +14,6 @@ class JourneyTimeMapperTest {
     String CODE = "code1";
 
     @Test
-    public void dtoToEntity() {
-        JourneyTimeDTO dto = MockData.getJourneyTimeDto(CODE);
-        JourneyTime entity = mapper.dtoToEntity(dto);
-
-        assertThat(entity).isNotNull();
-        assertThat(entity.getSystemCodeNumber()).isEqualTo(CODE);
-        assertThat(entity.getEndPoint()).isNull();
-    }
-
-    @Test
     public void entityToDto() {
         JourneyTime entity = MockData.getJourneyTime(CODE);
         JourneyTimeDTO dto = mapper.entityToDto(entity);

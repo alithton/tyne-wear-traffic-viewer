@@ -5,6 +5,9 @@ import lombok.*;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents user authentication data.
+ */
 @Data
 @NoArgsConstructor
 @Entity
@@ -18,15 +21,30 @@ public class User {
     private String token;
     private ZonedDateTime tokenExpiry;
 
+    /**
+     * Constructor for users using the username and password.
+     * @param username The username of the user.
+     * @param password The hash of the user's password.
+     */
     public User(String username, String password) {
         this.credentials =  new Credentials(username, password);
     }
 
+    /**
+     * Constructor for user data.
+     * @param username The user's username.
+     * @param password The hash of the user's password.
+     * @param salt The salt used to generate the password hash.
+     */
     public User(String username, String password, String salt) {
         this(username, password);
         this.salt = salt;
     }
 
+    /**
+     * Constructor for user data.
+     * @param credentials The user's authentication credentials.
+     */
     public User(Credentials credentials) {
         this.credentials = credentials;
     }

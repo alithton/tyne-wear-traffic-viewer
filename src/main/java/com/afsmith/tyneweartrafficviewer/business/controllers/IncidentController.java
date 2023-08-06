@@ -4,7 +4,9 @@ import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.services.CommentService;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficPointData;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterOptions;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.exceptions.InvalidTrafficDataException;
 import com.afsmith.tyneweartrafficviewer.exceptions.NotAuthenticatedException;
@@ -36,27 +38,26 @@ public class IncidentController {
     /**
      * Get a list of all stored traffic data of the requested type. If no data
      * type is specified in the request, incident data will be returned.
-     * @param dataTypes The type of data to be returned.
+     * @param filterOptions Options specifying the data to be returned.
      * @return An HTTP response with the requested data stored in the body in
      * JSON format.
      */
     @GetMapping("/incidents")
     public ResponseEntity<Map<String, List<? extends TrafficDataDTO>>>
-        getIncidents(@RequestParam(name="type", required = false) List<TrafficDataTypes> dataTypes,
-                     @RequestParam(name="speedType", required = false) SpeedType speedType) {
+    getIncidents(FilterOptions filterOptions) {
 
         Map<String, List<? extends TrafficDataDTO>> response = new HashMap<>();
+        FilterService filterService = FilterService.fromOptions(filterOptions);
 
         // With no data types specified, return a response with an empty body.
-        if (dataTypes == null) return ResponseEntity.ok(response);
-        if (speedType == null) speedType = SpeedType.CURRENT;
+        if (filterService.noDataRequested()) return ResponseEntity.ok(response);
 
-        for (var dataType : dataTypes) {
+        for (var dataType : filterService.getDataTypes()) {
             List<? extends TrafficDataDTO> incidents;
-            if (dataType == TrafficDataTypes.SPEED && speedType != SpeedType.CURRENT) {
-                incidents = typicalJourneyTimeService.listAll(speedType);
+            if (dataType == TrafficDataTypes.SPEED && !filterService.isCurrentSpeed()) {
+                incidents = typicalJourneyTimeService.listAll(filterOptions.getSpeedType());
             } else {
-                incidents = dtoService.listAll(dataType);
+                incidents = dtoService.listAll(dataType, filterService);
             }
             response.put(dataType.name(), incidents);
         }
@@ -115,6 +116,15 @@ public class IncidentController {
         }
     }
 
+    /**
+     * Create a new traffic data incident using the data provided in the request
+     * body. This action requires the user to provide a valid authentication token.
+     * If the provided token is not valid, an HTTP 401 Unauthorised response will
+     * be returned. If the provided traffic data is not valid, a 400 Bad Request
+     * response will be returned.
+     * @param incident The incident data to be created.
+     * @param token The user's authentication token.
+     */
     @PostMapping("/incidents")
     @ResponseStatus(HttpStatus.CREATED)
     public void addIncident(@RequestBody NewTrafficDataDTO incident,

@@ -1,10 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.business.controllers;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
-import com.afsmith.tyneweartrafficviewer.business.mappers.MappableDTO;
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDTO;
 import com.afsmith.tyneweartrafficviewer.business.services.CommentService;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
+import com.afsmith.tyneweartrafficviewer.business.services.filter.SpeedType;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +18,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -43,8 +44,8 @@ class IncidentControllerTest {
     @Autowired
     MockMvc mockMvc;
 
-    List<MappableDTO> incidentList;
-    List<MappableDTO> eventList;
+    List<TrafficDTO> incidentList;
+    List<TrafficDTO> eventList;
 
     @BeforeEach
     void setUp() {
@@ -67,7 +68,7 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeIncident() throws Exception {
-        when(dtoService.listAll(TrafficDataTypes.INCIDENT)).thenReturn(incidentList);
+        when(dtoService.listAll(eq(TrafficDataTypes.INCIDENT), any())).thenReturn(incidentList);
 
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "INCIDENT"))
                 .andExpect(status().isOk())
@@ -77,7 +78,7 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeEvent() throws Exception {
-        when(dtoService.listAll(TrafficDataTypes.EVENT)).thenReturn(eventList);
+        when(dtoService.listAll(eq(TrafficDataTypes.EVENT), any())).thenReturn(eventList);
 
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "EVENT"))
                .andExpect(status().isOk())
@@ -87,10 +88,10 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeAccident() throws Exception {
-        List<MappableDTO> accidentList = List.of(
+        List<TrafficDTO> accidentList = List.of(
                 MockData.getAccidentDto("code 1"),
                 MockData.getAccidentDto("code 2"));
-        when(dtoService.listAll(TrafficDataTypes.ACCIDENT)).thenReturn(accidentList);
+        when(dtoService.listAll(eq(TrafficDataTypes.ACCIDENT), any())).thenReturn(accidentList);
 
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ACCIDENT"))
                .andExpect(status().isOk())
@@ -100,10 +101,10 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeRoadwork() throws Exception {
-        List<MappableDTO> roadworkList = List.of(
+        List<TrafficDTO> roadworkList = List.of(
                 MockData.getRoadworkDto("code 1"),
                 MockData.getRoadworkDto("code 2"));
-        when(dtoService.listAll(TrafficDataTypes.ROADWORKS)).thenReturn(roadworkList);
+        when(dtoService.listAll(eq(TrafficDataTypes.ROADWORKS), any())).thenReturn(roadworkList);
 
         mockMvc.perform(get(URL_PATH).queryParam(DATA_TYPE_PARAM, "ROADWORKS"))
                .andExpect(status().isOk())

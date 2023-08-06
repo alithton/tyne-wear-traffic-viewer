@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 /**
  * Abstract class defining some convenience methods for deserializing JSON data
  * from the Open Data Service.
- * @param <T> The type of data to deserializa in to.
+ * @param <T> The type of data to deserialize in to.
  */
 public abstract class TrafficDataDeserializer<T> extends StdDeserializer<T> {
 

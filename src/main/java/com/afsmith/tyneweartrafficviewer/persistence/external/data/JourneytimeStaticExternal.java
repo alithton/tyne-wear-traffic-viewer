@@ -44,11 +44,17 @@ public class JourneytimeStaticExternal extends DynamicDataExternal<JourneyTime> 
         this.lastUpdated = lastUpdated;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public JourneyTime toEntity() {
         return mapper.externalToEntity(this);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <T extends DynamicDataExternal<JourneyTime>> JourneyTime toEntity(T other) {
         if (!(other instanceof JourneytimeDynamicExternal dynamicData)) {

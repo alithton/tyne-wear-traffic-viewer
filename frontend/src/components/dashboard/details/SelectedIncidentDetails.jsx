@@ -17,11 +17,12 @@ function SelectedIncidentDetails({codeNumber}) {
 
     // On successfully loading the data
     else if (isSuccess) {
+        console.log(eventDetails);
         const incidentPosition = [eventDetails.point.latitude, eventDetails.point.longitude];
         const lat = incidentPosition[0].toFixed(COORDINATE_PRECISION);
         const long = incidentPosition[1].toFixed(COORDINATE_PRECISION);
-        const startTime = eventDetails.incidentTime;
-        const endTime = eventDetails.endTime;
+        const startTime = eventDetails.times.startTime;
+        const endTime = eventDetails.times.endTime;
         const diversion = eventDetails.diversionInForce;
         const lanes = eventDetails.lanesAffectedTypeRefDescription;
         const incidentType = eventDetails.incidentTypeDescription
@@ -34,7 +35,7 @@ function SelectedIncidentDetails({codeNumber}) {
         );
 
         const endTimeDisplay = (
-            <p className={styles['info--date']}>{hasOccurred(endTime) ? 'Finishing' : 'Ended'}: <b>{utcToLocal(endTime)}</b></p>
+                <p className={styles['info--date']}>{hasOccurred(endTime) ? 'Finishing' : 'Ended'}: <b>{utcToLocal(endTime)}</b></p>
         );
 
         content = (
@@ -46,8 +47,8 @@ function SelectedIncidentDetails({codeNumber}) {
                 <p className={styles['info--main']}>{eventDetails.longDescription || eventDetails.shortDescription}</p>
                 {lanes && lanes.trim() && <p className={styles['info--main']}>Lanes affected: {lanes}</p>}
                 {diversion && diversion.trim() && <p className={styles['info--main']}>Diversion: {diversion}</p>}
-                {startTimeDisplay}
-                {endTimeDisplay}
+                {startTime && startTimeDisplay}
+                {endTime && endTimeDisplay}
                 <Comments codeNumber={eventDetails.systemCodeNumber} comments={eventDetails.comments} />
             </div>
         );

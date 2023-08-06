@@ -19,29 +19,47 @@ public class PasswordHashingService {
     private static final int KEY_LENGTH = 256;
     private static final SecureRandom RANDOM = new SecureRandom();
 
+    /**
+     * Create a secure hash of the password along with the provided salt.
+     * @param password The password to be hashed.
+     * @param salt The salt to be used in hashing.
+     * @return The secure hash.
+     */
     public String hash(String password, String salt) {
         KeySpec keySpec = new PBEKeySpec(password.toCharArray(), salt.getBytes(), ITERATIONS, KEY_LENGTH);
         SecretKey key = getKey(keySpec);
         return bytesToBase64(key.getEncoded());
     }
 
+    /**
+     * Generate a salt using a secure random number generator.
+     * @return The salt as a Base64 string.
+     */
     public String getSalt() {
         byte[] saltBytes = getRandomBytes(16);
         return bytesToBase64(saltBytes);
     }
 
+    /**
+     * Generate a token of the specified number of bytes using a secure random number generator.
+     * @param len The number of bytes in length the token should be.
+     * @return The token as a Base64 string.
+     */
     public String getToken(int len) {
         byte[] token = getRandomBytes(len);
         return bytesToBase64(token);
     }
 
-
+    /*
+     * Generate len random bytes using a secure RNG.
+     */
     private byte[] getRandomBytes(int len) {
         byte[] salt = new byte[len];
         RANDOM.nextBytes(salt);
         return salt;
     }
 
+    // Generate a secret key.
     private SecretKey getKey(KeySpec keySpec) {
         try {
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
@@ -51,6 +69,7 @@ public class PasswordHashingService {
         }
     }
 
+    // Convert an array of bytes to a Base64-encoded string.
     private String bytesToBase64(byte[] bytes) {
         return Base64.getEncoder().encodeToString(bytes);
     }

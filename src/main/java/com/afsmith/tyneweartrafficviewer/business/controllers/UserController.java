@@ -13,13 +13,24 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-
+/**
+ * A REST controller for the user data API.
+ */
 @RequiredArgsConstructor
 @CrossOrigin(origins = {"http://localhost:8080", "http://localhost:5173"}, allowCredentials = "true")
 @RestController
 public class UserController {
     private final UserService userService;
 
+    /**
+     * Attempt to register as a user with the provided credentials. If a user with
+     * the same username already exists, return an HTTP 409 Conflict response. If
+     * registration is successful, return a 201 Created response with an HTTP-only
+     * cookie containing the user's authentication token for the current session.
+     *
+     * @param credentials The username and password with which to register.
+     * @return An HTTP response.
+     */
     @PostMapping("/users/signup")
     public ResponseEntity<?> signUp(@RequestBody Credentials credentials) {
         String token;
@@ -32,9 +43,19 @@ public class UserController {
         return new ResponseEntity<>("", headers, HttpStatus.CREATED);
     }
 
+    /**
+     * Attempt to log in with the provided credentials.
+     * <p>
+     *     If no user matching the provided credentials is found, return an HTTP
+     *     401 Unauthorised response. If registration is successful, return a 201
+     *     Created response with an HTTP-only cookie containing the user's authentication
+     *     token for the current session.
+     * </p>
+     * @param credentials The provided username and password.
+     * @return An HTTP response.
+     */
     @PostMapping("/users/login")
     public ResponseEntity<?> login(@RequestBody Credentials credentials) {
-        System.out.println("Username: " + credentials.getUsername() + ", Password: " + credentials.getPassword());
         User user = userService.find(credentials);
         if (user == null) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "No user found with those credentials.");
@@ -44,10 +65,19 @@ public class UserController {
                              .build();
     }
 
+    /**
+     * Attempt to update the credentials of the user specified by the provided authentication
+     * token using the provided new credentials.
+     * <p>
+     *     If no user matching the provided token is found, return an HTTP
+     *     401 Unauthorised response.
+     * </p>
+     * @param credentials
+     * @param token
+     */
     @PutMapping("/users/edit")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void edit(@RequestBody Credentials credentials, @CookieValue("token") String token) {
-        System.out.println(token);
         User user;
         try {
             user = userService.findByToken(token);
@@ -58,17 +88,24 @@ public class UserController {
         userService.update(user, credentials);
     }
 
+    /*
+     * Get HTTP headers on which a cookie containing the provided authentication
+     * token has been set.
+     */
     private HttpHeaders getHeadersWithToken(String token) {
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.SET_COOKIE, createAuthCookie(token));
         return headers;
     }
 
+    /*
+     * Create an HTTP-only cookie containing the provided authentication token.
+     */
     private String createAuthCookie(String token) {
         ResponseCookie cookie = ResponseCookie.from("token", token)
                                               .httpOnly(true)
                                               .maxAge(3600L)
-                .path("/")
+                                              .path("/")
                                               .build();
         return cookie.toString();
     }

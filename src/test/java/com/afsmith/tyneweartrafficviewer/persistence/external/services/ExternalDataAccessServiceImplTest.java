@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
@@ -31,6 +31,7 @@ class ExternalDataAccessServiceImplTest {
     @BeforeEach
     void setUp() {
         dataAccessService = new ExternalDataAccessServiceImpl(client);
+        dataAccessService.setBaseDirectory("src/test/resources/data");
     }
 
     @Test
@@ -85,6 +86,22 @@ class ExternalDataAccessServiceImplTest {
         List<JourneyTime> journeyTimes = dataAccessService.getData(TrafficDataTypes.SPEED);
         assertThat(journeyTimes.size()).isEqualTo(2);
         assertThat(journeyTimes.get(0).getLastUpdatedDynamic()).isNull();
+    }
+
+    @Test
+    void getIncidentDataFromFile() throws IOException {
+        List<TrafficIncident> incidents = dataAccessService.getData(TrafficDataTypes.INCIDENT, "incidents-test.json");
+
+        assertThat(incidents.size()).isEqualTo(1);
+        assertThat(incidents.get(0).getIncidentTypeDescription()).isEqualTo("BRIDGE CLOSED");
+    }
+
+    @Test
+    void getJourneyTimeDataFromFile() throws IOException {
+        List<JourneyTime> journeyTimes = dataAccessService.getData(TrafficDataTypes.SPEED, "journeytime-static-full-test.json", "journeytime-dynamic-full-test.json");
+
+        assertThat(journeyTimes.size()).isGreaterThan(0);
+        assertThat(journeyTimes.get(0).getRoute()).isNull();
     }
 
     /*

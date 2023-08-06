@@ -7,12 +7,12 @@ import moderateAccidentImageUrl from '../../../assets/marker-accident-moderate.p
 import severeAccidentImageUrl from '../../../assets/marker-accident-severe.png';
 import unknownAccidentImageUrl from '../../../assets/marker-accident-unknown.png';
 import markerShadowImageUrl from '../../../assets/marker-shadow-5opacity.png';
-function IncidentMarker(props) {
+function IncidentMarker({incidentData}) {
 
     const dispatch = useDispatch();
 
     const selectEvent = () => {
-        dispatch(update(props.incidentData));
+        dispatch(update(incidentData));
     }
 
     const EventIcon = L.Icon.extend({
@@ -28,7 +28,7 @@ function IncidentMarker(props) {
     });
 
     let iconUrl;
-    switch(props.incidentData.severityTypeRefDescription) {
+    switch(incidentData.severityTypeRefDescription) {
         case 'Low':
             iconUrl = lowAccidentImageUrl;
             break;
@@ -46,14 +46,16 @@ function IncidentMarker(props) {
 
     const popupContent = (
         <>
-            <h3>{props.incidentData.incidentTypeDescription}</h3>
-            <p>{props.incidentData.longDescription}</p>
+            <h3>{incidentData.typeDescription}</h3>
+            <p>{incidentData.longDescription || incidentData.shortDescription}</p>
         </>
-);
+    );
+
+    const incidentPosition = [incidentData.point.latitude, incidentData.point.longitude];
 
     return (
-        <Marker icon={markerIcon} eventHandlers={{ click: selectEvent }} position={props.incidentData.incidentPosition}>
-            <Tooltip >{props.incidentData.shortDescription}</Tooltip>
+        <Marker icon={markerIcon} eventHandlers={{ click: selectEvent }} position={incidentPosition}>
+            <Tooltip >{incidentData.shortDescription}</Tooltip>
             <Popup >{popupContent}</Popup>
         </Marker>
     );

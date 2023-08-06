@@ -12,21 +12,48 @@ export const detailsSlice = createSlice({
             // Did the user opt to create a new custom marker?
             newMarker: false,
             // The data associated with the selected marker.
-            data: {}
+            data: {},
+            submissionSuccess: false
         }
     },
     reducers: {
         update: (state, action) => {
-            state.value = {markerSelected: true, newMarker: false, data: action.payload};
+            state.value = {
+                ...state.value,
+                markerSelected: true,
+                newMarker: false,
+                data: action.payload,
+            };
         },
         clear: state => {
-            state.value = {markerSelected: false, newMarker: false, data: {}}
+            state.value = {
+                ...state.value,
+                markerSelected: false,
+                newMarker: false,
+                data: {},
+            }
         },
         addNew: (state, action) => {
-            state.value = {markerSelected: false, newMarker: true, data: action.payload};
+            state.value = {
+                markerSelected: false,
+                newMarker: true,
+                data: action.payload,
+                submissionSuccess: false
+            };
+        },
+        setSuccess: (state, action) => {
+            state.value = {
+                ...state.value,
+                submissionSuccess: action.payload,
+            };
         }
     }
 });
 
-export const { update, clear, addNew } = detailsSlice.actions;
+export const {
+    update,
+    clear,
+    addNew ,
+    setSuccess
+} = detailsSlice.actions;
 export default detailsSlice.reducer;

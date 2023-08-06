@@ -2,65 +2,22 @@ import {MapContainer, TileLayer} from "react-leaflet";
 import {useDispatch, useSelector} from "react-redux";
 import IncidentMarker from "./IncidentMarker.jsx";
 import 'leaflet/dist/leaflet.css'
-import {useEffect, useState} from "react";
 import 'leaflet-contextmenu';
 import {addNew} from "../../../store/slices/detailsSlice.js";
 import {useGetIncidentsQuery} from "../../../store/slices/apiSlice.js";
 import TrafficSpeedLine from "./TrafficSpeedLine.jsx";
 import SpeedComparisonLine from "./SpeedComparisonLine.jsx";
-
-const TRAFFIC_POINT_TYPES = ["INCIDENT", "ACCIDENT", "ROADWORKS", "EVENT"];
+import {maxMin} from "../../../util/summaryStats.js";
 
 function Map() {
 
-    // const [incidents, setIncidents] = useState([]);
-    const [filteredData, setFilteredData] = useState({});
-    // const [trafficData, setTrafficData] = useState({});
-
     const defaultPosition = [54.97, -1.61];
+    const dispatch = useDispatch();
+
     const filters = useSelector(state => state.filters.value);
 
-    const dispatch = useDispatch();
-    console.log(filters.speedType);
-
-    const queryParams = {dataType: filters.dataType, speedType: filters.speedType};
-    console.log(queryParams);
     // Fetch incident data from back end or from store
-    const {data: trafficData, isSuccess} = useGetIncidentsQuery(queryParams);
-
-    console.log("Just before use effect");
-    // Filter the loaded data and reformat coordinates to the format expected by Leaflet
-    useEffect(() => {
-        console.log("Checking that data is loaded...");
-        if (isSuccess) {
-            const filteredDataTemp = {};
-            console.log('Filtering...');
-            Object.keys(trafficData).forEach(dataType => {
-                console.log("Data type = " + dataType);
-                const data = trafficData[dataType];
-                if (TRAFFIC_POINT_TYPES.includes(dataType)) {
-                    filteredDataTemp[dataType] = data
-                        .filter(incident => filters.severity.includes(incident.severityTypeRefDescription))
-                        .map(incident => ({
-                            incidentPosition: [incident.point.latitude, incident.point.longitude],
-                            ...incident
-                        }));
-                } else if (dataType === "SPEED") {
-                    filteredDataTemp[dataType] = data.map(entry => ({
-                        ...entry
-                    }))
-                } else {
-                    filteredDataTemp[dataType] = data.map(entry => ({
-                        incidentPosition: [entry.point.latitude, entry.point.longitude],
-                        ...entry
-                    }))
-                }
-
-            });
-            console.log("Finished...");
-            setFilteredData(filteredDataTemp);
-        }
-    }, [trafficData, isSuccess, filters.severity]);
+    const {data: trafficData, isSuccess} = useGetIncidentsQuery(filters);
 
     // Create a new custom event.
     function createNewEvent(e) {
@@ -68,27 +25,18 @@ function Map() {
         dispatch(addNew(payload));
     }
 
+    const showSpeedComparison = trafficData && trafficData.SPEED && filters.speedType === 'COMPARISON';
+    const showCurrentOrAverageSpeed = trafficData && trafficData.SPEED && filters.speedType !== 'COMPARISON';
+
     // An array of all data that is displayed as incident markers
-    const pointData = Object.keys(filteredData).filter(key => key !== "SPEED")
-                            .map(key => filteredData[key])
-                            .flat();
-
-    const showSpeedComparison = filteredData.SPEED && filters.speedType === 'COMPARISON';
-    const showCurrentOrAverageSpeed = filteredData.SPEED && filters.speedType !== 'COMPARISON';
-
-    console.log("Show speed comparison: " + showSpeedComparison);
-    console.log("Show current or average speed: " + showCurrentOrAverageSpeed);
-
-    // Calculate maximum and minimum speeds (used for determining colour).
+    let pointData = [];
     let speedStats = {};
-    if (showCurrentOrAverageSpeed) {
-        speedStats.max = filteredData.SPEED.reduce((currentMax, value) => {
-                                return Math.max(value.speed, currentMax);
-                            }, 0);
-        speedStats.min = filteredData.SPEED.reduce((currentMin, value) => {
-            return Math.min(value.speed, currentMin);
-        }, Number.MAX_SAFE_INTEGER);
-        console.log(speedStats);
+    if (isSuccess) {
+        pointData = Object.keys(trafficData).filter(key => key !== "SPEED")
+                                .map(key => trafficData[key])
+                                .flat();
+        // Calculate maximum and minimum speeds (used for determining display colour).
+        if (showCurrentOrAverageSpeed) speedStats = maxMin(trafficData.SPEED);
     }
 
     return (
@@ -114,10 +62,10 @@ function Map() {
                 return <IncidentMarker key={value.systemCodeNumber} incidentData={value}/>;
             })}
 
-            {showCurrentOrAverageSpeed && filteredData.SPEED.map(value => {
+            {showCurrentOrAverageSpeed && trafficData.SPEED.map(value => {
                 return <TrafficSpeedLine key={value.systemCodeNumber} positions={value.route.coordinates} data={value} max={speedStats.max} min={speedStats.min} />
             })}
-            {showSpeedComparison && filteredData.SPEED.map(value => {
+            {showSpeedComparison && trafficData.SPEED.map(value => {
                 return <SpeedComparisonLine key={value.systemCodeNumber} positions={value.route.coordinates} data={value} />
             })}
 

@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficIncidentExternalMapper;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -11,16 +11,24 @@ import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents data about traffic incidents.
+ */
 @Getter
 public final class TrafficIncidentExternal extends TrafficPointDataExternal<TrafficIncident> {
+
         @JsonIgnore
         private final TrafficIncidentExternalMapper mapper = Mappers.getMapper(TrafficIncidentExternalMapper.class);
+
         String incidentTypeDescription;
         @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
         ZonedDateTime incidentTime;
         @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
         ZonedDateTime endTime;
 
+        /**
+         * Constructor for traffic incident data.
+         */
         @Builder
         public TrafficIncidentExternal(
                 String systemCodeNumber,
@@ -48,7 +56,9 @@ public final class TrafficIncidentExternal extends TrafficPointDataExternal<Traf
                 this.endTime = endTime;
         }
 
-
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public TrafficIncident toEntity() {
                 return mapper.externalToEntity(this);

@@ -16,8 +16,8 @@ public class MockData {
     public static final double LONGITUDE = -1.0;
     private static final PointDTO POINT_DTO = new PointDTO(LATITUDE, LONGITUDE);
     private static final Point POINT = new Point(LATITUDE, LONGITUDE);
-    private static final PlannedTimes PLANNED = new PlannedTimes(TIME, TIME);
-    private static final PlannedDTO PLANNED_DTO = new PlannedDTO(TIME, TIME);
+    private static final PlannedTimes PLANNED = new PlannedTimes(TIME, END_TIME);
+    private static final PlannedDTO PLANNED_DTO = new PlannedDTO(TIME, END_TIME);
     public static final String SHORT_DESCRIPTION = "short description";
     public static final String LONG_DESCRIPTION = "long description";
     public static final String LOCATION_DESCRIPTION = "location description";
@@ -204,10 +204,16 @@ public class MockData {
                               .lanesAffectedTypeRefDescription("| T")
                               .diversionInForce("N")
                               .phaseTypeRef("current")
-                              .incidentTypeDescription("")
+                              .incidentTypeDescription(TYPE_DESCRIPTION)
                               .incidentTime(TIME)
-                              .endTime(TIME)
+                              .endTime(END_TIME)
                               .build();
+    }
+
+    public static TrafficIncident getIncident(String code, String severity) {
+        TrafficIncident incident = getIncident(code);
+        incident.setSeverityTypeRefDescription(severity);
+        return incident;
     }
 
     public static TrafficEvent getEvent(String code) {
@@ -226,7 +232,7 @@ public class MockData {
                            .lanesAffectedTypeRefDescription("| T")
                            .diversionInForce("N")
                            .phaseTypeRef("current")
-                           .eventTypeDescription("")
+                           .eventTypeDescription(TYPE_DESCRIPTION)
                            .organiser("An organiser")
                            .venueName("venue")
                            .planned(PLANNED)
@@ -249,9 +255,9 @@ public class MockData {
                                  .lanesAffectedTypeRefDescription("| T")
                                  .diversionInForce("N")
                                  .phaseTypeRef("current")
-                                 .accidentTypeDescription("")
+                                 .accidentTypeDescription(TYPE_DESCRIPTION)
                                  .accidentTime(TIME)
-                                 .endTime(TIME)
+                                 .endTime(END_TIME)
                                  .build();
     }
 
@@ -271,7 +277,7 @@ public class MockData {
                                   .lanesAffectedTypeRefDescription("| T")
                                   .diversionInForce("N")
                                   .phaseTypeRef("current")
-                                  .roadworkTypeDescription("")
+                                  .roadworkTypeDescription(TYPE_DESCRIPTION)
                                   .contractor("contractor")
                                   .contraflow("N")
                                   .trafficSignals("N")

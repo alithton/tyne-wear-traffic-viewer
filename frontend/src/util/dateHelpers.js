@@ -12,6 +12,18 @@ export function formDateToIsoString(formDate) {
     return date.toISOString();
 }
 
+export function isValidDate(date) {
+    try {
+        new Date(date).toISOString();
+        return true;
+    } catch (error) {
+        if (error instanceof RangeError) {
+            return false;
+        }
+        throw error;
+    }
+}
+
 export function hasOccurred(utcDate) {
     const eventDate = new Date(utcDate);
     const currentDate = new Date();

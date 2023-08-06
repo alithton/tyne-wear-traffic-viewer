@@ -2,7 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.routing.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.client.OsrmClient;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.GeoJsonExternalToSimpleRouteMapper;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.OsrmToSimpleRouteMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,7 +27,7 @@ class RoutingServiceTest {
 
     @Mock
     OsrmClient client;
-    GeoJsonExternalToSimpleRouteMapper mapper = Mappers.getMapper(GeoJsonExternalToSimpleRouteMapper.class);
+    OsrmToSimpleRouteMapper mapper = Mappers.getMapper(OsrmToSimpleRouteMapper.class);
 
     @BeforeEach
     void setUp() {

@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Represents user login credentials.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

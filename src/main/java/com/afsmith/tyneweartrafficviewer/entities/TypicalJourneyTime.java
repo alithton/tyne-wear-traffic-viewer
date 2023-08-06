@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
+import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
 import com.opencsv.bean.CsvIgnore;
@@ -53,4 +54,17 @@ public class TypicalJourneyTime implements TrafficEntity {
     @CsvBindByName(column = "Time")
     @CsvDate("HH:mm")
     private LocalTime timeOfDay;
+
+    /**
+     * Should the entity be included in the returned set of data based on the criteria
+     * specified by the filter service? Always returns true, indicating no filtering
+     * should be carried out on this data type.
+     * @param filter A service providing a set of configurable filters to determine
+     *                      which entities should be included in the server response.
+     * @return Whether the entity should be included.
+     */
+    @Override
+    public boolean isIncluded(FilterService filter) {
+        return true;
+    }
 }

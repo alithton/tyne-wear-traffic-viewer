@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,9 @@ import lombok.NoArgsConstructor;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * A data transfer object for transferring any type of traffic incident data to the frontend.
+ */
 @Getter
 @NoArgsConstructor
 public class TrafficPointDataDTO extends TrafficDataDTO {
@@ -27,7 +31,12 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
     String diversionInForce;
     String phaseTypeRef;
     List<CommentDTO> comments;
+    PlannedDTO times;
+    String typeDescription;
 
+    /**
+     * An all-arguments constructor for traffic point data transfer objects.
+     */
     public TrafficPointDataDTO(String systemCodeNumber,
                                TrafficDataTypes type,
                                String shortDescription,
@@ -42,7 +51,9 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
                                String lanesAffectedTypeRefDescription,
                                String diversionInForce,
                                String phaseTypeRef,
-                               List<CommentDTO> comments) {
+                               List<CommentDTO> comments,
+                               PlannedDTO times,
+                               String typeDescription) {
         super(systemCodeNumber);
         this.type = type;
         this.shortDescription = shortDescription;
@@ -58,5 +69,7 @@ public class TrafficPointDataDTO extends TrafficDataDTO {
         this.diversionInForce = diversionInForce;
         this.phaseTypeRef = phaseTypeRef;
         this.comments = comments;
+        this.times = times;
+        this.typeDescription = typeDescription;
     }
 }

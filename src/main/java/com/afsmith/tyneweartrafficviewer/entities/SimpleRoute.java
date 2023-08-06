@@ -10,7 +10,6 @@ import java.util.List;
  * for the Traffic Viewer app. This representation is not tied to any particular
  * API route response format.
  */
-
 @Getter
 @Setter
 @Builder

@@ -1,12 +1,14 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * Super class for all types of traffic incident data.
+ */
 @Setter
 @Getter
 @NoArgsConstructor
@@ -28,6 +30,7 @@ public class TrafficPointData extends TrafficData {
     private String diversionInForce;
     private String phaseTypeRef;
 
+    // A list of comments added by users.
     @OneToMany(mappedBy = "trafficData")
     private List<Comment> comments;
 
@@ -36,6 +39,9 @@ public class TrafficPointData extends TrafficData {
     @JoinColumn(name = "user_id")
     private User createdBy;
 
+    /**
+     * All-argument constructor.
+     */
     public TrafficPointData(String systemCodeNumber,
                             TrafficDataTypes type,
                             String shortDescription,

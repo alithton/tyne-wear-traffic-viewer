@@ -1,5 +1,6 @@
 import {Polyline, Tooltip} from "react-leaflet";
 import Gradient from "javascript-color-gradient";
+import styles from './SpeedLine.module.css';
 
 const NUM_COLOURS = 20;
 
@@ -21,8 +22,7 @@ function TrafficSpeedLine({positions, data, ...props}) {
     return (
         <Polyline pathOptions={ {color: colour} } positions={positions} >
             <Tooltip>
-                <p>{`${Math.ceil(data.speed)} mph`}</p>
-                <p>{data.systemCodeNumber}</p>
+                <p className={styles.data}>{`${Math.ceil(data.speed)} mph`}</p>
                 <p>{data.shortDescription}</p>
             </Tooltip>
         </Polyline>

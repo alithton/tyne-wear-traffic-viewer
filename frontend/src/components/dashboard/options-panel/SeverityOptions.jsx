@@ -13,7 +13,7 @@ const severityMapping = {
 function SeverityOptions() {
 
     const dispatch = useDispatch();
-    const filters = useSelector((state) => state.filters.value);
+    const {severity: severityFilter} = useSelector((state) => state.filters.value);
 
     const handleSelection = e => {
         const severity = severityMapping[e.target.id];
@@ -25,22 +25,32 @@ function SeverityOptions() {
 
     }
 
-    console.log(filters.severity);
-
     return (
         <>
             <SectionHeading title='Severity' />
             <div className={styles['severity-options']}>
                 <div>
-                    <input type='checkbox' id='low-severity' name='low-severity' defaultChecked={true} onChange={handleSelection}/>
+                    <input type='checkbox'
+                           id='low-severity'
+                           name='low-severity'
+                           checked={severityFilter.includes('Low')}
+                           onChange={handleSelection}/>
                     <label htmlFor='low-severity'>Low</label>
                 </div>
                 <div>
-                    <input type='checkbox' id='medium-severity' name='medium-severity' defaultChecked={true} onChange={handleSelection}/>
+                    <input type='checkbox'
+                           id='medium-severity'
+                           name='medium-severity'
+                           checked={severityFilter.includes('Medium')}
+                           onChange={handleSelection}/>
                     <label htmlFor='medium-severity'>Medium</label>
                 </div>
                 <div>
-                    <input type='checkbox' id='high-severity' name='high-severity' defaultChecked={true} onChange={handleSelection}/>
+                    <input type='checkbox'
+                           id='high-severity'
+                           name='high-severity'
+                           defaultChecked={severityFilter.includes('High')}
+                           onChange={handleSelection}/>
                     <label htmlFor='high-severity'>High</label>
                 </div>
             </div>

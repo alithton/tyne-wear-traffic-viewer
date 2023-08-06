@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.client;
 
 import com.afsmith.tyneweartrafficviewer.entities.GeoJsonPoint;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.OsrmRoute;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -65,7 +65,7 @@ class OsrmClientTest {
               .andRespond(withSuccess(getExampleResponseBody(), MediaType.APPLICATION_JSON));
 
 
-        GeoJsonRouteExternal route = client.getRoute(start, end);
+        OsrmRoute route = client.getRoute(start, end);
 
         assertThat(route).isNotNull();
         assertThat(route.getRoutes().size()).isEqualTo(1);

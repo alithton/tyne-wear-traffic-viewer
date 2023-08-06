@@ -8,16 +8,21 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.util.DefaultUriBuilderFactory;
 
 /**
- * Configure the default RestTemplate to connect with the Open Data Service.
+ * Configure the default RestTemplate to connect with the Open Data Service. This
+ * requires that an account has been created with the data service. The username
+ * and password for that account should be set as environment variables.
  */
 @Configuration
 public class RestTemplateBuilderConfig {
+    // The base URL of the Open Data Service.
     @Value("${utmc-open-data-service.rest.template.base-url}")
     private String baseUrl;
 
+    // A valid username for connecting to the Open Data Service.
     @Value("${utmc-open-data-service.rest.username}")
     private String username;
 
+    // A valid password for connecting to the Open Data Service.
     @Value("${utmc-open-data-service.rest.password}")
     private String password;
 

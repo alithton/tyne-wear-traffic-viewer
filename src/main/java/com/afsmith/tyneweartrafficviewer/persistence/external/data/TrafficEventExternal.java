@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEvent;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficEventExternalMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -10,15 +10,23 @@ import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents data about an event that is expected to cause some disruption to traffic.
+ */
 @Getter
 public final class TrafficEventExternal extends TrafficPointDataExternal<TrafficEvent> {
+
         @JsonIgnore
         private final TrafficEventExternalMapper mapper = Mappers.getMapper(TrafficEventExternalMapper.class);
+
         String eventTypeDescription;
         PlannedExternal planned;
         String organiser;
         String venueName;
 
+        /**
+         * Constructor for traffic event data.
+         */
         @Builder
         public TrafficEventExternal(String systemCodeNumber,
                                     TrafficDataTypes type,
@@ -49,6 +57,9 @@ public final class TrafficEventExternal extends TrafficPointDataExternal<Traffic
                 this.venueName = venueName;
         }
 
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public TrafficEvent toEntity() {
                 return mapper.externalToEntity(this);

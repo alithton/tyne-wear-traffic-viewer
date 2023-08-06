@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.routing.mappers;
 
 import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.GeoJsonRouteExternal;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.routes.OsrmRoute;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -10,14 +10,14 @@ import org.mapstruct.factory.Mappers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class GeoJsonExternalToSimpleRouteMapperTest {
+class OsrmToSimpleRouteMapperTest {
 
-    GeoJsonExternalToSimpleRouteMapper mapper = Mappers.getMapper(GeoJsonExternalToSimpleRouteMapper.class);
+    OsrmToSimpleRouteMapper mapper = Mappers.getMapper(OsrmToSimpleRouteMapper.class);
 
     @Test
     void externalToEntity() throws JsonProcessingException {
 
-        GeoJsonRouteExternal external = getGeoJsonExternal();
+        OsrmRoute external = getGeoJsonExternal();
 
         SimpleRoute route = mapper.externalToEntity(external);
 
@@ -28,7 +28,7 @@ class GeoJsonExternalToSimpleRouteMapperTest {
         assertThat(route.getDistance()).isBetween(627.6, 627.8);
     }
 
-    private GeoJsonRouteExternal getGeoJsonExternal() throws JsonProcessingException {
+    private OsrmRoute getGeoJsonExternal() throws JsonProcessingException {
         String json = """
                 {
                     "code": "Ok",
@@ -134,6 +134,6 @@ class GeoJsonExternalToSimpleRouteMapperTest {
                 """;
 
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(json, GeoJsonRouteExternal.class);
+        return mapper.readValue(json, OsrmRoute.class);
     }
 }

@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import java.net.URL;
 import java.time.ZonedDateTime;
 
+/**
+ * Represents traffic camera data.
+ */
 @Getter
 @NoArgsConstructor
 @Entity
@@ -19,6 +22,9 @@ public class Camera extends TrafficData {
     URL image;
     ZonedDateTime lastUpdatedDynamic;
 
+    /**
+     * Constructor for traffic camera data instance.
+     */
     @Builder
     public Camera(String systemCodeNumber,
                   String shortDescription,
