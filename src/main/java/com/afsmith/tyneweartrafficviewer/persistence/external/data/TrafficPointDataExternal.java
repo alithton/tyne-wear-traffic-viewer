@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 
@@ -32,6 +32,9 @@ public abstract sealed class TrafficPointDataExternal<E extends TrafficData> ext
     String diversionInForce;
     String phaseTypeRef;
 
+     /**
+      * Constructor for traffic point data.
+      */
     public TrafficPointDataExternal(String systemCodeNumber,
                                     TrafficDataTypes type,
                                     String shortDescription,

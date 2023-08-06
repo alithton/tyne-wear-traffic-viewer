@@ -14,7 +14,6 @@ import java.time.ZonedDateTime;
 /**
  * CCTV static data provides information on the locations of traffic CCTV cameras.
  */
-
 @Getter
 @JsonDeserialize(using = StaticCctvDeserialiser.class)
 public class CctvStaticExternal extends DynamicDataExternal<Camera> {
@@ -27,6 +26,9 @@ public class CctvStaticExternal extends DynamicDataExternal<Camera> {
     PointExternal point;
     ZonedDateTime lastUpdated;
 
+    /**
+     * Construct instances of static CCTV data.
+     */
     @Builder
     public CctvStaticExternal(String systemCodeNumber,
                               String shortDescription,
@@ -40,6 +42,9 @@ public class CctvStaticExternal extends DynamicDataExternal<Camera> {
         this.lastUpdated = lastUpdated;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <T extends DynamicDataExternal<Camera>> Camera toEntity(T other) {
         if (!(other instanceof CctvDynamicExternal dynamicData)) {

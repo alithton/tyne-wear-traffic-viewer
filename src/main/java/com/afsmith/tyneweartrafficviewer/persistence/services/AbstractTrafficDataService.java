@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 /**
- * A data service implementation that allows storage of and access to generic
+ * A traffic data service implementation that allows storage of and access to generic
  * traffic data. Supplied data connectors allow the generic methods to be applied
  * to concrete traffic data types.
  */

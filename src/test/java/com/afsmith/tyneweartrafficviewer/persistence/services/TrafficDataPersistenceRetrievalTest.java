@@ -1,13 +1,10 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.entities.*;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;

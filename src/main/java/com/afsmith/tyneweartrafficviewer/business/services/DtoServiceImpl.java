@@ -1,7 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.NewTrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficPointDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.*;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
@@ -13,7 +14,6 @@ import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersist
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.ZonedDateTime;
 import java.util.List;
 
 import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downcastList;
@@ -38,16 +38,11 @@ public class DtoServiceImpl implements DtoService {
     private final UserService userService;
 
     /**
-     * Get a list of all available data of the requested type in a data transfer format ready to
-     * be served to the front end.
-     * @param dataType The type of data requested.
-     * @return A list of data transfer objects of the type requested.
-     * @param <DTO> The type of data transfer object corresponding to the requested data type.
-     * @param <T> The entity corresponding to the requested type.
+     * {@inheritDoc}
      */
     @Override
     @SuppressWarnings("unchecked")
-    public <DTO extends MappableDTO, T extends TrafficEntity>
+    public <DTO extends TrafficDTO, T extends TrafficEntity>
             List<DTO> listAll(TrafficDataTypes dataType) {
 
         // These casts are known to be safe as there is a finite number of possible return values (based on the
@@ -57,9 +52,12 @@ public class DtoServiceImpl implements DtoService {
         return mapper.entityToDto(entities);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @SuppressWarnings("unchecked")
-    public <DTO extends MappableDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter) {
+    public <DTO extends TrafficDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter) {
         // These casts are known to be safe as there is a finite number of possible return values (based on the
         // enum dataType), all of which are safe.
         var mapper = (TrafficDataMapper<DTO, T>) getMapper(dataType);
@@ -69,10 +67,7 @@ public class DtoServiceImpl implements DtoService {
     }
 
     /**
-     * Get the most recent image from the traffic camera specified by the system
-     * code number.
-     * @param systemCodeNumber ID of the requested traffic camera.
-     * @return An array of bytes corresponding to the image.
+     * {@inheritDoc}
      */
     @Override
     public byte[] getImage(String systemCodeNumber) {
@@ -80,13 +75,7 @@ public class DtoServiceImpl implements DtoService {
     }
 
     /**
-     * Get data for a single traffic incident as specified by the provided system code
-     * number.
-     * @param codeNumber The system code number of the incident.
-     * @return The traffic incident data transfer object.
-     * @param <DTO> The type of data transfer object corresponding to the data to be retrieved.
-     * @param <T> The entity type of the data being retrieved.
-     * @throws DataNotFoundException When no incident matching the provided code number can be found.
+     * {@inheritDoc}
      */
     @Override
     public <DTO extends TrafficPointDataDTO, T extends TrafficPointData>
@@ -99,14 +88,7 @@ public class DtoServiceImpl implements DtoService {
     }
 
     /**
-     * Save the provided traffic data to the database. This requires that a valid
-     * authentication token is provided and that the traffic data is in a valid format.
-     * Failure to assure these preconditions are met will result in an exception being
-     * thrown.
-     * @param trafficData The traffic data to be saved.
-     * @param token The authentication token.
-     * @throws NotAuthenticatedException If the provided authentication token is not valid.
-     * @throws InvalidTrafficDataException If the traffic data is not valid.
+     * {@inheritDoc}
      */
     @Override
     public void save(NewTrafficDataDTO trafficData, String token)
@@ -121,7 +103,7 @@ public class DtoServiceImpl implements DtoService {
     }
 
     // Get the appropriate mapper for the requested data type.
-    private TrafficDataMapper<? extends MappableDTO, ? extends TrafficEntity> getMapper(TrafficDataTypes dataType) {
+    private TrafficDataMapper<? extends TrafficDTO, ? extends TrafficEntity> getMapper(TrafficDataTypes dataType) {
         return switch(dataType) {
             case INCIDENT -> incidentMapper;
             case EVENT -> eventMapper;

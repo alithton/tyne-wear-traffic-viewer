@@ -10,6 +10,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.time.ZonedDateTime;
 
+/**
+ * Custom JSON deserialiser for static journey time data.
+ */
 public class StaticJourneyTimeDeserialiser extends TrafficDataDeserializer<JourneytimeStaticExternal> {
 
     public StaticJourneyTimeDeserialiser() {

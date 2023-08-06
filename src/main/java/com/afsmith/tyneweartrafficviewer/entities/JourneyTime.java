@@ -5,6 +5,9 @@ import lombok.*;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents journey time data.
+ */
 @Getter
 @ToString
 @NoArgsConstructor
@@ -41,6 +44,9 @@ public class JourneyTime extends TrafficData {
     int plateMatches;
     ZonedDateTime lastUpdatedDynamic;
 
+    /**
+     * An all-arguments constructor for journey time data.
+     */
     @Builder
     public JourneyTime(String systemCodeNumber,
                        String shortDescription,

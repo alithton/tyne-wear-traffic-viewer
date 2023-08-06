@@ -8,7 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
- * Provides methods to access any kind of traffic point data.
+ * Provides methods to access any kind of traffic incident data, including any
+ * comments that are associated with them.
  */
 
 @RequiredArgsConstructor
@@ -27,6 +28,10 @@ public class TrafficPointDataService {
                          .orElse(null);
     }
 
+    /**
+     * Store a comment in the database.
+     * @param comment The comment to be stored.
+     */
     public void saveComment(Comment comment) {
         commentRepository.save(comment);
     }

@@ -1,13 +1,13 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.client.OsrmClient;
-import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.GeoJsonExternalToSimpleRouteMapperImpl;
+import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.OsrmToSimpleRouteMapperImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,10 +23,9 @@ import java.io.IOException;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.verify;
 
 @DataJpaTest
-@Import({RoutingService.class, GeoJsonExternalToSimpleRouteMapperImpl.class, OsrmClient.class, ObjectMapper.class})
+@Import({RoutingService.class, OsrmToSimpleRouteMapperImpl.class, OsrmClient.class, ObjectMapper.class})
 public class TrafficDataServiceJourneyTimesIT {
 
     TrafficDataServiceJourneyTimes journeyTimeService;

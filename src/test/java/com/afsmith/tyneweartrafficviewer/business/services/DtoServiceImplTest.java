@@ -1,7 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.NewTrafficDataDTO;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficIncidentDTO;
 import com.afsmith.tyneweartrafficviewer.business.mappers.*;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;

@@ -1,11 +1,11 @@
 package com.afsmith.tyneweartrafficviewer.business.controllers;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
-import com.afsmith.tyneweartrafficviewer.business.mappers.MappableDTO;
+import com.afsmith.tyneweartrafficviewer.business.data.TrafficDTO;
 import com.afsmith.tyneweartrafficviewer.business.services.CommentService;
 import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.SpeedType;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -44,8 +44,8 @@ class IncidentControllerTest {
     @Autowired
     MockMvc mockMvc;
 
-    List<MappableDTO> incidentList;
-    List<MappableDTO> eventList;
+    List<TrafficDTO> incidentList;
+    List<TrafficDTO> eventList;
 
     @BeforeEach
     void setUp() {
@@ -88,7 +88,7 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeAccident() throws Exception {
-        List<MappableDTO> accidentList = List.of(
+        List<TrafficDTO> accidentList = List.of(
                 MockData.getAccidentDto("code 1"),
                 MockData.getAccidentDto("code 2"));
         when(dtoService.listAll(eq(TrafficDataTypes.ACCIDENT), any())).thenReturn(accidentList);
@@ -101,7 +101,7 @@ class IncidentControllerTest {
 
     @Test
     void getIncidentsTypeRoadwork() throws Exception {
-        List<MappableDTO> roadworkList = List.of(
+        List<TrafficDTO> roadworkList = List.of(
                 MockData.getRoadworkDto("code 1"),
                 MockData.getRoadworkDto("code 2"));
         when(dtoService.listAll(eq(TrafficDataTypes.ROADWORKS), any())).thenReturn(roadworkList);

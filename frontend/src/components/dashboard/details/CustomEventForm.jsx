@@ -11,6 +11,7 @@ import {useDispatch, useSelector} from "react-redux";
 import PanelMessage from "./PanelMessage.jsx";
 import {ErrorContext} from "./ErrorContext.jsx";
 import {logOut} from "../../../store/slices/authenticationSlice.js";
+import {setSuccess} from "../../../store/slices/detailsSlice.js";
 
 const requiredFields = ['type', 'shortDescription', 'severityTypeRefDescription', 'start'];
 const defaultErrorMessages = {};
@@ -23,6 +24,7 @@ function CustomEventForm(props) {
     const [errorMessages, setErrorMessages] = useState(defaultErrorMessages);
 
     const {isLoggedIn, sessionExpired} = useSelector(state => state.authentication.value);
+    const {submissionSuccess} = useSelector(state => state.details.value);
     const dispatch = useDispatch();
 
     const [triggerAddIncident, {isSuccess, error}] = useAddIncidentMutation();
@@ -71,7 +73,7 @@ function CustomEventForm(props) {
         return hasRequiredFields(data);
     }
 
-    const handleCreate = (e) => {
+    const handleCreate = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = formDataToObject(formData);
@@ -83,7 +85,11 @@ function CustomEventForm(props) {
         console.log(data);
 
         if (isValid(data)) {
-            triggerAddIncident(data);
+            await triggerAddIncident(data);
+            if(isSuccess) {
+                console.log('Successfully created');
+                dispatch(setSuccess(true));
+            }
         }
     }
 
@@ -105,8 +111,10 @@ function CustomEventForm(props) {
         handleBadRequest();
     }
 
-    let contents = <PanelMessage message={'Log in to add custom events.'} />;
-    if (isLoggedIn || sessionExpired) {
+    const message = submissionSuccess ? 'Event created.' : 'Log in to add custom events.';
+
+    let contents = <PanelMessage message={message} />;
+    if ((isLoggedIn || sessionExpired) && !submissionSuccess) {
         contents = (
             <div className={detailsStyles['details--selection']}>
                 <h3 className={detailsStyles.details__header}>Custom Event</h3>

@@ -2,16 +2,18 @@ import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {isValidDate} from "../../../util/dateHelpers.js";
 
-function DateInput({id, label, dispatchFn, disabled, ...others}) {
-    const [date, setDate] = useState('');
+function DateInput({id, label, value, dispatchFn, disabled, ...others}) {
+
+    const dateValue = value ? new Date(value).toISOString().split('T')[0] : '';
+
+    const [date, setDate] = useState(dateValue);
 
     const dispatch = useDispatch();
 
     const handleChange = (e) => {
-        const value = e.target.value;
-        console.log(value);
-        const date = isValidDate(value) ? new Date(value).toISOString() : '';
-        setDate(value);
+        const newValue = e.target.value;
+        const date = isValidDate(newValue) ? new Date(newValue).toISOString() : '';
+        setDate(newValue);
         dispatch(dispatchFn(date));
     }
 

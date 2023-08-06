@@ -1,6 +1,5 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.Entity;
 import lombok.*;
@@ -9,7 +8,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /**
- * A JPA entity representing traffic event data.
+ * Represents data on events that may cause traffic disruption.
  */
 @Setter
 @Getter
@@ -21,6 +20,9 @@ public class TrafficEvent extends TrafficPointData {
     String organiser;
     String venueName;
 
+    /**
+     * An all-arguments constructor for event data.
+     */
     @Builder
     public TrafficEvent(
             String systemCodeNumber,
@@ -52,10 +54,21 @@ public class TrafficEvent extends TrafficPointData {
         this.venueName = venueName;
     }
 
+    /**
+     * A copy constructor for event data.
+     * @param pointData The traffic data from which the event data should be constructed.
+     */
     public TrafficEvent(TrafficPointData pointData) {
         super(pointData);
     }
 
+    /**
+     * Should the entity be included in the returned set of data based on the criteria
+     * specified by the filter service?
+     * @param filter A service providing a set of configurable filters to determine
+     *                      which entities should be included in the server response.
+     * @return Whether the entity should be included.
+     */
     @Override
     public boolean isIncluded(FilterService filter) {
         return filter.filterSeverity(getSeverityTypeRefDescription())

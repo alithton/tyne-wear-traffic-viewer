@@ -1,6 +1,5 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.Entity;
 import lombok.Builder;
@@ -11,6 +10,9 @@ import lombok.Setter;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * Represents a traffic accident.
+ */
 @Setter
 @Getter
 @NoArgsConstructor
@@ -20,6 +22,9 @@ public class TrafficAccident extends TrafficPointData {
     ZonedDateTime accidentTime;
     ZonedDateTime endTime;
 
+    /**
+     * An all-arguments constructor for traffic accident data.
+     */
     @Builder
     public TrafficAccident(String systemCodeNumber,
                            TrafficDataTypes type,
@@ -49,10 +54,19 @@ public class TrafficAccident extends TrafficPointData {
         this.endTime = endTime;
     }
 
+    /**
+     * A copy constructor for traffic accident from a generic traffic point data instance.
+     * @param pointData The traffic incident data from which to construct the traffic accident data.
+     */
     public TrafficAccident(TrafficPointData pointData) {
         super(pointData);
     }
 
+    /**
+     *
+     * @param filter
+     * @return
+     */
     @Override
     public boolean isIncluded(FilterService filter) {
         return filter.filterSeverity(getSeverityTypeRefDescription())

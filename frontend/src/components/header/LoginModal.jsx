@@ -32,7 +32,9 @@ function LoginModal(props) {
 
         } catch (err) {
             console.log(err);
-            setErrorMessage('Username or password did not match.');
+            const message = isSignUp ? 'A user with that username already exists.'
+                                            : 'Username or password did not match.'
+            setErrorMessage(message);
         }
 
     };

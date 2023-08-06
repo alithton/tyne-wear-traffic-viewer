@@ -5,13 +5,15 @@ import com.afsmith.tyneweartrafficviewer.entities.TrafficIncident;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-import java.util.List;
-
 /**
- * A MapStruct mapper for traffic incidents.
+ * Defines a mapping from traffic incident entities to DTOs.
  */
 @Mapper(uses = CommentMapper.class)
 public interface TrafficIncidentMapper extends TrafficDataMapper<TrafficIncidentDTO, TrafficIncident> {
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @Mapping(source = "incidentTime", target = "times.startTime")
     @Mapping(source = "endTime", target = "times.endTime")

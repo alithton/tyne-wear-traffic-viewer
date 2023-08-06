@@ -5,11 +5,14 @@ import lombok.*;
 
 import java.util.List;
 
+/**
+ * A representation of the route JSON response data received from the OSRM server.
+ */
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class GeoJsonRouteExternal {
+public class OsrmRoute {
     private String code;
     private List<Route> routes;
     private List<Waypoint> waypoints;

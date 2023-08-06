@@ -3,6 +3,7 @@ package com.afsmith.tyneweartrafficviewer.business.services;
 import com.afsmith.tyneweartrafficviewer.business.data.*;
 import com.afsmith.tyneweartrafficviewer.business.mappers.JourneyTimeMapper;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.SpeedType;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,6 +1,5 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.*;
 import lombok.Builder;
@@ -11,6 +10,9 @@ import lombok.Setter;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * Represents data on roadworks.
+ */
 @Setter
 @Getter
 @NoArgsConstructor
@@ -28,6 +30,9 @@ public class TrafficRoadwork extends TrafficPointData {
     String trafficSignals;
     String contraflow;
 
+    /**
+     * An all-arguments constructor for roadwork data.
+     */
     @Builder
     public TrafficRoadwork(String systemCodeNumber,
                            TrafficDataTypes type,
@@ -63,6 +68,10 @@ public class TrafficRoadwork extends TrafficPointData {
         this.contraflow = contraflow;
     }
 
+    /**
+     * A copy constructor for roadwork data.
+     * @param pointData The traffic data from which the roadwork data should be constructed.
+     */
     public TrafficRoadwork(TrafficPointData pointData) {
         super(pointData);
     }
@@ -91,6 +100,13 @@ public class TrafficRoadwork extends TrafficPointData {
         return actual.getEndTime();
     }
 
+    /**
+     * Should the entity be included in the returned set of data based on the criteria
+     * specified by the filter service?
+     * @param filter A service providing a set of configurable filters to determine
+     *                      which entities should be included in the server response.
+     * @return Whether the entity should be included.
+     */
     @Override
     public boolean isIncluded(FilterService filter) {
         return filter.filterSeverity(getSeverityTypeRefDescription())

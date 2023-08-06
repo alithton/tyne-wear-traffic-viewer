@@ -1,13 +1,9 @@
 package com.afsmith.tyneweartrafficviewer.persistence;
 
 
-import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
-import com.afsmith.tyneweartrafficviewer.persistence.external.data.*;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReader;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.TrafficDataReaderImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
 import jakarta.transaction.Transactional;
@@ -23,13 +19,17 @@ import java.util.List;
 
 /**
  * Populate the database on startup.
+ * <p>
+ *     Accepts the command line flag --local. If this flag is set, it will load
+ *     data from local files. Otherwise, it will attempt to load data from the
+ *     Open Data Service API. Using local data can be useful for troubleshooting
+ *     or when developing without an internet connection.
  */
 @Component
 @RequiredArgsConstructor
 @Profile("!test")
 public class BootstrapData implements CommandLineRunner {
 
-    private final TrafficDataReader trafficDataReader = TrafficDataReaderImpl.fromFilePath("src/main/resources/data");
     private final TrafficDataPersistence dataPersistence;
     private final ExternalDataAccessService dataAccessService;
     private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
@@ -88,6 +88,10 @@ public class BootstrapData implements CommandLineRunner {
         dataPersistence.persistEntities(typicalJourneyTimes, TrafficDataTypes.TYPICAL_SPEED);
     }
 
+    /**
+     * Set the class to use local data rather than accessing data from the API.
+     * @param useLocalData Should local data be used?
+     */
     public void setUseLocalData(boolean useLocalData) {
         this.useLocalData = useLocalData;
     }

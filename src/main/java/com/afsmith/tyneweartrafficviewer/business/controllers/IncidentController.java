@@ -6,7 +6,7 @@ import com.afsmith.tyneweartrafficviewer.business.services.DtoService;
 import com.afsmith.tyneweartrafficviewer.business.services.TypicalJourneyTimeService;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterOptions;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
-import com.afsmith.tyneweartrafficviewer.business.services.filter.SpeedType;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.exceptions.DataNotFoundException;
 import com.afsmith.tyneweartrafficviewer.exceptions.InvalidTrafficDataException;
 import com.afsmith.tyneweartrafficviewer.exceptions.NotAuthenticatedException;
@@ -116,6 +116,15 @@ public class IncidentController {
         }
     }
 
+    /**
+     * Create a new traffic data incident using the data provided in the request
+     * body. This action requires the user to provide a valid authentication token.
+     * If the provided token is not valid, an HTTP 401 Unauthorised response will
+     * be returned. If the provided traffic data is not valid, a 400 Bad Request
+     * response will be returned.
+     * @param incident The incident data to be created.
+     * @param token The user's authentication token.
+     */
     @PostMapping("/incidents")
     @ResponseStatus(HttpStatus.CREATED)
     public void addIncident(@RequestBody NewTrafficDataDTO incident,

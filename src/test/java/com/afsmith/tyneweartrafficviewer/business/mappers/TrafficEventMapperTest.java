@@ -4,7 +4,6 @@ import com.afsmith.tyneweartrafficviewer.business.data.TrafficEventDTO;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficEvent;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.Test;
-import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

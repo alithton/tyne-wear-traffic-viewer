@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.business.services.filter;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.PlannedTimes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficRoadwork;
 import com.afsmith.tyneweartrafficviewer.util.MockData;

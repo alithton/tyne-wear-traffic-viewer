@@ -8,6 +8,10 @@ import lombok.Setter;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents a time period. This is used to represent the planned or actual start
+ * and end times of some traffic incidents.
+ */
 @Getter
 @Setter
 @NoArgsConstructor

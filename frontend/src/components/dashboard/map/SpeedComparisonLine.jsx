@@ -1,5 +1,6 @@
 import {Polyline, Tooltip} from "react-leaflet";
 import Gradient from "javascript-color-gradient";
+import styles from './SpeedLine.module.css';
 
 
 
@@ -23,8 +24,7 @@ function SpeedComparisonLine({positions, data}) {
     return (
         <Polyline pathOptions={ {color: result.colour} } positions={positions}>
             <Tooltip>
-                <p>{result.message}</p>
-                <p>{data.systemCodeNumber}</p>
+                <p className={styles.data}>{result.message}</p>
                 <p>{data.shortDescription}</p>
             </Tooltip>
         </Polyline>

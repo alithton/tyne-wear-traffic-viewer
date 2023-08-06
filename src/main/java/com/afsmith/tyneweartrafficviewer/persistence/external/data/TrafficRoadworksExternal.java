@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficRoadwork;
 import com.afsmith.tyneweartrafficviewer.persistence.external.mappers.TrafficRoadworkExternalMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -10,6 +10,9 @@ import org.mapstruct.factory.Mappers;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Represents data about roadworks.
+ */
 @Getter
 public final class TrafficRoadworksExternal extends TrafficPointDataExternal<TrafficRoadwork> {
     @JsonIgnore
@@ -21,6 +24,9 @@ public final class TrafficRoadworksExternal extends TrafficPointDataExternal<Tra
     String trafficSignals;
     String contraflow;
 
+    /**
+     * Constructor for roadwork data.
+     */
     @Builder
     public TrafficRoadworksExternal(
             String systemCodeNumber,
@@ -54,7 +60,9 @@ public final class TrafficRoadworksExternal extends TrafficPointDataExternal<Tra
         this.contraflow = contraflow;
     }
 
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public TrafficRoadwork toEntity() {
         return mapper.externalToEntity(this);

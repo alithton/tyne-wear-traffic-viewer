@@ -26,6 +26,9 @@ public class ComparisonDTO extends JourneyTimeDTO {
     @JsonIgnore
     private final double INNER_THRESHOLD = 0.1;
 
+    /**
+     * An all-arguments constructor for traffic speed comparison data transfer objects.
+     */
     @Builder(builderMethodName = "comparisonBuilder")
     public ComparisonDTO(String systemCodeNumber,
                          String shortDescription,

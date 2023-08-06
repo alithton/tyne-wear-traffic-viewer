@@ -1,6 +1,5 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
-import com.afsmith.tyneweartrafficviewer.business.data.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
 import jakarta.persistence.Entity;
 import lombok.*;
@@ -9,7 +8,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /**
- * A JPA entity representing traffic incident data.
+ * Represents traffic incident data.
  */
 @Getter
 @Setter
@@ -20,6 +19,9 @@ public class TrafficIncident extends TrafficPointData {
     private ZonedDateTime incidentTime;
     private ZonedDateTime endTime;
 
+    /**
+     * An all-arguments constructor for traffic incident data.
+     */
     @Builder
     public TrafficIncident(
             String systemCodeNumber,
@@ -49,10 +51,21 @@ public class TrafficIncident extends TrafficPointData {
         this.endTime = endTime;
     }
 
+    /**
+     * A copy constructor for traffic incident data.
+     * @param pointData The traffic data from which the incident data should be constructed.
+     */
     public TrafficIncident(TrafficPointData pointData) {
         super(pointData);
     }
 
+    /**
+     * Should the entity be included in the returned set of data based on the criteria
+     * specified by the filter service?
+     * @param filter A service providing a set of configurable filters to determine
+     *                      which entities should be included in the server response.
+     * @return Whether the entity should be included.
+     */
     @Override
     public boolean isIncluded(FilterService filter) {
         return filter.filterSeverity(getSeverityTypeRefDescription())

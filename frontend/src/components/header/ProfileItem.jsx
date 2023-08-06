@@ -3,6 +3,7 @@ import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useEditDetailsMutation} from "../../store/slices/apiSlice.js";
 import {updateCredentials} from "../../store/slices/authenticationSlice.js";
+import FormInputElement from "../ui/FormInputElement.jsx";
 
 function ProfileItem(props) {
     const [isEditing, setIsEditing] = useState(false);
@@ -11,7 +12,7 @@ function ProfileItem(props) {
 
     const credentials = useSelector(state => state.authentication.value.credentials);
     const dispatch = useDispatch();
-    const [triggerEdit, {}] = useEditDetailsMutation();
+    const [triggerEdit, {isError}] = useEditDetailsMutation();
 
     const handleEdit = () => {
         setIsEditing(true);
@@ -23,8 +24,6 @@ function ProfileItem(props) {
         setValue(storedValue);
     }
 
-    const handleInputChange = (e) => setValue(e.target.value);
-
     const handleConfirmChange = async (e) => {
         e.preventDefault();
         const updatedCredentials = {...credentials};
@@ -33,6 +32,8 @@ function ProfileItem(props) {
         dispatch(updateCredentials(updatedCredentials));
         setIsEditing(false);
     }
+
+    const errorMessage = isError ? 'A user with that username already exists' : '';
 
     const notEditing = (
         <div className={styles['profile-item']}>
@@ -44,8 +45,15 @@ function ProfileItem(props) {
 
     const editing = (
         <form onSubmit={handleConfirmChange} className={styles['profile-item']} >
-            <label className={styles['profile-item-label']} htmlFor={props.name} >{props.name + ':'}</label>
-            <input name={props.name} value={value} onChange={handleInputChange} />
+            <FormInputElement
+                label={props.name + ':'}
+                name={props.name}
+                type='text'
+                value={value}
+                className={styles['profile-item-label']}
+                setValue={setValue}
+                error={errorMessage}
+            />
             <button type='submit' className={styles['profile-item-button']}>Confirm</button>
             <button type='button' className={styles['profile-item-button']} onClick={handleCancel}>Cancel</button>
         </form>

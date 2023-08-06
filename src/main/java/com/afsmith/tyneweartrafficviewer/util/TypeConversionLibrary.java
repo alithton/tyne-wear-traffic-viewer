@@ -2,7 +2,11 @@ package com.afsmith.tyneweartrafficviewer.util;
 
 import java.util.List;
 
+/**
+ * A collection of useful methods for managing conversions between types.
+ */
 public class TypeConversionLibrary {
+
     /**
      * Safely cast all the elements of a list to a given subtype. Any elements
      * that cannot be cast to the specified subtype are removed.

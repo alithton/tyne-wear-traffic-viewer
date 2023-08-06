@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Getter;
@@ -7,6 +8,9 @@ import lombok.Getter;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * A data transfer object for transferring traffic accident data to the frontend.
+ */
 @Getter
 public final class TrafficAccidentDTO extends TrafficPointDataDTO {
     String accidentTypeDescription;
@@ -15,6 +19,9 @@ public final class TrafficAccidentDTO extends TrafficPointDataDTO {
     @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     ZonedDateTime endTime;
 
+    /**
+     * An all-arguments constructor for traffic accident data transfer objects.
+     */
     @Builder
     public TrafficAccidentDTO(
             String systemCodeNumber,

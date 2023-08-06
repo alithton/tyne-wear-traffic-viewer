@@ -1,11 +1,15 @@
 package com.afsmith.tyneweartrafficviewer.business.data;
 
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import lombok.Builder;
 import lombok.Getter;
 
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * A data transfer object for transferring traffic roadwork data to the frontend.
+ */
 @Getter
 public final class TrafficRoadworksDTO extends TrafficPointDataDTO {
     String roadworkTypeDescription;
@@ -15,6 +19,9 @@ public final class TrafficRoadworksDTO extends TrafficPointDataDTO {
     String trafficSignals;
     String contraflow;
 
+    /**
+     * An all-arguments constructor for traffic roadwork data transfer objects.
+     */
     @Builder
     public TrafficRoadworksDTO(
             String systemCodeNumber,

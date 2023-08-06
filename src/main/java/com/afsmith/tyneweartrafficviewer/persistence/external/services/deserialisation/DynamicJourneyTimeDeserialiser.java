@@ -41,6 +41,10 @@ public class DynamicJourneyTimeDeserialiser extends TrafficDataDeserializer<Jour
                                          .build();
     }
 
+    /*
+     * Attempt to parse a JSON node as an integer and return the result. If the
+     * parsing fails, return 0.
+     */
     private int getIntegerOrZero(JsonNode node) {
         int result;
         try {

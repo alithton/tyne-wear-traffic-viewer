@@ -2,15 +2,12 @@ import {MapContainer, TileLayer} from "react-leaflet";
 import {useDispatch, useSelector} from "react-redux";
 import IncidentMarker from "./IncidentMarker.jsx";
 import 'leaflet/dist/leaflet.css'
-import {useEffect, useState} from "react";
 import 'leaflet-contextmenu';
 import {addNew} from "../../../store/slices/detailsSlice.js";
 import {useGetIncidentsQuery} from "../../../store/slices/apiSlice.js";
 import TrafficSpeedLine from "./TrafficSpeedLine.jsx";
 import SpeedComparisonLine from "./SpeedComparisonLine.jsx";
 import {maxMin} from "../../../util/summaryStats.js";
-
-const TRAFFIC_POINT_TYPES = ["INCIDENT", "ACCIDENT", "ROADWORKS", "EVENT"];
 
 function Map() {
 

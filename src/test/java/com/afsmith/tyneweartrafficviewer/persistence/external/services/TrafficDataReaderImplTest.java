@@ -1,10 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.services;
 
-import com.afsmith.tyneweartrafficviewer.business.data.*;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.*;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.MapperFeature;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -14,7 +11,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.ZoneId;
 import java.time.Month;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
