@@ -72,8 +72,8 @@ public class UserController {
      *     If no user matching the provided token is found, return an HTTP
      *     401 Unauthorised response.
      * </p>
-     * @param credentials
-     * @param token
+     * @param credentials The new username and password for the user.
+     * @param token An authentication token.
      */
     @PutMapping("/users/edit")
     @ResponseStatus(HttpStatus.NO_CONTENT)

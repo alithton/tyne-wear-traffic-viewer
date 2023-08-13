@@ -1,0 +1,131 @@
+= Traffic Viewer REST API
+
+== Traffic Data
+
+=== Get traffic data
+
+Get all traffic data matching the query parameters.
+
+.Available parameters
+include::{snippets}/incidents/form-parameters.adoc[]
+
+.Example request:
+include::{snippets}/incidents/curl-request.adoc[]
+
+.request
+include::{snippets}/incidents/http-request.adoc[]
+
+.response
+include::{snippets}/incidents/http-response.adoc[]
+
+=== Get individual traffic data
+
+Fetch a single piece of traffic data specified by a provided system code number.
+
+include::{snippets}/getIncident/path-parameters.adoc[]
+
+.Example request
+include::{snippets}/getIncident/curl-request.adoc[]
+
+.response
+include::{snippets}/getIncident/http-response.adoc[]
+
+=== Get an image
+
+Get the most recent image from the specified traffic camera.
+
+include::{snippets}/getImage/path-parameters.adoc[]
+
+.Example request
+include::{snippets}/getImage/curl-request.adoc[]
+
+.response
+include::{snippets}/getImage/http-response.adoc[]
+
+=== Add a comment
+
+Add a comment to a specified traffic incident. Must supply a valid authentication
+token.
+
+include::{snippets}/addComment/path-parameters.adoc[]
+
+.Request cookie
+include::{snippets}/addComment/request-cookies.adoc[]
+
+.Example request
+include::{snippets}/addComment/curl-request.adoc[]
+
+.request
+include::{snippets}/addComment/http-request.adoc[]
+
+.response
+include::{snippets}/addComment/http-response.adoc[]
+
+=== Create new incident data
+
+Create a new traffic incident using user-supplied data.
+
+.Request cookie
+include::{snippets}/createIncident/request-cookies.adoc[]
+
+.Example request
+include::{snippets}/createIncident/curl-request.adoc[]
+
+.request
+include::{snippets}/createIncident/http-request.adoc[]
+
+.response
+include::{snippets}/createIncident/http-response.adoc[]
+
+== User data
+
+=== Sign up
+
+Create a new user account with a provided username and password.
+
+.Response cookies
+include::{snippets}/signUp/response-cookies.adoc[]
+
+.Example request
+include::{snippets}/signUp/curl-request.adoc[]
+
+.request
+include::{snippets}/signUp/http-request.adoc[]
+
+.response
+include::{snippets}/signUp/http-response.adoc[]
+
+=== Login
+
+Attempt to log in with the supplied username and password.
+
+.Response cookies
+include::{snippets}/login/response-cookies.adoc[]
+
+.Example request
+include::{snippets}/login/curl-request.adoc[]
+
+.request
+include::{snippets}/login/http-request.adoc[]
+
+.response
+include::{snippets}/login/http-response.adoc[]
+
+=== Edit user data
+
+Change the user credentials to match the credentials provided.
+
+.Request cookies
+include::{snippets}/edit/request-cookies.adoc[]
+
+.Example request
+include::{snippets}/edit/curl-request.adoc[]
+
+.request
+include::{snippets}/edit/http-request.adoc[]
+
+.response
+include::{snippets}/edit/http-response.adoc[]
+
+
+

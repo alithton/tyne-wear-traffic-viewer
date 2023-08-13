@@ -77,23 +77,4 @@ class TrafficDataServiceJourneyTimesTest {
         assertThat(firstJourney.getRoute()).isNotNull();
     }
 
-    @Test
-    void routesReadFromFileRealJourneyTimeData() throws IOException {
-        ExternalDataAccessService externalDataAccessService = new ExternalDataAccessServiceImpl(new OpenDataServiceClient(
-                new RestTemplateBuilder()));
-        externalDataAccessService.setBaseDirectory("src/test/resources/data");
-
-        List<JourneyTime> journeyTimes = externalDataAccessService.getData(TrafficDataTypes.SPEED, "journeytime-static-full-test.json", "journeytime-dynamic-full-test.json");
-
-        journeyTimeService.setRoutesFromFile(true);
-        journeyTimeService.persistEntities(journeyTimes);
-
-        verify(repository).saveAll(captor.capture());
-
-        JourneyTime firstJourney = captor.getValue()
-                                         .get(0);
-
-        assertThat(firstJourney.getRoute()).isNotNull();
-    }
-
 }

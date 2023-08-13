@@ -104,6 +104,7 @@ public class IncidentController {
      *              or provides a valid login.
      */
     @PostMapping(value = "/incidents/{codeNumber}")
+    @ResponseStatus(HttpStatus.CREATED)
     public void addComment(@PathVariable String codeNumber,
                            @RequestBody CommentDTO comment,
                            @CookieValue("token") String token) {

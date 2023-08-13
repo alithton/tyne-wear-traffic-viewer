@@ -186,6 +186,14 @@ public class MockData {
                                 .build();
     }
 
+    public static CommentDTO getCommentDto(String username) {
+        return CommentDTO.builder()
+                .userName(username)
+                .content("content")
+                .created(TIME)
+                         .build();
+    }
+
     // Get Mock entities
 
     public static TrafficIncident getIncident(String code) {

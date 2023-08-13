@@ -18,8 +18,6 @@ public class JourneyTime extends TrafficData {
 
     @Embedded
     @AttributeOverrides({
-            @AttributeOverride(name = "easting", column = @Column(name = "start_easting")),
-            @AttributeOverride(name = "northing", column = @Column(name = "start_northing")),
             @AttributeOverride(name = "latitude", column = @Column(name = "start_latitude")),
             @AttributeOverride(name = "longitude", column = @Column(name = "start_longitude")),
     })
@@ -27,8 +25,6 @@ public class JourneyTime extends TrafficData {
 
     @Embedded
     @AttributeOverrides({
-            @AttributeOverride(name = "easting", column = @Column(name = "end_easting")),
-            @AttributeOverride(name = "northing", column = @Column(name = "end_northing")),
             @AttributeOverride(name = "latitude", column = @Column(name = "end_latitude")),
             @AttributeOverride(name = "longitude", column = @Column(name = "end_longitude")),
     })
