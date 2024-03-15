@@ -16,6 +16,7 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
+@DiscriminatorValue("roadworks")
 @Entity
 public class TrafficRoadwork extends TrafficPointData {
     String roadworkTypeDescription;

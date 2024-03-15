@@ -11,6 +11,7 @@ import java.time.ZonedDateTime;
 @Getter
 @ToString
 @NoArgsConstructor
+@DiscriminatorValue("journey_time")
 @Entity
 public class JourneyTime extends TrafficData {
     String shortDescription;

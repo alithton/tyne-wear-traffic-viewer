@@ -20,7 +20,7 @@ class CommentRepositoryTest {
     CommentRepository commentRepository;
 
     @Autowired
-    IncidentRepository incidentRepository;
+    TrafficDataRepository dataRepository;
 
     @Autowired
     UserRepository userRepository;
@@ -34,7 +34,7 @@ class CommentRepositoryTest {
     @BeforeEach
     void setUp() {
         userRepository.saveAll(List.of(user1, user2));
-        incidentRepository.saveAndFlush(pointData);
+        dataRepository.saveAndFlush(pointData);
         commentRepository.saveAllAndFlush(comments);
     }
 

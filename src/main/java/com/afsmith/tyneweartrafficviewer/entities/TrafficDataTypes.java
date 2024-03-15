@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.data.*;
+import com.afsmith.tyneweartrafficviewer.persistence.repositories.*;
 import lombok.Getter;
 
 import java.util.List;
@@ -30,7 +31,8 @@ public enum TrafficDataTypes {
      * @param dtoClass The DTO class associated with the data type.
      * @param entityClass The entity class associated with the data type.
      */
-    TrafficDataTypes(Class<? extends TrafficDataDTO> dtoClass, Class<? extends TrafficEntity> entityClass) {
+    TrafficDataTypes(Class<? extends TrafficDataDTO> dtoClass,
+                     Class<? extends TrafficEntity> entityClass) {
         this.dtoClass = dtoClass;
         this.entityClass = entityClass;
     }

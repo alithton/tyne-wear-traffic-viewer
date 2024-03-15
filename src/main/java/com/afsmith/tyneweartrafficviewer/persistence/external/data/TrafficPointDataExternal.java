@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.data;
 
-import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.AbstractTrafficData;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.time.ZonedDateTime;
  * @param <E> The corresponding entity.
  */
 @Getter
-public abstract sealed class TrafficPointDataExternal<E extends TrafficData> extends TrafficDataExternal<E>
+public abstract sealed class TrafficPointDataExternal<E extends AbstractTrafficData> extends TrafficDataExternal<E>
         permits TrafficEventExternal, TrafficIncidentExternal, TrafficAccidentExternal, TrafficRoadworksExternal
          {
     TrafficDataTypes type;

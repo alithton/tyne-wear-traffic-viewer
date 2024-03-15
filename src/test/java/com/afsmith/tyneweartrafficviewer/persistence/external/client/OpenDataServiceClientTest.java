@@ -1,8 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.client;
 
-import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.AbstractTrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.config.RestTemplateBuilderConfig;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.ExternalDataTypes;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficIncidentExternal;
@@ -69,7 +68,7 @@ class OpenDataServiceClientTest {
                 .andExpect(header("Authorization", "Basic " + authHeaderEncoded))
                 .andRespond(withSuccess(responseBody, MediaType.APPLICATION_JSON));
 
-        List<TrafficDataExternal<TrafficData>> incidents = client.getData(ExternalDataTypes.INCIDENT);
+        List<TrafficDataExternal<AbstractTrafficData>> incidents = client.getData(ExternalDataTypes.INCIDENT);
         assertThat(incidents.size()).isEqualTo(1);
         assertThat(incidents.get(0)).isInstanceOf(TrafficIncidentExternal.class);
     }

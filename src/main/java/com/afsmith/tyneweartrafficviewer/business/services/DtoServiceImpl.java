@@ -42,7 +42,7 @@ public class DtoServiceImpl implements DtoService {
      */
     @Override
     @SuppressWarnings("unchecked")
-    public <DTO extends TrafficDTO, T extends TrafficEntity>
+    public <DTO extends TrafficDTO, T extends TrafficData>
             List<DTO> listAll(TrafficDataTypes dataType) {
 
         // These casts are known to be safe as there is a finite number of possible return values (based on the
@@ -57,7 +57,7 @@ public class DtoServiceImpl implements DtoService {
      */
     @Override
     @SuppressWarnings("unchecked")
-    public <DTO extends TrafficDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter) {
+    public <DTO extends TrafficDTO, T extends TrafficData> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter) {
         // These casts are known to be safe as there is a finite number of possible return values (based on the
         // enum dataType), all of which are safe.
         var mapper = (TrafficDataMapper<DTO, T>) getMapper(dataType);
@@ -128,10 +128,10 @@ public class DtoServiceImpl implements DtoService {
 
     // Get a list of all entities in the database of the specified traffic data type.
     @SuppressWarnings("unchecked")
-    private <T extends TrafficEntity>
+    private <T extends TrafficData>
     List<T> listEntities(TrafficDataTypes dataType) {
         Class<T> entityClass = (Class<T>) dataType.getEntityClass();
-        List<TrafficEntity> entities = dataPersistence.listAll(dataType);
+        List<TrafficData> entities = dataPersistence.listAll(dataType);
         return downcastList(entities, entityClass);
     }
 

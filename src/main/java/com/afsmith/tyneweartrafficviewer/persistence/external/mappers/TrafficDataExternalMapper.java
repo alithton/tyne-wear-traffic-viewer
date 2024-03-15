@@ -1,6 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.persistence.external.mappers;
 
-import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
+import com.afsmith.tyneweartrafficviewer.entities.AbstractTrafficData;
 import com.afsmith.tyneweartrafficviewer.persistence.external.data.TrafficDataExternal;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  * @param <T> The external data type.
  * @param <E> The data entity.
  */
-public interface TrafficDataExternalMapper<T extends TrafficDataExternal<E>, E extends TrafficData> {
+public interface TrafficDataExternalMapper<T extends TrafficDataExternal<E>, E extends AbstractTrafficData> {
 
     /**
      * Map a single instance of the external data type to its corresponding entity.

@@ -3,6 +3,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.repositories;
 import com.afsmith.tyneweartrafficviewer.entities.TypicalJourneyTime;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.time.LocalTime;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * A data repository, managing access to typical journey time data.
  */
-public interface TypicalJourneyTimeRepository extends JpaRepository<TypicalJourneyTime, String> {
+public interface TypicalJourneyTimeRepository extends CrudRepository<TypicalJourneyTime, Long> {
 
     /**
      * Get typical journey time data for the time matching the provided time. The

@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.business.services;
 
 import com.afsmith.tyneweartrafficviewer.business.data.NewTrafficDataDTO;
+import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficPointDataDTO;
 import com.afsmith.tyneweartrafficviewer.business.data.TrafficDTO;
@@ -29,7 +30,7 @@ public interface DtoService {
      * @param <DTO> The type of data transfer object corresponding to the requested data type.
      * @param <T> The entity corresponding to the requested type.
      */
-    <DTO extends TrafficDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType);
+    <DTO extends TrafficDTO, T extends TrafficData> List<DTO> listAll(TrafficDataTypes dataType);
 
     /**
      * Get a list of all available data of the requested type and matching the filter criteria
@@ -40,7 +41,7 @@ public interface DtoService {
      * @param <DTO> The type of data transfer object corresponding to the requested data type.
      * @param <T> The entity corresponding to the requested type.
      */
-    <DTO extends TrafficDTO, T extends TrafficEntity> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter);
+    <DTO extends TrafficDTO, T extends TrafficData> List<DTO> listAll(TrafficDataTypes dataType, FilterService filter);
 
     /**
      * Get the latest image from the camera specified by the provided system code number.

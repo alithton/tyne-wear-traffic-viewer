@@ -1,12 +1,8 @@
 package com.afsmith.tyneweartrafficviewer.persistence.services;
 
-import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.Point;
-import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
-import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
-import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
+import com.afsmith.tyneweartrafficviewer.persistence.repositories.TrafficDataRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.afsmith.tyneweartrafficviewer.util.MockData;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,9 +12,7 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.Mock;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
@@ -34,7 +28,7 @@ class TrafficDataServiceJourneyTimesTest {
     RoutingService routingService;
 
     @Mock
-    JourneyTimeRepository repository;
+    TrafficDataRepository repository;
 
     List<JourneyTime> mockJourneyTimes;
 

@@ -1,14 +1,15 @@
 package com.afsmith.tyneweartrafficviewer.persistence;
 
 
+import com.afsmith.tyneweartrafficviewer.entities.TrafficData;
 import com.afsmith.tyneweartrafficviewer.entities.TrafficDataTypes;
-import com.afsmith.tyneweartrafficviewer.entities.TrafficEntity;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataPersistence;
-import com.afsmith.tyneweartrafficviewer.persistence.services.TrafficDataServiceTypicalJourneyTime;
+import com.afsmith.tyneweartrafficviewer.persistence.services.TypicalJourneyTimeDataService;
 import jakarta.transaction.Transactional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
@@ -32,12 +33,13 @@ public class BootstrapData implements CommandLineRunner {
 
     private final TrafficDataPersistence dataPersistence;
     private final ExternalDataAccessService dataAccessService;
-    private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
+    private final TypicalJourneyTimeDataService typicalJourneyTimeService;
     private final String WEEKDAY_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekdays.csv";
     private final String WEEKEND_JOURNEY_TIMES_FILE = "src/main/resources/data/Journey-Time-Data-Weekends.csv";
 
     // Should the data be loaded from local files or downloaded from the Open Data Service?
     @Getter
+    @Setter
     private boolean useLocalData;
 
     @Transactional
@@ -53,13 +55,13 @@ public class BootstrapData implements CommandLineRunner {
      */
     public void loadIncidents() throws IOException {
 
-        List<TrafficEntity> trafficIncidents;
-        List<TrafficEntity> trafficEvents;
-        List<TrafficEntity> trafficAccidents;
-        List<TrafficEntity> trafficRoadworks;
-        List<TrafficEntity> journeyTimes;
-        List<TrafficEntity> cameras;
-        List<TrafficEntity> typicalJourneyTimes = List.copyOf(typicalJourneyTimeService.loadFromFile(WEEKDAY_JOURNEY_TIMES_FILE, WEEKEND_JOURNEY_TIMES_FILE));
+        List<TrafficData> trafficIncidents;
+        List<TrafficData> trafficEvents;
+        List<TrafficData> trafficAccidents;
+        List<TrafficData> trafficRoadworks;
+        List<TrafficData> journeyTimes;
+        List<TrafficData> cameras;
+        List<TrafficData> typicalJourneyTimes = List.copyOf(typicalJourneyTimeService.loadFromFile(WEEKDAY_JOURNEY_TIMES_FILE, WEEKEND_JOURNEY_TIMES_FILE));
 
         // Command line flag to quickly switch between loading data from local files vs fetching from server
         if (isUseLocalData()) {
@@ -86,13 +88,5 @@ public class BootstrapData implements CommandLineRunner {
         dataPersistence.persistEntities(journeyTimes, TrafficDataTypes.SPEED);
         dataPersistence.persistEntities(cameras, TrafficDataTypes.CAMERA);
         dataPersistence.persistEntities(typicalJourneyTimes, TrafficDataTypes.TYPICAL_SPEED);
-    }
-
-    /**
-     * Set the class to use local data rather than accessing data from the API.
-     * @param useLocalData Should local data be used?
-     */
-    public void setUseLocalData(boolean useLocalData) {
-        this.useLocalData = useLocalData;
     }
 }
