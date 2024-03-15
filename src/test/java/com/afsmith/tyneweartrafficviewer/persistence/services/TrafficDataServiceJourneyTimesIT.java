@@ -5,7 +5,7 @@ import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.persistence.external.client.OpenDataServiceClient;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessService;
 import com.afsmith.tyneweartrafficviewer.persistence.external.services.ExternalDataAccessServiceImpl;
-import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
+import com.afsmith.tyneweartrafficviewer.persistence.repositories.TrafficDataRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.client.OsrmClient;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.mappers.OsrmToSimpleRouteMapperImpl;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
@@ -34,7 +34,7 @@ public class TrafficDataServiceJourneyTimesIT {
     RoutingService routingService;
 
     @Autowired
-    JourneyTimeRepository repository;
+    TrafficDataRepository repository;
 
     ExternalDataAccessService externalDataAccessService;
 

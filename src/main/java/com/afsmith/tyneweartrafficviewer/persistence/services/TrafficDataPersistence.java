@@ -18,16 +18,10 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class TrafficDataPersistence {
-
-    private final TrafficDataServiceIncidents incidentService;
-    private final TrafficDataServiceEvent eventService;
-    private final TrafficDataServiceAccident accidentService;
-    private final TrafficDataServiceRoadworks roadworksService;
-    private final TrafficDataServiceJourneyTimes journeyTimeService;
-    private final TrafficDataServiceCamera cameraService;
-    private final TrafficDataServiceTypicalJourneyTime typicalJourneyTimeService;
-    private final TrafficPointDataService pointDataService;
-    private final ExternalDataAccessService dataAccessService;
+    private final ExternalDataAccessService externalDataAccessService;
+    private final TrafficDataAccessService trafficDataService;
+    private final TypicalJourneyTimeDataService typicalJTDataService;
+    private final TrafficDataServiceJourneyTimes jtDataService;
 
     /**
      * Get a list of all the data stored corresponding to the provided traffic
@@ -35,10 +29,10 @@ public class TrafficDataPersistence {
      * @param dataType The traffic data type.
      * @return A list of traffic data.
      */
-    public <T extends TrafficEntity> List<T> listAll(TrafficDataTypes dataType) {
+    public <T extends TrafficData> List<T> listAll(TrafficDataTypes dataType) {
         @SuppressWarnings("unchecked")
-        var dataService = (TrafficDataService<T>) getDataService(dataType);
-        return List.copyOf(dataService.listAll());
+        Class<T> entityClass = (Class<T>) dataType.getEntityClass();
+        return trafficDataService.listAll(entityClass);
     }
 
     /**
@@ -46,10 +40,13 @@ public class TrafficDataPersistence {
      * @param trafficData A list of entities to be stored.
      * @param dataType The type of data to be stored.
      */
-    public <T extends TrafficEntity> void persistEntities(List<T> trafficData, TrafficDataTypes dataType) {
-        @SuppressWarnings("unchecked")
-        var dataService = (TrafficDataService<T>) getDataService(dataType);
-        dataService.persistEntities(List.copyOf(trafficData));
+    @SuppressWarnings("unchecked")
+    public <T extends TrafficData> void persistEntities(List<T> trafficData, TrafficDataTypes dataType) {
+        if (dataType == TrafficDataTypes.SPEED) {
+            jtDataService.persistEntities( (List<JourneyTime>) trafficData);
+        } else {
+            trafficDataService.saveAll(trafficData);
+        }
     }
 
     /**
@@ -57,10 +54,12 @@ public class TrafficDataPersistence {
      * @param trafficData The data to be stored.
      * @param dataType The type of data to be stored.
      */
-    public <T extends TrafficEntity> void persist(T trafficData,  TrafficDataTypes dataType) {
-        @SuppressWarnings("unchecked")
-        var dataService = (TrafficDataService<T>) getDataService(dataType);
-        dataService.persist(trafficData);
+    public <T extends TrafficData> void persist(T trafficData,  TrafficDataTypes dataType) {
+        if (dataType == TrafficDataTypes.SPEED) {
+            jtDataService.persistEntities(List.of( (JourneyTime) trafficData));
+        } else {
+            trafficDataService.save(trafficData);
+        }
     }
 
     /**
@@ -69,10 +68,8 @@ public class TrafficDataPersistence {
      * @param dataType The type of data to search.
      * @return The located traffic data, or null.
      */
-    public <T extends TrafficEntity> T find(String codeNumber, TrafficDataTypes dataType) {
-        @SuppressWarnings("unchecked")
-        var dataService = (TrafficDataService<T>) getDataService(dataType);
-        return dataService.findByCodeNumber(codeNumber);
+    public <T extends TrafficData> T find(String codeNumber, TrafficDataTypes dataType) {
+        return trafficDataService.findByCodeNumber(codeNumber);
     }
 
     /**
@@ -81,12 +78,7 @@ public class TrafficDataPersistence {
      * @return Return the traffic data, if found, or else null.
      */
     public <T extends TrafficPointData> T find(String codeNumber) throws DataNotFoundException {
-        TrafficPointData pointData = pointDataService.findByCodeNumber(codeNumber);
-        if (pointData == null) throw new DataNotFoundException("No data found that matches the provided code number.");
-        TrafficDataTypes dataType = pointData.getType();
-        @SuppressWarnings("unchecked")
-        var dataService = (TrafficDataService<T>) getDataService(dataType);
-        return dataService.convert(pointData);
+        return trafficDataService.findPointDataByCodeNumber(codeNumber);
     }
 
     /**
@@ -94,10 +86,9 @@ public class TrafficDataPersistence {
      * @param pointData The traffic data to which the comment is being added.
      * @param comment The comment being added.
      */
-    public void saveComment(TrafficPointData pointData, Comment comment) {
-        TrafficDataTypes dataType = pointData.getType();
-        persist(pointData, dataType);
-        pointDataService.saveComment(comment);
+    public <T extends TrafficPointData> void saveComment(T pointData, Comment comment) {
+        pointData.addComment(comment);
+        trafficDataService.save(pointData);
     }
 
     /**
@@ -110,7 +101,7 @@ public class TrafficDataPersistence {
      * @return A list of typical journey time data for the requested time and day.
      */
     public List<TypicalJourneyTime> findTypicalJourneyTimesByTime(LocalTime time, boolean isWeekend) {
-        return typicalJourneyTimeService.findByTime(time, isWeekend);
+        return typicalJTDataService.findByTime(time, isWeekend);
     }
 
     /**
@@ -120,21 +111,15 @@ public class TrafficDataPersistence {
      * @return The image as an array of bytes.
      */
     public byte[] getImage(String systemCodeNumber) {
-        Camera camera = cameraService.findById(systemCodeNumber);
+        TrafficData data = trafficDataService.findByCodeNumber(systemCodeNumber);
+        Camera camera;
+        if (data instanceof Camera) {
+            camera = (Camera) data;
+        } else {
+            return null;
+        }
         URL imageUrl = camera.getImage();
-        return dataAccessService.getImage(imageUrl);
+        return externalDataAccessService.getImage(imageUrl);
     }
 
-    // Get the appropriate data service for the requested data type.
-    private TrafficDataService<? extends TrafficEntity> getDataService(TrafficDataTypes dataType) {
-        return switch (dataType) {
-            case INCIDENT -> incidentService;
-            case EVENT -> eventService;
-            case ACCIDENT -> accidentService;
-            case ROADWORKS -> roadworksService;
-            case SPEED -> journeyTimeService;
-            case CAMERA -> cameraService;
-            case TYPICAL_SPEED -> typicalJourneyTimeService;
-        };
-    }
 }

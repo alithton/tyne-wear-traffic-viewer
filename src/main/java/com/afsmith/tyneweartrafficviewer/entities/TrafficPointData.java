@@ -39,6 +39,7 @@ public class TrafficPointData extends TrafficData {
     @JoinColumn(name = "user_id")
     private User createdBy;
 
+
     /**
      * All-argument constructor.
      */

@@ -1,6 +1,7 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
 import com.afsmith.tyneweartrafficviewer.business.services.filter.FilterService;
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.*;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@DiscriminatorValue("incident")
 @Entity
 public class TrafficIncident extends TrafficPointData {
     private String incidentTypeDescription;

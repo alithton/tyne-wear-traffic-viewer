@@ -24,11 +24,7 @@ import java.time.LocalTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class TypicalJourneyTime implements TrafficEntity {
-
-    @GeneratedValue
-    @Id
-    private long id;
+public class TypicalJourneyTime extends TrafficData {
 
     // An identifying code for the link.
     @CsvBindByName(column = "Site Name", profiles = "weekday")

@@ -1,5 +1,6 @@
 package com.afsmith.tyneweartrafficviewer.entities;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,6 +14,7 @@ import java.time.ZonedDateTime;
  */
 @Getter
 @NoArgsConstructor
+@DiscriminatorValue("camera")
 @Entity
 public class Camera extends TrafficData {
     String shortDescription;

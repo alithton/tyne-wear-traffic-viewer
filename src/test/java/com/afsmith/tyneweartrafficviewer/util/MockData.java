@@ -331,11 +331,10 @@ public class MockData {
     public static TypicalJourneyTime getTypicalJourneyTime(String code) {
         return TypicalJourneyTime.builder()
                                  .systemCodeNumber(code)
-                                 .id(1L)
                                  .isWeekend(false)
                                  .travelTime(10.0)
                                  .standardDeviation(1.0)
-                                 .timeOfDay(LocalTime.now())
+                                 .timeOfDay(LocalTime.NOON)
                                  .build();
     }
 

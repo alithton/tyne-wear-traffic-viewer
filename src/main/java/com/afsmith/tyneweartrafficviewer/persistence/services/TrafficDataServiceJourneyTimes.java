@@ -2,7 +2,7 @@ package com.afsmith.tyneweartrafficviewer.persistence.services;
 
 import com.afsmith.tyneweartrafficviewer.entities.JourneyTime;
 import com.afsmith.tyneweartrafficviewer.entities.SimpleRoute;
-import com.afsmith.tyneweartrafficviewer.persistence.repositories.JourneyTimeRepository;
+import com.afsmith.tyneweartrafficviewer.persistence.repositories.TrafficDataRepository;
 import com.afsmith.tyneweartrafficviewer.persistence.routing.services.RoutingService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -36,10 +36,11 @@ import static com.afsmith.tyneweartrafficviewer.util.TypeConversionLibrary.downc
  * --update-routes - If set, loaded route data is written to a file.
  */
 @Service
-public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<JourneyTime> {
+public class TrafficDataServiceJourneyTimes {
     // The routing service, for dynamically generating route data.
     private final RoutingService routingService;
 
+    private final TrafficDataRepository repository;
     // The file path to use for reading and writing route data.
     @Getter
     private Path routeOutputFile = Paths.get(System.getProperty("user.dir") + "/output/routes.json");
@@ -54,14 +55,13 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
 
     /**
      * Autowired constructor that uses command line arguments to configure options.
-     * @param repository The JPA repository to use.
      * @param routingService The routing service, used for dynamically generating route data.
      * @param args A Spring Boot ApplicationArguments instance. This is provided automatically
      *             when the service is initialised by Spring.
      */
     @Autowired
-    public TrafficDataServiceJourneyTimes(JourneyTimeRepository repository, RoutingService routingService, ApplicationArguments args) {
-        super(repository, JourneyTime.class);
+    public TrafficDataServiceJourneyTimes(TrafficDataRepository repository, RoutingService routingService, ApplicationArguments args) {
+        this.repository = repository;
         this.routingService = routingService;
         routesFromFile = args.containsOption("local-routes");
         updateRoutesFile = args.containsOption("update-routes");
@@ -72,11 +72,10 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
     /**
      * A constructor that does not accept command line arguments. This is useful in circumstances
      * in which the Spring Boot context is not available, such as in testing.
-     * @param repository The JPA repository to use.
      * @param routingService The routing service, used for dynamically generating route data.
      */
-    public TrafficDataServiceJourneyTimes(JourneyTimeRepository repository, RoutingService routingService) {
-        super(repository, JourneyTime.class);
+    public TrafficDataServiceJourneyTimes(TrafficDataRepository repository, RoutingService routingService) {
+        this.repository = repository;
         this.routingService = routingService;
         routesFromFile = false;
         updateRoutesFile = false;
@@ -92,7 +91,6 @@ public class TrafficDataServiceJourneyTimes extends AbstractTrafficDataService<J
      * routeOutputFile, overwriting any existing file at that location.
      * @param trafficData A list of traffic data.
      */
-    @Override
     public void persistEntities(List<JourneyTime> trafficData) {
         List<JourneyTime> journeyTimes = downcastList(trafficData, JourneyTime.class);
 
